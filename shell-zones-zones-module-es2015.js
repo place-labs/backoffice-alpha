@@ -2352,7 +2352,7 @@ class ZoneAboutComponent extends _shared_globals_base_directive__WEBPACK_IMPORTE
     }
     /** List of tags associated with the zone */
     get tag_list() {
-        return this.item && this.item.tags ? this.item.tags.split(',') : [];
+        return this.item ? this.item.tags : [];
     }
 }
 ZoneAboutComponent.ɵfac = function ZoneAboutComponent_Factory(t) { return new (t || ZoneAboutComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_app_service__WEBPACK_IMPORTED_MODULE_3__["ApplicationService"])); };
