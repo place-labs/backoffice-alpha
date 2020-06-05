@@ -23227,6 +23227,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       I18N_0 = $localize(_templateObject130());
     }
 
+    var _c2 = function _c2() {
+      return {
+        standalone: true
+      };
+    };
+
     function RepositoryFormComponent_div_0_div_2_Template(rf, ctx) {
       if (rf & 1) {
         var _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
@@ -23259,39 +23265,39 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("options", ctx_r1.commit_list)("loading", ctx_r1.loading_commits)("ngModel", ctx_r1.base_commit);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("options", ctx_r1.commit_list)("loading", ctx_r1.loading_commits)("ngModel", ctx_r1.base_commit)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](4, _c2));
       }
     }
 
-    var I18N_2;
+    var I18N_3;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_branchLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___3 = goog.getMsg("Branch{$startTagSpan}*{$closeTagSpan}:", {
+      var MSG_EXTERNAL_branchLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___4 = goog.getMsg("Branch{$startTagSpan}*{$closeTagSpan}:", {
         "startTagSpan": "\uFFFD#3\uFFFD",
         "closeTagSpan": "\uFFFD/#3\uFFFD"
       });
-      I18N_2 = MSG_EXTERNAL_branchLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___3;
+      I18N_3 = MSG_EXTERNAL_branchLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___4;
     } else {
-      I18N_2 = $localize(_templateObject131(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
+      I18N_3 = $localize(_templateObject131(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
     }
 
-    var I18N_4;
+    var I18N_5;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repositoryBranchPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___5 = goog.getMsg("Branch Name");
-      I18N_4 = MSG_EXTERNAL_repositoryBranchPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___5;
+      var MSG_EXTERNAL_repositoryBranchPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___6 = goog.getMsg("Branch Name");
+      I18N_5 = MSG_EXTERNAL_repositoryBranchPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___6;
     } else {
-      I18N_4 = $localize(_templateObject132());
+      I18N_5 = $localize(_templateObject132());
     }
 
-    var _c6 = ["placeholder", I18N_4];
-    var I18N_7;
+    var _c7 = ["placeholder", I18N_5];
+    var I18N_8;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repoBranchError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___8 = goog.getMsg("Working branch name is required");
-      I18N_7 = MSG_EXTERNAL_repoBranchError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___8;
+      var MSG_EXTERNAL_repoBranchError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___9 = goog.getMsg("Working branch name is required");
+      I18N_8 = MSG_EXTERNAL_repoBranchError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___9;
     } else {
-      I18N_7 = $localize(_templateObject133());
+      I18N_8 = $localize(_templateObject133());
     }
 
     function RepositoryFormComponent_div_0_div_3_Template(rf, ctx) {
@@ -23300,7 +23306,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 9);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "span");
 
@@ -23312,13 +23318,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "input", 11);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c7);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "mat-error");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_8);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -23336,35 +23342,35 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var I18N_9;
+    var I18N_10;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___10 = goog.getMsg("Name{$startTagSpan}*{$closeTagSpan}:", {
+      var MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___11 = goog.getMsg("Name{$startTagSpan}*{$closeTagSpan}:", {
         "startTagSpan": "\uFFFD#3\uFFFD",
         "closeTagSpan": "\uFFFD/#3\uFFFD"
       });
-      I18N_9 = MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___10;
+      I18N_10 = MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___11;
     } else {
-      I18N_9 = $localize(_templateObject134(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
+      I18N_10 = $localize(_templateObject134(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
     }
 
-    var I18N_11;
+    var I18N_12;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repositoryNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___12 = goog.getMsg("Repository Name");
-      I18N_11 = MSG_EXTERNAL_repositoryNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___12;
+      var MSG_EXTERNAL_repositoryNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___13 = goog.getMsg("Repository Name");
+      I18N_12 = MSG_EXTERNAL_repositoryNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___13;
     } else {
-      I18N_11 = $localize(_templateObject135());
+      I18N_12 = $localize(_templateObject135());
     }
 
-    var _c13 = ["placeholder", I18N_11];
-    var I18N_14;
+    var _c14 = ["placeholder", I18N_12];
+    var I18N_15;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repoNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___15 = goog.getMsg("Repository name is required");
-      I18N_14 = MSG_EXTERNAL_repoNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___15;
+      var MSG_EXTERNAL_repoNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___16 = goog.getMsg("Repository name is required");
+      I18N_15 = MSG_EXTERNAL_repoNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___16;
     } else {
-      I18N_14 = $localize(_templateObject136());
+      I18N_15 = $localize(_templateObject136());
     }
 
     function RepositoryFormComponent_div_0_div_4_Template(rf, ctx) {
@@ -23373,7 +23379,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 9);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_10);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "span");
 
@@ -23385,13 +23391,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "input", 12);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c14);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "mat-error");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_15);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -23409,35 +23415,35 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var I18N_16;
+    var I18N_17;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_folderNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___17 = goog.getMsg(" Folder Name{$startTagSpan}*{$closeTagSpan}: ", {
+      var MSG_EXTERNAL_folderNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___18 = goog.getMsg(" Folder Name{$startTagSpan}*{$closeTagSpan}: ", {
         "startTagSpan": "\uFFFD#3\uFFFD",
         "closeTagSpan": "\uFFFD/#3\uFFFD"
       });
-      I18N_16 = MSG_EXTERNAL_folderNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___17;
+      I18N_17 = MSG_EXTERNAL_folderNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___18;
     } else {
-      I18N_16 = $localize(_templateObject137(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
+      I18N_17 = $localize(_templateObject137(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
     }
 
-    var I18N_18;
+    var I18N_19;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_folderNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___19 = goog.getMsg("Folder Name");
-      I18N_18 = MSG_EXTERNAL_folderNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___19;
+      var MSG_EXTERNAL_folderNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___20 = goog.getMsg("Folder Name");
+      I18N_19 = MSG_EXTERNAL_folderNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___20;
     } else {
-      I18N_18 = $localize(_templateObject138());
+      I18N_19 = $localize(_templateObject138());
     }
 
-    var _c20 = ["placeholder", I18N_18];
-    var I18N_21;
+    var _c21 = ["placeholder", I18N_19];
+    var I18N_22;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_folderNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___22 = goog.getMsg("Folder name is required");
-      I18N_21 = MSG_EXTERNAL_folderNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___22;
+      var MSG_EXTERNAL_folderNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___23 = goog.getMsg("Folder name is required");
+      I18N_22 = MSG_EXTERNAL_folderNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___23;
     } else {
-      I18N_21 = $localize(_templateObject139());
+      I18N_22 = $localize(_templateObject139());
     }
 
     function RepositoryFormComponent_div_0_div_5_Template(rf, ctx) {
@@ -23446,7 +23452,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 13);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_17);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "span");
 
@@ -23458,13 +23464,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "input", 14);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c21);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "mat-error");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_22);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -23482,25 +23488,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var I18N_23;
+    var I18N_24;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___24 = goog.getMsg("Description:");
-      I18N_23 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___24;
+      var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___25 = goog.getMsg("Description:");
+      I18N_24 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___25;
     } else {
-      I18N_23 = $localize(_templateObject140());
+      I18N_24 = $localize(_templateObject140());
     }
 
-    var I18N_25;
+    var I18N_26;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___26 = goog.getMsg("Description");
-      I18N_25 = MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___26;
+      var MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___27 = goog.getMsg("Description");
+      I18N_26 = MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___27;
     } else {
-      I18N_25 = $localize(_templateObject141());
+      I18N_26 = $localize(_templateObject141());
     }
 
-    var _c27 = ["placeholder", I18N_25];
+    var _c28 = ["placeholder", I18N_26];
 
     function RepositoryFormComponent_div_0_div_6_Template(rf, ctx) {
       if (rf & 1) {
@@ -23508,7 +23514,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 15);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_24);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -23516,7 +23522,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "textarea", 16);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -23526,35 +23532,35 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var I18N_28;
+    var I18N_29;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___29 = goog.getMsg(" Repository URI{$startTagSpan}*{$closeTagSpan}: ", {
+      var MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___30 = goog.getMsg(" Repository URI{$startTagSpan}*{$closeTagSpan}: ", {
         "startTagSpan": "\uFFFD#3\uFFFD",
         "closeTagSpan": "\uFFFD/#3\uFFFD"
       });
-      I18N_28 = MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___29;
+      I18N_29 = MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___30;
     } else {
-      I18N_28 = $localize(_templateObject142(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
+      I18N_29 = $localize(_templateObject142(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
     }
 
-    var I18N_30;
+    var I18N_31;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repoUriPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___31 = goog.getMsg("Repository URI");
-      I18N_30 = MSG_EXTERNAL_repoUriPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___31;
+      var MSG_EXTERNAL_repoUriPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___32 = goog.getMsg("Repository URI");
+      I18N_31 = MSG_EXTERNAL_repoUriPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___32;
     } else {
-      I18N_30 = $localize(_templateObject143());
+      I18N_31 = $localize(_templateObject143());
     }
 
-    var _c32 = ["placeholder", I18N_30];
-    var I18N_33;
+    var _c33 = ["placeholder", I18N_31];
+    var I18N_34;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repoUriError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___34 = goog.getMsg("URI is required");
-      I18N_33 = MSG_EXTERNAL_repoUriError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___34;
+      var MSG_EXTERNAL_repoUriError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___35 = goog.getMsg("URI is required");
+      I18N_34 = MSG_EXTERNAL_repoUriError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___35;
     } else {
-      I18N_33 = $localize(_templateObject144());
+      I18N_34 = $localize(_templateObject144());
     }
 
     function RepositoryFormComponent_div_0_div_7_Template(rf, ctx) {
@@ -23563,7 +23569,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 17);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_29);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "span");
 
@@ -23575,13 +23581,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "input", 18);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c32);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c33);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "mat-error");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_33);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_34);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -23599,43 +23605,43 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var I18N_35;
+    var I18N_36;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repoTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___36 = goog.getMsg("Repository Type: ");
-      I18N_35 = MSG_EXTERNAL_repoTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___36;
+      var MSG_EXTERNAL_repoTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___37 = goog.getMsg("Repository Type: ");
+      I18N_36 = MSG_EXTERNAL_repoTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___37;
     } else {
-      I18N_35 = $localize(_templateObject145());
+      I18N_36 = $localize(_templateObject145());
     }
 
+    var I18N_39;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_4921065910437942376$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____40 = goog.getMsg("{VAR_SELECT, select, Driver {Driver } Interface {Interface } other {Other\n                        }}");
+      I18N_39 = MSG_EXTERNAL_4921065910437942376$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____40;
+    } else {
+      I18N_39 = $localize(_templateObject146());
+    }
+
+    I18N_39 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nPostprocess"](I18N_39, {
+      "VAR_SELECT": "\uFFFD0\uFFFD"
+    });
     var I18N_38;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_4921065910437942376$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____39 = goog.getMsg("{VAR_SELECT, select, Driver {Driver } Interface {Interface } other {Other\n                        }}");
-      I18N_38 = MSG_EXTERNAL_4921065910437942376$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____39;
-    } else {
-      I18N_38 = $localize(_templateObject146());
-    }
-
-    I18N_38 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nPostprocess"](I18N_38, {
-      "VAR_SELECT": "\uFFFD0\uFFFD"
-    });
-    var I18N_37;
-
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repoType$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____40 = goog.getMsg(" {$icu} ", {
-        "icu": I18N_38
+      var MSG_EXTERNAL_repoType$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____41 = goog.getMsg(" {$icu} ", {
+        "icu": I18N_39
       });
-      I18N_37 = MSG_EXTERNAL_repoType$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____40;
+      I18N_38 = MSG_EXTERNAL_repoType$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____41;
     } else {
-      I18N_37 = $localize(_templateObject147(), I18N_38);
+      I18N_38 = $localize(_templateObject147(), I18N_39);
     }
 
     function RepositoryFormComponent_div_0_div_8_mat_option_5_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-option", 22);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](1, I18N_37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](1, I18N_38);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
       }
@@ -23659,7 +23665,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 19);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_36);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -23691,7 +23697,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "form", 2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, RepositoryFormComponent_div_0_div_2_Template, 4, 3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, RepositoryFormComponent_div_0_div_2_Template, 4, 5, "div", 3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, RepositoryFormComponent_div_0_div_3_Template, 9, 2, "div", 4);
 
@@ -23743,7 +23749,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx_r0.is_edit && ctx_r0.form.controls.repo_type);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx_r0.is_edit && ctx_r0.form.controls.repo_type && ctx_r0.form.controls.folder_name);
       }
     }
 
@@ -23857,7 +23863,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]],
       decls: 1,
       vars: 1,
-      consts: [["class", "repository form", 4, "ngIf"], [1, "repository", "form"], [3, "formGroup"], ["class", "field commit", 4, "ngIf"], ["class", "field", 4, "ngIf"], [1, "field", "commit"], ["for", "commit"], ["name", "commit", 3, "options", "loading", "ngModel", "ngModelChange"], [1, "field"], ["for", "repository-name"], ["appearance", "outline"], ["matInput", "", "name", "branch-name", "formControlName", "branch", "required", "", 6, "placeholder"], ["matInput", "", "name", "repository-name", "formControlName", "name", "required", "", 6, "placeholder"], ["for", "folder-name"], ["matInput", "", "name", "folder-name", "formControlName", "folder_name", "required", "", 6, "placeholder"], ["for", "description"], ["matInput", "", "name", "description", "formControlName", "description", 6, "placeholder"], ["for", "uri"], ["matInput", "", "name", "uri", "formControlName", "uri", "required", "", 6, "placeholder"], ["for", "type"], ["name", "type", "formControlName", "repo_type"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"]],
+      consts: [["class", "repository form", 4, "ngIf"], [1, "repository", "form"], [3, "formGroup"], ["class", "field commit", 4, "ngIf"], ["class", "field", 4, "ngIf"], [1, "field", "commit"], ["for", "commit"], ["name", "commit", 3, "options", "loading", "ngModel", "ngModelOptions", "ngModelChange"], [1, "field"], ["for", "repository-name"], ["appearance", "outline"], ["matInput", "", "name", "branch-name", "formControlName", "branch", "required", "", 6, "placeholder"], ["matInput", "", "name", "repository-name", "formControlName", "name", "required", "", 6, "placeholder"], ["for", "folder-name"], ["matInput", "", "name", "folder-name", "formControlName", "folder_name", "required", "", 6, "placeholder"], ["for", "description"], ["matInput", "", "name", "description", "formControlName", "description", 6, "placeholder"], ["for", "uri"], ["matInput", "", "name", "uri", "formControlName", "uri", "required", "", 6, "placeholder"], ["for", "type"], ["name", "type", "formControlName", "repo_type"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"]],
       template: function RepositoryFormComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, RepositoryFormComponent_div_0_Template, 9, 8, "div", 0);
@@ -39134,7 +39140,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (!repository.id) {
         repository.storePendingChange('commit_hash', 'head');
       } else {
-        delete fields.repo_type;
         delete fields.folder_name;
       }
 
@@ -43238,16 +43243,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "be71781",
-      "hash": "be71781",
+      "raw": "aee7dee",
+      "hash": "aee7dee",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "be71781",
+      "suffix": "aee7dee",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1591324743544
+      "time": 1591327680993
     };
     /* tslint:enable */
 

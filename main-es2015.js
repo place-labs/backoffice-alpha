@@ -10335,6 +10335,7 @@ if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
 else {
     I18N_0 = $localize `:@@repoCommitLabel␟280d0890fdecde93ad745766223227737c63ac8f␟186698483505131840:Repository Commit: `;
 }
+const _c2 = function () { return { standalone: true }; };
 function RepositoryFormComponent_div_0_div_2_Template(rf, ctx) { if (rf & 1) {
     const _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 5);
@@ -10348,46 +10349,46 @@ function RepositoryFormComponent_div_0_div_2_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("options", ctx_r1.commit_list)("loading", ctx_r1.loading_commits)("ngModel", ctx_r1.base_commit);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("options", ctx_r1.commit_list)("loading", ctx_r1.loading_commits)("ngModel", ctx_r1.base_commit)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](4, _c2));
 } }
-var I18N_2;
+var I18N_3;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_branchLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___3 = goog.getMsg("Branch{$startTagSpan}*{$closeTagSpan}:", { "startTagSpan": "\uFFFD#3\uFFFD", "closeTagSpan": "\uFFFD/#3\uFFFD" });
-    I18N_2 = MSG_EXTERNAL_branchLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___3;
+    const MSG_EXTERNAL_branchLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___4 = goog.getMsg("Branch{$startTagSpan}*{$closeTagSpan}:", { "startTagSpan": "\uFFFD#3\uFFFD", "closeTagSpan": "\uFFFD/#3\uFFFD" });
+    I18N_3 = MSG_EXTERNAL_branchLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___4;
 }
 else {
-    I18N_2 = $localize `:@@branchLabel␟e34e183432ecab10f200527956f20bbf37499b0f␟8781697647890147881:Branch${"\uFFFD#3\uFFFD"}:START_TAG_SPAN:*${"\uFFFD/#3\uFFFD"}:CLOSE_TAG_SPAN::`;
+    I18N_3 = $localize `:@@branchLabel␟e34e183432ecab10f200527956f20bbf37499b0f␟8781697647890147881:Branch${"\uFFFD#3\uFFFD"}:START_TAG_SPAN:*${"\uFFFD/#3\uFFFD"}:CLOSE_TAG_SPAN::`;
 }
-var I18N_4;
+var I18N_5;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repositoryBranchPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___5 = goog.getMsg("Branch Name");
-    I18N_4 = MSG_EXTERNAL_repositoryBranchPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___5;
+    const MSG_EXTERNAL_repositoryBranchPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___6 = goog.getMsg("Branch Name");
+    I18N_5 = MSG_EXTERNAL_repositoryBranchPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___6;
 }
 else {
-    I18N_4 = $localize `:@@repositoryBranchPlaceholder␟4ee8636e16c362c40e81c21aa870c8440e754ca7␟1374329908723449513:Branch Name`;
+    I18N_5 = $localize `:@@repositoryBranchPlaceholder␟4ee8636e16c362c40e81c21aa870c8440e754ca7␟1374329908723449513:Branch Name`;
 }
-const _c6 = ["placeholder", I18N_4];
-var I18N_7;
+const _c7 = ["placeholder", I18N_5];
+var I18N_8;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repoBranchError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___8 = goog.getMsg("Working branch name is required");
-    I18N_7 = MSG_EXTERNAL_repoBranchError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___8;
+    const MSG_EXTERNAL_repoBranchError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___9 = goog.getMsg("Working branch name is required");
+    I18N_8 = MSG_EXTERNAL_repoBranchError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___9;
 }
 else {
-    I18N_7 = $localize `:@@repoBranchError␟a3d7f4bdbc7ea09be3b7deea77941c1aa518f883␟2240652292051126524:Working branch name is required`;
+    I18N_8 = $localize `:@@repoBranchError␟a3d7f4bdbc7ea09be3b7deea77941c1aa518f883␟2240652292051126524:Working branch name is required`;
 }
 function RepositoryFormComponent_div_0_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "span");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "mat-form-field", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "input", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c7);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "mat-error");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -10396,44 +10397,44 @@ function RepositoryFormComponent_div_0_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("error", ctx_r2.form.controls.branch.invalid && ctx_r2.form.controls.branch.touched);
 } }
-var I18N_9;
+var I18N_10;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___10 = goog.getMsg("Name{$startTagSpan}*{$closeTagSpan}:", { "startTagSpan": "\uFFFD#3\uFFFD", "closeTagSpan": "\uFFFD/#3\uFFFD" });
-    I18N_9 = MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___10;
+    const MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___11 = goog.getMsg("Name{$startTagSpan}*{$closeTagSpan}:", { "startTagSpan": "\uFFFD#3\uFFFD", "closeTagSpan": "\uFFFD/#3\uFFFD" });
+    I18N_10 = MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___11;
 }
 else {
-    I18N_9 = $localize `:@@nameLabel␟0086787a66bd9938d2c140d6f8abed64e466fbf8␟3682970902519304055:Name${"\uFFFD#3\uFFFD"}:START_TAG_SPAN:*${"\uFFFD/#3\uFFFD"}:CLOSE_TAG_SPAN::`;
+    I18N_10 = $localize `:@@nameLabel␟0086787a66bd9938d2c140d6f8abed64e466fbf8␟3682970902519304055:Name${"\uFFFD#3\uFFFD"}:START_TAG_SPAN:*${"\uFFFD/#3\uFFFD"}:CLOSE_TAG_SPAN::`;
 }
-var I18N_11;
+var I18N_12;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repositoryNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___12 = goog.getMsg("Repository Name");
-    I18N_11 = MSG_EXTERNAL_repositoryNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___12;
+    const MSG_EXTERNAL_repositoryNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___13 = goog.getMsg("Repository Name");
+    I18N_12 = MSG_EXTERNAL_repositoryNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___13;
 }
 else {
-    I18N_11 = $localize `:@@repositoryNamePlaceholder␟7bc3dcf480270df7d04ec7640cb9aa902c5e3b04␟3629654746165381135:Repository Name`;
+    I18N_12 = $localize `:@@repositoryNamePlaceholder␟7bc3dcf480270df7d04ec7640cb9aa902c5e3b04␟3629654746165381135:Repository Name`;
 }
-const _c13 = ["placeholder", I18N_11];
-var I18N_14;
+const _c14 = ["placeholder", I18N_12];
+var I18N_15;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repoNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___15 = goog.getMsg("Repository name is required");
-    I18N_14 = MSG_EXTERNAL_repoNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___15;
+    const MSG_EXTERNAL_repoNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___16 = goog.getMsg("Repository name is required");
+    I18N_15 = MSG_EXTERNAL_repoNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___16;
 }
 else {
-    I18N_14 = $localize `:@@repoNameError␟b6630ac2fd8bc82aa6bbd0a81294060cac08d635␟2343577417990751372:Repository name is required`;
+    I18N_15 = $localize `:@@repoNameError␟b6630ac2fd8bc82aa6bbd0a81294060cac08d635␟2343577417990751372:Repository name is required`;
 }
 function RepositoryFormComponent_div_0_div_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "span");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "mat-form-field", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "input", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "mat-error");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_15);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -10442,44 +10443,44 @@ function RepositoryFormComponent_div_0_div_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("error", ctx_r3.form.controls.name.invalid && ctx_r3.form.controls.name.touched);
 } }
-var I18N_16;
+var I18N_17;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_folderNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___17 = goog.getMsg(" Folder Name{$startTagSpan}*{$closeTagSpan}: ", { "startTagSpan": "\uFFFD#3\uFFFD", "closeTagSpan": "\uFFFD/#3\uFFFD" });
-    I18N_16 = MSG_EXTERNAL_folderNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___17;
+    const MSG_EXTERNAL_folderNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___18 = goog.getMsg(" Folder Name{$startTagSpan}*{$closeTagSpan}: ", { "startTagSpan": "\uFFFD#3\uFFFD", "closeTagSpan": "\uFFFD/#3\uFFFD" });
+    I18N_17 = MSG_EXTERNAL_folderNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___18;
 }
 else {
-    I18N_16 = $localize `:@@folderNameLabel␟1e15f64f31260f30e861c2f9a510d32053f4b08d␟1984864990723759648: Folder Name${"\uFFFD#3\uFFFD"}:START_TAG_SPAN:*${"\uFFFD/#3\uFFFD"}:CLOSE_TAG_SPAN:: `;
+    I18N_17 = $localize `:@@folderNameLabel␟1e15f64f31260f30e861c2f9a510d32053f4b08d␟1984864990723759648: Folder Name${"\uFFFD#3\uFFFD"}:START_TAG_SPAN:*${"\uFFFD/#3\uFFFD"}:CLOSE_TAG_SPAN:: `;
 }
-var I18N_18;
+var I18N_19;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_folderNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___19 = goog.getMsg("Folder Name");
-    I18N_18 = MSG_EXTERNAL_folderNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___19;
+    const MSG_EXTERNAL_folderNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___20 = goog.getMsg("Folder Name");
+    I18N_19 = MSG_EXTERNAL_folderNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___20;
 }
 else {
-    I18N_18 = $localize `:@@folderNamePlaceholder␟6a51cc55294d5544335935ad12732fae6ecb676c␟1402797997100454551:Folder Name`;
+    I18N_19 = $localize `:@@folderNamePlaceholder␟6a51cc55294d5544335935ad12732fae6ecb676c␟1402797997100454551:Folder Name`;
 }
-const _c20 = ["placeholder", I18N_18];
-var I18N_21;
+const _c21 = ["placeholder", I18N_19];
+var I18N_22;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_folderNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___22 = goog.getMsg("Folder name is required");
-    I18N_21 = MSG_EXTERNAL_folderNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___22;
+    const MSG_EXTERNAL_folderNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___23 = goog.getMsg("Folder name is required");
+    I18N_22 = MSG_EXTERNAL_folderNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___23;
 }
 else {
-    I18N_21 = $localize `:@@folderNameError␟4b8ffbe0f0c47ba9de9dd43a3abf5d8fb0ab5870␟4146577678883073642:Folder name is required`;
+    I18N_22 = $localize `:@@folderNameError␟4b8ffbe0f0c47ba9de9dd43a3abf5d8fb0ab5870␟4146577678883073642:Folder name is required`;
 }
 function RepositoryFormComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_17);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "span");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "mat-form-field", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "input", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c21);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "mat-error");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_22);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -10488,73 +10489,73 @@ function RepositoryFormComponent_div_0_div_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("error", ctx_r4.form.controls.folder_name.invalid && ctx_r4.form.controls.folder_name.touched);
 } }
-var I18N_23;
+var I18N_24;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___24 = goog.getMsg("Description:");
-    I18N_23 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___24;
+    const MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___25 = goog.getMsg("Description:");
+    I18N_24 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___25;
 }
 else {
-    I18N_23 = $localize `:@@descriptionLabel␟4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad␟6996799422725544865:Description:`;
+    I18N_24 = $localize `:@@descriptionLabel␟4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad␟6996799422725544865:Description:`;
 }
-var I18N_25;
+var I18N_26;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___26 = goog.getMsg("Description");
-    I18N_25 = MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___26;
+    const MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___27 = goog.getMsg("Description");
+    I18N_26 = MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___27;
 }
 else {
-    I18N_25 = $localize `:@@descriptionPlaceholder␟eec715de352a6b114713b30b640d319fa78207a0␟4902817035128594900:Description`;
+    I18N_26 = $localize `:@@descriptionPlaceholder␟eec715de352a6b114713b30b640d319fa78207a0␟4902817035128594900:Description`;
 }
-const _c27 = ["placeholder", I18N_25];
+const _c28 = ["placeholder", I18N_26];
 function RepositoryFormComponent_div_0_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_24);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "mat-form-field", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "textarea", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c28);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } }
-var I18N_28;
+var I18N_29;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___29 = goog.getMsg(" Repository URI{$startTagSpan}*{$closeTagSpan}: ", { "startTagSpan": "\uFFFD#3\uFFFD", "closeTagSpan": "\uFFFD/#3\uFFFD" });
-    I18N_28 = MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___29;
+    const MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___30 = goog.getMsg(" Repository URI{$startTagSpan}*{$closeTagSpan}: ", { "startTagSpan": "\uFFFD#3\uFFFD", "closeTagSpan": "\uFFFD/#3\uFFFD" });
+    I18N_29 = MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___30;
 }
 else {
-    I18N_28 = $localize `:@@repoUriLabel␟8b72deb20e1f25e80c30746cea48c841982c4d48␟3211239144348360370: Repository URI${"\uFFFD#3\uFFFD"}:START_TAG_SPAN:*${"\uFFFD/#3\uFFFD"}:CLOSE_TAG_SPAN:: `;
+    I18N_29 = $localize `:@@repoUriLabel␟8b72deb20e1f25e80c30746cea48c841982c4d48␟3211239144348360370: Repository URI${"\uFFFD#3\uFFFD"}:START_TAG_SPAN:*${"\uFFFD/#3\uFFFD"}:CLOSE_TAG_SPAN:: `;
 }
-var I18N_30;
+var I18N_31;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repoUriPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___31 = goog.getMsg("Repository URI");
-    I18N_30 = MSG_EXTERNAL_repoUriPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___31;
+    const MSG_EXTERNAL_repoUriPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___32 = goog.getMsg("Repository URI");
+    I18N_31 = MSG_EXTERNAL_repoUriPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___32;
 }
 else {
-    I18N_30 = $localize `:@@repoUriPlaceholder␟8c33336b84b4f5384333a03f94b9e2bfa43dfe29␟3081337847567885075:Repository URI`;
+    I18N_31 = $localize `:@@repoUriPlaceholder␟8c33336b84b4f5384333a03f94b9e2bfa43dfe29␟3081337847567885075:Repository URI`;
 }
-const _c32 = ["placeholder", I18N_30];
-var I18N_33;
+const _c33 = ["placeholder", I18N_31];
+var I18N_34;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repoUriError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___34 = goog.getMsg("URI is required");
-    I18N_33 = MSG_EXTERNAL_repoUriError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___34;
+    const MSG_EXTERNAL_repoUriError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___35 = goog.getMsg("URI is required");
+    I18N_34 = MSG_EXTERNAL_repoUriError$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___35;
 }
 else {
-    I18N_33 = $localize `:@@repoUriError␟82ace454b13b4c270bf1a9b60237d1120832ae0f␟1826031299833435088:URI is required`;
+    I18N_34 = $localize `:@@repoUriError␟82ace454b13b4c270bf1a9b60237d1120832ae0f␟1826031299833435088:URI is required`;
 }
 function RepositoryFormComponent_div_0_div_7_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nStart"](2, I18N_29);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "span");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "mat-form-field", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "input", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c32);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](6, _c33);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "mat-error");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_33);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](8, I18N_34);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -10563,35 +10564,35 @@ function RepositoryFormComponent_div_0_div_7_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("error", ctx_r6.form.controls.uri.invalid && ctx_r6.form.controls.uri.touched);
 } }
-var I18N_35;
+var I18N_36;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repoTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___36 = goog.getMsg("Repository Type: ");
-    I18N_35 = MSG_EXTERNAL_repoTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___36;
+    const MSG_EXTERNAL_repoTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___37 = goog.getMsg("Repository Type: ");
+    I18N_36 = MSG_EXTERNAL_repoTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS___37;
 }
 else {
-    I18N_35 = $localize `:@@repoTypeLabel␟062584228b2309ead61757e888a525daae825365␟1428946901706425093:Repository Type: `;
+    I18N_36 = $localize `:@@repoTypeLabel␟062584228b2309ead61757e888a525daae825365␟1428946901706425093:Repository Type: `;
 }
-var I18N_38;
+var I18N_39;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_4921065910437942376$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____39 = goog.getMsg("{VAR_SELECT, select, Driver {Driver } Interface {Interface } other {Other\n                        }}");
-    I18N_38 = MSG_EXTERNAL_4921065910437942376$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____39;
+    const MSG_EXTERNAL_4921065910437942376$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____40 = goog.getMsg("{VAR_SELECT, select, Driver {Driver } Interface {Interface } other {Other\n                        }}");
+    I18N_39 = MSG_EXTERNAL_4921065910437942376$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____40;
 }
 else {
-    I18N_38 = $localize `:␟62f668c21cd52430db1fb908c1ea310c8b7eb806␟4921065910437942376:{VAR_SELECT, select, Driver {Driver } Interface {Interface } other {Other
+    I18N_39 = $localize `:␟62f668c21cd52430db1fb908c1ea310c8b7eb806␟4921065910437942376:{VAR_SELECT, select, Driver {Driver } Interface {Interface } other {Other
                         }}`;
 }
-I18N_38 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nPostprocess"](I18N_38, { "VAR_SELECT": "\uFFFD0\uFFFD" });
-var I18N_37;
+I18N_39 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nPostprocess"](I18N_39, { "VAR_SELECT": "\uFFFD0\uFFFD" });
+var I18N_38;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repoType$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____40 = goog.getMsg(" {$icu} ", { "icu": I18N_38 });
-    I18N_37 = MSG_EXTERNAL_repoType$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____40;
+    const MSG_EXTERNAL_repoType$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____41 = goog.getMsg(" {$icu} ", { "icu": I18N_39 });
+    I18N_38 = MSG_EXTERNAL_repoType$$SRC_APP_SHARED_COMPONENTS_FORMS_REPOSITORY_FORM_REPOSITORY_FORM_COMPONENT_TS____41;
 }
 else {
-    I18N_37 = $localize `:@@repoType␟a8c565a28c4fb0b66a37c18aa9515e08e22a4fbb␟8699238292972915476: ${I18N_38}:ICU: `;
+    I18N_38 = $localize `:@@repoType␟a8c565a28c4fb0b66a37c18aa9515e08e22a4fbb␟8699238292972915476: ${I18N_39}:ICU: `;
 }
 function RepositoryFormComponent_div_0_div_8_mat_option_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-option", 22);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](1, I18N_37);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](1, I18N_38);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const type_r11 = ctx.$implicit;
@@ -10603,7 +10604,7 @@ function RepositoryFormComponent_div_0_div_8_mat_option_5_Template(rf, ctx) { if
 function RepositoryFormComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_36);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "mat-form-field", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "mat-select", 20);
@@ -10619,7 +10620,7 @@ function RepositoryFormComponent_div_0_div_8_Template(rf, ctx) { if (rf & 1) {
 function RepositoryFormComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "form", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, RepositoryFormComponent_div_0_div_2_Template, 4, 3, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, RepositoryFormComponent_div_0_div_2_Template, 4, 5, "div", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, RepositoryFormComponent_div_0_div_3_Template, 9, 2, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, RepositoryFormComponent_div_0_div_4_Template, 9, 2, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, RepositoryFormComponent_div_0_div_5_Template, 9, 2, "div", 4);
@@ -10645,7 +10646,7 @@ function RepositoryFormComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.uri);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx_r0.is_edit && ctx_r0.form.controls.repo_type);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx_r0.is_edit && ctx_r0.form.controls.repo_type && ctx_r0.form.controls.folder_name);
 } }
 class RepositoryFormComponent {
     constructor(_service) {
@@ -10700,7 +10701,7 @@ class RepositoryFormComponent {
     }
 }
 RepositoryFormComponent.ɵfac = function RepositoryFormComponent_Factory(t) { return new (t || RepositoryFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_services_app_service__WEBPACK_IMPORTED_MODULE_4__["ApplicationService"])); };
-RepositoryFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: RepositoryFormComponent, selectors: [["repository-form"]], inputs: { form: "form" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 1, vars: 1, consts: [["class", "repository form", 4, "ngIf"], [1, "repository", "form"], [3, "formGroup"], ["class", "field commit", 4, "ngIf"], ["class", "field", 4, "ngIf"], [1, "field", "commit"], ["for", "commit"], ["name", "commit", 3, "options", "loading", "ngModel", "ngModelChange"], [1, "field"], ["for", "repository-name"], ["appearance", "outline"], ["matInput", "", "name", "branch-name", "formControlName", "branch", "required", "", 6, "placeholder"], ["matInput", "", "name", "repository-name", "formControlName", "name", "required", "", 6, "placeholder"], ["for", "folder-name"], ["matInput", "", "name", "folder-name", "formControlName", "folder_name", "required", "", 6, "placeholder"], ["for", "description"], ["matInput", "", "name", "description", "formControlName", "description", 6, "placeholder"], ["for", "uri"], ["matInput", "", "name", "uri", "formControlName", "uri", "required", "", 6, "placeholder"], ["for", "type"], ["name", "type", "formControlName", "repo_type"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"]], template: function RepositoryFormComponent_Template(rf, ctx) { if (rf & 1) {
+RepositoryFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: RepositoryFormComponent, selectors: [["repository-form"]], inputs: { form: "form" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 1, vars: 1, consts: [["class", "repository form", 4, "ngIf"], [1, "repository", "form"], [3, "formGroup"], ["class", "field commit", 4, "ngIf"], ["class", "field", 4, "ngIf"], [1, "field", "commit"], ["for", "commit"], ["name", "commit", 3, "options", "loading", "ngModel", "ngModelOptions", "ngModelChange"], [1, "field"], ["for", "repository-name"], ["appearance", "outline"], ["matInput", "", "name", "branch-name", "formControlName", "branch", "required", "", 6, "placeholder"], ["matInput", "", "name", "repository-name", "formControlName", "name", "required", "", 6, "placeholder"], ["for", "folder-name"], ["matInput", "", "name", "folder-name", "formControlName", "folder_name", "required", "", 6, "placeholder"], ["for", "description"], ["matInput", "", "name", "description", "formControlName", "description", 6, "placeholder"], ["for", "uri"], ["matInput", "", "name", "uri", "formControlName", "uri", "required", "", 6, "placeholder"], ["for", "type"], ["name", "type", "formControlName", "repo_type"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"]], template: function RepositoryFormComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, RepositoryFormComponent_div_0_Template, 9, 8, "div", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.form);
@@ -19096,7 +19097,6 @@ function generateRepositoryFormFields(repository) {
         repository.storePendingChange('commit_hash', 'head');
     }
     else {
-        delete fields.repo_type;
         delete fields.folder_name;
     }
     return {
@@ -21197,16 +21197,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "be71781",
-    "hash": "be71781",
+    "raw": "aee7dee",
+    "hash": "aee7dee",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "be71781",
+    "suffix": "aee7dee",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1591324743544
+    "time": 1591327680993
 };
 /* tslint:enable */
 
