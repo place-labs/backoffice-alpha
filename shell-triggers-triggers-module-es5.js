@@ -54,7 +54,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _possibleConstructorReturn(self, call) { if (call && (typeof call === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
@@ -2106,6 +2106,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
         value: function newItem() {
           var _this17 = this;
 
+          var copy = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
           if (this.modal_ref) {
             return;
           }
@@ -2116,8 +2118,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
             maxHeight: 'calc(100vh - 2em)',
             maxWidth: 'calc(100vw - 2em)',
             data: {
-              item: new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineTrigger"](),
-              service: this._service.Triggers
+              item: copy ? new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineTrigger"](Object.assign(Object.assign({}, this.item), {
+                id: '',
+                name: "".concat(this.item.name, " (1)")
+              })) : new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineTrigger"](),
+              service: this._service.Domains
             }
           });
           this.subscription('modal_events', this.modal_ref.componentInstance.event.subscribe(function (event) {

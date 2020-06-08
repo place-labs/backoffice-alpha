@@ -5638,6 +5638,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function newItem() {
           var _this23 = this;
 
+          var copy = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
           if (this.modal_ref) {
             return;
           }
@@ -5648,8 +5650,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             maxHeight: 'calc(100vh - 2em)',
             maxWidth: 'calc(100vw - 2em)',
             data: {
-              item: new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineZone"](),
-              service: this._service.Zones
+              item: copy ? new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineZone"](Object.assign(Object.assign({}, this.item), {
+                id: '',
+                name: "".concat(this.item.name, " (1)")
+              })) : new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineZone"](),
+              service: this._service.Domains
             }
           });
           this.subscription('modal_events', this.modal_ref.componentInstance.event.subscribe(function (event) {

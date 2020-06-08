@@ -3492,7 +3492,7 @@ class ZonesComponent extends _shared_components_base_root_component__WEBPACK_IMP
     /**
      * Open the modal to create a new system
      */
-    newItem() {
+    newItem(copy = false) {
         if (this.modal_ref) {
             return;
         }
@@ -3502,8 +3502,8 @@ class ZonesComponent extends _shared_components_base_root_component__WEBPACK_IMP
             maxHeight: 'calc(100vh - 2em)',
             maxWidth: 'calc(100vw - 2em)',
             data: {
-                item: new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineZone"](),
-                service: this._service.Zones
+                item: copy ? new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineZone"](Object.assign(Object.assign({}, this.item), { id: '', name: `${this.item.name} (1)` })) : new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineZone"](),
+                service: this._service.Domains
             }
         });
         this.subscription('modal_events', this.modal_ref.componentInstance.event.subscribe(event => {
