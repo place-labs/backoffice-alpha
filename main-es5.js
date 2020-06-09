@@ -4471,43 +4471,49 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _template_data__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./template-data */
+    "./src/app/overlays/bulk-item-modal/template-data.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_material_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/material/button */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
     /* harmony import */
 
 
-    var _shared_components_icon_icon_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _shared_components_icon_icon_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ../../shared/components/icon/icon.component */
     "./src/app/shared/components/icon/icon.component.ts");
     /* harmony import */
 
 
-    var _status_list_status_list_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _status_list_status_list_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./status-list/status-list.component */
     "./src/app/overlays/bulk-item-modal/status-list/status-list.component.ts");
     /* harmony import */
 
 
-    var _list_list_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _list_list_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ./list/list.component */
     "./src/app/overlays/bulk-item-modal/list/list.component.ts");
     /* harmony import */
 
 
-    var _match_fields_match_fields_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _match_fields_match_fields_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./match-fields/match-fields.component */
     "./src/app/overlays/bulk-item-modal/match-fields/match-fields.component.ts");
     /* harmony import */
 
 
-    var _csv_upload_csv_upload_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _csv_upload_csv_upload_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./csv-upload/csv-upload.component */
     "./src/app/overlays/bulk-item-modal/csv-upload/csv-upload.component.ts");
 
@@ -4774,89 +4780,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function generateTemplate() {
           switch (this._data.constr) {
             case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineSystem"]:
-              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineSystem"]({
-                name: 'A System',
-                description: 'A description',
-                email: 'system@place.tech',
-                capacity: 10,
-                features: 'vidConf',
-                bookable: true,
-                installed_ui_devices: 4,
-                support_url: 'https://place.tech/support/test',
-                modules: ['mod-123'],
-                zones: ['zone-123'],
-                map_id: 'area-123',
-                module_data: [{
-                  id: 'mod-001',
-                  name: 'A Module'
-                }]
-              }).toJSON()];
+              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineSystem"](_template_data__WEBPACK_IMPORTED_MODULE_4__["SYSTEM_TEMPLATE"]).toJSON()];
 
             case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineModule"]:
-              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineModule"]({
-                name: 'A Module',
-                driver_id: 'dep-001',
-                control_system_id: 'sys-001',
-                ip: '1.1.1.1',
-                tls: false,
-                udp: false,
-                port: 32000,
-                makebreak: false,
-                uri: 'test.com',
-                custom_name: 'mi-name',
-                role: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineDriverRole"].Device,
-                notes: 'Clone wars',
-                ignore_connected: false
-              }).toJSON()];
+              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineModule"](_template_data__WEBPACK_IMPORTED_MODULE_4__["MODULE_TEMPLATE"]).toJSON()];
 
             case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineDriver"]:
-              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineDriver"]({
-                name: 'A Driver',
-                description: 'In a galaxy far far away...',
-                module_name: 'SteamShip',
-                role: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineDriverRole"].Logic,
-                default_uri: 'Sometimes we default',
-                default_port: 1234,
-                ignore_connected: false,
-                settings: {
-                  settings_string: '{ today: false, future: \'Yeah!\' }'
-                },
-                class_name: '::ACA::SolveProblem',
-                repository_id: 'my-repo',
-                file_name: 'fancy-driver.cr',
-                commit: 'some-hash'
-              }).toJSON()];
+              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineDriver"](_template_data__WEBPACK_IMPORTED_MODULE_4__["DRIVER_TEMPLATE"]).toJSON()];
 
             case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineUser"]:
-              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineUser"]({
-                name: 'A User',
-                authority_id: 'On who\'s authority',
-                email: 'jon@place.tech',
-                phone: '+612000000000',
-                country: 'Australia',
-                image: '',
-                metadata: 'there be none',
-                login_name: 'elitedarklord',
-                staff_id: 'PERSON_12345',
-                first_name: 'Bob',
-                last_name: 'Marley'
-              })];
+              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineUser"](_template_data__WEBPACK_IMPORTED_MODULE_4__["USER_TEMPLATE"])];
 
             case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineZone"]:
-              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineZone"]({
-                name: 'A Zone',
-                description: 'In a galaxy far far away...',
-                triggers: ['trig-001'],
-                parent_id: 'zone-123',
-                display_name: 'The Zone',
-                tags: 'building,level,org',
-                code: 'BLD-123',
-                type: 'Client',
-                count: 32,
-                capacity: 2345,
-                location: 'Somewhere close',
-                map_id: 'a/url/to/my/map.svg'
-              })];
+              return [new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineZone"](_template_data__WEBPACK_IMPORTED_MODULE_4__["ZONE_TEMPLATE"])];
           }
         }
       }, {
@@ -4940,7 +4876,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "match-fields");
         }
       },
-      directives: [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogTitle"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogContent"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgSwitchCase"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgSwitchDefault"], _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButton"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogClose"], _shared_components_icon_icon_component__WEBPACK_IMPORTED_MODULE_6__["IconComponent"], _status_list_status_list_component__WEBPACK_IMPORTED_MODULE_7__["StatusListComponent"], _list_list_component__WEBPACK_IMPORTED_MODULE_8__["ListComponent"], _match_fields_match_fields_component__WEBPACK_IMPORTED_MODULE_9__["MatchFieldsComponent"], _csv_upload_csv_upload_component__WEBPACK_IMPORTED_MODULE_10__["CsvUploadComponent"]],
+      directives: [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogTitle"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogContent"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgSwitchCase"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgSwitchDefault"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButton"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_1__["MatDialogClose"], _shared_components_icon_icon_component__WEBPACK_IMPORTED_MODULE_7__["IconComponent"], _status_list_status_list_component__WEBPACK_IMPORTED_MODULE_8__["StatusListComponent"], _list_list_component__WEBPACK_IMPORTED_MODULE_9__["ListComponent"], _match_fields_match_fields_component__WEBPACK_IMPORTED_MODULE_10__["MatchFieldsComponent"], _csv_upload_csv_upload_component__WEBPACK_IMPORTED_MODULE_11__["CsvUploadComponent"]],
       styles: [".body[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  padding: 1em;\n}\n.icon[_ngcontent-%COMP%] {\n  height: 1.2em;\n  width: 1.2em;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 2em;\n}\n.content[_ngcontent-%COMP%] {\n  width: 16rem;\n  text-align: center;\n  font-size: 0.8em;\n}\n.info-block[_ngcontent-%COMP%] {\n  margin: 2em 6em;\n}\nmat-dialog-actions[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  min-width: 8em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2JhY2tvZmZpY2UvYmFja29mZmljZS9zcmMvYXBwL3NoYXJlZC9zdHlsZXMvc2hhcmVkLnN0eWxlcy5zY3NzIiwiL2hvbWUvcnVubmVyL3dvcmsvYmFja29mZmljZS9iYWNrb2ZmaWNlL3NyYy9hcHAvb3ZlcmxheXMvYnVsay1pdGVtLW1vZGFsL2J1bGstaXRlbS1tb2RhbC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvb3ZlcmxheXMvYnVsay1pdGVtLW1vZGFsL2J1bGstaXRlbS1tb2RhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTs7MEJBQUE7QUFxQ0E7O2NBQUE7QUFZQTs7ZUFBQTtBQU9BOztlQUFBO0FBZ0JBOztzQkFBQTtBQ3RFQTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHNCQUFBO0VBQ0EsWUFBQTtBQ2FKO0FEVkE7RUFDSSxhQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsY0FBQTtBQ2FKO0FEVkE7RUFDSSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtBQ2FKO0FEVkE7RUFDSSxlQUFBO0FDYUo7QURWQTtFQUNJLGNBQUE7QUNhSiIsImZpbGUiOiJzcmMvYXBwL292ZXJsYXlzL2J1bGstaXRlbS1tb2RhbC9idWxrLWl0ZW0tbW9kYWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi8qPT09PT09PT09PT09PT09PT09PT09PT0qXFxcbnx8ICBBcHBsaWNhdGlvbiBDb2xvdXJzICB8fFxuXFwqPT09PT09PT09PT09PT09PT09PT09PT0qL1xuXG4kZm9udC1kYXJrOiAjMDAwO1xuJGZvbnQtbGlnaHQ6ICNmZmY7XG5cbiRzdWNjZXNzOiAjNGNhZjUwO1xuJHN1Y2Nlc3MtbGlnaHQ6ICM2NmJiNmE7XG4kc3VjY2Vzcy1kYXJrOiAjMDA3OTZiO1xuXG4kcGVuZGluZzogI2ZmOGYwMDtcbiRwZW5kaW5nLWxpZ2h0OiAjZmZjMDQ2O1xuJHBlbmRpbmctZGFyazogI2M1NjAwMDtcblxuJGVycm9yOiAjZjQ0MzM2O1xuJGVycm9yLWxpZ2h0OiAjZmY2ZjYwO1xuJGVycm9yLWRhcms6ICNhYjAwMGQ7XG5cbiRjb2xvci1wcmltYXJ5OiAjQzkyMzY2O1xuJGNvbG9yLXByaW1hcnktbGlnaHQ6ICNjZDU2OGE7XG4kY29sb3ItcHJpbWFyeS1kYXJrOiAjYjYwMDVkO1xuXG4kY29sb3Itc2Vjb25kYXJ5OiAjNUM2NEZGO1xuJGNvbG9yLXNlY29uZGFyeS1saWdodDogIzcyNzJlNztcbiRjb2xvci1zZWNvbmRhcnktZGFyazogIzU1NTdkMTtcblxuJGNvbG9yLWRldmVsb3A6ICNmMGYwZjA7XG4kY29sb3ItZGV2ZWxvcC1saWdodDogI2ZmZjtcbiRjb2xvci1kZXZlbG9wLWRhcms6ICNlMGUwZTA7XG5cbiRiYWNrZ3JvdW5kOiAjMjYzMjM4O1xuJGJhY2tncm91bmQtbGlnaHQ6ICM0NTVhNjQ7XG4kYmFja2dyb3VuZC1kYXJrOiAjMjAyNjMyO1xuXG4kaGVhZGVyLWNvbG9yOiAjMEEwRDJFO1xuXG4vKj09PT09PT09PT09KlxcXG58fCAgIEZvbnRzICAgfHxcblxcKj09PT09PT09PT09Ki9cblxuJGZvbnQ6IFwiUm9ib3RvXCIsIFwiVmVyZGFuYVwiLCBcIkhlbHZldGljYSBOZXVlXCIsIEFyaWFsLCBzYW5zLXNlcmlmO1xuJGhlYWRpbmctZm9udDogXCJZb3VuZ1wiLCAkZm9udDtcbiRtb25vLWZvbnQ6IFwiRmlyYSBDb2RlXCIsIG1vbm9zcGFjZTtcblxuJGJhc2Utc2l6ZTogMTZweDtcbiR0YWJsZXQtc2l6ZTogMTZweDtcbiRtb2JpbGUtc2l6ZTogMTZweDtcblxuLyo9PT09PT09PT09PT0qXFxcbnx8ICAgU2l6aW5nICAgfHxcblxcKj09PT09PT09PT09PSovXG5cbiRoZWFkZXItaGVpZ2h0OiA0ZW07XG5cblxuLyo9PT09PT09PT09PT0qXFxcbnx8ICAgTWl4aW5zICAgfHxcblxcKj09PT09PT09PT09PSovXG5cbkBtaXhpbiBoaWRlLXRleHQtb3ZlcmZsb3cge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbn1cblxuQG1peGluIGJveC1zaGFkb3coJGRlcHRoOiAxLCAkc3ByZWFkOiAxKSB7XG4gICAgYm94LXNoYWRvdzogMCAoMXB4ICogJHNwcmVhZCkgKDNweCAqICRzcHJlYWQpIDAgcmdiYSgjMDAwLCAuMiAqICRkZXB0aCksXG4gICAgICAgICAgICAgICAgMCAoMXB4ICogJHNwcmVhZCkgKDFweCAqICRzcHJlYWQpIDAgcmdiYSgjMDAwLCAuMTQgKiAkZGVwdGgpLFxuICAgICAgICAgICAgICAgIDAgKDJweCAqICRzcHJlYWQpICgxcHggKiAkc3ByZWFkKSAtKDFweCAqICRzcHJlYWQpIHJnYmEoIzAwMCwgLjEyICogJGRlcHRoKTtcbn1cblxuLyo9PT09PT09PT09PT09PT09PT09KlxcXG58fCAgIE1lZGlhIFF1ZXJpZXMgICB8fFxuXFwqPT09PT09PT09PT09PT09PT09PSovXG5cbiRicmVhay1tb2JpbGU6IDQ1MHB4O1xuJGJyZWFrLXRhYmxldDogODAwcHg7XG4kYnJlYWstbGFwdG9wOiAxMDI0cHg7XG5cbiRicmVhay1sYW5kc2NhcGUtbW9iaWxlOiA4MDBweDtcbiRicmVhay1sYW5kc2NhcGUtdGFibGV0OiAxMDQ4cHg7XG4kYnJlYWstbGFuZHNjYXBlLWxhcHRvcDogMTI4MHB4O1xuXG5AbWl4aW4gcmVzcG9uZC10bygkbWVkaWEpIHtcbiAgICBAaWYgJG1lZGlhID09IG1vYmlsZSB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBwb3J0cmFpdCkgYW5kIChtYXgtd2lkdGg6ICRicmVhay1tb2JpbGUpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstbGFuZHNjYXBlLW1vYmlsZSkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9IEBlbHNlIGlmICRtZWRpYSA9PSBtb2JpbGUtbGFuZHNjYXBlIHtcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkgYW5kIChtYXgtd2lkdGg6ICRicmVhay1sYW5kc2NhcGUtbW9iaWxlKSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IG1vYmlsZS1wb3J0cmFpdCB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBwb3J0cmFpdCkgYW5kIChtYXgtd2lkdGg6ICRicmVhay1tb2JpbGUpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfSBAZWxzZSBpZiAkbWVkaWEgPT0gbm90LW1vYmlsZSB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBwb3J0cmFpdCkgYW5kIChtaW4td2lkdGg6ICRicmVhay1tb2JpbGUgKyAxKSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogbGFuZHNjYXBlKSBhbmQgKG1pbi13aWR0aDogJGJyZWFrLWxhbmRzY2FwZS1tb2JpbGUgKyAxKSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IGxhcHRvcCB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBwb3J0cmFpdCkgYW5kIChtaW4td2lkdGg6ICRicmVhay10YWJsZXQgKyAxKSBhbmQgKG1heC13aWR0aDogJGJyZWFrLWxhcHRvcCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkgYW5kIChtaW4td2lkdGg6ICRicmVhay1sYW5kc2NhcGUtdGFibGV0ICsgMSkgYW5kIChtYXgtd2lkdGg6ICRicmVhay1sYW5kc2NhcGUtbGFwdG9wKSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IGxhcHRvcC1sYW5kc2NhcGUge1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogbGFuZHNjYXBlKSBhbmQgKG1pbi13aWR0aDogJGJyZWFrLWxhbmRzY2FwZS10YWJsZXQgKyAxKSBhbmQgKG1heC13aWR0aDogJGJyZWFrLWxhbmRzY2FwZS1sYXB0b3ApIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfSBAZWxzZSBpZiAkbWVkaWEgPT0gbGFwdG9wLXBvcnRyYWl0IHtcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IHBvcnRyYWl0KSBhbmQgKG1pbi13aWR0aDogJGJyZWFrLXRhYmxldCArIDEpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstbGFwdG9wKSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gIEBlbHNlIGlmICRtZWRpYSA9PSBsYXQge1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogcG9ydHJhaXQpIGFuZCAobWluLXdpZHRoOiAkYnJlYWstbW9iaWxlICsgMSkgYW5kIChtYXgtd2lkdGg6ICRicmVhay10YWJsZXQpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpIGFuZCAobWluLXdpZHRoOiAkYnJlYWstbGFuZHNjYXBlLW1vYmlsZSArIDEpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstbGFuZHNjYXBlLXRhYmxldCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9IEBlbHNlIGlmICRtZWRpYSA9PSB0YWJsZXQtbGFuZHNjYXBlIHtcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkgYW5kIChtaW4td2lkdGg6ICRicmVhay1sYW5kc2NhcGUtbW9iaWxlICsgMSkgYW5kIChtYXgtd2lkdGg6ICRicmVhay1sYW5kc2NhcGUtdGFibGV0KSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IHRhYmxldC1wb3J0cmFpdCB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBwb3J0cmFpdCkgYW5kIChtaW4td2lkdGg6ICRicmVhay1tb2JpbGUgKyAxKSBhbmQgKG1heC13aWR0aDogJGJyZWFrLXRhYmxldCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9IEBlbHNlIGlmICgkbWVkaWEgPT0gdGFibGV0LW1vYmlsZSBvciAkbWVkaWEgPT0gbm90LWRlc2t0b3ApIHtcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IHBvcnRyYWl0KSBhbmQgKG1heC13aWR0aDogJGJyZWFrLXRhYmxldCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkgYW5kIChtYXgtd2lkdGg6ICRicmVhay1sYW5kc2NhcGUtdGFibGV0KSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IGRlc2t0b3Age1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogcG9ydHJhaXQpIGFuZCAobWluLXdpZHRoOiAkYnJlYWstdGFibGV0KSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogbGFuZHNjYXBlKSBhbmQgKG1pbi13aWR0aDogJGJyZWFrLWxhbmRzY2FwZS10YWJsZXQpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfSBAZWxzZSBpZiAkbWVkaWEgPT0gZGVza3RvcC1sYW5kc2NhcGUge1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogbGFuZHNjYXBlKSBhbmQgKG1pbi13aWR0aDogJGJyZWFrLWxhbmRzY2FwZS10YWJsZXQpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfSBAZWxzZSBpZiAkbWVkaWEgPT0gZGVza3RvcC1wb3J0cmFpdCB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBwb3J0cmFpdCkgYW5kIChtaW4td2lkdGg6ICRicmVhay10YWJsZXQpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfSBAZWxzZSBpZiAkbWVkaWEgPT0gbGFuZHNjYXBlIHtcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9IEBlbHNlIGlmICRtZWRpYSA9PSBwb3J0cmFpdCB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBwb3J0cmFpdCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9XG59XG4iLCJcbkBpbXBvcnQgJ3NoYXJlZC5zdHlsZXMnO1xuXG4uYm9keSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgcGFkZGluZzogMWVtO1xufVxuXG4uaWNvbiB7XG4gICAgaGVpZ2h0OiAxLjJlbTtcbiAgICB3aWR0aDogMS4yZW07XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMmVtO1xufVxuXG4uY29udGVudCB7XG4gICAgd2lkdGg6IDE2cmVtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IC44ZW07XG59XG5cbi5pbmZvLWJsb2NrIHtcbiAgICBtYXJnaW46IDJlbSA2ZW07XG59XG5cbm1hdC1kaWFsb2ctYWN0aW9ucyBidXR0b24ge1xuICAgIG1pbi13aWR0aDogOGVtO1xufVxuIiwiLyo9PT09PT09PT09PT09PT09PT09PT09PSpcXFxufHwgIEFwcGxpY2F0aW9uIENvbG91cnMgIHx8XG5cXCo9PT09PT09PT09PT09PT09PT09PT09PSovXG4vKj09PT09PT09PT09KlxcXG58fCAgIEZvbnRzICAgfHxcblxcKj09PT09PT09PT09Ki9cbi8qPT09PT09PT09PT09KlxcXG58fCAgIFNpemluZyAgIHx8XG5cXCo9PT09PT09PT09PT0qL1xuLyo9PT09PT09PT09PT0qXFxcbnx8ICAgTWl4aW5zICAgfHxcblxcKj09PT09PT09PT09PSovXG4vKj09PT09PT09PT09PT09PT09PT0qXFxcbnx8ICAgTWVkaWEgUXVlcmllcyAgIHx8XG5cXCo9PT09PT09PT09PT09PT09PT09Ki9cbi5ib2R5IHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgcGFkZGluZzogMWVtO1xufVxuXG4uaWNvbiB7XG4gIGhlaWdodDogMS4yZW07XG4gIHdpZHRoOiAxLjJlbTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMmVtO1xufVxuXG4uY29udGVudCB7XG4gIHdpZHRoOiAxNnJlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IDAuOGVtO1xufVxuXG4uaW5mby1ibG9jayB7XG4gIG1hcmdpbjogMmVtIDZlbTtcbn1cblxubWF0LWRpYWxvZy1hY3Rpb25zIGJ1dHRvbiB7XG4gIG1pbi13aWR0aDogOGVtO1xufSJdfQ== */"]
     });
     /*@__PURE__*/
@@ -6223,6 +6159,134 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     })();
     /***/
 
+  },
+
+  /***/
+  "./src/app/overlays/bulk-item-modal/template-data.ts":
+  /*!***********************************************************!*\
+    !*** ./src/app/overlays/bulk-item-modal/template-data.ts ***!
+    \***********************************************************/
+
+  /*! exports provided: SYSTEM_TEMPLATE, MODULE_TEMPLATE, DRIVER_TEMPLATE, USER_TEMPLATE, ZONE_TEMPLATE */
+
+  /***/
+  function srcAppOverlaysBulkItemModalTemplateDataTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SYSTEM_TEMPLATE", function () {
+      return SYSTEM_TEMPLATE;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "MODULE_TEMPLATE", function () {
+      return MODULE_TEMPLATE;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DRIVER_TEMPLATE", function () {
+      return DRIVER_TEMPLATE;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "USER_TEMPLATE", function () {
+      return USER_TEMPLATE;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ZONE_TEMPLATE", function () {
+      return ZONE_TEMPLATE;
+    });
+    /* harmony import */
+
+
+    var _placeos_ts_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @placeos/ts-client */
+    "./node_modules/@placeos/ts-client/dist/ts-client.es5.js");
+
+    var SYSTEM_TEMPLATE = {
+      name: 'A System',
+      description: 'A description',
+      email: 'system@place.tech',
+      capacity: 10,
+      features: 'vidConf',
+      bookable: true,
+      installed_ui_devices: 4,
+      support_url: 'https://place.tech/support/test',
+      modules: ['mod-123'],
+      zones: ['zone-123'],
+      map_id: 'area-123',
+      module_data: [{
+        id: 'mod-001',
+        name: 'A Module'
+      }]
+    };
+    var MODULE_TEMPLATE = {
+      name: 'A Module',
+      driver_id: 'dep-001',
+      control_system_id: 'sys-001',
+      ip: '1.1.1.1',
+      tls: false,
+      udp: false,
+      port: 32000,
+      makebreak: false,
+      uri: 'test.com',
+      custom_name: 'mi-name',
+      role: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_0__["EngineDriverRole"].Device,
+      notes: 'Clone wars',
+      ignore_connected: false
+    };
+    var DRIVER_TEMPLATE = {
+      name: 'A Driver',
+      description: 'In a galaxy far far away...',
+      module_name: 'SteamShip',
+      role: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_0__["EngineDriverRole"].Logic,
+      default_uri: 'Sometimes we default',
+      default_port: 1234,
+      ignore_connected: false,
+      settings: {
+        settings_string: '{ today: false, future: \'Yeah!\' }'
+      },
+      class_name: '::ACA::SolveProblem',
+      repository_id: 'my-repo',
+      file_name: 'fancy-driver.cr',
+      commit: 'some-hash'
+    };
+    var USER_TEMPLATE = {
+      name: 'A User',
+      authority_id: 'On who\'s authority',
+      email: 'jon@place.tech',
+      phone: '+612000000000',
+      country: 'Australia',
+      image: '',
+      metadata: 'there be none',
+      login_name: 'elitedarklord',
+      staff_id: 'PERSON_12345',
+      first_name: 'Bob',
+      last_name: 'Marley'
+    };
+    var ZONE_TEMPLATE = {
+      name: 'A Zone',
+      description: 'In a galaxy far far away...',
+      triggers: ['trig-001'],
+      parent_id: 'zone-123',
+      display_name: 'The Zone',
+      tags: 'building,level,org',
+      code: 'BLD-123',
+      type: 'Client',
+      count: 32,
+      capacity: 2345,
+      location: 'Somewhere close',
+      map_id: 'a/url/to/my/map.svg'
+    };
+    /***/
   },
 
   /***/
@@ -40291,7 +40355,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       } : null;
     }
 
-    var URL_PATTERN = "^(?:(?:(?:https?|ftp):)?//)(?:S+(?::S*)?@)?(?:(?!(?:10|127)(?:.d{1,3}){3})(?!(?:169.254|192.168)(?:.d{1,3}){2})(?!172.(?:1[6-9]|2d|3[0-1])(?:.d{1,3}){2})(?:[1-9]d?|1dd|2[01]d|22[0-3])(?:.(?:1?d{1,2}|2[0-4]d|25[0-5])){2}(?:.(?:[1-9]d?|1dd|2[0-4]d|25[0-4]))|(?:(?:[a-z\xA1-\uFFFF0-9]-*)*[a-z\xA1-\uFFFF0-9]+)(?:.(?:[a-z\xA1-\uFFFF0-9]-*)*[a-z\xA1-\uFFFF0-9]+)*(?:.(?:[a-z\xA1-\uFFFF]{2,})))(?::d{2,5})?(?:[/?#]S*)?$";
+    var URL_PATTERN = "^(?:(?:(?:https?|ftp|wss?):)?//)(?:S+(?::S*)?@)?(?:(?!(?:10|127)(?:.d{1,3}){3})(?!(?:169.254|192.168)(?:.d{1,3}){2})(?!172.(?:1[6-9]|2d|3[0-1])(?:.d{1,3}){2})(?:[1-9]d?|1dd|2[01]d|22[0-3])(?:.(?:1?d{1,2}|2[0-4]d|25[0-5])){2}(?:.(?:[1-9]d?|1dd|2[0-4]d|25[0-4]))|(?:(?:[a-z\xA1-\uFFFF0-9]-*)*[a-z\xA1-\uFFFF0-9]+)(?:.(?:[a-z\xA1-\uFFFF0-9]-*)*[a-z\xA1-\uFFFF0-9]+)*(?:.(?:[a-z\xA1-\uFFFF]{2,})))(?::d{2,5})?(?:[/?#]S*)?$";
 
     function generateSystemsFormFields(system) {
       if (!system) {
@@ -44325,16 +44389,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "2f8b243",
-      "hash": "2f8b243",
+      "raw": "70f1256",
+      "hash": "70f1256",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "2f8b243",
+      "suffix": "70f1256",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1591617483612
+      "time": 1591676859859
     };
     /* tslint:enable */
 
