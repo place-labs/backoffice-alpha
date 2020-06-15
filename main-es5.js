@@ -40200,7 +40200,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }
 
     function resetModuleFormValidators(fields) {
-      fields.ip.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateIpAddress"]]), fields.port.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535)]), fields.uri.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern('\w+:(\/?\/?)[^\s]+')]), fields.settings_string.setValidators([_systems_utilities__WEBPACK_IMPORTED_MODULE_2__["validateYAML"]]), fields.system.setValidators([]), fields.driver.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]);
+      fields.ip.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateIpAddress"]]), fields.port.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535)]), fields.uri.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateURI"]]), fields.settings_string.setValidators([_systems_utilities__WEBPACK_IMPORTED_MODULE_2__["validateYAML"]]), fields.system.setValidators([]), fields.driver.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]);
     }
     /***/
 
@@ -41575,9 +41575,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       };
     };
 
-    var validateURI = _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern(/^([a-z][a-z0-9+.-]+):(\/\/([^@]+@)?([a-z0-9.\-_~]+)(:\d+)?)?((?:[a-z0-9-._~]|%[a-f0-9]|[!$&'()*+,;=:@])+(?:\/(?:[a-z0-9-._~]|%[a-f0-9]|[!$&'()*+,;=:@])*)*|(?:\/(?:[a-z0-9-._~]|%[a-f0-9]|[!$&'()*+,;=:@])+)*)?(\?(?:[a-z0-9-._~]|%[a-f0-9]|[!$&'()*+,;=:@]|[/?])+)?(\#(?:[a-z0-9-._~]|%[a-f0-9]|[!$&'()*+,;=:@]|[/?])+)?$/gi);
+    var validateURI = function validateURI(ctrl) {
+      console.log('Value:', ctrl.value);
+      return /\w+:(\/?\/?)[^\s]+?/gm.test(ctrl.value || '') ? null : {
+        pattern: true
+      };
+    };
 
-    var validateURL = _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern(/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/g);
+    var validateURL = _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern(/^(?:(http(s)?):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/g);
 
     function validateJSONString(control) {
       if (!control || !control.value) {
@@ -44389,16 +44394,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "70f1256",
-      "hash": "70f1256",
+      "raw": "b8630ff",
+      "hash": "b8630ff",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "70f1256",
+      "suffix": "b8630ff",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1591676859859
+      "time": 1592190450754
     };
     /* tslint:enable */
 
