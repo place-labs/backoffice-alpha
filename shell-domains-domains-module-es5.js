@@ -2025,6 +2025,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
             return;
           }
 
+          console.log('form 0', this.item);
+          console.log('test form:', new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDomain"]());
           this.modal_ref = this._dialog.open(src_app_overlays_item_modal_item_modal_component__WEBPACK_IMPORTED_MODULE_3__["ItemCreateUpdateModalComponent"], {
             height: 'auto',
             width: 'auto',

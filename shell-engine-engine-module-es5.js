@@ -38286,7 +38286,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
       }, {
         key: "backoffice_version",
         get: function get() {
-          return src_environments_version__WEBPACK_IMPORTED_MODULE_4__["VERSION"].semver;
+          return src_environments_version__WEBPACK_IMPORTED_MODULE_4__["VERSION"].semver.version;
         }
       }, {
         key: "backoffice_build",

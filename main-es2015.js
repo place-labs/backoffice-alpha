@@ -2232,6 +2232,7 @@ class ItemCreateUpdateModalComponent extends src_app_shared_globals_base_directi
         return new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormGroup"]({});
     }
     ngOnInit() {
+        console.log('form', this._data);
         this.item = this._data.item;
         this.edit = !!this._data.item.id;
         this.form = this.generateFormData();
@@ -2241,6 +2242,7 @@ class ItemCreateUpdateModalComponent extends src_app_shared_globals_base_directi
      * Save changes and create item if it does not exist
      */
     submit() {
+        console.log('form 1', this.form);
         this.form.markAllAsTouched();
         if (this.item && this.form.valid) {
             this.loading = `${this.item.id ? 'Updating' : 'Creating'} ${this.name}...`;
@@ -2249,7 +2251,9 @@ class ItemCreateUpdateModalComponent extends src_app_shared_globals_base_directi
                 this.event.emit({ reason: 'action', metadata: this.form.value });
                 return;
             }
+            console.log('form 2', this.form, this.item);
             this.item.save().then(item => {
+                console.log('form 3', item);
                 this.result = item;
                 this._dialog_ref.disableClose = false;
                 this.event.emit({ reason: 'done', metadata: { item } });
@@ -8547,9 +8551,9 @@ function DomainFormComponent_div_0_div_4_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r2.form.controls.dom.invalid && ctx_r2.form.controls.dom.touched);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r2.form.controls.domain.invalid && ctx_r2.form.controls.domain.touched);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r2.form.controls.dom.invalid);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r2.form.controls.domain.invalid);
 } }
 var I18N_11;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
@@ -8675,7 +8679,7 @@ function DomainFormComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.dom);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.domain);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.login_url);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
@@ -8686,7 +8690,7 @@ function DomainFormComponent_div_0_Template(rf, ctx) { if (rf & 1) {
 class DomainFormComponent {
 }
 DomainFormComponent.ɵfac = function DomainFormComponent_Factory(t) { return new (t || DomainFormComponent)(); };
-DomainFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DomainFormComponent, selectors: [["domain-form"]], inputs: { form: "form" }, decls: 1, vars: 1, consts: [["class", "domain form", 4, "ngIf"], [1, "domain", "form"], [3, "formGroup"], [1, "fieldset"], ["class", "field", 4, "ngIf"], [1, "field"], ["for", "domain-name"], ["appearance", "outline"], ["matInput", "", "name", "domain-name", "formControlName", "name", "required", "", 6, "placeholder"], [4, "ngIf"], ["for", "domain"], ["matInput", "", "name", "domain", "placeholder", "Domain e.g localhost", "formControlName", "dom"], ["for", "login-url"], ["matInput", "", "name", "login-url", "placeholder", "Login URL", "formControlName", "login_url"], ["for", "logout-url"], ["matInput", "", "name", "logout-url", "formControlName", "logout_url", 6, "placeholder"], ["for", "description"], ["matInput", "", "name", "description", "placeholder", "Description", "formControlName", "description"]], template: function DomainFormComponent_Template(rf, ctx) { if (rf & 1) {
+DomainFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DomainFormComponent, selectors: [["domain-form"]], inputs: { form: "form" }, decls: 1, vars: 1, consts: [["class", "domain form", 4, "ngIf"], [1, "domain", "form"], [3, "formGroup"], [1, "fieldset"], ["class", "field", 4, "ngIf"], [1, "field"], ["for", "domain-name"], ["appearance", "outline"], ["matInput", "", "name", "domain-name", "formControlName", "name", "required", "", 6, "placeholder"], [4, "ngIf"], ["for", "domain"], ["matInput", "", "name", "domain", "placeholder", "Domain e.g localhost", "formControlName", "domain"], ["for", "login-url"], ["matInput", "", "name", "login-url", "placeholder", "Login URL", "formControlName", "login_url"], ["for", "logout-url"], ["matInput", "", "name", "logout-url", "formControlName", "logout_url", 6, "placeholder"], ["for", "description"], ["matInput", "", "name", "description", "placeholder", "Description", "formControlName", "description"]], template: function DomainFormComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, DomainFormComponent_div_0_Template, 8, 6, "div", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.form);
@@ -19370,7 +19374,7 @@ function generateDomainFormFields(authority) {
     }
     const fields = {
         name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.name || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
-        dom: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.dom || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
+        domain: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.domain || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
         login_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.login_url || ''),
         logout_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.logout_url || ''),
         config: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.config || ''),
@@ -21692,16 +21696,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "b8630ff",
-    "hash": "b8630ff",
+    "raw": "604e8d3",
+    "hash": "604e8d3",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "b8630ff",
+    "suffix": "604e8d3",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1592190450754
+    "time": 1592307830331
 };
 /* tslint:enable */
 

@@ -8003,6 +8003,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function ngOnInit() {
           var _this13 = this;
 
+          console.log('form', this._data);
           this.item = this._data.item;
           this.edit = !!this._data.item.id;
           this.form = this.generateFormData();
@@ -8019,6 +8020,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function submit() {
           var _this14 = this;
 
+          console.log('form 1', this.form);
           this.form.markAllAsTouched();
 
           if (this.item && this.form.valid) {
@@ -8033,7 +8035,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               return;
             }
 
+            console.log('form 2', this.form, this.item);
             this.item.save().then(function (item) {
+              console.log('form 3', item);
               _this14.result = item;
               _this14._dialog_ref.disableClose = false;
 
@@ -20237,11 +20241,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r2.form.controls.dom.invalid && ctx_r2.form.controls.dom.touched);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r2.form.controls.domain.invalid && ctx_r2.form.controls.domain.touched);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r2.form.controls.dom.invalid);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r2.form.controls.domain.invalid);
       }
     }
 
@@ -20450,7 +20454,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.dom);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.domain);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
@@ -20482,7 +20486,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       },
       decls: 1,
       vars: 1,
-      consts: [["class", "domain form", 4, "ngIf"], [1, "domain", "form"], [3, "formGroup"], [1, "fieldset"], ["class", "field", 4, "ngIf"], [1, "field"], ["for", "domain-name"], ["appearance", "outline"], ["matInput", "", "name", "domain-name", "formControlName", "name", "required", "", 6, "placeholder"], [4, "ngIf"], ["for", "domain"], ["matInput", "", "name", "domain", "placeholder", "Domain e.g localhost", "formControlName", "dom"], ["for", "login-url"], ["matInput", "", "name", "login-url", "placeholder", "Login URL", "formControlName", "login_url"], ["for", "logout-url"], ["matInput", "", "name", "logout-url", "formControlName", "logout_url", 6, "placeholder"], ["for", "description"], ["matInput", "", "name", "description", "placeholder", "Description", "formControlName", "description"]],
+      consts: [["class", "domain form", 4, "ngIf"], [1, "domain", "form"], [3, "formGroup"], [1, "fieldset"], ["class", "field", 4, "ngIf"], [1, "field"], ["for", "domain-name"], ["appearance", "outline"], ["matInput", "", "name", "domain-name", "formControlName", "name", "required", "", 6, "placeholder"], [4, "ngIf"], ["for", "domain"], ["matInput", "", "name", "domain", "placeholder", "Domain e.g localhost", "formControlName", "domain"], ["for", "login-url"], ["matInput", "", "name", "login-url", "placeholder", "Login URL", "formControlName", "login_url"], ["for", "logout-url"], ["matInput", "", "name", "logout-url", "formControlName", "logout_url", 6, "placeholder"], ["for", "description"], ["matInput", "", "name", "description", "placeholder", "Description", "formControlName", "description"]],
       template: function DomainFormComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, DomainFormComponent_div_0_Template, 8, 6, "div", 0);
@@ -39967,7 +39971,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       var fields = {
         name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.name || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
-        dom: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.dom || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
+        domain: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.domain || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
         login_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.login_url || ''),
         logout_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.logout_url || ''),
         config: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.config || ''),
@@ -44394,16 +44398,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "b8630ff",
-      "hash": "b8630ff",
+      "raw": "604e8d3",
+      "hash": "604e8d3",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "b8630ff",
+      "suffix": "604e8d3",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1592190450754
+      "time": 1592307830331
     };
     /* tslint:enable */
 
