@@ -863,6 +863,9 @@ class DomainsComponent extends _shared_components_base_root_component__WEBPACK_I
         this._service.title = 'Domains';
     }
     loadValues() {
+        if (!this.item) {
+            return;
+        }
         let query = { offset: 0, limit: 1, owner: this.item.id };
         // Get application count
         this._service.Applications.query(query).then(list => (this.applications = this._service.Applications.last_total || list.length || 0));
@@ -881,8 +884,6 @@ class DomainsComponent extends _shared_components_base_root_component__WEBPACK_I
         if (this.modal_ref) {
             return;
         }
-        console.log('form 0', this.item);
-        console.log('test form:', new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDomain"]());
         this.modal_ref = this._dialog.open(src_app_overlays_item_modal_item_modal_component__WEBPACK_IMPORTED_MODULE_3__["ItemCreateUpdateModalComponent"], {
             height: 'auto',
             width: 'auto',

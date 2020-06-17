@@ -8003,7 +8003,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function ngOnInit() {
           var _this13 = this;
 
-          console.log('form', this._data);
           this.item = this._data.item;
           this.edit = !!this._data.item.id;
           this.form = this.generateFormData();
@@ -8020,7 +8019,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function submit() {
           var _this14 = this;
 
-          console.log('form 1', this.form);
           this.form.markAllAsTouched();
 
           if (this.item && this.form.valid) {
@@ -8035,9 +8033,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               return;
             }
 
-            console.log('form 2', this.form, this.item);
             this.item.save().then(function (item) {
-              console.log('form 3', item);
               _this14.result = item;
               _this14._dialog_ref.disableClose = false;
 
@@ -44398,16 +44394,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "604e8d3",
-      "hash": "604e8d3",
+      "raw": "de39ec5",
+      "hash": "de39ec5",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "604e8d3",
+      "suffix": "de39ec5",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1592307830331
+      "time": 1592383816684
     };
     /* tslint:enable */
 
