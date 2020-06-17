@@ -1773,7 +1773,7 @@ class SystemsComponent extends _shared_components_base_root_component__WEBPACK_I
             maxWidth: 'calc(100vw - 2em)',
             data: {
                 item: copy ? new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineSystem"](Object.assign(Object.assign({}, this.item), { id: '', name: `${this.item.name} (1)` })) : new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineSystem"](),
-                service: this._service.Domains
+                service: this._service.Systems
             }
         });
         this.subscription('modal_events', this.modal_ref.componentInstance.event.subscribe(event => {

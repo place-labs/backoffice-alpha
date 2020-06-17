@@ -1219,7 +1219,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
                 id: '',
                 name: "".concat(this.item.name, " (1)")
               })) : new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineRepository"](),
-              service: this._service.Domains
+              service: this._service.Repositories
             }
           });
           this.subscription('modal_event', this.modal_ref.componentInstance.event.subscribe(function (event) {

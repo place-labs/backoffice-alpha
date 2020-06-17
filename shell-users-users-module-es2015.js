@@ -351,7 +351,7 @@ class UsersComponent extends _shared_components_base_root_component__WEBPACK_IMP
             maxWidth: 'calc(100vw - 2em)',
             data: {
                 item: copy ? new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineUser"](Object.assign(Object.assign({}, this.item), { id: '', name: `${this.item.name} (1)` })) : new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineUser"](),
-                service: this._service.Domains
+                service: this._service.Users
             }
         });
         this.modal_ref.componentInstance.event.subscribe(event => {
