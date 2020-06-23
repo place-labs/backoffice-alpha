@@ -1,5 +1,15 @@
-function _templateObject324() {
+function _templateObject325() {
   var data = _taggedTemplateLiteral([":@@rootLoader\u241F14bedde62d9b8d981d5c7bfc90a28539f328e201\u241F6050958487477380449:Loading application data..."]);
+
+  _templateObject325 = function _templateObject325() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject324() {
+  var data = _taggedTemplateLiteral([":@@languageAction\u241Ffe46ccaae902ce974e2441abe752399288298619\u241F2826581353496868063:Language"]);
 
   _templateObject324 = function _templateObject324() {
     return data;
@@ -9,7 +19,7 @@ function _templateObject324() {
 }
 
 function _templateObject323() {
-  var data = _taggedTemplateLiteral([":@@languageAction\u241Ffe46ccaae902ce974e2441abe752399288298619\u241F2826581353496868063:Language"]);
+  var data = _taggedTemplateLiteral([":@@newUserAction\u241F56d1a826e9d05dd72cc43c6f090b7e7d85a8caca\u241F3494336661951944774:{VAR_SELECT, select, true {Users } false {User }}"]);
 
   _templateObject323 = function _templateObject323() {
     return data;
@@ -19,7 +29,7 @@ function _templateObject323() {
 }
 
 function _templateObject322() {
-  var data = _taggedTemplateLiteral([":@@newUserAction\u241F56d1a826e9d05dd72cc43c6f090b7e7d85a8caca\u241F3494336661951944774:{VAR_SELECT, select, true {Users } false {User }}"]);
+  var data = _taggedTemplateLiteral([":@@newModuleAction\u241F01a95aab8ae8b06e0e1daf84dd9e6cf8e78d3d62\u241F4644596245398953801:{VAR_SELECT, select, true {Modules } false {Module }}"]);
 
   _templateObject322 = function _templateObject322() {
     return data;
@@ -29,7 +39,7 @@ function _templateObject322() {
 }
 
 function _templateObject321() {
-  var data = _taggedTemplateLiteral([":@@newModuleAction\u241F01a95aab8ae8b06e0e1daf84dd9e6cf8e78d3d62\u241F4644596245398953801:{VAR_SELECT, select, true {Modules } false {Module }}"]);
+  var data = _taggedTemplateLiteral([":@@newDriverAction\u241F80a021361db2047108a1a4f25c945511da9b1ecc\u241F8699416356467417400:{VAR_SELECT, select, true {Drivers } false {Driver }}"]);
 
   _templateObject321 = function _templateObject321() {
     return data;
@@ -39,7 +49,7 @@ function _templateObject321() {
 }
 
 function _templateObject320() {
-  var data = _taggedTemplateLiteral([":@@newDriverAction\u241F80a021361db2047108a1a4f25c945511da9b1ecc\u241F8699416356467417400:{VAR_SELECT, select, true {Drivers } false {Driver }}"]);
+  var data = _taggedTemplateLiteral([":@@newZoneAction\u241F00363f937b2363a638bab27b4c7fc3d2ef1618cf\u241F4149854438708661230:{VAR_SELECT, select, true {Zones } false {Zone }}"]);
 
   _templateObject320 = function _templateObject320() {
     return data;
@@ -49,7 +59,7 @@ function _templateObject320() {
 }
 
 function _templateObject319() {
-  var data = _taggedTemplateLiteral([":@@newZoneAction\u241F00363f937b2363a638bab27b4c7fc3d2ef1618cf\u241F4149854438708661230:{VAR_SELECT, select, true {Zones } false {Zone }}"]);
+  var data = _taggedTemplateLiteral([":@@newSystemAction\u241F1457387612e2afc6878ea808c7fd36d91b9bd434\u241F4377142603300937838:{VAR_SELECT, select, true {Systems } false {System }}"]);
 
   _templateObject319 = function _templateObject319() {
     return data;
@@ -59,7 +69,7 @@ function _templateObject319() {
 }
 
 function _templateObject318() {
-  var data = _taggedTemplateLiteral([":@@newSystemAction\u241F1457387612e2afc6878ea808c7fd36d91b9bd434\u241F4377142603300937838:{VAR_SELECT, select, true {Systems } false {System }}"]);
+  var data = _taggedTemplateLiteral([":@@bulkNewAction\u241F8b0c4bd174d9a59a43aa2c1d06e77e79005de155\u241F453148519308187877:Bulk New"]);
 
   _templateObject318 = function _templateObject318() {
     return data;
@@ -69,7 +79,7 @@ function _templateObject318() {
 }
 
 function _templateObject317() {
-  var data = _taggedTemplateLiteral([":@@bulkNewAction\u241F8b0c4bd174d9a59a43aa2c1d06e77e79005de155\u241F453148519308187877:Bulk New"]);
+  var data = _taggedTemplateLiteral([":@@newAction\u241Fd81f00c85d3b507f3e3d78bfc617a2c66e028391\u241F5280218112746407598:New"]);
 
   _templateObject317 = function _templateObject317() {
     return data;
@@ -79,7 +89,7 @@ function _templateObject317() {
 }
 
 function _templateObject316() {
-  var data = _taggedTemplateLiteral([":@@newAction\u241Fd81f00c85d3b507f3e3d78bfc617a2c66e028391\u241F5280218112746407598:New"]);
+  var data = _taggedTemplateLiteral([":@@reportAction\u241Fbe8ddc0368963c912be90c70b88f18a0d99879e4\u241F7126973103434606149:Report an Issue"]);
 
   _templateObject316 = function _templateObject316() {
     return data;
@@ -89,7 +99,7 @@ function _templateObject316() {
 }
 
 function _templateObject315() {
-  var data = _taggedTemplateLiteral([":@@reportAction\u241Fbe8ddc0368963c912be90c70b88f18a0d99879e4\u241F7126973103434606149:Report an Issue"]);
+  var data = _taggedTemplateLiteral([":@@darkMode\u241Fc943d5ecc32b916a210d7c984fe5f55771ad0b1a\u241F3279636347259347513:Dark Mode"]);
 
   _templateObject315 = function _templateObject315() {
     return data;
@@ -99,7 +109,7 @@ function _templateObject315() {
 }
 
 function _templateObject314() {
-  var data = _taggedTemplateLiteral([":@@darkMode\u241Fc943d5ecc32b916a210d7c984fe5f55771ad0b1a\u241F3279636347259347513:Dark Mode"]);
+  var data = _taggedTemplateLiteral([":@@logoutAction\u241Fbb694b49d408265c91c62799c2b3a7e3151c824d\u241F3797778920049399855:Logout"]);
 
   _templateObject314 = function _templateObject314() {
     return data;
@@ -109,7 +119,7 @@ function _templateObject314() {
 }
 
 function _templateObject313() {
-  var data = _taggedTemplateLiteral([":@@logoutAction\u241Fbb694b49d408265c91c62799c2b3a7e3151c824d\u241F3797778920049399855:Logout"]);
+  var data = _taggedTemplateLiteral([":@@profileAction\u241F994363f08f9fbfa3b3994ff7b35c6904fdff18d8\u241F4915431133669985304:Profile"]);
 
   _templateObject313 = function _templateObject313() {
     return data;
@@ -119,7 +129,7 @@ function _templateObject313() {
 }
 
 function _templateObject312() {
-  var data = _taggedTemplateLiteral([":@@profileAction\u241F994363f08f9fbfa3b3994ff7b35c6904fdff18d8\u241F4915431133669985304:Profile"]);
+  var data = _taggedTemplateLiteral([":\u241F328708dce9025cefba33d1fb55930918d6bd43cf\u241F5975271772062060140: ", ":ICU: "]);
 
   _templateObject312 = function _templateObject312() {
     return data;
@@ -129,7 +139,7 @@ function _templateObject312() {
 }
 
 function _templateObject311() {
-  var data = _taggedTemplateLiteral([":\u241F328708dce9025cefba33d1fb55930918d6bd43cf\u241F5975271772062060140: ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":\u241Fd159c8ee1ab00895d011670aec21f52593bbe8f3\u241F1497526233588378893:{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repos {Repos } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}"]);
 
   _templateObject311 = function _templateObject311() {
     return data;
@@ -139,7 +149,7 @@ function _templateObject311() {
 }
 
 function _templateObject310() {
-  var data = _taggedTemplateLiteral([":\u241Fd159c8ee1ab00895d011670aec21f52593bbe8f3\u241F1497526233588378893:{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repos {Repos } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":\u241Fa1e20a5411dd200fdd7d60e8ee2dbc31a9fa60de\u241F4490461035567493937: Add new ", ":INTERPOLATION: "]);
 
   _templateObject310 = function _templateObject310() {
     return data;
@@ -149,7 +159,7 @@ function _templateObject310() {
 }
 
 function _templateObject309() {
-  var data = _taggedTemplateLiteral([":\u241Fa1e20a5411dd200fdd7d60e8ee2dbc31a9fa60de\u241F4490461035567493937: Add new ", ":INTERPOLATION: "]);
+  var data = _taggedTemplateLiteral([":\u241F71af3b0c94878b7a01117a33f35d1e37057cf07f\u241F4582722582214648803:\n            Exceeded quota! No new item can be created\n            until the total is below you license count."]);
 
   _templateObject309 = function _templateObject309() {
     return data;
@@ -159,7 +169,7 @@ function _templateObject309() {
 }
 
 function _templateObject308() {
-  var data = _taggedTemplateLiteral([":\u241F71af3b0c94878b7a01117a33f35d1e37057cf07f\u241F4582722582214648803:\n            Exceeded quota! No new item can be created\n            until the total is below you license count."]);
+  var data = _taggedTemplateLiteral([":\u241F4437d7f46a39b4fbe2821eb4c414848fcbbe4051\u241F7954964908113382488:{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repositories {Repositories } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}"]);
 
   _templateObject308 = function _templateObject308() {
     return data;
@@ -169,7 +179,7 @@ function _templateObject308() {
 }
 
 function _templateObject307() {
-  var data = _taggedTemplateLiteral([":\u241F4437d7f46a39b4fbe2821eb4c414848fcbbe4051\u241F7954964908113382488:{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repositories {Repositories } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":@@deleteAction\u241F61fc382bf58f28881d40c717f4606a554cedc3c4\u241F721771769947153347: Delete ", ":ICU: [D] "]);
 
   _templateObject307 = function _templateObject307() {
     return data;
@@ -179,7 +189,7 @@ function _templateObject307() {
 }
 
 function _templateObject306() {
-  var data = _taggedTemplateLiteral([":@@deleteAction\u241F61fc382bf58f28881d40c717f4606a554cedc3c4\u241F721771769947153347: Delete ", ":ICU: [D] "]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject306 = function _templateObject306() {
     return data;
@@ -189,7 +199,7 @@ function _templateObject306() {
 }
 
 function _templateObject305() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":@@editAction\u241F21ceb22efac889d1779502a913c6a6034fce2762\u241F3319045061424151644: Edit ", ":ICU: [E] "]);
 
   _templateObject305 = function _templateObject305() {
     return data;
@@ -199,7 +209,7 @@ function _templateObject305() {
 }
 
 function _templateObject304() {
-  var data = _taggedTemplateLiteral([":@@editAction\u241F21ceb22efac889d1779502a913c6a6034fce2762\u241F3319045061424151644: Edit ", ":ICU: [E] "]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject304 = function _templateObject304() {
     return data;
@@ -209,7 +219,7 @@ function _templateObject304() {
 }
 
 function _templateObject303() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":@@itemLoading\u241F52d044ff4297029471c22520db9de1da5f9f5a38\u241F2653895365641621709: Loading ", ":ICU:... "]);
 
   _templateObject303 = function _templateObject303() {
     return data;
@@ -219,7 +229,7 @@ function _templateObject303() {
 }
 
 function _templateObject302() {
-  var data = _taggedTemplateLiteral([":@@itemLoading\u241F52d044ff4297029471c22520db9de1da5f9f5a38\u241F2653895365641621709: Loading ", ":ICU:... "]);
+  var data = _taggedTemplateLiteral([":\u241Fa087d72479f0869cfee2f4b2993c38db8786c16e\u241F1515061680644220493:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other\n        }}"]);
 
   _templateObject302 = function _templateObject302() {
     return data;
@@ -229,7 +239,7 @@ function _templateObject302() {
 }
 
 function _templateObject301() {
-  var data = _taggedTemplateLiteral([":\u241Fa087d72479f0869cfee2f4b2993c38db8786c16e\u241F1515061680644220493:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other\n        }}"]);
+  var data = _taggedTemplateLiteral([":@@selectItemMobile\u241F384929f519ae014136d51fc46e276888d6f91823\u241F2159444929156162707: Select a ", ":ICU: from the search bar "]);
 
   _templateObject301 = function _templateObject301() {
     return data;
@@ -239,7 +249,7 @@ function _templateObject301() {
 }
 
 function _templateObject300() {
-  var data = _taggedTemplateLiteral([":@@selectItemMobile\u241F384929f519ae014136d51fc46e276888d6f91823\u241F2159444929156162707: Select a ", ":ICU: from the search bar "]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject300 = function _templateObject300() {
     return data;
@@ -249,7 +259,7 @@ function _templateObject300() {
 }
 
 function _templateObject299() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":@@selectItem\u241F079228ff68aec07ed1e85c1135d1c02ec12550a3\u241F7513824411355833289: Select a ", ":ICU: from the sidebar "]);
 
   _templateObject299 = function _templateObject299() {
     return data;
@@ -259,7 +269,7 @@ function _templateObject299() {
 }
 
 function _templateObject298() {
-  var data = _taggedTemplateLiteral([":@@selectItem\u241F079228ff68aec07ed1e85c1135d1c02ec12550a3\u241F7513824411355833289: Select a ", ":ICU: from the sidebar "]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject298 = function _templateObject298() {
     return data;
@@ -269,7 +279,7 @@ function _templateObject298() {
 }
 
 function _templateObject297() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":@@tabNames\u241Ff5d55010cea116d649d36311938f07a7b09c6e79\u241F4365557421863687412: ", ":ICU: \xA0 "]);
 
   _templateObject297 = function _templateObject297() {
     return data;
@@ -279,7 +289,7 @@ function _templateObject297() {
 }
 
 function _templateObject296() {
-  var data = _taggedTemplateLiteral([":@@tabNames\u241Ff5d55010cea116d649d36311938f07a7b09c6e79\u241F4365557421863687412: ", ":ICU: \xA0 "]);
+  var data = _taggedTemplateLiteral([":\u241F377431400b7c82410100e5b09cce0a22a7babf3f\u241F927071735214087141:{VAR_SELECT, select, About {About } Modules {Modules } Zones {Zones } Triggers {Triggers } Systems {Systems } Metadata {Metadata } Children {Children } Drivers {Drivers } History {History } Applications {Applications } Authentication {Authentication } Users {Users } Database {Database } Clusters {Clusters } Interfaces {Interfaces } MQTT Brokers {MQTT Brokers } other {Other }}"]);
 
   _templateObject296 = function _templateObject296() {
     return data;
@@ -289,7 +299,7 @@ function _templateObject296() {
 }
 
 function _templateObject295() {
-  var data = _taggedTemplateLiteral([":\u241F377431400b7c82410100e5b09cce0a22a7babf3f\u241F927071735214087141:{VAR_SELECT, select, About {About } Modules {Modules } Zones {Zones } Triggers {Triggers } Systems {Systems } Metadata {Metadata } Children {Children } Drivers {Drivers } History {History } Applications {Applications } Authentication {Authentication } Users {Users } Database {Database } Clusters {Clusters } Interfaces {Interfaces } MQTT Brokers {MQTT Brokers } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":@@secure\u241Ff6fb6b1a38912a6dce713ec93049253d2bb09ec1\u241F6818576096697117709:Secure"]);
 
   _templateObject295 = function _templateObject295() {
     return data;
@@ -299,7 +309,7 @@ function _templateObject295() {
 }
 
 function _templateObject294() {
-  var data = _taggedTemplateLiteral([":@@secure\u241Ff6fb6b1a38912a6dce713ec93049253d2bb09ec1\u241F6818576096697117709:Secure"]);
+  var data = _taggedTemplateLiteral([":@@onlineState\u241F7660aaa8fa61bddb05966595d391bb27b3bfb67c\u241F2757699679594366926: ", ":ICU: "]);
 
   _templateObject294 = function _templateObject294() {
     return data;
@@ -309,7 +319,7 @@ function _templateObject294() {
 }
 
 function _templateObject293() {
-  var data = _taggedTemplateLiteral([":@@onlineState\u241F7660aaa8fa61bddb05966595d391bb27b3bfb67c\u241F2757699679594366926: ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":\u241Fdf3256642015f9f9c6e01ba29f1f5f74f18a67ff\u241F1133432502520691599:{VAR_SELECT, select, true {Online } false {Offline } other {Other }}"]);
 
   _templateObject293 = function _templateObject293() {
     return data;
@@ -319,7 +329,7 @@ function _templateObject293() {
 }
 
 function _templateObject292() {
-  var data = _taggedTemplateLiteral([":\u241Fdf3256642015f9f9c6e01ba29f1f5f74f18a67ff\u241F1133432502520691599:{VAR_SELECT, select, true {Online } false {Offline } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":@@driverType\u241Fc8c46d751e5c3c2c2dc4aa5b692aca82b8c8f5b2\u241F8490238683340498476: ", ":ICU: "]);
 
   _templateObject292 = function _templateObject292() {
     return data;
@@ -329,7 +339,7 @@ function _templateObject292() {
 }
 
 function _templateObject291() {
-  var data = _taggedTemplateLiteral([":@@driverType\u241Fc8c46d751e5c3c2c2dc4aa5b692aca82b8c8f5b2\u241F8490238683340498476: ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":\u241F2ff3c95508830453d9aa8026026bebdb7e068ff3\u241F930388057628811577:{VAR_SELECT, select, Device {Device } Logic {Logic } SSH {SSH } Websocket {Websocket } Service {Service } other {Other }}"]);
 
   _templateObject291 = function _templateObject291() {
     return data;
@@ -339,7 +349,7 @@ function _templateObject291() {
 }
 
 function _templateObject290() {
-  var data = _taggedTemplateLiteral([":\u241F2ff3c95508830453d9aa8026026bebdb7e068ff3\u241F930388057628811577:{VAR_SELECT, select, Device {Device } Logic {Logic } SSH {SSH } Websocket {Websocket } Service {Service } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":@@exporeAction\u241F9d2eec442dd6661ddc55b1a55606f586dfe92df7\u241F6976166530197119541: Export ", ":ICU: as TSV template "]);
 
   _templateObject290 = function _templateObject290() {
     return data;
@@ -349,7 +359,7 @@ function _templateObject290() {
 }
 
 function _templateObject289() {
-  var data = _taggedTemplateLiteral([":@@exporeAction\u241F9d2eec442dd6661ddc55b1a55606f586dfe92df7\u241F6976166530197119541: Export ", ":ICU: as TSV template "]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject289 = function _templateObject289() {
     return data;
@@ -359,7 +369,7 @@ function _templateObject289() {
 }
 
 function _templateObject288() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":@@duplicateAction\u241F41bd546356e6e3f040c515d8057a7ad9d13702d3\u241F6000965021238022836: Duplicate ", ":ICU: "]);
 
   _templateObject288 = function _templateObject288() {
     return data;
@@ -369,7 +379,7 @@ function _templateObject288() {
 }
 
 function _templateObject287() {
-  var data = _taggedTemplateLiteral([":@@duplicateAction\u241F41bd546356e6e3f040c515d8057a7ad9d13702d3\u241F6000965021238022836: Duplicate ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject287 = function _templateObject287() {
     return data;
@@ -379,7 +389,7 @@ function _templateObject287() {
 }
 
 function _templateObject286() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":@@copyItemAction\u241F1b32a43f6b66009f73629476c0acac5f1278c91f\u241F6066848467110836457: Create new from this ", ":ICU: "]);
 
   _templateObject286 = function _templateObject286() {
     return data;
@@ -389,7 +399,7 @@ function _templateObject286() {
 }
 
 function _templateObject285() {
-  var data = _taggedTemplateLiteral([":@@copyItemAction\u241F1b32a43f6b66009f73629476c0acac5f1278c91f\u241F6066848467110836457: Create new from this ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject285 = function _templateObject285() {
     return data;
@@ -399,7 +409,7 @@ function _templateObject285() {
 }
 
 function _templateObject284() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":@@mapUrlPlaceholder\u241Fb4b18d9d669719c8c7439750dc36df8b85e869a9\u241F6753878050259146319:Map ID or URL"]);
 
   _templateObject284 = function _templateObject284() {
     return data;
@@ -409,7 +419,7 @@ function _templateObject284() {
 }
 
 function _templateObject283() {
-  var data = _taggedTemplateLiteral([":@@mapUrlPlaceholder\u241Fb4b18d9d669719c8c7439750dc36df8b85e869a9\u241F6753878050259146319:Map ID or URL"]);
+  var data = _taggedTemplateLiteral([":@@mapUrlLabel\u241Fb59ac98267a9fea534d729d6021e4ad108b9166e\u241F5947091241433737383:Map:"]);
 
   _templateObject283 = function _templateObject283() {
     return data;
@@ -419,7 +429,7 @@ function _templateObject283() {
 }
 
 function _templateObject282() {
-  var data = _taggedTemplateLiteral([":@@mapUrlLabel\u241Fb59ac98267a9fea534d729d6021e4ad108b9166e\u241F5947091241433737383:Map:"]);
+  var data = _taggedTemplateLiteral([":@@zoneCapacityPlaceholder\u241F134a4b73b60ff641a03d3a8b934ae9e426523ae8\u241F7734256545220786201:Physical capacity of the zone"]);
 
   _templateObject282 = function _templateObject282() {
     return data;
@@ -429,7 +439,7 @@ function _templateObject282() {
 }
 
 function _templateObject281() {
-  var data = _taggedTemplateLiteral([":@@zoneCapacityPlaceholder\u241F134a4b73b60ff641a03d3a8b934ae9e426523ae8\u241F7734256545220786201:Physical capacity of the zone"]);
+  var data = _taggedTemplateLiteral([":@@capacityLabel\u241Fa1170e85d1897210d5fe03d1f363587de15d02cd\u241F8062822823331512246:Capacity:"]);
 
   _templateObject281 = function _templateObject281() {
     return data;
@@ -439,7 +449,7 @@ function _templateObject281() {
 }
 
 function _templateObject280() {
-  var data = _taggedTemplateLiteral([":@@capacityLabel\u241Fa1170e85d1897210d5fe03d1f363587de15d02cd\u241F8062822823331512246:Capacity:"]);
+  var data = _taggedTemplateLiteral([":@@zoneFeatureCountPlaceholder\u241F5c4156cb0372c1beb930c5fa7fcb97a71bf8e81f\u241F5165905722503978389:Resource count. Desks, Hardware, etc."]);
 
   _templateObject280 = function _templateObject280() {
     return data;
@@ -449,7 +459,7 @@ function _templateObject280() {
 }
 
 function _templateObject279() {
-  var data = _taggedTemplateLiteral([":@@zoneFeatureCountPlaceholder\u241F5c4156cb0372c1beb930c5fa7fcb97a71bf8e81f\u241F5165905722503978389:Resource count. Desks, Hardware, etc."]);
+  var data = _taggedTemplateLiteral([":@@countLabel\u241Fe684046d73bcee88e82f7ff01e2852789a05fc32\u241F6836949342567686088:Count:"]);
 
   _templateObject279 = function _templateObject279() {
     return data;
@@ -459,7 +469,7 @@ function _templateObject279() {
 }
 
 function _templateObject278() {
-  var data = _taggedTemplateLiteral([":@@countLabel\u241Fe684046d73bcee88e82f7ff01e2852789a05fc32\u241F6836949342567686088:Count:"]);
+  var data = _taggedTemplateLiteral([":@@zoneTypePlaceholder\u241F850c309c2c6cda8212f559414838f9071223d7ad\u241F2265282878270583875:Organisational Categorisation"]);
 
   _templateObject278 = function _templateObject278() {
     return data;
@@ -469,7 +479,7 @@ function _templateObject278() {
 }
 
 function _templateObject277() {
-  var data = _taggedTemplateLiteral([":@@zoneTypePlaceholder\u241F850c309c2c6cda8212f559414838f9071223d7ad\u241F2265282878270583875:Organisational Categorisation"]);
+  var data = _taggedTemplateLiteral([":@@typeLabel\u241Fe78c0d60ac39787f62c9159646fe0b3c1ed55a1d\u241F2736556170366900089:Type:"]);
 
   _templateObject277 = function _templateObject277() {
     return data;
@@ -479,7 +489,7 @@ function _templateObject277() {
 }
 
 function _templateObject276() {
-  var data = _taggedTemplateLiteral([":@@typeLabel\u241Fe78c0d60ac39787f62c9159646fe0b3c1ed55a1d\u241F2736556170366900089:Type:"]);
+  var data = _taggedTemplateLiteral([":@@codePlaceholder\u241F817f526a89b8ab78083a764cbcd590fd5412be84\u241F8686897182969797112:Organisation Code"]);
 
   _templateObject276 = function _templateObject276() {
     return data;
@@ -489,7 +499,7 @@ function _templateObject276() {
 }
 
 function _templateObject275() {
-  var data = _taggedTemplateLiteral([":@@codePlaceholder\u241F817f526a89b8ab78083a764cbcd590fd5412be84\u241F8686897182969797112:Organisation Code"]);
+  var data = _taggedTemplateLiteral([":@@codeLabel\u241F08a3263c58aafca24f31b3f312d90934a14069e5\u241F4793952596010266372:Code:"]);
 
   _templateObject275 = function _templateObject275() {
     return data;
@@ -499,7 +509,7 @@ function _templateObject275() {
 }
 
 function _templateObject274() {
-  var data = _taggedTemplateLiteral([":@@codeLabel\u241F08a3263c58aafca24f31b3f312d90934a14069e5\u241F4793952596010266372:Code:"]);
+  var data = _taggedTemplateLiteral([":@@locationPlaceholder\u241Fb3e5a1f76ec45c4b931802cffa6fccfda193d326\u241F5207377723288317697:Geo-location details for zone. <lat, long>"]);
 
   _templateObject274 = function _templateObject274() {
     return data;
@@ -509,7 +519,7 @@ function _templateObject274() {
 }
 
 function _templateObject273() {
-  var data = _taggedTemplateLiteral([":@@locationPlaceholder\u241Fb3e5a1f76ec45c4b931802cffa6fccfda193d326\u241F5207377723288317697:Geo-location details for zone. <lat, long>"]);
+  var data = _taggedTemplateLiteral([":@@locationLabel\u241F4bebbae34f84157c0b5b852529f0bc2c39a5a38a\u241F4510013877734913501:Location:"]);
 
   _templateObject273 = function _templateObject273() {
     return data;
@@ -519,7 +529,7 @@ function _templateObject273() {
 }
 
 function _templateObject272() {
-  var data = _taggedTemplateLiteral([":@@locationLabel\u241F4bebbae34f84157c0b5b852529f0bc2c39a5a38a\u241F4510013877734913501:Location:"]);
+  var data = _taggedTemplateLiteral([":@@descriptionPlaceholder\u241Feec715de352a6b114713b30b640d319fa78207a0\u241F4902817035128594900:Description"]);
 
   _templateObject272 = function _templateObject272() {
     return data;
@@ -529,7 +539,7 @@ function _templateObject272() {
 }
 
 function _templateObject271() {
-  var data = _taggedTemplateLiteral([":@@descriptionPlaceholder\u241Feec715de352a6b114713b30b640d319fa78207a0\u241F4902817035128594900:Description"]);
+  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
 
   _templateObject271 = function _templateObject271() {
     return data;
@@ -539,7 +549,7 @@ function _templateObject271() {
 }
 
 function _templateObject270() {
-  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
+  var data = _taggedTemplateLiteral([":@@zoneTagsPlaceholder\u241F8dc7c13b0c6b8ad9c770bce0ad72e14b4aef8456\u241F3986010900542572161:Zone tags..."]);
 
   _templateObject270 = function _templateObject270() {
     return data;
@@ -549,7 +559,7 @@ function _templateObject270() {
 }
 
 function _templateObject269() {
-  var data = _taggedTemplateLiteral([":@@zoneTagsPlaceholder\u241F8dc7c13b0c6b8ad9c770bce0ad72e14b4aef8456\u241F3986010900542572161:Zone tags..."]);
+  var data = _taggedTemplateLiteral([":@@tagsLabel\u241Feb97e382f44a2509510b9f817b3760416d683b7e\u241F6536400157246961073: Tags: "]);
 
   _templateObject269 = function _templateObject269() {
     return data;
@@ -559,7 +569,7 @@ function _templateObject269() {
 }
 
 function _templateObject268() {
-  var data = _taggedTemplateLiteral([":@@tagsLabel\u241Feb97e382f44a2509510b9f817b3760416d683b7e\u241F6536400157246961073: Tags: "]);
+  var data = _taggedTemplateLiteral([":@@zoneDisplayNamePlaceholder\u241Fdef055ca6569ccb72cf972e6e6b9b98c83a4cc5f\u241F2910270903067956845:Zone display name"]);
 
   _templateObject268 = function _templateObject268() {
     return data;
@@ -32334,95 +32344,138 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var I18N_9;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_tagsLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___10 = goog.getMsg(" Tags: ");
-      I18N_9 = MSG_EXTERNAL_tagsLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___10;
+      var MSG_EXTERNAL_zoneDisplayNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___10 = goog.getMsg("Zone display name");
+      I18N_9 = MSG_EXTERNAL_zoneDisplayNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___10;
     } else {
       I18N_9 = $localize(_templateObject268());
     }
 
-    var I18N_11;
+    var _c11 = ["placeholder", I18N_9];
 
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_zoneTagsPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___12 = goog.getMsg("Zone tags...");
-      I18N_11 = MSG_EXTERNAL_zoneTagsPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___12;
-    } else {
-      I18N_11 = $localize(_templateObject269());
+    function ZoneFormComponent_div_0_div_4_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 11);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, " Display Name: ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "mat-form-field", 9);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "input", 12);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c11);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("error", ctx_r3.form.controls.display_name.invalid && ctx_r3.form.controls.display_name.touched);
+      }
     }
 
-    var _c13 = ["placeholder", I18N_11];
+    var I18N_12;
 
-    var _c14 = function _c14() {
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_tagsLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___13 = goog.getMsg(" Tags: ");
+      I18N_12 = MSG_EXTERNAL_tagsLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___13;
+    } else {
+      I18N_12 = $localize(_templateObject269());
+    }
+
+    var I18N_14;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_zoneTagsPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___15 = goog.getMsg("Zone tags...");
+      I18N_14 = MSG_EXTERNAL_zoneTagsPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___15;
+    } else {
+      I18N_14 = $localize(_templateObject270());
+    }
+
+    var _c16 = ["placeholder", I18N_14];
+
+    var _c17 = function _c17() {
       return {
         "class": "backoffice-cross"
       };
     };
 
-    function ZoneFormComponent_div_0_div_4_mat_chip_6_Template(rf, ctx) {
+    function ZoneFormComponent_div_0_div_5_mat_chip_6_Template(rf, ctx) {
       if (rf & 1) {
-        var _r15 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+        var _r16 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-chip", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-chip", 18);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("removed", function ZoneFormComponent_div_0_div_4_mat_chip_6_Template_mat_chip_removed_0_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("removed", function ZoneFormComponent_div_0_div_5_mat_chip_6_Template_mat_chip_removed_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r16);
 
-          var tag_r13 = ctx.$implicit;
+          var tag_r14 = ctx.$implicit;
 
-          var ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](3);
+          var ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](3);
 
-          return ctx_r14.removeTag(tag_r13);
+          return ctx_r15.removeTag(tag_r14);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "app-icon", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "app-icon", 19);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
       }
 
       if (rf & 2) {
-        var tag_r13 = ctx.$implicit;
+        var tag_r14 = ctx.$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("selectable", true)("removable", true);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", tag_r13, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", tag_r14, " ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("icon", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](4, _c14));
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("icon", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](4, _c17));
       }
     }
 
-    function ZoneFormComponent_div_0_div_4_Template(rf, ctx) {
+    function ZoneFormComponent_div_0_div_5_Template(rf, ctx) {
       if (rf & 1) {
-        var _r17 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+        var _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 13);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_12);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "mat-form-field", 9);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "mat-chip-list", 12, 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "mat-chip-list", 14, 15);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, ZoneFormComponent_div_0_div_4_mat_chip_6_Template, 3, 5, "mat-chip", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, ZoneFormComponent_div_0_div_5_mat_chip_6_Template, 3, 5, "mat-chip", 16);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "input", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "input", 17);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](8, _c13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](8, _c16);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("matChipInputTokenEnd", function ZoneFormComponent_div_0_div_4_Template_input_matChipInputTokenEnd_7_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("matChipInputTokenEnd", function ZoneFormComponent_div_0_div_5_Template_input_matChipInputTokenEnd_7_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r18);
 
-          var ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+          var ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
 
-          return ctx_r16.addTag($event);
+          return ctx_r17.addTag($event);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -32435,87 +32488,43 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](5);
+        var _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](5);
 
-        var ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+        var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("error", ctx_r3.form.controls.tags.invalid && ctx_r3.form.controls.tags.touched);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("error", ctx_r4.form.controls.tags.invalid && ctx_r4.form.controls.tags.touched);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r3.tag_list);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r4.tag_list);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("matChipInputFor", _r11)("matChipInputSeparatorKeyCodes", ctx_r3.separators)("matChipInputAddOnBlur", true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("matChipInputFor", _r12)("matChipInputSeparatorKeyCodes", ctx_r4.separators)("matChipInputAddOnBlur", true);
       }
     }
 
-    var I18N_15;
+    var I18N_18;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___16 = goog.getMsg("Description:");
-      I18N_15 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___16;
+      var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___19 = goog.getMsg("Description:");
+      I18N_18 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___19;
     } else {
-      I18N_15 = $localize(_templateObject270());
-    }
-
-    var I18N_17;
-
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___18 = goog.getMsg("Description");
-      I18N_17 = MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___18;
-    } else {
-      I18N_17 = $localize(_templateObject271());
-    }
-
-    var _c19 = ["placeholder", I18N_17];
-
-    function ZoneFormComponent_div_0_div_5_Template(rf, ctx) {
-      if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 5);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 18);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_15);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "mat-form-field", 9);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "textarea", 19);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c19);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      }
+      I18N_18 = $localize(_templateObject271());
     }
 
     var I18N_20;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_locationLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___21 = goog.getMsg("Location:");
-      I18N_20 = MSG_EXTERNAL_locationLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___21;
+      var MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___21 = goog.getMsg("Description");
+      I18N_20 = MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___21;
     } else {
       I18N_20 = $localize(_templateObject272());
     }
 
-    var I18N_22;
-
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_locationPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___23 = goog.getMsg("Geo-location details for zone. <lat, long>");
-      I18N_22 = MSG_EXTERNAL_locationPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___23;
-    } else {
-      I18N_22 = $localize(_templateObject273());
-    }
-
-    var _c24 = ["placeholder", I18N_22];
+    var _c22 = ["placeholder", I18N_20];
 
     function ZoneFormComponent_div_0_div_6_Template(rf, ctx) {
       if (rf & 1) {
@@ -32523,15 +32532,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 20);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_18);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "mat-form-field", 9);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "input", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "textarea", 21);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c22);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32541,33 +32550,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
+    var I18N_23;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_locationLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___24 = goog.getMsg("Location:");
+      I18N_23 = MSG_EXTERNAL_locationLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___24;
+    } else {
+      I18N_23 = $localize(_templateObject273());
+    }
+
     var I18N_25;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_codeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___26 = goog.getMsg("Code:");
-      I18N_25 = MSG_EXTERNAL_codeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___26;
+      var MSG_EXTERNAL_locationPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___26 = goog.getMsg("Geo-location details for zone. <lat, long>");
+      I18N_25 = MSG_EXTERNAL_locationPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___26;
     } else {
       I18N_25 = $localize(_templateObject274());
     }
 
-    var I18N_27;
+    var _c27 = ["placeholder", I18N_25];
 
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_codePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___28 = goog.getMsg("Organisation Code");
-      I18N_27 = MSG_EXTERNAL_codePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___28;
-    } else {
-      I18N_27 = $localize(_templateObject275());
-    }
-
-    var _c29 = ["placeholder", I18N_27];
-
-    function ZoneFormComponent_div_0_div_8_Template(rf, ctx) {
+    function ZoneFormComponent_div_0_div_7_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 5);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 22);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32575,7 +32584,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "input", 23);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32585,25 +32594,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
+    var I18N_28;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_codeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___29 = goog.getMsg("Code:");
+      I18N_28 = MSG_EXTERNAL_codeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___29;
+    } else {
+      I18N_28 = $localize(_templateObject275());
+    }
+
     var I18N_30;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_typeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___31 = goog.getMsg("Type:");
-      I18N_30 = MSG_EXTERNAL_typeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___31;
+      var MSG_EXTERNAL_codePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___31 = goog.getMsg("Organisation Code");
+      I18N_30 = MSG_EXTERNAL_codePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___31;
     } else {
       I18N_30 = $localize(_templateObject276());
     }
 
-    var I18N_32;
-
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_zoneTypePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___33 = goog.getMsg("Organisational Categorisation");
-      I18N_32 = MSG_EXTERNAL_zoneTypePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___33;
-    } else {
-      I18N_32 = $localize(_templateObject277());
-    }
-
-    var _c34 = ["placeholder", I18N_32];
+    var _c32 = ["placeholder", I18N_30];
 
     function ZoneFormComponent_div_0_div_9_Template(rf, ctx) {
       if (rf & 1) {
@@ -32611,7 +32620,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 24);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32619,7 +32628,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "input", 25);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c34);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c32);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32629,33 +32638,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
+    var I18N_33;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_typeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___34 = goog.getMsg("Type:");
+      I18N_33 = MSG_EXTERNAL_typeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___34;
+    } else {
+      I18N_33 = $localize(_templateObject277());
+    }
+
     var I18N_35;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_countLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___36 = goog.getMsg("Count:");
-      I18N_35 = MSG_EXTERNAL_countLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___36;
+      var MSG_EXTERNAL_zoneTypePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___36 = goog.getMsg("Organisational Categorisation");
+      I18N_35 = MSG_EXTERNAL_zoneTypePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___36;
     } else {
       I18N_35 = $localize(_templateObject278());
     }
 
-    var I18N_37;
+    var _c37 = ["placeholder", I18N_35];
 
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_zoneFeatureCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___38 = goog.getMsg("Resource count. Desks, Hardware, etc.");
-      I18N_37 = MSG_EXTERNAL_zoneFeatureCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___38;
-    } else {
-      I18N_37 = $localize(_templateObject279());
-    }
-
-    var _c39 = ["placeholder", I18N_37];
-
-    function ZoneFormComponent_div_0_div_11_Template(rf, ctx) {
+    function ZoneFormComponent_div_0_div_10_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 5);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 26);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_33);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32663,7 +32672,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "input", 27);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c39);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c37);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32673,25 +32682,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
+    var I18N_38;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_countLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___39 = goog.getMsg("Count:");
+      I18N_38 = MSG_EXTERNAL_countLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___39;
+    } else {
+      I18N_38 = $localize(_templateObject279());
+    }
+
     var I18N_40;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___41 = goog.getMsg("Capacity:");
-      I18N_40 = MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___41;
+      var MSG_EXTERNAL_zoneFeatureCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___41 = goog.getMsg("Resource count. Desks, Hardware, etc.");
+      I18N_40 = MSG_EXTERNAL_zoneFeatureCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___41;
     } else {
       I18N_40 = $localize(_templateObject280());
     }
 
-    var I18N_42;
-
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_zoneCapacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___43 = goog.getMsg("Physical capacity of the zone");
-      I18N_42 = MSG_EXTERNAL_zoneCapacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___43;
-    } else {
-      I18N_42 = $localize(_templateObject281());
-    }
-
-    var _c44 = ["placeholder", I18N_42];
+    var _c42 = ["placeholder", I18N_40];
 
     function ZoneFormComponent_div_0_div_12_Template(rf, ctx) {
       if (rf & 1) {
@@ -32699,7 +32708,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 28);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_40);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_38);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32707,7 +32716,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "input", 29);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c44);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c42);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32717,25 +32726,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
+    var I18N_43;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___44 = goog.getMsg("Capacity:");
+      I18N_43 = MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___44;
+    } else {
+      I18N_43 = $localize(_templateObject281());
+    }
+
     var I18N_45;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_mapUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___46 = goog.getMsg("Map:");
-      I18N_45 = MSG_EXTERNAL_mapUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___46;
+      var MSG_EXTERNAL_zoneCapacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___46 = goog.getMsg("Physical capacity of the zone");
+      I18N_45 = MSG_EXTERNAL_zoneCapacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___46;
     } else {
       I18N_45 = $localize(_templateObject282());
     }
 
-    var I18N_47;
-
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_mapUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___48 = goog.getMsg("Map ID or URL");
-      I18N_47 = MSG_EXTERNAL_mapUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___48;
-    } else {
-      I18N_47 = $localize(_templateObject283());
-    }
-
-    var _c49 = ["placeholder", I18N_47];
+    var _c47 = ["placeholder", I18N_45];
 
     function ZoneFormComponent_div_0_div_13_Template(rf, ctx) {
       if (rf & 1) {
@@ -32743,7 +32752,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 30);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_45);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_43);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32751,7 +32760,51 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "input", 31);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c49);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c47);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      }
+    }
+
+    var I18N_48;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_mapUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___49 = goog.getMsg("Map:");
+      I18N_48 = MSG_EXTERNAL_mapUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___49;
+    } else {
+      I18N_48 = $localize(_templateObject283());
+    }
+
+    var I18N_50;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_mapUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___51 = goog.getMsg("Map ID or URL");
+      I18N_50 = MSG_EXTERNAL_mapUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___51;
+    } else {
+      I18N_50 = $localize(_templateObject284());
+    }
+
+    var _c52 = ["placeholder", I18N_50];
+
+    function ZoneFormComponent_div_0_div_14_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "label", 32);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18n"](2, I18N_48);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "mat-form-field", 9);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "input", 33);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵi18nAttributes"](5, _c52);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32771,29 +32824,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, ZoneFormComponent_div_0_div_3_Template, 9, 2, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, ZoneFormComponent_div_0_div_4_Template, 9, 6, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, ZoneFormComponent_div_0_div_4_Template, 6, 2, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, ZoneFormComponent_div_0_div_5_Template, 6, 0, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, ZoneFormComponent_div_0_div_5_Template, 9, 6, "div", 3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, ZoneFormComponent_div_0_div_6_Template, 6, 0, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, ZoneFormComponent_div_0_div_7_Template, 6, 0, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](8, ZoneFormComponent_div_0_div_8_Template, 6, 0, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "div", 4);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](9, ZoneFormComponent_div_0_div_9_Template, 6, 0, "div", 3);
 
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](10, ZoneFormComponent_div_0_div_10_Template, 6, 0, "div", 3);
+
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "div", 4);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, ZoneFormComponent_div_0_div_11_Template, 6, 0, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "div", 4);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](12, ZoneFormComponent_div_0_div_12_Template, 6, 0, "div", 3);
 
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, ZoneFormComponent_div_0_div_13_Template, 6, 0, "div", 3);
+
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, ZoneFormComponent_div_0_div_13_Template, 6, 0, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](14, ZoneFormComponent_div_0_div_14_Template, 6, 0, "div", 3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -32814,6 +32869,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.name);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.display_name);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
@@ -32987,10 +33046,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInheritDefinitionFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]],
       decls: 1,
       vars: 1,
-      consts: [["class", "zone form", 4, "ngIf"], [1, "zone", "form"], [3, "formGroup"], ["class", "field", 4, "ngIf"], [1, "fieldset"], [1, "field"], ["for", "parent-zone"], ["name", "parent-zone", "formControlName", "parent_zone", 3, "service", "exclude"], ["for", "zone-name"], ["appearance", "outline"], ["matInput", "", "name", "zone-name", "formControlName", "name", "required", "", 6, "placeholder"], ["for", "system-email"], ["aria-label", "Zone Tags"], ["chipList", ""], [3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], [3, "matChipInputFor", "matChipInputSeparatorKeyCodes", "matChipInputAddOnBlur", "matChipInputTokenEnd", 6, "placeholder"], [3, "selectable", "removable", "removed"], ["matChipRemove", "", 3, "icon"], ["for", "description"], ["matInput", "", "name", "description", "formControlName", "description", 6, "placeholder"], ["for", "location"], ["matInput", "", "name", "location", "formControlName", "location", 6, "placeholder"], ["for", "code"], ["matInput", "", "name", "code", "formControlName", "code", 6, "placeholder"], ["for", "type"], ["matInput", "", "name", "type", "formControlName", "type", 6, "placeholder"], ["for", "count"], ["matInput", "", "name", "count", "type", "number", "formControlName", "count", 6, "placeholder"], ["for", "capacity"], ["matInput", "", "name", "capacity", "type", "number", "formControlName", "capacity", 6, "placeholder"], ["for", "map"], ["matInput", "", "name", "map", "formControlName", "map_id", 6, "placeholder"]],
+      consts: [["class", "zone form", 4, "ngIf"], [1, "zone", "form"], [3, "formGroup"], ["class", "field", 4, "ngIf"], [1, "fieldset"], [1, "field"], ["for", "parent-zone"], ["name", "parent-zone", "formControlName", "parent_zone", 3, "service", "exclude"], ["for", "zone-name"], ["appearance", "outline"], ["matInput", "", "name", "zone-name", "formControlName", "name", "required", "", 6, "placeholder"], ["for", "zone-display"], ["matInput", "", "name", "zone-display", "formControlName", "display_name", 6, "placeholder"], ["for", "system-email"], ["aria-label", "Zone Tags"], ["chipList", ""], [3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], [3, "matChipInputFor", "matChipInputSeparatorKeyCodes", "matChipInputAddOnBlur", "matChipInputTokenEnd", 6, "placeholder"], [3, "selectable", "removable", "removed"], ["matChipRemove", "", 3, "icon"], ["for", "description"], ["matInput", "", "name", "description", "formControlName", "description", 6, "placeholder"], ["for", "location"], ["matInput", "", "name", "location", "formControlName", "location", 6, "placeholder"], ["for", "code"], ["matInput", "", "name", "code", "formControlName", "code", 6, "placeholder"], ["for", "type"], ["matInput", "", "name", "type", "formControlName", "type", 6, "placeholder"], ["for", "count"], ["matInput", "", "name", "count", "type", "number", "formControlName", "count", 6, "placeholder"], ["for", "capacity"], ["matInput", "", "name", "capacity", "type", "number", "formControlName", "capacity", 6, "placeholder"], ["for", "map"], ["matInput", "", "name", "map", "formControlName", "map_id", 6, "placeholder"]],
       template: function ZoneFormComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, ZoneFormComponent_div_0_Template, 14, 11, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, ZoneFormComponent_div_0_Template, 15, 12, "div", 0);
         }
 
         if (rf & 2) {
@@ -33309,7 +33368,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_3 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_2 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_3;
     } else {
-      I18N_2 = $localize(_templateObject284());
+      I18N_2 = $localize(_templateObject285());
     }
 
     I18N_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_2, {
@@ -33323,7 +33382,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_1 = MSG_EXTERNAL_copyItemAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_4;
     } else {
-      I18N_1 = $localize(_templateObject285(), I18N_2);
+      I18N_1 = $localize(_templateObject286(), I18N_2);
     }
 
     var I18N_6;
@@ -33332,7 +33391,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_7 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_6 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_7;
     } else {
-      I18N_6 = $localize(_templateObject286());
+      I18N_6 = $localize(_templateObject287());
     }
 
     I18N_6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_6, {
@@ -33346,7 +33405,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_5 = MSG_EXTERNAL_duplicateAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_8;
     } else {
-      I18N_5 = $localize(_templateObject287(), I18N_6);
+      I18N_5 = $localize(_templateObject288(), I18N_6);
     }
 
     var I18N_10;
@@ -33355,7 +33414,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_11 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_10 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_11;
     } else {
-      I18N_10 = $localize(_templateObject288());
+      I18N_10 = $localize(_templateObject289());
     }
 
     I18N_10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_10, {
@@ -33369,7 +33428,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_9 = MSG_EXTERNAL_exporeAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_12;
     } else {
-      I18N_9 = $localize(_templateObject289(), I18N_10);
+      I18N_9 = $localize(_templateObject290(), I18N_10);
     }
 
     function ItemDisplayComponent_header_1_div_5_Template(rf, ctx) {
@@ -33410,7 +33469,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_930388057628811577$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___15 = goog.getMsg("{VAR_SELECT, select, Device {Device } Logic {Logic } SSH {SSH } Websocket {Websocket } Service {Service } other {Other }}");
       I18N_14 = MSG_EXTERNAL_930388057628811577$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___15;
     } else {
-      I18N_14 = $localize(_templateObject290());
+      I18N_14 = $localize(_templateObject291());
     }
 
     I18N_14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_14, {
@@ -33424,7 +33483,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_13 = MSG_EXTERNAL_driverType$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___16;
     } else {
-      I18N_13 = $localize(_templateObject291(), I18N_14);
+      I18N_13 = $localize(_templateObject292(), I18N_14);
     }
 
     function ItemDisplayComponent_header_1_div_6_Template(rf, ctx) {
@@ -33453,7 +33512,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_1133432502520691599$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___19 = goog.getMsg("{VAR_SELECT, select, true {Online } false {Offline } other {Other }}");
       I18N_18 = MSG_EXTERNAL_1133432502520691599$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___19;
     } else {
-      I18N_18 = $localize(_templateObject292());
+      I18N_18 = $localize(_templateObject293());
     }
 
     I18N_18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_18, {
@@ -33467,7 +33526,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_17 = MSG_EXTERNAL_onlineState$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___20;
     } else {
-      I18N_17 = $localize(_templateObject293(), I18N_18);
+      I18N_17 = $localize(_templateObject294(), I18N_18);
     }
 
     function ItemDisplayComponent_header_1_div_7_Template(rf, ctx) {
@@ -33498,7 +33557,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_secure$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___22 = goog.getMsg("Secure");
       I18N_21 = MSG_EXTERNAL_secure$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___22;
     } else {
-      I18N_21 = $localize(_templateObject294());
+      I18N_21 = $localize(_templateObject295());
     }
 
     function ItemDisplayComponent_header_1_div_8_Template(rf, ctx) {
@@ -33621,7 +33680,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_927071735214087141$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___26 = goog.getMsg("{VAR_SELECT, select, About {About } Modules {Modules } Zones {Zones } Triggers {Triggers } Systems {Systems } Metadata {Metadata } Children {Children } Drivers {Drivers } History {History } Applications {Applications } Authentication {Authentication } Users {Users } Database {Database } Clusters {Clusters } Interfaces {Interfaces } MQTT Brokers {MQTT Brokers } other {Other }}");
       I18N_25 = MSG_EXTERNAL_927071735214087141$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___26;
     } else {
-      I18N_25 = $localize(_templateObject295());
+      I18N_25 = $localize(_templateObject296());
     }
 
     I18N_25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_25, {
@@ -33635,7 +33694,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_24 = MSG_EXTERNAL_tabNames$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___27;
     } else {
-      I18N_24 = $localize(_templateObject296(), I18N_25);
+      I18N_24 = $localize(_templateObject297(), I18N_25);
     }
 
     function ItemDisplayComponent_main_2_a_3_div_6_Template(rf, ctx) {
@@ -33760,7 +33819,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__32 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_31 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__32;
     } else {
-      I18N_31 = $localize(_templateObject297());
+      I18N_31 = $localize(_templateObject298());
     }
 
     I18N_31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_31, {
@@ -33774,7 +33833,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_30 = MSG_EXTERNAL_selectItem$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__33;
     } else {
-      I18N_30 = $localize(_templateObject298(), I18N_31);
+      I18N_30 = $localize(_templateObject299(), I18N_31);
     }
 
     function ItemDisplayComponent_div_3_Template(rf, ctx) {
@@ -33817,7 +33876,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__36 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_35 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__36;
     } else {
-      I18N_35 = $localize(_templateObject299());
+      I18N_35 = $localize(_templateObject300());
     }
 
     I18N_35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_35, {
@@ -33831,7 +33890,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_34 = MSG_EXTERNAL_selectItemMobile$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__37;
     } else {
-      I18N_34 = $localize(_templateObject300(), I18N_35);
+      I18N_34 = $localize(_templateObject301(), I18N_35);
     }
 
     function ItemDisplayComponent_div_4_Template(rf, ctx) {
@@ -33874,7 +33933,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_1515061680644220493$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__40 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other\n        }}");
       I18N_39 = MSG_EXTERNAL_1515061680644220493$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__40;
     } else {
-      I18N_39 = $localize(_templateObject301());
+      I18N_39 = $localize(_templateObject302());
     }
 
     I18N_39 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_39, {
@@ -33888,7 +33947,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_38 = MSG_EXTERNAL_itemLoading$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__41;
     } else {
-      I18N_38 = $localize(_templateObject302(), I18N_39);
+      I18N_38 = $localize(_templateObject303(), I18N_39);
     }
 
     function ItemDisplayComponent_div_5_Template(rf, ctx) {
@@ -33927,7 +33986,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__44 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_43 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__44;
     } else {
-      I18N_43 = $localize(_templateObject303());
+      I18N_43 = $localize(_templateObject304());
     }
 
     I18N_43 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_43, {
@@ -33941,7 +34000,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_42 = MSG_EXTERNAL_editAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__45;
     } else {
-      I18N_42 = $localize(_templateObject304(), I18N_43);
+      I18N_42 = $localize(_templateObject305(), I18N_43);
     }
 
     var _c46 = function _c46() {
@@ -34000,7 +34059,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__49 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_48 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__49;
     } else {
-      I18N_48 = $localize(_templateObject305());
+      I18N_48 = $localize(_templateObject306());
     }
 
     I18N_48 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_48, {
@@ -34014,7 +34073,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_47 = MSG_EXTERNAL_deleteAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__50;
     } else {
-      I18N_47 = $localize(_templateObject306(), I18N_48);
+      I18N_47 = $localize(_templateObject307(), I18N_48);
     }
 
     var _c51 = function _c51() {
@@ -35977,7 +36036,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_7954964908113382488$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS_2 = goog.getMsg("{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repositories {Repositories } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}");
       I18N_1 = MSG_EXTERNAL_7954964908113382488$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS_2;
     } else {
-      I18N_1 = $localize(_templateObject307());
+      I18N_1 = $localize(_templateObject308());
     }
 
     I18N_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_1, {
@@ -36016,7 +36075,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_4582722582214648803$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS__4 = goog.getMsg("\n            Exceeded quota! No new item can be created\n            until the total is below you license count.");
       I18N_3 = MSG_EXTERNAL_4582722582214648803$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS__4;
     } else {
-      I18N_3 = $localize(_templateObject308());
+      I18N_3 = $localize(_templateObject309());
     }
 
     var _c5 = ["matTooltip", I18N_3];
@@ -36132,7 +36191,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_8 = MSG_EXTERNAL_4490461035567493937$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS___9;
     } else {
-      I18N_8 = $localize(_templateObject309(), "\uFFFD0\uFFFD");
+      I18N_8 = $localize(_templateObject310(), "\uFFFD0\uFFFD");
     }
 
     function SidebarComponent_div_21_div_5_Template(rf, ctx) {
@@ -42392,7 +42451,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_1497526233588378893$$SRC_APP_SHELL_COMPONENTS_SIDEBAR_MENU_SIDEBAR_MENU_COMPONENT_TS____2 = goog.getMsg("{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repos {Repos } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}");
       I18N_1 = MSG_EXTERNAL_1497526233588378893$$SRC_APP_SHELL_COMPONENTS_SIDEBAR_MENU_SIDEBAR_MENU_COMPONENT_TS____2;
     } else {
-      I18N_1 = $localize(_templateObject310());
+      I18N_1 = $localize(_templateObject311());
     }
 
     I18N_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_1, {
@@ -42406,7 +42465,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_0 = MSG_EXTERNAL_5975271772062060140$$SRC_APP_SHELL_COMPONENTS_SIDEBAR_MENU_SIDEBAR_MENU_COMPONENT_TS____3;
     } else {
-      I18N_0 = $localize(_templateObject311(), I18N_1);
+      I18N_0 = $localize(_templateObject312(), I18N_1);
     }
 
     function SidebarMenuComponent_div_0_ng_container_1_div_4_Template(rf, ctx) {
@@ -42838,7 +42897,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_profileAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_1 = goog.getMsg("Profile");
       I18N_0 = MSG_EXTERNAL_profileAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_1;
     } else {
-      I18N_0 = $localize(_templateObject312());
+      I18N_0 = $localize(_templateObject313());
     }
 
     var I18N_2;
@@ -42847,7 +42906,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_logoutAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_3 = goog.getMsg("Logout");
       I18N_2 = MSG_EXTERNAL_logoutAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_3;
     } else {
-      I18N_2 = $localize(_templateObject313());
+      I18N_2 = $localize(_templateObject314());
     }
 
     var I18N_4;
@@ -42856,7 +42915,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_darkMode$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_5 = goog.getMsg("Dark Mode");
       I18N_4 = MSG_EXTERNAL_darkMode$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_5;
     } else {
-      I18N_4 = $localize(_templateObject314());
+      I18N_4 = $localize(_templateObject315());
     }
 
     var I18N_6;
@@ -42865,7 +42924,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_reportAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_7 = goog.getMsg("Report an Issue");
       I18N_6 = MSG_EXTERNAL_reportAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_7;
     } else {
-      I18N_6 = $localize(_templateObject315());
+      I18N_6 = $localize(_templateObject316());
     }
 
     var I18N_8;
@@ -42874,7 +42933,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_9 = goog.getMsg("New");
       I18N_8 = MSG_EXTERNAL_newAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_9;
     } else {
-      I18N_8 = $localize(_templateObject316());
+      I18N_8 = $localize(_templateObject317());
     }
 
     var I18N_10;
@@ -42883,7 +42942,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_bulkNewAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_11 = goog.getMsg("Bulk New");
       I18N_10 = MSG_EXTERNAL_bulkNewAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_11;
     } else {
-      I18N_10 = $localize(_templateObject317());
+      I18N_10 = $localize(_templateObject318());
     }
 
     var I18N_12;
@@ -42892,7 +42951,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newSystemAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_13 = goog.getMsg("{VAR_SELECT, select, true {Systems } false {System }}");
       I18N_12 = MSG_EXTERNAL_newSystemAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_13;
     } else {
-      I18N_12 = $localize(_templateObject318());
+      I18N_12 = $localize(_templateObject319());
     }
 
     I18N_12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_12, {
@@ -42904,7 +42963,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newZoneAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_15 = goog.getMsg("{VAR_SELECT, select, true {Zones } false {Zone }}");
       I18N_14 = MSG_EXTERNAL_newZoneAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_15;
     } else {
-      I18N_14 = $localize(_templateObject319());
+      I18N_14 = $localize(_templateObject320());
     }
 
     I18N_14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_14, {
@@ -42916,7 +42975,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newDriverAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_17 = goog.getMsg("{VAR_SELECT, select, true {Drivers } false {Driver }}");
       I18N_16 = MSG_EXTERNAL_newDriverAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_17;
     } else {
-      I18N_16 = $localize(_templateObject320());
+      I18N_16 = $localize(_templateObject321());
     }
 
     I18N_16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_16, {
@@ -42928,7 +42987,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newModuleAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_19 = goog.getMsg("{VAR_SELECT, select, true {Modules } false {Module }}");
       I18N_18 = MSG_EXTERNAL_newModuleAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_19;
     } else {
-      I18N_18 = $localize(_templateObject321());
+      I18N_18 = $localize(_templateObject322());
     }
 
     I18N_18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_18, {
@@ -42940,7 +42999,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newUserAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_21 = goog.getMsg("{VAR_SELECT, select, true {Users } false {User }}");
       I18N_20 = MSG_EXTERNAL_newUserAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_21;
     } else {
-      I18N_20 = $localize(_templateObject322());
+      I18N_20 = $localize(_templateObject323());
     }
 
     I18N_20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_20, {
@@ -43045,7 +43104,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_languageAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS__24 = goog.getMsg("Language");
       I18N_23 = MSG_EXTERNAL_languageAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS__24;
     } else {
-      I18N_23 = $localize(_templateObject323());
+      I18N_23 = $localize(_templateObject324());
     }
 
     var _c25 = function _c25() {
@@ -44160,7 +44219,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_rootLoader$$SRC_APP_SHELL_SHELL_COMPONENT_TS__1 = goog.getMsg("Loading application data...");
       I18N_0 = MSG_EXTERNAL_rootLoader$$SRC_APP_SHELL_SHELL_COMPONENT_TS__1;
     } else {
-      I18N_0 = $localize(_templateObject324());
+      I18N_0 = $localize(_templateObject325());
     }
 
     function AppShellComponent_div_1_Template(rf, ctx) {
@@ -44398,16 +44457,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "19e7e0d",
-      "hash": "19e7e0d",
+      "raw": "4d809fe",
+      "hash": "4d809fe",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "19e7e0d",
+      "suffix": "4d809fe",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1592889459908
+      "time": 1592954343940
     };
     /* tslint:enable */
 
