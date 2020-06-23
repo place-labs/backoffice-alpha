@@ -22837,7 +22837,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r6.role === "ssh");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r6.role === "ssh" || ctx_r6.role === "device");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
@@ -23026,7 +23026,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r11.role === "websocket");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r11.role === "websocket" || ctx_r11.role === "service");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
@@ -40128,7 +40128,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       var fields = {
         ip: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.ip || '', [_validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateIpAddress"]]),
-        port: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.port || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535)]),
+        port: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.port || null, [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535)]),
         tls: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.tls || false),
         udp: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.udp || false),
         makebreak: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.makebreak || false),
@@ -40167,11 +40167,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           resetModuleFormValidators(fields);
 
           switch (value.role) {
+            case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDriverRole"].Service:
             case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDriverRole"].Websocket:
               fields.uri.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required, _validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateURI"]]);
               fields.udp.setValue(false);
               break;
 
+            case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDriverRole"].Device:
             case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDriverRole"].SSH:
               fields.ip.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateIpAddress"], _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]);
               fields.port.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]);
@@ -44396,16 +44398,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "b7b2c38",
-      "hash": "b7b2c38",
+      "raw": "19e7e0d",
+      "hash": "19e7e0d",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "b7b2c38",
+      "suffix": "19e7e0d",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1592886383284
+      "time": 1592889459908
     };
     /* tslint:enable */
 
