@@ -19493,9 +19493,7 @@ function generateModuleFormFields(module) {
         subscriptions.push(fields.driver.valueChanges.subscribe((value) => {
             module.storePendingChange('driver_id', value.id);
             fields.name.setValue(value.name || value.module_name);
-            if (value.default_uri) {
-                fields.uri.setValue(value.default_uri);
-            }
+            fields.uri.setValue(value.default_uri);
             fields.port.setValue(value.default_port || 1);
             resetModuleFormValidators(fields);
             switch (value.role) {
@@ -21696,16 +21694,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "729cfba",
-    "hash": "729cfba",
+    "raw": "b7b2c38",
+    "hash": "b7b2c38",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "729cfba",
+    "suffix": "b7b2c38",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1592885787523
+    "time": 1592886383284
 };
 /* tslint:enable */
 
