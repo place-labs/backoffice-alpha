@@ -19457,9 +19457,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resetModuleFormValidators", function() { return resetModuleFormValidators; });
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 /* harmony import */ var _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @placeos/ts-client */ "./node_modules/@placeos/ts-client/dist/ts-client.es5.js");
-/* harmony import */ var _systems_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./systems.utilities */ "./src/app/shared/utilities/data/systems.utilities.ts");
-/* harmony import */ var _validation_utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../validation.utilities */ "./src/app/shared/utilities/validation.utilities.ts");
-
+/* harmony import */ var _validation_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../validation.utilities */ "./src/app/shared/utilities/validation.utilities.ts");
 
 
 
@@ -19468,13 +19466,13 @@ function generateModuleFormFields(module) {
         throw Error('No Module passed to generate form fields');
     }
     const fields = {
-        ip: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.ip || '', [_validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateIpAddress"]]),
+        ip: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.ip || '', [_validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateIpAddress"]]),
         port: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.port || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535)]),
         tls: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.tls || false),
         udp: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.udp || false),
         makebreak: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.makebreak || false),
         ignore_connected: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.ignore_connected || false),
-        uri: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.uri || '', [_validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateURI"]]),
+        uri: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.uri || '', [_validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateURI"]]),
         notes: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.notes || ''),
         name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.name || ''),
         custom_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](module.custom_name || ''),
@@ -19495,16 +19493,18 @@ function generateModuleFormFields(module) {
         subscriptions.push(fields.driver.valueChanges.subscribe((value) => {
             module.storePendingChange('driver_id', value.id);
             fields.name.setValue(value.name || value.module_name);
-            fields.uri.setValue(value.default_uri);
+            if (value.default_uri) {
+                fields.uri.setValue(value.default_uri);
+            }
             fields.port.setValue(value.default_port || 1);
             resetModuleFormValidators(fields);
             switch (value.role) {
                 case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDriverRole"].Websocket:
-                    fields.uri.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required, _validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateURI"]]);
+                    fields.uri.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required, _validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateURI"]]);
                     fields.udp.setValue(false);
                     break;
                 case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDriverRole"].SSH:
-                    fields.ip.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateIpAddress"], _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]);
+                    fields.ip.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateIpAddress"], _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]);
                     fields.port.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]);
                     break;
                 case _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDriverRole"].Logic:
@@ -19523,12 +19523,12 @@ function generateModuleFormFields(module) {
     };
 }
 function resetModuleFormValidators(fields) {
-    fields.ip.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateIpAddress"]]),
-        fields.port.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535)]),
-        fields.uri.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateURI"]]),
-        fields.settings_string.setValidators([_systems_utilities__WEBPACK_IMPORTED_MODULE_2__["validateYAML"]]),
-        fields.system.setValidators([]),
-        fields.driver.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]);
+    fields.ip.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateIpAddress"]]);
+    fields.port.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535)]);
+    fields.uri.setValidators([_validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateURI"]]);
+    // fields.settings_string.setValidators([validateYAML]);
+    fields.system.setValidators([]);
+    fields.driver.setValidators([_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]);
 }
 
 
@@ -20332,8 +20332,12 @@ const validateIpAddress = (ctrl) => /^(25[0-5]|2[0-4][0-9]|1?[0-9][0-9]?)\.(25[0
     ? null
     : { pattern: true };
 const validateURI = (ctrl) => {
-    console.log('Value:', ctrl.value);
-    return /\w+:(\/?\/?)[^\s]+?/gm.test(ctrl.value || '') ? null : { pattern: true };
+    if (!ctrl.value) {
+        return null;
+    }
+    else {
+        return /\w+:(\/?\/?)[^\s]+?/gm.test(ctrl.value) ? null : { pattern: true };
+    }
 };
 const validateURL = _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern(/^(?:(http(s)?):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/g);
 function validateJSONString(control) {
@@ -21692,16 +21696,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "dc2b72d",
-    "hash": "dc2b72d",
+    "raw": "729cfba",
+    "hash": "729cfba",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "dc2b72d",
+    "suffix": "729cfba",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1592403284387
+    "time": 1592885787523
 };
 /* tslint:enable */
 
