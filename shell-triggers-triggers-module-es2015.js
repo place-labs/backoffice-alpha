@@ -679,9 +679,9 @@ function TriggerSystemsComponent_div_0_table_2_tr_9_a_4_Template(rf, ctx) { if (
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const trigger_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](3, _c4, trigger_r5.system_id))("matTooltip", trigger_r5.system_id);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](3, _c4, trigger_r5.id))("matTooltip", trigger_r5.id);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", trigger_r5.system_name, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", trigger_r5.name, " ");
 } }
 const _c5 = function () { return { class: "backoffice-trash" }; };
 function TriggerSystemsComponent_div_0_table_2_tr_9_Template(rf, ctx) { if (rf & 1) {
@@ -707,9 +707,9 @@ function TriggerSystemsComponent_div_0_table_2_tr_9_Template(rf, ctx) { if (rf &
 } if (rf & 2) {
     const trigger_r5 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("active", trigger_r5.enabled);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("active", trigger_r5.bookable);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", trigger_r5.system_id);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", trigger_r5.id);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](7, 5, (trigger_r5.created_at - 0) * 1000));
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
