@@ -80,23 +80,31 @@ else {
 }
 var I18N_12;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13 = goog.getMsg("Description:");
-    I18N_12 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13;
+    const MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13 = goog.getMsg("Commit hash:");
+    I18N_12 = MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13;
 }
 else {
-    I18N_12 = $localize `:@@descriptionLabel␟4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad␟6996799422725544865:Description:`;
+    I18N_12 = $localize `:@@repoUriLabel␟682ca154aba791fe87aa293b29c921247e12da9c␟7502103762200984555:Commit hash:`;
 }
 var I18N_14;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repoPullAction$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS___15 = goog.getMsg("Pull");
-    I18N_14 = MSG_EXTERNAL_repoPullAction$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS___15;
+    const MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__15 = goog.getMsg("Description:");
+    I18N_14 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__15;
 }
 else {
-    I18N_14 = $localize `:@@repoPullAction␟74d3b9d5b6586b4961d0bf8fa1a62047d2448e12␟7593000025262916359:Pull`;
+    I18N_14 = $localize `:@@descriptionLabel␟4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad␟6996799422725544865:Description:`;
+}
+var I18N_16;
+if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+    const MSG_EXTERNAL_repoPullAction$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS___17 = goog.getMsg("Pull");
+    I18N_16 = MSG_EXTERNAL_repoPullAction$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS___17;
+}
+else {
+    I18N_16 = $localize `:@@repoPullAction␟74d3b9d5b6586b4961d0bf8fa1a62047d2448e12␟7593000025262916359:Pull`;
 }
 function RepositoryAboutComponent_div_0_ng_container_8_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_16);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 } }
 function RepositoryAboutComponent_div_0_Template(rf, ctx) { if (rf & 1) {
@@ -153,6 +161,14 @@ function RepositoryAboutComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "label");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](34, I18N_14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -168,9 +184,11 @@ function RepositoryAboutComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.item.folder_name || "No folder set");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("href", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](25, 8, ctx_r0.item.uri, "url"), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("href", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](25, 9, ctx_r0.item.uri, "url"), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.item.uri || "No URI set");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.item.commit_hash || "No Commit hash set");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.item.description || "No description");
 } }
@@ -203,7 +221,7 @@ class RepositoryAboutComponent extends _shared_globals_base_directive__WEBPACK_I
 }
 RepositoryAboutComponent.ɵfac = function RepositoryAboutComponent_Factory(t) { return new (t || RepositoryAboutComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_app_service__WEBPACK_IMPORTED_MODULE_2__["ApplicationService"])); };
 RepositoryAboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: RepositoryAboutComponent, selectors: [["repository-about"]], inputs: { item: "item" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]], decls: 3, vars: 1, consts: [["class", "container", 4, "ngIf"], ["spinner", ""], [1, "container"], [1, "actions"], ["mat-button", "", 3, "disabled", "tapped"], [4, "ngIf", "ngIfElse"], [1, "details"], [1, "field"], [1, "value"], [3, "href"], [1, "spinner"], ["diameter", "32"]], template: function RepositoryAboutComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, RepositoryAboutComponent_div_0_Template, 32, 11, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, RepositoryAboutComponent_div_0_Template, 37, 12, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, RepositoryAboutComponent_ng_template_1_Template, 2, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.item);

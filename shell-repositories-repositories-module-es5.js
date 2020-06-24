@@ -2,8 +2,18 @@ function _get(target, property, receiver) { if (typeof Reflect !== "undefined" &
 
 function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
 
-function _templateObject12() {
+function _templateObject13() {
   var data = _taggedTemplateLiteral([":@@driverListLoading\u241F929bfd86e4829c0b7401762d92f52536a57ca6c0\u241F4949757592530193773:Loading driver list..."]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = _taggedTemplateLiteral([":@@driverListEmpty\u241F0b0bbe90203a8b9ff0681db976d02fbcd960cb85\u241F6121742772920538074:No drivers for repository"]);
 
   _templateObject12 = function _templateObject12() {
     return data;
@@ -13,7 +23,7 @@ function _templateObject12() {
 }
 
 function _templateObject11() {
-  var data = _taggedTemplateLiteral([":@@driverListEmpty\u241F0b0bbe90203a8b9ff0681db976d02fbcd960cb85\u241F6121742772920538074:No drivers for repository"]);
+  var data = _taggedTemplateLiteral([":@@driverListname\u241Fcff1428d10d59d14e45edec3c735a27b5482db59\u241F8953033926734869941:Name"]);
 
   _templateObject11 = function _templateObject11() {
     return data;
@@ -23,19 +33,9 @@ function _templateObject11() {
 }
 
 function _templateObject10() {
-  var data = _taggedTemplateLiteral([":@@driverListname\u241Fcff1428d10d59d14e45edec3c735a27b5482db59\u241F8953033926734869941:Name"]);
-
-  _templateObject10 = function _templateObject10() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject9() {
   var data = _taggedTemplateLiteral([":@@repoDriverHeader\u241F0fb2961dd5d0938e459c98921d1effe1d21e759b\u241F4782277420149557084:Available Drivers"]);
 
-  _templateObject9 = function _templateObject9() {
+  _templateObject10 = function _templateObject10() {
     return data;
   };
 
@@ -62,8 +62,18 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _templateObject8() {
+function _templateObject9() {
   var data = _taggedTemplateLiteral([":@@repoPullAction\u241F74d3b9d5b6586b4961d0bf8fa1a62047d2448e12\u241F7593000025262916359:Pull"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -73,7 +83,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
+  var data = _taggedTemplateLiteral([":@@repoUriLabel\u241F682ca154aba791fe87aa293b29c921247e12da9c\u241F7502103762200984555:Commit hash:"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -283,8 +293,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     var I18N_12;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13 = goog.getMsg("Description:");
-      I18N_12 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13;
+      var MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13 = goog.getMsg("Commit hash:");
+      I18N_12 = MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13;
     } else {
       I18N_12 = $localize(_templateObject7());
     }
@@ -292,17 +302,26 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     var I18N_14;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repoPullAction$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS___15 = goog.getMsg("Pull");
-      I18N_14 = MSG_EXTERNAL_repoPullAction$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS___15;
+      var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__15 = goog.getMsg("Description:");
+      I18N_14 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__15;
     } else {
       I18N_14 = $localize(_templateObject8());
+    }
+
+    var I18N_16;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_repoPullAction$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS___17 = goog.getMsg("Pull");
+      I18N_16 = MSG_EXTERNAL_repoPullAction$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS___17;
+    } else {
+      I18N_16 = $localize(_templateObject9());
     }
 
     function RepositoryAboutComponent_div_0_ng_container_8_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_16);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
       }
@@ -422,6 +441,22 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 7);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "label");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](34, I18N_14);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div", 8);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -452,11 +487,15 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("href", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](25, 8, ctx_r0.item.uri, "url"), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("href", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](25, 9, ctx_r0.item.uri, "url"), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.item.uri || "No URI set");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.item.commit_hash || "No Commit hash set");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
@@ -540,7 +579,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       consts: [["class", "container", 4, "ngIf"], ["spinner", ""], [1, "container"], [1, "actions"], ["mat-button", "", 3, "disabled", "tapped"], [4, "ngIf", "ngIfElse"], [1, "details"], [1, "field"], [1, "value"], [3, "href"], [1, "spinner"], ["diameter", "32"]],
       template: function RepositoryAboutComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, RepositoryAboutComponent_div_0_Template, 32, 11, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, RepositoryAboutComponent_div_0_Template, 37, 12, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, RepositoryAboutComponent_ng_template_1_Template, 2, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         }
@@ -675,7 +714,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       var MSG_EXTERNAL_repoDriverHeader$$SRC_APP_SHELL_REPOSITORIES_DRIVERS_REPOSITORY_DRIVERS_COMPONENT_TS__1 = goog.getMsg("Available Drivers");
       I18N_0 = MSG_EXTERNAL_repoDriverHeader$$SRC_APP_SHELL_REPOSITORIES_DRIVERS_REPOSITORY_DRIVERS_COMPONENT_TS__1;
     } else {
-      I18N_0 = $localize(_templateObject9());
+      I18N_0 = $localize(_templateObject10());
     }
 
     var I18N_2;
@@ -684,7 +723,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       var MSG_EXTERNAL_driverListname$$SRC_APP_SHELL_REPOSITORIES_DRIVERS_REPOSITORY_DRIVERS_COMPONENT_TS____3 = goog.getMsg("Name");
       I18N_2 = MSG_EXTERNAL_driverListname$$SRC_APP_SHELL_REPOSITORIES_DRIVERS_REPOSITORY_DRIVERS_COMPONENT_TS____3;
     } else {
-      I18N_2 = $localize(_templateObject10());
+      I18N_2 = $localize(_templateObject11());
     }
 
     var _c4 = function _c4() {
@@ -780,7 +819,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       var MSG_EXTERNAL_driverListEmpty$$SRC_APP_SHELL_REPOSITORIES_DRIVERS_REPOSITORY_DRIVERS_COMPONENT_TS____6 = goog.getMsg("No drivers for repository");
       I18N_5 = MSG_EXTERNAL_driverListEmpty$$SRC_APP_SHELL_REPOSITORIES_DRIVERS_REPOSITORY_DRIVERS_COMPONENT_TS____6;
     } else {
-      I18N_5 = $localize(_templateObject11());
+      I18N_5 = $localize(_templateObject12());
     }
 
     function RepositoryDriversComponent_div_0_div_3_div_2_Template(rf, ctx) {
@@ -853,7 +892,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       var MSG_EXTERNAL_driverListLoading$$SRC_APP_SHELL_REPOSITORIES_DRIVERS_REPOSITORY_DRIVERS_COMPONENT_TS__8 = goog.getMsg("Loading driver list...");
       I18N_7 = MSG_EXTERNAL_driverListLoading$$SRC_APP_SHELL_REPOSITORIES_DRIVERS_REPOSITORY_DRIVERS_COMPONENT_TS__8;
     } else {
-      I18N_7 = $localize(_templateObject12());
+      I18N_7 = $localize(_templateObject13());
     }
 
     function RepositoryDriversComponent_ng_template_1_Template(rf, ctx) {
