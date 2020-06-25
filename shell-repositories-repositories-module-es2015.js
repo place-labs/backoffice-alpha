@@ -80,11 +80,11 @@ else {
 }
 var I18N_12;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13 = goog.getMsg("Commit hash:");
-    I18N_12 = MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13;
+    const MSG_EXTERNAL_repoCommitHashLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13 = goog.getMsg("Commit hash:");
+    I18N_12 = MSG_EXTERNAL_repoCommitHashLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13;
 }
 else {
-    I18N_12 = $localize `:@@repoUriLabel␟682ca154aba791fe87aa293b29c921247e12da9c␟7502103762200984555:Commit hash:`;
+    I18N_12 = $localize `:@@repoCommitHashLabel␟682ca154aba791fe87aa293b29c921247e12da9c␟7502103762200984555:Commit hash:`;
 }
 var I18N_14;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {

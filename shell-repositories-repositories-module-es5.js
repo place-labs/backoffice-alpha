@@ -83,7 +83,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral([":@@repoUriLabel\u241F682ca154aba791fe87aa293b29c921247e12da9c\u241F7502103762200984555:Commit hash:"]);
+  var data = _taggedTemplateLiteral([":@@repoCommitHashLabel\u241F682ca154aba791fe87aa293b29c921247e12da9c\u241F7502103762200984555:Commit hash:"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -293,8 +293,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     var I18N_12;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13 = goog.getMsg("Commit hash:");
-      I18N_12 = MSG_EXTERNAL_repoUriLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13;
+      var MSG_EXTERNAL_repoCommitHashLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13 = goog.getMsg("Commit hash:");
+      I18N_12 = MSG_EXTERNAL_repoCommitHashLabel$$SRC_APP_SHELL_REPOSITORIES_ABOUT_REPOSITORY_ABOUT_COMPONENT_TS__13;
     } else {
       I18N_12 = $localize(_templateObject7());
     }
