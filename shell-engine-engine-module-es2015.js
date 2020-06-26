@@ -38422,7 +38422,7 @@ class EngineDetailsComponent extends src_app_shared_globals_base_directive__WEBP
         return this._service.Users.current();
     }
     get backoffice_version() {
-        return src_environments_version__WEBPACK_IMPORTED_MODULE_4__["VERSION"].semver.version;
+        return src_environments_version__WEBPACK_IMPORTED_MODULE_4__["VERSION"].semver ? src_environments_version__WEBPACK_IMPORTED_MODULE_4__["VERSION"].semver.version : '';
     }
     get backoffice_build() {
         const build = dayjs__WEBPACK_IMPORTED_MODULE_3__(src_environments_version__WEBPACK_IMPORTED_MODULE_4__["VERSION"].time);
