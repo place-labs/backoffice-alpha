@@ -309,7 +309,7 @@ function _templateObject297() {
 }
 
 function _templateObject296() {
-  var data = _taggedTemplateLiteral([":@@onlineState\u241F7660aaa8fa61bddb05966595d391bb27b3bfb67c\u241F2757699679594366926: ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":@@onlineState\u241F7331d11693e30136c2a6ec57c8eea1caf1124fa2\u241F2757699679594366926: ", ":ICU: "]);
 
   _templateObject296 = function _templateObject296() {
     return data;
@@ -319,7 +319,7 @@ function _templateObject296() {
 }
 
 function _templateObject295() {
-  var data = _taggedTemplateLiteral([":\u241Fdf3256642015f9f9c6e01ba29f1f5f74f18a67ff\u241F1133432502520691599:{VAR_SELECT, select, true {Online } false {Offline } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":\u241F01b7d133a633a7836d0192085668b6ad2ccad2ab\u241F1133432502520691599:{VAR_SELECT, select, true {Online } false {Offline } other {Other }}"]);
 
   _templateObject295 = function _templateObject295() {
     return data;
@@ -33611,11 +33611,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 2) {
         var ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("active", ctx_r10.item.connected);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("active", ctx_r10.item.running);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nExp"](ctx_r10.item.connected);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nExp"](ctx_r10.item.running);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nApply"](1);
       }
@@ -33732,7 +33732,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.item.connected !== null && ctx_r0.item.connected !== undefined);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.item.running !== null && ctx_r0.item.running !== undefined);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
@@ -44527,16 +44527,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "5f99c14",
-      "hash": "5f99c14",
+      "raw": "f9ec750",
+      "hash": "f9ec750",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "5f99c14",
+      "suffix": "f9ec750",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1593135051347
+      "time": 1593137680748
     };
     /* tslint:enable */
 
