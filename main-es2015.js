@@ -12716,7 +12716,7 @@ function SystemFormComponent_div_0_div_12_mat_chip_6_Template(rf, ctx) { if (rf 
 function SystemFormComponent_div_0_div_12_Template(rf, ctx) { if (rf & 1) {
     const _r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_43);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-form-field", 11);
@@ -12733,7 +12733,7 @@ function SystemFormComponent_div_0_div_12_Template(rf, ctx) { if (rf & 1) {
     const _r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](5);
     const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r9.form.controls.tag_list.invalid && ctx_r9.form.controls.tag_list.touched);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r9.form.controls.features.invalid && ctx_r9.form.controls.features.touched);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r9.feature_list);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
@@ -12808,7 +12808,7 @@ function SystemFormComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.description);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.tag_list);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.features);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.map_id);
 } }
@@ -12824,10 +12824,10 @@ class SystemFormComponent extends src_app_shared_globals_base_directive__WEBPACK
             { id: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EncryptionLevel"].NeverDisplay, name: 'Never Display' }
         ];
         /** List of separator characters for features */
-        this.separators = [_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["SPACE"]];
+        this.separators = [_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["COMMA"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["SPACE"]];
     }
     get feature_list() {
-        return this.form.controls.feature_list.value;
+        return this.form.controls.features.value;
     }
     /** Service for handling zones */
     get zone_service() {
@@ -12838,14 +12838,14 @@ class SystemFormComponent extends src_app_shared_globals_base_directive__WEBPACK
      * @param event Input event
      */
     addFeature(event) {
-        if (!this.form || !this.form.controls.feature_list)
+        if (!this.form || !this.form.controls.features)
             return;
         const input = event.input;
         const value = event.value;
         const feature_list = this.feature_list;
         if ((value || '').trim()) {
             feature_list.push(value);
-            this.form.controls.feature_list.setValue(feature_list);
+            this.form.controls.features.setValue(feature_list);
         }
         // Reset the input value
         if (input) {
@@ -12857,18 +12857,18 @@ class SystemFormComponent extends src_app_shared_globals_base_directive__WEBPACK
      * @param existing_feature Feature to remove
      */
     removeFeature(existing_feature) {
-        if (!this.form || !this.form.controls.feature_list)
+        if (!this.form || !this.form.controls.features)
             return;
         const feature_list = this.feature_list;
         const index = feature_list.indexOf(existing_feature);
         if (index >= 0) {
             feature_list.splice(index, 1);
-            this.form.controls.feature_list.setValue(feature_list);
+            this.form.controls.features.setValue(feature_list);
         }
     }
 }
 SystemFormComponent.ɵfac = function SystemFormComponent_Factory(t) { return new (t || SystemFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_app_service__WEBPACK_IMPORTED_MODULE_4__["ApplicationService"])); };
-SystemFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SystemFormComponent, selectors: [["system-form"]], inputs: { form: "form" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]], decls: 1, vars: 1, consts: [["class", "system form", 4, "ngIf"], [1, "system", "form"], [3, "formGroup"], ["class", "field", 4, "ngIf"], [1, "fieldset"], [1, "field"], ["for", "zone"], ["formControlName", "zone", 3, "service"], ["class", "error", 4, "ngIf"], [1, "error"], ["for", "system-name"], ["appearance", "outline"], ["matInput", "", "name", "system-name", "formControlName", "name", "required", "", 6, "placeholder"], [4, "ngIf"], ["for", "system-email"], ["matInput", "", "name", "system-email", "formControlName", "email", 6, "placeholder"], ["for", "support-url"], ["matInput", "", "name", "support-url", "formControlName", "support_url", 6, "placeholder"], ["for", "ui-devices"], ["matInput", "", "name", "ui-devices", "type", "number", "formControlName", "installed_ui_devices", 6, "placeholder"], ["for", "capacity"], ["matInput", "", "name", "capacity", "type", "number", "formControlName", "capacity", 6, "placeholder"], ["name", "bookable", "formControlName", "bookable"], ["for", "description"], ["matInput", "", "name", "description", "placeholder", "Description", "formControlName", "description"], ["aria-label", "Zone Tags"], ["chipList", ""], [3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], [3, "matChipInputFor", "matChipInputSeparatorKeyCodes", "matChipInputAddOnBlur", "matChipInputTokenEnd", 6, "placeholder"], [3, "selectable", "removable", "removed"], ["matChipRemove", "", 3, "icon"], ["for", "map_id"], ["matInput", "", "name", "map_id", "formControlName", "map_id", 6, "placeholder"]], template: function SystemFormComponent_Template(rf, ctx) { if (rf & 1) {
+SystemFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SystemFormComponent, selectors: [["system-form"]], inputs: { form: "form" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]], decls: 1, vars: 1, consts: [["class", "system form", 4, "ngIf"], [1, "system", "form"], [3, "formGroup"], ["class", "field", 4, "ngIf"], [1, "fieldset"], [1, "field"], ["for", "zone"], ["formControlName", "zone", 3, "service"], ["class", "error", 4, "ngIf"], [1, "error"], ["for", "system-name"], ["appearance", "outline"], ["matInput", "", "name", "system-name", "formControlName", "name", "required", "", 6, "placeholder"], [4, "ngIf"], ["for", "system-email"], ["matInput", "", "name", "system-email", "formControlName", "email", 6, "placeholder"], ["for", "support-url"], ["matInput", "", "name", "support-url", "formControlName", "support_url", 6, "placeholder"], ["for", "ui-devices"], ["matInput", "", "name", "ui-devices", "type", "number", "formControlName", "installed_ui_devices", 6, "placeholder"], ["for", "capacity"], ["matInput", "", "name", "capacity", "type", "number", "formControlName", "capacity", 6, "placeholder"], ["name", "bookable", "formControlName", "bookable"], ["for", "description"], ["matInput", "", "name", "description", "placeholder", "Description", "formControlName", "description"], ["aria-label", "System features"], ["chipList", ""], [3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], [3, "matChipInputFor", "matChipInputSeparatorKeyCodes", "matChipInputAddOnBlur", "matChipInputTokenEnd", 6, "placeholder"], [3, "selectable", "removable", "removed"], ["matChipRemove", "", 3, "icon"], ["for", "map_id"], ["matInput", "", "name", "map_id", "formControlName", "map_id", 6, "placeholder"]], template: function SystemFormComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, SystemFormComponent_div_0_Template, 14, 11, "div", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.form);
@@ -15418,7 +15418,7 @@ class ZoneFormComponent extends src_app_shared_globals_base_directive__WEBPACK_I
         super();
         this._service = _service;
         /** List of separator characters for tags */
-        this.separators = [_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["COMMA"]];
+        this.separators = [_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["COMMA"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["SPACE"]];
         /** Function to exclude zones */
         this.exclude = (zone) => zone.id === this.form.controls.id.value;
     }
@@ -19688,7 +19688,7 @@ function generateSystemsFormFields(system) {
         installed_ui_devices: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.installed_ui_devices || 0, [
             _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern('[0-9]*')
         ]),
-        feature_list: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.features ? system.features.split(' ') : []),
+        features: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.features || []),
         capacity: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.capacity || 0, [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern('[0-9]*')]),
         bookable: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.bookable || false),
         description: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.description || ''),
@@ -21756,16 +21756,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "cbfa622",
-    "hash": "cbfa622",
+    "raw": "5f99c14",
+    "hash": "5f99c14",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "cbfa622",
+    "suffix": "5f99c14",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1593057924927
+    "time": 1593135051347
 };
 /* tslint:enable */
 
