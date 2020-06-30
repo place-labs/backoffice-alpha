@@ -17909,7 +17909,7 @@ const REPO_DATA = [
         name: 'PlaceOS Drivers',
         folder_name: 'drivers/placeos',
         uri: 'https://github.com/PlaceOS/drivers',
-        commit_hash: 'head',
+        commit_hash: 'HEAD',
         type: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_0__["EngineRepositoryType"].Driver,
     },
 ];
@@ -19631,7 +19631,7 @@ function generateRepositoryFormFields(repository) {
     }
     fields.branch.disable();
     if (!repository.id) {
-        repository.storePendingChange('commit_hash', 'head');
+        repository.storePendingChange('commit_hash', 'HEAD');
     }
     else {
         delete fields.folder_name;
@@ -21757,16 +21757,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "4db36ab",
-    "hash": "4db36ab",
+    "raw": "6dfc133",
+    "hash": "6dfc133",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "4db36ab",
+    "suffix": "6dfc133",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1593480268339
+    "time": 1593481513175
 };
 /* tslint:enable */
 

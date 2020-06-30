@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1593480343019,
+  "timestamp": 1593481589878,
   "index": "/backoffice/index.html",
   "assetGroups": [
     {
@@ -359,8 +359,8 @@
     "/backoffice/default~shell-systems-systems-module~shell-triggers-triggers-module-es5.js": "3f5f0c2ab568e63eaaf9e28558a4ee682b0cdce5",
     "/backoffice/favicon.ico": "fdc860283294c177c4935459507f4976ac8d7219",
     "/backoffice/index.html": "c56f4965718c01860191921844d55229731f805b",
-    "/backoffice/main-es2015.js": "abe52c35d07c1afba6d036914f2fa4af75ebc23f",
-    "/backoffice/main-es5.js": "5742bc28ed33ed2779315f30974fcd057602df84",
+    "/backoffice/main-es2015.js": "7349a8c3f39bc6daff4736a50d9cfe894535333e",
+    "/backoffice/main-es5.js": "b82efc29850d42d8012bb6d11b518b159402de66",
     "/backoffice/manifest.webmanifest": "988c96618f8c1e129ecc6572821b7dc2e2a291a5",
     "/backoffice/polyfills-es2015.js": "ed8cb14e65da036fd9781a9252006ed38f833296",
     "/backoffice/polyfills-es5.js": "0761355f2e661884c6a24b60a219747ca88e70b7",
