@@ -19685,19 +19685,21 @@ function generateSystemsFormFields(system) {
         email: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.email || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].email]),
         support_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.support_url || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern(URL_PATTERN)]),
         installed_ui_devices: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.installed_ui_devices || 0, [
-            _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern('[0-9]*')
+            _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern('[0-9]*'),
         ]),
-        features: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.features || []),
+        features: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"]((typeof system.features === 'string'
+            ? system.features.split(' ')
+            : system.features) || []),
         capacity: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.capacity || 0, [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern('[0-9]*')]),
         bookable: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.bookable || false),
         description: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.description || ''),
         map_id: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.map_id || ''),
-        zone: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required])
+        zone: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
     };
     const subscriptions = [];
     for (const key in fields) {
         if (fields[key] && key.indexOf('settings') < 0) {
-            subscriptions.push(fields[key].valueChanges.subscribe(value => system.storePendingChange(key, value)));
+            subscriptions.push(fields[key].valueChanges.subscribe((value) => system.storePendingChange(key, value)));
         }
     }
     if (!system.id) {
@@ -19708,7 +19710,7 @@ function generateSystemsFormFields(system) {
     }
     return {
         form: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormGroup"](fields),
-        subscriptions
+        subscriptions,
     };
 }
 
@@ -21755,16 +21757,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "c18be22",
-    "hash": "c18be22",
+    "raw": "4db36ab",
+    "hash": "4db36ab",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "c18be22",
+    "suffix": "4db36ab",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1593478508895
+    "time": 1593480268339
 };
 /* tslint:enable */
 
