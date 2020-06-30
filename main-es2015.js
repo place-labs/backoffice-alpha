@@ -8523,17 +8523,12 @@ else {
 }
 var I18N_9;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-    const MSG_EXTERNAL_domainError$$SRC_APP_SHARED_COMPONENTS_FORMS_DOMAIN_FORM_DOMAIN_FORM_COMPONENT_TS____10 = goog.getMsg(" A valid Domain is required ");
-    I18N_9 = MSG_EXTERNAL_domainError$$SRC_APP_SHARED_COMPONENTS_FORMS_DOMAIN_FORM_DOMAIN_FORM_COMPONENT_TS____10;
+    const MSG_EXTERNAL_domainError$$SRC_APP_SHARED_COMPONENTS_FORMS_DOMAIN_FORM_DOMAIN_FORM_COMPONENT_TS___10 = goog.getMsg(" A valid Domain is required ");
+    I18N_9 = MSG_EXTERNAL_domainError$$SRC_APP_SHARED_COMPONENTS_FORMS_DOMAIN_FORM_DOMAIN_FORM_COMPONENT_TS___10;
 }
 else {
     I18N_9 = $localize `:@@domainError␟5a830c4aca7079ff6845c32f932d4282b6d09b73␟2221420848183260382: A valid Domain is required `;
 }
-function DomainFormComponent_div_0_div_4_mat_error_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-error");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} }
 function DomainFormComponent_div_0_div_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 10);
@@ -8541,15 +8536,15 @@ function DomainFormComponent_div_0_div_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-form-field", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "input", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, DomainFormComponent_div_0_div_4_mat_error_5_Template, 2, 0, "mat-error", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-error");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](6, I18N_9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r2.form.controls.domain.invalid && ctx_r2.form.controls.domain.touched);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r2.form.controls.domain.invalid);
 } }
 var I18N_11;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
@@ -8661,7 +8656,7 @@ function DomainFormComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "form", 2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, DomainFormComponent_div_0_div_3_Template, 8, 3, "div", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, DomainFormComponent_div_0_div_4_Template, 6, 3, "div", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, DomainFormComponent_div_0_div_4_Template, 7, 2, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, DomainFormComponent_div_0_div_5_Template, 6, 3, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, DomainFormComponent_div_0_div_6_Template, 7, 3, "div", 4);
@@ -19424,23 +19419,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateDomainFormFields", function() { return generateDomainFormFields; });
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 
-function generateDomainFormFields(authority) {
-    if (!authority) {
+function generateDomainFormFields(domain) {
+    if (!domain) {
         throw Error('No User passed to generate form fields');
     }
     const fields = {
-        name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.name || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
-        domain: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.domain || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
-        login_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.login_url || ''),
-        logout_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.logout_url || ''),
-        config: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.config || ''),
-        internals: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.internals || ''),
-        description: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](authority.description || ''),
+        name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](domain.name || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
+        domain: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](domain.domain || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
+        login_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](domain.login_url || ''),
+        logout_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](domain.logout_url || ''),
+        config: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](domain.config || ''),
+        internals: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](domain.internals || ''),
+        description: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](domain.description || ''),
     };
     const subscriptions = [];
     for (const key in fields) {
         if (fields[key] && key.indexOf('confirm') < 0) {
-            subscriptions.push(fields[key].valueChanges.subscribe(value => authority.storePendingChange(key, value)));
+            subscriptions.push(fields[key].valueChanges.subscribe(value => domain.storePendingChange(key, value)));
         }
     }
     return {
@@ -19464,6 +19459,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateDriverFormFields", function() { return generateDriverFormFields; });
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 /* harmony import */ var _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @placeos/ts-client */ "./node_modules/@placeos/ts-client/dist/ts-client.es5.js");
+/* harmony import */ var _validation_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../validation.utilities */ "./src/app/shared/utilities/validation.utilities.ts");
+
 
 
 function generateDriverFormFields(driver) {
@@ -19478,7 +19475,7 @@ function generateDriverFormFields(driver) {
         name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](driver.name || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
         role: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](driver.role || _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineDriverRole"].Logic),
         module_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](driver.module_name || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
-        default_uri: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](driver.default_uri || ''),
+        default_uri: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](driver.default_uri || '', [_validation_utilities__WEBPACK_IMPORTED_MODULE_2__["validateURI"]]),
         default_port: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](driver.default_port || 1, [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].min(1), _angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].max(65535)]),
         class_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](driver.class_name || ''),
         description: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](driver.description || ''),
@@ -19632,11 +19629,13 @@ function generateRepositoryFormFields(repository) {
             subscriptions.push(fields[key].valueChanges.subscribe((value) => repository.storePendingChange(key, value)));
         }
     }
+    fields.branch.disable();
     if (!repository.id) {
         repository.storePendingChange('commit_hash', 'head');
     }
     else {
         delete fields.folder_name;
+        delete fields.uri;
     }
     return {
         form: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormGroup"](fields),
@@ -21756,16 +21755,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "a419b8d",
-    "hash": "a419b8d",
+    "raw": "c18be22",
+    "hash": "c18be22",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "a419b8d",
+    "suffix": "c18be22",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1593152657736
+    "time": 1593478508895
 };
 /* tslint:enable */
 
