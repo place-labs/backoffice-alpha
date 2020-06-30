@@ -638,8 +638,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
           this.pulling = true;
 
-          this._service.Repositories.pullCommit(this.item.id).then(function () {
-            return _this3.pulling = false;
+          this._service.Repositories.pullCommit(this.item.id).then(function (resp) {
+            _this3.pulling = false;
+
+            _this3._service.notifyInfo("Pulled down commit ".concat(resp.commit_hash, " for ").concat(_this3.item.name));
           }, function (err) {
             _this3.pulling = false;
 
