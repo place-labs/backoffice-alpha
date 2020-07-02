@@ -3797,91 +3797,97 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _shared_globals_base_directive__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @placeos/ts-client */
+    "./node_modules/@placeos/ts-client/dist/ts-client.es5.js");
+    /* harmony import */
+
+
+    var _shared_globals_base_directive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ../../../shared/globals/base.directive */
     "./src/app/shared/globals/base.directive.ts");
     /* harmony import */
 
 
-    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
     /* harmony import */
 
 
-    var src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! src/app/shared/utilities/validation.utilities */
     "./src/app/shared/utilities/validation.utilities.ts");
     /* harmony import */
 
 
-    var src_app_overlays_metadata_details_modal_metadata_details_modal_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var src_app_overlays_metadata_details_modal_metadata_details_modal_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! src/app/overlays/metadata-details-modal/metadata-details-modal.component */
     "./src/app/overlays/metadata-details-modal/metadata-details-modal.component.ts");
     /* harmony import */
 
 
-    var src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! src/app/overlays/confirm-modal/confirm-modal.component */
     "./src/app/overlays/confirm-modal/confirm-modal.component.ts");
     /* harmony import */
 
 
-    var _services_app_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _services_app_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ../../../services/app.service */
     "./src/app/services/app.service.ts");
     /* harmony import */
 
 
-    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/dialog */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/dialog.js");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_material_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! @angular/material/button */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
     /* harmony import */
 
 
-    var _acaprojects_ngx_custom_events__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _acaprojects_ngx_custom_events__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! @acaprojects/ngx-custom-events */
     "./node_modules/@acaprojects/ngx-custom-events/__ivy_ngcc__/fesm2015/acaprojects-ngx-custom-events.js");
     /* harmony import */
 
 
-    var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! @angular/material/expansion */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/expansion.js");
     /* harmony import */
 
 
-    var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! @angular/material/tooltip */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/tooltip.js");
     /* harmony import */
 
 
-    var _shared_components_icon_icon_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _shared_components_icon_icon_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! ../../../shared/components/icon/icon.component */
     "./src/app/shared/components/icon/icon.component.ts");
     /* harmony import */
 
 
-    var _shared_components_custom_fields_settings_field_settings_field_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _shared_components_custom_fields_settings_field_settings_field_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ../../../shared/components/custom-fields/settings-field/settings-field.component */
     "./src/app/shared/components/custom-fields/settings-field/settings-field.component.ts");
     /* harmony import */
 
 
-    var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! @angular/material/progress-spinner */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/progress-spinner.js");
 
@@ -4258,7 +4264,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function editMetadataDetails(field) {
           var form = this.form_map[field.name];
 
-          this._dialog.open(src_app_overlays_metadata_details_modal_metadata_details_modal_component__WEBPACK_IMPORTED_MODULE_4__["MetadataDetailsModalComponent"], {
+          this._dialog.open(src_app_overlays_metadata_details_modal_metadata_details_modal_component__WEBPACK_IMPORTED_MODULE_5__["MetadataDetailsModalComponent"], {
             maxWidth: '95vw',
             data: {
               form: form
@@ -4275,7 +4281,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function deleteMetadata(field) {
           var _this9 = this;
 
-          var ref = this._dialog.open(src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_5__["ConfirmModalComponent"], Object.assign(Object.assign({}, src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_5__["CONFIRM_METADATA"]), {
+          var ref = this._dialog.open(src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_6__["ConfirmModalComponent"], Object.assign(Object.assign({}, src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_6__["CONFIRM_METADATA"]), {
             data: {
               title: "Kill process",
               content: "\n                    <p>Are you sure you want delete the metadata property \"".concat(field, "\"?</p>\n                "),
@@ -4288,7 +4294,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.subscription('confirm', ref.componentInstance.event.subscribe(function (event) {
             if (event.reason === 'done') {
-              _this9._service.Zones.deleteMetadata(_this9.item.id, {
+              _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["PlaceOS"].metadata["delete"](_this9.item.id, {
                 name: field
               }).then(function () {
                 _this9._service.notifySuccess("Successfully removed \"".concat(field, "\" metadata."));
@@ -4318,7 +4324,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var value = form.value;
             this.loading[field.name] = true;
 
-            this._service.Zones.updateMetadata(this.item.id, Object.assign(Object.assign({}, value), {
+            _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["PlaceOS"].metadata.update(this.item.id, Object.assign(Object.assign({}, value), {
               details: JSON.parse(value.details)
             })).then(function (item) {
               _this10.loading[field.name] = false;
@@ -4330,7 +4336,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               _this10.edited[field.name] = false;
 
               if (field.name !== item.name) {
-                _this10._service.Zones.deleteMetadata(_this10.item.id, field)["catch"](function (err) {
+                _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["PlaceOS"].metadata["delete"](_this10.item.id, field)["catch"](function (err) {
                   return _this10._service.notifyError("Error removing old \"".concat(field.name, "\" metadata. Error: ").concat(JSON.stringify(err.response || err.message || err)));
                 });
               }
@@ -4361,14 +4367,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           delete this.form_map;
           this.form_map = {};
           this.metadata.forEach(function (group) {
-            _this11.form_map[group.name] = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
-              name: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](group.name, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _this11.validateName(_this11.metadata.filter(function (i) {
+            _this11.form_map[group.name] = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormGroup"]({
+              name: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](group.name, [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required, _this11.validateName(_this11.metadata.filter(function (i) {
                 return i.name !== group.name;
               }).map(function (i) {
                 return i.name;
               }))]),
-              description: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](group.name),
-              details: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](JSON.stringify(group.details || {}, undefined, 4), [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_3__["validateJSONString"]])
+              description: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](group.name),
+              details: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](JSON.stringify(group.details || {}, undefined, 4), [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required, src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_4__["validateJSONString"]])
             });
 
             _this11.subscription("".concat(group.name, "_name"), _this11.form_map[group.name].controls.name.valueChanges.subscribe(function () {
@@ -4389,7 +4395,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function loadMetadata() {
           var _this12 = this;
 
-          this._service.Zones.listMetadata(this.item.id).then(function (map) {
+          _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["PlaceOS"].metadata.show(this.item.id).then(function (map) {
             _this12.metadata = Object.keys(map).map(function (key) {
               return map[key];
             });
@@ -4400,10 +4406,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }]);
 
       return ZoneMetadataComponent;
-    }(_shared_globals_base_directive__WEBPACK_IMPORTED_MODULE_1__["BaseDirective"]);
+    }(_shared_globals_base_directive__WEBPACK_IMPORTED_MODULE_2__["BaseDirective"]);
 
     ZoneMetadataComponent.ɵfac = function ZoneMetadataComponent_Factory(t) {
-      return new (t || ZoneMetadataComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_app_service__WEBPACK_IMPORTED_MODULE_6__["ApplicationService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__["MatDialog"]));
+      return new (t || ZoneMetadataComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_app_service__WEBPACK_IMPORTED_MODULE_7__["ApplicationService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_8__["MatDialog"]));
     };
 
     ZoneMetadataComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -4429,7 +4435,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.item);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButton"], _acaprojects_ngx_custom_events__WEBPACK_IMPORTED_MODULE_10__["ɵb"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_11__["MatAccordion"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgForOf"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_11__["MatExpansionPanel"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroupDirective"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_11__["MatExpansionPanelHeader"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_11__["MatExpansionPanelTitle"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_12__["MatTooltip"], _shared_components_icon_icon_component__WEBPACK_IMPORTED_MODULE_13__["IconComponent"], _shared_components_custom_fields_settings_field_settings_field_component__WEBPACK_IMPORTED_MODULE_14__["SettingsFieldComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControlName"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_15__["MatSpinner"]],
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButton"], _acaprojects_ngx_custom_events__WEBPACK_IMPORTED_MODULE_11__["ɵb"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_12__["MatAccordion"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgForOf"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_12__["MatExpansionPanel"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormGroupDirective"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_12__["MatExpansionPanelHeader"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_12__["MatExpansionPanelTitle"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__["MatTooltip"], _shared_components_icon_icon_component__WEBPACK_IMPORTED_MODULE_14__["IconComponent"], _shared_components_custom_fields_settings_field_settings_field_component__WEBPACK_IMPORTED_MODULE_15__["SettingsFieldComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControlName"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_16__["MatSpinner"]],
       styles: [".container[_ngcontent-%COMP%] {\n  padding: 1em;\n}\n.text[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n.text[_ngcontent-%COMP%]   app-icon[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: opacity 200ms;\n}\n.text[_ngcontent-%COMP%]:hover   app-icon[_ngcontent-%COMP%] {\n  opacity: 1;\n}\n.list[_ngcontent-%COMP%] {\n  margin-top: 0.5em;\n}\nmat-panel-title[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  height: 1.2em;\n  overflow: visible;\n}\nmat-panel-title[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  font-size: 0.8em;\n  background: none;\n  border: none;\n  text-decoration: underline;\n  color: inherit;\n}\nmat-form-field[_ngcontent-%COMP%] {\n  height: 3em;\n}\n.settings[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 24em;\n}\n.contents[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: flex-end;\n  flex: 1;\n  min-width: 2em;\n}\n.contents[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  text-decoration: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2JhY2tvZmZpY2UvYmFja29mZmljZS9zcmMvYXBwL3NoYXJlZC9zdHlsZXMvc2hhcmVkLnN0eWxlcy5zY3NzIiwiL2hvbWUvcnVubmVyL3dvcmsvYmFja29mZmljZS9iYWNrb2ZmaWNlL3NyYy9hcHAvc2hlbGwvem9uZXMvem9uZS1tZXRhZGF0YS96b25lLW1ldGFkYXRhLnN0eWxlcy5zY3NzIiwic3JjL2FwcC9zaGVsbC96b25lcy96b25lLW1ldGFkYXRhL3pvbmUtbWV0YWRhdGEuc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7OzBCQUFBO0FBcUNBOztjQUFBO0FBWUE7O2VBQUE7QUFPQTs7ZUFBQTtBQWdCQTs7c0JBQUE7QUN2RUE7RUFDSSxZQUFBO0FDY0o7QURYQTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtBQ2NKO0FEWkk7RUFDSSxVQUFBO0VBQ0EseUJBQUE7QUNjUjtBRFZRO0VBQ0ksVUFBQTtBQ1laO0FEUEE7RUFDSSxpQkFBQTtBQ1VKO0FEUEE7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxhQUFBO0VBQ0EsaUJBQUE7QUNVSjtBRFJJO0VBQ0ksZ0JBQUE7RUFDQSxnQkFBQTtFQUNBLFlBQUE7RUFDQSwwQkFBQTtFQUNBLGNBQUE7QUNVUjtBRE5BO0VBQ0ksV0FBQTtBQ1NKO0FETkE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtBQ1NKO0FETkE7RUFDSSxhQUFBO0VBQ0EseUJBQUE7RUFDQSxPQUFBO0VBQ0EsY0FBQTtBQ1NKO0FEUkk7RUFDSSxxQkFBQTtBQ1VSIiwiZmlsZSI6InNyYy9hcHAvc2hlbGwvem9uZXMvem9uZS1tZXRhZGF0YS96b25lLW1ldGFkYXRhLnN0eWxlcy5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG4vKj09PT09PT09PT09PT09PT09PT09PT09KlxcXG58fCAgQXBwbGljYXRpb24gQ29sb3VycyAgfHxcblxcKj09PT09PT09PT09PT09PT09PT09PT09Ki9cblxuJGZvbnQtZGFyazogIzAwMDtcbiRmb250LWxpZ2h0OiAjZmZmO1xuXG4kc3VjY2VzczogIzRjYWY1MDtcbiRzdWNjZXNzLWxpZ2h0OiAjNjZiYjZhO1xuJHN1Y2Nlc3MtZGFyazogIzAwNzk2YjtcblxuJHBlbmRpbmc6ICNmZjhmMDA7XG4kcGVuZGluZy1saWdodDogI2ZmYzA0NjtcbiRwZW5kaW5nLWRhcms6ICNjNTYwMDA7XG5cbiRlcnJvcjogI2Y0NDMzNjtcbiRlcnJvci1saWdodDogI2ZmNmY2MDtcbiRlcnJvci1kYXJrOiAjYWIwMDBkO1xuXG4kY29sb3ItcHJpbWFyeTogI0M5MjM2NjtcbiRjb2xvci1wcmltYXJ5LWxpZ2h0OiAjY2Q1NjhhO1xuJGNvbG9yLXByaW1hcnktZGFyazogI2I2MDA1ZDtcblxuJGNvbG9yLXNlY29uZGFyeTogIzVDNjRGRjtcbiRjb2xvci1zZWNvbmRhcnktbGlnaHQ6ICM3MjcyZTc7XG4kY29sb3Itc2Vjb25kYXJ5LWRhcms6ICM1NTU3ZDE7XG5cbiRjb2xvci1kZXZlbG9wOiAjZjBmMGYwO1xuJGNvbG9yLWRldmVsb3AtbGlnaHQ6ICNmZmY7XG4kY29sb3ItZGV2ZWxvcC1kYXJrOiAjZTBlMGUwO1xuXG4kYmFja2dyb3VuZDogIzI2MzIzODtcbiRiYWNrZ3JvdW5kLWxpZ2h0OiAjNDU1YTY0O1xuJGJhY2tncm91bmQtZGFyazogIzIwMjYzMjtcblxuJGhlYWRlci1jb2xvcjogIzBBMEQyRTtcblxuLyo9PT09PT09PT09PSpcXFxufHwgICBGb250cyAgIHx8XG5cXCo9PT09PT09PT09PSovXG5cbiRmb250OiBcIlJvYm90b1wiLCBcIlZlcmRhbmFcIiwgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBBcmlhbCwgc2Fucy1zZXJpZjtcbiRoZWFkaW5nLWZvbnQ6IFwiWW91bmdcIiwgJGZvbnQ7XG4kbW9uby1mb250OiBcIkZpcmEgQ29kZVwiLCBtb25vc3BhY2U7XG5cbiRiYXNlLXNpemU6IDE2cHg7XG4kdGFibGV0LXNpemU6IDE2cHg7XG4kbW9iaWxlLXNpemU6IDE2cHg7XG5cbi8qPT09PT09PT09PT09KlxcXG58fCAgIFNpemluZyAgIHx8XG5cXCo9PT09PT09PT09PT0qL1xuXG4kaGVhZGVyLWhlaWdodDogNGVtO1xuXG5cbi8qPT09PT09PT09PT09KlxcXG58fCAgIE1peGlucyAgIHx8XG5cXCo9PT09PT09PT09PT0qL1xuXG5AbWl4aW4gaGlkZS10ZXh0LW92ZXJmbG93IHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG59XG5cbkBtaXhpbiBib3gtc2hhZG93KCRkZXB0aDogMSwgJHNwcmVhZDogMSkge1xuICAgIGJveC1zaGFkb3c6IDAgKDFweCAqICRzcHJlYWQpICgzcHggKiAkc3ByZWFkKSAwIHJnYmEoIzAwMCwgLjIgKiAkZGVwdGgpLFxuICAgICAgICAgICAgICAgIDAgKDFweCAqICRzcHJlYWQpICgxcHggKiAkc3ByZWFkKSAwIHJnYmEoIzAwMCwgLjE0ICogJGRlcHRoKSxcbiAgICAgICAgICAgICAgICAwICgycHggKiAkc3ByZWFkKSAoMXB4ICogJHNwcmVhZCkgLSgxcHggKiAkc3ByZWFkKSByZ2JhKCMwMDAsIC4xMiAqICRkZXB0aCk7XG59XG5cbi8qPT09PT09PT09PT09PT09PT09PSpcXFxufHwgICBNZWRpYSBRdWVyaWVzICAgfHxcblxcKj09PT09PT09PT09PT09PT09PT0qL1xuXG4kYnJlYWstbW9iaWxlOiA0NTBweDtcbiRicmVhay10YWJsZXQ6IDgwMHB4O1xuJGJyZWFrLWxhcHRvcDogMTAyNHB4O1xuXG4kYnJlYWstbGFuZHNjYXBlLW1vYmlsZTogODAwcHg7XG4kYnJlYWstbGFuZHNjYXBlLXRhYmxldDogMTA0OHB4O1xuJGJyZWFrLWxhbmRzY2FwZS1sYXB0b3A6IDEyODBweDtcblxuQG1peGluIHJlc3BvbmQtdG8oJG1lZGlhKSB7XG4gICAgQGlmICRtZWRpYSA9PSBtb2JpbGUge1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogcG9ydHJhaXQpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstbW9iaWxlKSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogbGFuZHNjYXBlKSBhbmQgKG1heC13aWR0aDogJGJyZWFrLWxhbmRzY2FwZS1tb2JpbGUpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfSBAZWxzZSBpZiAkbWVkaWEgPT0gbW9iaWxlLWxhbmRzY2FwZSB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstbGFuZHNjYXBlLW1vYmlsZSkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9IEBlbHNlIGlmICRtZWRpYSA9PSBtb2JpbGUtcG9ydHJhaXQge1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogcG9ydHJhaXQpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstbW9iaWxlKSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IG5vdC1tb2JpbGUge1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogcG9ydHJhaXQpIGFuZCAobWluLXdpZHRoOiAkYnJlYWstbW9iaWxlICsgMSkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkgYW5kIChtaW4td2lkdGg6ICRicmVhay1sYW5kc2NhcGUtbW9iaWxlICsgMSkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9IEBlbHNlIGlmICRtZWRpYSA9PSBsYXB0b3Age1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogcG9ydHJhaXQpIGFuZCAobWluLXdpZHRoOiAkYnJlYWstdGFibGV0ICsgMSkgYW5kIChtYXgtd2lkdGg6ICRicmVhay1sYXB0b3ApIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpIGFuZCAobWluLXdpZHRoOiAkYnJlYWstbGFuZHNjYXBlLXRhYmxldCArIDEpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstbGFuZHNjYXBlLWxhcHRvcCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9IEBlbHNlIGlmICRtZWRpYSA9PSBsYXB0b3AtbGFuZHNjYXBlIHtcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkgYW5kIChtaW4td2lkdGg6ICRicmVhay1sYW5kc2NhcGUtdGFibGV0ICsgMSkgYW5kIChtYXgtd2lkdGg6ICRicmVhay1sYW5kc2NhcGUtbGFwdG9wKSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IGxhcHRvcC1wb3J0cmFpdCB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBwb3J0cmFpdCkgYW5kIChtaW4td2lkdGg6ICRicmVhay10YWJsZXQgKyAxKSBhbmQgKG1heC13aWR0aDogJGJyZWFrLWxhcHRvcCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9ICBAZWxzZSBpZiAkbWVkaWEgPT0gbGF0IHtcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IHBvcnRyYWl0KSBhbmQgKG1pbi13aWR0aDogJGJyZWFrLW1vYmlsZSArIDEpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstdGFibGV0KSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogbGFuZHNjYXBlKSBhbmQgKG1pbi13aWR0aDogJGJyZWFrLWxhbmRzY2FwZS1tb2JpbGUgKyAxKSBhbmQgKG1heC13aWR0aDogJGJyZWFrLWxhbmRzY2FwZS10YWJsZXQpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfSBAZWxzZSBpZiAkbWVkaWEgPT0gdGFibGV0LWxhbmRzY2FwZSB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpIGFuZCAobWluLXdpZHRoOiAkYnJlYWstbGFuZHNjYXBlLW1vYmlsZSArIDEpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstbGFuZHNjYXBlLXRhYmxldCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9IEBlbHNlIGlmICRtZWRpYSA9PSB0YWJsZXQtcG9ydHJhaXQge1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogcG9ydHJhaXQpIGFuZCAobWluLXdpZHRoOiAkYnJlYWstbW9iaWxlICsgMSkgYW5kIChtYXgtd2lkdGg6ICRicmVhay10YWJsZXQpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfSBAZWxzZSBpZiAoJG1lZGlhID09IHRhYmxldC1tb2JpbGUgb3IgJG1lZGlhID09IG5vdC1kZXNrdG9wKSB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBwb3J0cmFpdCkgYW5kIChtYXgtd2lkdGg6ICRicmVhay10YWJsZXQpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpIGFuZCAobWF4LXdpZHRoOiAkYnJlYWstbGFuZHNjYXBlLXRhYmxldCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICB9IEBlbHNlIGlmICRtZWRpYSA9PSBkZXNrdG9wIHtcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IHBvcnRyYWl0KSBhbmQgKG1pbi13aWR0aDogJGJyZWFrLXRhYmxldCkge1xuICAgICAgICAgICAgQGNvbnRlbnQ7XG4gICAgICAgIH1cbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkgYW5kIChtaW4td2lkdGg6ICRicmVhay1sYW5kc2NhcGUtdGFibGV0KSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IGRlc2t0b3AtbGFuZHNjYXBlIHtcbiAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAob3JpZW50YXRpb246IGxhbmRzY2FwZSkgYW5kIChtaW4td2lkdGg6ICRicmVhay1sYW5kc2NhcGUtdGFibGV0KSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IGRlc2t0b3AtcG9ydHJhaXQge1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogcG9ydHJhaXQpIGFuZCAobWluLXdpZHRoOiAkYnJlYWstdGFibGV0KSB7XG4gICAgICAgICAgICBAY29udGVudDtcbiAgICAgICAgfVxuICAgIH0gQGVsc2UgaWYgJG1lZGlhID09IGxhbmRzY2FwZSB7XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG9yaWVudGF0aW9uOiBsYW5kc2NhcGUpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfSBAZWxzZSBpZiAkbWVkaWEgPT0gcG9ydHJhaXQge1xuICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChvcmllbnRhdGlvbjogcG9ydHJhaXQpIHtcbiAgICAgICAgICAgIEBjb250ZW50O1xuICAgICAgICB9XG4gICAgfVxufVxuIiwiQGltcG9ydCAnc2hhcmVkLnN0eWxlcyc7XG5cbi5jb250YWluZXIge1xuICAgIHBhZGRpbmc6IDFlbTtcbn1cblxuLnRleHQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxuICAgIGFwcC1pY29uIHtcbiAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAyMDBtcztcbiAgICB9XG5cbiAgICAmOmhvdmVyIHtcbiAgICAgICAgYXBwLWljb24ge1xuICAgICAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgfVxuICAgIH1cbn1cblxuLmxpc3Qge1xuICAgIG1hcmdpbi10b3A6IDAuNWVtO1xufVxuXG5tYXQtcGFuZWwtdGl0bGUge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDEuMmVtO1xuICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuXG4gICAgYnV0dG9uIHtcbiAgICAgICAgZm9udC1zaXplOiAwLjhlbTtcbiAgICAgICAgYmFja2dyb3VuZDogbm9uZTtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgICAgICAgY29sb3I6IGluaGVyaXQ7XG4gICAgfVxufVxuXG5tYXQtZm9ybS1maWVsZCB7XG4gICAgaGVpZ2h0OiAzZW07XG59XG5cbi5zZXR0aW5ncyB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAyNGVtO1xufVxuXG4uY29udGVudHMge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LWVuZDtcbiAgICBmbGV4OiAxO1xuICAgIG1pbi13aWR0aDogMmVtO1xuICAgIGJ1dHRvbiB7XG4gICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICB9XG59XG4iLCIvKj09PT09PT09PT09PT09PT09PT09PT09KlxcXG58fCAgQXBwbGljYXRpb24gQ29sb3VycyAgfHxcblxcKj09PT09PT09PT09PT09PT09PT09PT09Ki9cbi8qPT09PT09PT09PT0qXFxcbnx8ICAgRm9udHMgICB8fFxuXFwqPT09PT09PT09PT0qL1xuLyo9PT09PT09PT09PT0qXFxcbnx8ICAgU2l6aW5nICAgfHxcblxcKj09PT09PT09PT09PSovXG4vKj09PT09PT09PT09PSpcXFxufHwgICBNaXhpbnMgICB8fFxuXFwqPT09PT09PT09PT09Ki9cbi8qPT09PT09PT09PT09PT09PT09PSpcXFxufHwgICBNZWRpYSBRdWVyaWVzICAgfHxcblxcKj09PT09PT09PT09PT09PT09PT0qL1xuLmNvbnRhaW5lciB7XG4gIHBhZGRpbmc6IDFlbTtcbn1cblxuLnRleHQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnRleHQgYXBwLWljb24ge1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IDIwMG1zO1xufVxuLnRleHQ6aG92ZXIgYXBwLWljb24ge1xuICBvcGFjaXR5OiAxO1xufVxuXG4ubGlzdCB7XG4gIG1hcmdpbi10b3A6IDAuNWVtO1xufVxuXG5tYXQtcGFuZWwtdGl0bGUge1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBoZWlnaHQ6IDEuMmVtO1xuICBvdmVyZmxvdzogdmlzaWJsZTtcbn1cbm1hdC1wYW5lbC10aXRsZSBidXR0b24ge1xuICBmb250LXNpemU6IDAuOGVtO1xuICBiYWNrZ3JvdW5kOiBub25lO1xuICBib3JkZXI6IG5vbmU7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xuICBjb2xvcjogaW5oZXJpdDtcbn1cblxubWF0LWZvcm0tZmllbGQge1xuICBoZWlnaHQ6IDNlbTtcbn1cblxuLnNldHRpbmdzIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMjRlbTtcbn1cblxuLmNvbnRlbnRzIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBmbGV4LWVuZDtcbiAgZmxleDogMTtcbiAgbWluLXdpZHRoOiAyZW07XG59XG4uY29udGVudHMgYnV0dG9uIHtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufSJdfQ== */"]
     });
     /*@__PURE__*/
@@ -4444,9 +4450,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }]
       }], function () {
         return [{
-          type: _services_app_service__WEBPACK_IMPORTED_MODULE_6__["ApplicationService"]
+          type: _services_app_service__WEBPACK_IMPORTED_MODULE_7__["ApplicationService"]
         }, {
-          type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__["MatDialog"]
+          type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_8__["MatDialog"]
         }];
       }, {
         item: [{
@@ -5732,7 +5738,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     this.child_count = this._service.Zones.last_total || list.length || 0; // Get metadata
 
                     _context.next = 18;
-                    return this._service.Zones.listMetadata(this.item.id);
+                    return _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["PlaceOS"].metadata.show(this.item.id);
 
                   case 18:
                     map = _context.sent;
