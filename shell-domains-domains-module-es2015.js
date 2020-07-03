@@ -1,5 +1,126 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["shell-domains-domains-module"],{
 
+/***/ "./src/app/shell/domains/domain-about/domain-about.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/shell/domains/domain-about/domain-about.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: DomainAboutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DomainAboutComponent", function() { return DomainAboutComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var _placeos_ts_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @placeos/ts-client */ "./node_modules/@placeos/ts-client/dist/ts-client.es5.js");
+/* harmony import */ var src_app_shared_globals_base_directive__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/globals/base.directive */ "./src/app/shared/globals/base.directive.ts");
+/* harmony import */ var src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/utilities/validation.utilities */ "./src/app/shared/utilities/validation.utilities.ts");
+/* harmony import */ var src_app_services_app_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/app.service */ "./src/app/services/app.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/tabs.js");
+/* harmony import */ var _shared_components_custom_fields_settings_field_settings_field_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../shared/components/custom-fields/settings-field/settings-field.component */ "./src/app/shared/components/custom-fields/settings-field/settings-field.component.ts");
+
+
+
+
+
+
+
+
+
+
+
+
+function DomainAboutComponent_section_2_settings_form_field_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "settings-form-field", 7);
+} if (rf & 2) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("readonly", false);
+} }
+function DomainAboutComponent_section_2_settings_form_field_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "settings-form-field", 8);
+} if (rf & 2) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("readonly", false);
+} }
+function DomainAboutComponent_section_2_Template(rf, ctx) { if (rf & 1) {
+    const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "section", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "mat-tab-group", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("selectedIndexChange", function DomainAboutComponent_section_2_Template_mat_tab_group_selectedIndexChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r4); const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r3.index = $event; });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "mat-tab", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "mat-tab", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, DomainAboutComponent_section_2_settings_form_field_4_Template, 1, 1, "settings-form-field", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, DomainAboutComponent_section_2_settings_form_field_5_Template, 1, 1, "settings-form-field", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formGroup", ctx_r0.form);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("selectedIndex", ctx_r0.index);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.index !== 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.index === 1);
+} }
+class DomainAboutComponent extends src_app_shared_globals_base_directive__WEBPACK_IMPORTED_MODULE_4__["BaseDirective"] {
+    constructor(_service) {
+        super();
+        this._service = _service;
+    }
+    ngOnInit() {
+        this.subscription('item', this._service.listen('BACKOFFICE.active_item').subscribe((item) => {
+            this.item = item;
+            this.loadForm();
+        }));
+    }
+    /** Load form fields for active item */
+    loadForm() {
+        this.form = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
+            config: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](JSON.stringify(this.item.config, undefined, 4), [
+                src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_5__["validateJSONString"],
+            ]),
+            internals: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](JSON.stringify(this.item.internals, undefined, 4), [
+                src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_5__["validateJSONString"],
+            ]),
+        });
+        this.subscription('form', this.form.valueChanges.subscribe(() => this.saveChanges()));
+    }
+    /** Save changes to the form fields */
+    saveChanges() {
+        this.timeout('save', () => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            if (this.form.valid) {
+                const domain = new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_3__["EngineDomain"](Object.assign(Object.assign({}, this.item), { config: this.form.value.config, internals: this.form.value.internals }));
+                const item = yield domain.save();
+                this.item = item;
+            }
+        }), 3000);
+    }
+}
+DomainAboutComponent.ɵfac = function DomainAboutComponent_Factory(t) { return new (t || DomainAboutComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_services_app_service__WEBPACK_IMPORTED_MODULE_6__["ApplicationService"])); };
+DomainAboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: DomainAboutComponent, selectors: [["app-domain-about"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInheritDefinitionFeature"]], decls: 3, vars: 2, consts: [[3, "formGroup", 4, "ngIf"], [3, "formGroup"], [3, "selectedIndex", "selectedIndexChange"], ["label", "Config"], ["label", "Internals"], ["formControlName", "config", "lang", "json", 3, "readonly", 4, "ngIf"], ["formControlName", "internals", "lang", "json", 3, "readonly", 4, "ngIf"], ["formControlName", "config", "lang", "json", 3, "readonly"], ["formControlName", "internals", "lang", "json", 3, "readonly"]], template: function DomainAboutComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, DomainAboutComponent_section_2_Template, 6, 4, "section", 0);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Settings ", ctx.index, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.form);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroupDirective"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__["MatTabGroup"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__["MatTab"], _shared_components_custom_fields_settings_field_settings_field_component__WEBPACK_IMPORTED_MODULE_9__["SettingsFieldComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControlName"]], styles: [".content[_ngcontent-%COMP%] {\n  width: 100%;\n  min-height: 50vh;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2JhY2tvZmZpY2UvYmFja29mZmljZS9zcmMvYXBwL3NoZWxsL2RvbWFpbnMvZG9tYWluLWFib3V0L2RvbWFpbi1hYm91dC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2hlbGwvZG9tYWlucy9kb21haW4tYWJvdXQvZG9tYWluLWFib3V0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0ksV0FBQTtFQUNBLGdCQUFBO0FDQUoiLCJmaWxlIjoic3JjL2FwcC9zaGVsbC9kb21haW5zL2RvbWFpbi1hYm91dC9kb21haW4tYWJvdXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5jb250ZW50IHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtaW4taGVpZ2h0OiA1MHZoO1xufVxuIiwiLmNvbnRlbnQge1xuICB3aWR0aDogMTAwJTtcbiAgbWluLWhlaWdodDogNTB2aDtcbn0iXX0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](DomainAboutComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{
+                selector: 'app-domain-about',
+                templateUrl: './domain-about.component.html',
+                styleUrls: ['./domain-about.component.scss'],
+            }]
+    }], function () { return [{ type: src_app_services_app_service__WEBPACK_IMPORTED_MODULE_6__["ApplicationService"] }]; }, null); })();
+
+
+/***/ }),
+
 /***/ "./src/app/shell/domains/domain-applications/domain-applications.component.ts":
 /*!************************************************************************************!*\
   !*** ./src/app/shell/domains/domain-applications/domain-applications.component.ts ***!
@@ -1011,6 +1132,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _domain_authentication_domain_authentication_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./domain-authentication/domain-authentication.component */ "./src/app/shell/domains/domain-authentication/domain-authentication.component.ts");
 /* harmony import */ var _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./domain-users/domain-users.component */ "./src/app/shell/domains/domain-users/domain-users.component.ts");
 /* harmony import */ var src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! src/app/shared/shared.module */ "./src/app/shared/shared.module.ts");
+/* harmony import */ var _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./domain-about/domain-about.component */ "./src/app/shell/domains/domain-about/domain-about.component.ts");
+
 
 
 
@@ -1029,14 +1152,17 @@ AppDomainsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineN
 AppDomainsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function AppDomainsModule_Factory(t) { return new (t || AppDomainsModule)(); }, imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(_domains_routes__WEBPACK_IMPORTED_MODULE_4__["ROUTES"]),
             src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AppDomainsModule, { declarations: [_domains_component__WEBPACK_IMPORTED_MODULE_5__["DomainsComponent"],
         _domain_applications_domain_applications_component__WEBPACK_IMPORTED_MODULE_6__["DomainApplicationsComponent"],
         _domain_authentication_domain_authentication_component__WEBPACK_IMPORTED_MODULE_7__["DomainAuthenticationComponent"],
-        _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_8__["DomainUsersComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"], src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]] }); })();
+        _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_8__["DomainUsersComponent"],
+        _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_10__["DomainAboutComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"], src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppDomainsModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
@@ -1044,11 +1170,13 @@ AppDomainsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
                     _domains_component__WEBPACK_IMPORTED_MODULE_5__["DomainsComponent"],
                     _domain_applications_domain_applications_component__WEBPACK_IMPORTED_MODULE_6__["DomainApplicationsComponent"],
                     _domain_authentication_domain_authentication_component__WEBPACK_IMPORTED_MODULE_7__["DomainAuthenticationComponent"],
-                    _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_8__["DomainUsersComponent"]
+                    _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_8__["DomainUsersComponent"],
+                    _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_10__["DomainAboutComponent"]
                 ],
                 imports: [
                     _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                     _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
+                    _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"],
                     _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(_domains_routes__WEBPACK_IMPORTED_MODULE_4__["ROUTES"]),
                     src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]
                 ]
@@ -1072,6 +1200,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _domain_applications_domain_applications_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./domain-applications/domain-applications.component */ "./src/app/shell/domains/domain-applications/domain-applications.component.ts");
 /* harmony import */ var _domain_authentication_domain_authentication_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./domain-authentication/domain-authentication.component */ "./src/app/shell/domains/domain-authentication/domain-authentication.component.ts");
 /* harmony import */ var _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./domain-users/domain-users.component */ "./src/app/shell/domains/domain-users/domain-users.component.ts");
+/* harmony import */ var _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./domain-about/domain-about.component */ "./src/app/shell/domains/domain-about/domain-about.component.ts");
+
 
 
 
@@ -1079,10 +1209,11 @@ __webpack_require__.r(__webpack_exports__);
 const ROUTES = [
     {
         path: ':id', component: _domains_component__WEBPACK_IMPORTED_MODULE_0__["DomainsComponent"], children: [
+            { path: 'about', component: _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_4__["DomainAboutComponent"] },
             { path: 'applications', component: _domain_applications_domain_applications_component__WEBPACK_IMPORTED_MODULE_1__["DomainApplicationsComponent"] },
             { path: 'authentication', component: _domain_authentication_domain_authentication_component__WEBPACK_IMPORTED_MODULE_2__["DomainAuthenticationComponent"] },
             { path: 'users', component: _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_3__["DomainUsersComponent"] },
-            { path: '**', redirectTo: 'applications' },
+            { path: '**', redirectTo: 'about' },
         ]
     },
     { path: '**', redirectTo: '-' },

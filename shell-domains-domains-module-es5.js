@@ -96,26 +96,6 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (typeof call === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _templateObject7() {
   var data = _taggedTemplateLiteral([":@@applicationTableEmpty\u241F923cb1a5e46a6e5ba971e0cd2fa58c53e4ad4f26\u241F342003372328863922:No applications found"]);
 
@@ -188,7 +168,319 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (typeof call === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["shell-domains-domains-module"], {
+  /***/
+  "./src/app/shell/domains/domain-about/domain-about.component.ts":
+  /*!**********************************************************************!*\
+    !*** ./src/app/shell/domains/domain-about/domain-about.component.ts ***!
+    \**********************************************************************/
+
+  /*! exports provided: DomainAboutComponent */
+
+  /***/
+  function srcAppShellDomainsDomainAboutDomainAboutComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DomainAboutComponent", function () {
+      return DomainAboutComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _placeos_ts_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @placeos/ts-client */
+    "./node_modules/@placeos/ts-client/dist/ts-client.es5.js");
+    /* harmony import */
+
+
+    var src_app_shared_globals_base_directive__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! src/app/shared/globals/base.directive */
+    "./src/app/shared/globals/base.directive.ts");
+    /* harmony import */
+
+
+    var src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! src/app/shared/utilities/validation.utilities */
+    "./src/app/shared/utilities/validation.utilities.ts");
+    /* harmony import */
+
+
+    var src_app_services_app_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! src/app/services/app.service */
+    "./src/app/services/app.service.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @angular/material/tabs */
+    "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/tabs.js");
+    /* harmony import */
+
+
+    var _shared_components_custom_fields_settings_field_settings_field_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ../../../shared/components/custom-fields/settings-field/settings-field.component */
+    "./src/app/shared/components/custom-fields/settings-field/settings-field.component.ts");
+
+    function DomainAboutComponent_section_2_settings_form_field_4_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "settings-form-field", 7);
+      }
+
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("readonly", false);
+      }
+    }
+
+    function DomainAboutComponent_section_2_settings_form_field_5_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "settings-form-field", 8);
+      }
+
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("readonly", false);
+      }
+    }
+
+    function DomainAboutComponent_section_2_Template(rf, ctx) {
+      if (rf & 1) {
+        var _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "section", 1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "mat-tab-group", 2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("selectedIndexChange", function DomainAboutComponent_section_2_Template_mat_tab_group_selectedIndexChange_1_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r4);
+
+          var ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+
+          return ctx_r3.index = $event;
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "mat-tab", 3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "mat-tab", 4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, DomainAboutComponent_section_2_settings_form_field_4_Template, 1, 1, "settings-form-field", 5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, DomainAboutComponent_section_2_settings_form_field_5_Template, 1, 1, "settings-form-field", 6);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formGroup", ctx_r0.form);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("selectedIndex", ctx_r0.index);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.index !== 1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.index === 1);
+      }
+    }
+
+    var DomainAboutComponent =
+    /*#__PURE__*/
+    function (_src_app_shared_globa) {
+      _inherits(DomainAboutComponent, _src_app_shared_globa);
+
+      var _super = _createSuper(DomainAboutComponent);
+
+      function DomainAboutComponent(_service) {
+        var _this;
+
+        _classCallCheck(this, DomainAboutComponent);
+
+        _this = _super.call(this);
+        _this._service = _service;
+        return _this;
+      }
+
+      _createClass(DomainAboutComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this.subscription('item', this._service.listen('BACKOFFICE.active_item').subscribe(function (item) {
+            _this2.item = item;
+
+            _this2.loadForm();
+          }));
+        }
+        /** Load form fields for active item */
+
+      }, {
+        key: "loadForm",
+        value: function loadForm() {
+          var _this3 = this;
+
+          this.form = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
+            config: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](JSON.stringify(this.item.config, undefined, 4), [src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_5__["validateJSONString"]]),
+            internals: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](JSON.stringify(this.item.internals, undefined, 4), [src_app_shared_utilities_validation_utilities__WEBPACK_IMPORTED_MODULE_5__["validateJSONString"]])
+          });
+          this.subscription('form', this.form.valueChanges.subscribe(function () {
+            return _this3.saveChanges();
+          }));
+        }
+        /** Save changes to the form fields */
+
+      }, {
+        key: "saveChanges",
+        value: function saveChanges() {
+          var _this4 = this;
+
+          this.timeout('save', function () {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this4, void 0, void 0,
+            /*#__PURE__*/
+            regeneratorRuntime.mark(function _callee() {
+              var domain, item;
+              return regeneratorRuntime.wrap(function _callee$(_context) {
+                while (1) {
+                  switch (_context.prev = _context.next) {
+                    case 0:
+                      if (!this.form.valid) {
+                        _context.next = 6;
+                        break;
+                      }
+
+                      domain = new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_3__["EngineDomain"](Object.assign(Object.assign({}, this.item), {
+                        config: this.form.value.config,
+                        internals: this.form.value.internals
+                      }));
+                      _context.next = 4;
+                      return domain.save();
+
+                    case 4:
+                      item = _context.sent;
+                      this.item = item;
+
+                    case 6:
+                    case "end":
+                      return _context.stop();
+                  }
+                }
+              }, _callee, this);
+            }));
+          }, 3000);
+        }
+      }]);
+
+      return DomainAboutComponent;
+    }(src_app_shared_globals_base_directive__WEBPACK_IMPORTED_MODULE_4__["BaseDirective"]);
+
+    DomainAboutComponent.ɵfac = function DomainAboutComponent_Factory(t) {
+      return new (t || DomainAboutComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_services_app_service__WEBPACK_IMPORTED_MODULE_6__["ApplicationService"]));
+    };
+
+    DomainAboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
+      type: DomainAboutComponent,
+      selectors: [["app-domain-about"]],
+      features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInheritDefinitionFeature"]],
+      decls: 3,
+      vars: 2,
+      consts: [[3, "formGroup", 4, "ngIf"], [3, "formGroup"], [3, "selectedIndex", "selectedIndexChange"], ["label", "Config"], ["label", "Internals"], ["formControlName", "config", "lang", "json", 3, "readonly", 4, "ngIf"], ["formControlName", "internals", "lang", "json", 3, "readonly", 4, "ngIf"], ["formControlName", "config", "lang", "json", 3, "readonly"], ["formControlName", "internals", "lang", "json", 3, "readonly"]],
+      template: function DomainAboutComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "h3");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, DomainAboutComponent_section_2_Template, 6, 4, "section", 0);
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Settings ", ctx.index, "");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.form);
+        }
+      },
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroupDirective"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__["MatTabGroup"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__["MatTab"], _shared_components_custom_fields_settings_field_settings_field_component__WEBPACK_IMPORTED_MODULE_9__["SettingsFieldComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControlName"]],
+      styles: [".content[_ngcontent-%COMP%] {\n  width: 100%;\n  min-height: 50vh;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2JhY2tvZmZpY2UvYmFja29mZmljZS9zcmMvYXBwL3NoZWxsL2RvbWFpbnMvZG9tYWluLWFib3V0L2RvbWFpbi1hYm91dC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2hlbGwvZG9tYWlucy9kb21haW4tYWJvdXQvZG9tYWluLWFib3V0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0ksV0FBQTtFQUNBLGdCQUFBO0FDQUoiLCJmaWxlIjoic3JjL2FwcC9zaGVsbC9kb21haW5zL2RvbWFpbi1hYm91dC9kb21haW4tYWJvdXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5jb250ZW50IHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtaW4taGVpZ2h0OiA1MHZoO1xufVxuIiwiLmNvbnRlbnQge1xuICB3aWR0aDogMTAwJTtcbiAgbWluLWhlaWdodDogNTB2aDtcbn0iXX0= */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](DomainAboutComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{
+          selector: 'app-domain-about',
+          templateUrl: './domain-about.component.html',
+          styleUrls: ['./domain-about.component.scss']
+        }]
+      }], function () {
+        return [{
+          type: src_app_services_app_service__WEBPACK_IMPORTED_MODULE_6__["ApplicationService"]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
   /***/
   "./src/app/shell/domains/domain-applications/domain-applications.component.ts":
   /*!************************************************************************************!*\
@@ -635,29 +927,29 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     function (_shared_globals_base_) {
       _inherits(DomainApplicationsComponent, _shared_globals_base_);
 
-      var _super = _createSuper(DomainApplicationsComponent);
+      var _super2 = _createSuper(DomainApplicationsComponent);
 
       function DomainApplicationsComponent(_service, _dialog) {
-        var _this;
+        var _this5;
 
         _classCallCheck(this, DomainApplicationsComponent);
 
-        _this = _super.call(this);
-        _this._service = _service;
-        _this._dialog = _dialog;
-        _this.show_secret = {};
-        return _this;
+        _this5 = _super2.call(this);
+        _this5._service = _service;
+        _this5._dialog = _dialog;
+        _this5.show_secret = {};
+        return _this5;
       }
 
       _createClass(DomainApplicationsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this2 = this;
+          var _this6 = this;
 
           this.subscription('item', this._service.listen('BACKOFFICE.active_item').subscribe(function (item) {
-            _this2.item = item;
+            _this6.item = item;
 
-            _this2.loadApplications();
+            _this6.loadApplications();
           }));
         }
       }, {
@@ -678,7 +970,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "loadApplications",
         value: function loadApplications() {
-          var _this3 = this;
+          var _this7 = this;
 
           var offset = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
@@ -691,7 +983,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
             offset: offset
           }).then(function (list) {
             if (!offset) {
-              _this3.application_list = [];
+              _this7.application_list = [];
             }
 
             var _iterator = _createForOfIteratorHelper(list || []),
@@ -702,7 +994,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
                 var item = _step.value;
                 var found = false;
 
-                var _iterator2 = _createForOfIteratorHelper(_this3.application_list),
+                var _iterator2 = _createForOfIteratorHelper(_this7.application_list),
                     _step2;
 
                 try {
@@ -721,7 +1013,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
                 }
 
                 if (!found) {
-                  _this3.application_list.push(item);
+                  _this7.application_list.push(item);
                 }
               }
             } catch (err) {
@@ -740,7 +1032,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "newApplication",
         value: function newApplication() {
-          var _this4 = this;
+          var _this8 = this;
 
           var ref = this._dialog.open(src_app_overlays_item_modal_item_modal_component__WEBPACK_IMPORTED_MODULE_3__["ItemCreateUpdateModalComponent"], {
             height: 'auto',
@@ -755,9 +1047,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
           this.subscription('item-form', ref.componentInstance.event.subscribe(function (event) {
             if (event.reason === 'done') {
-              _this4.application_list = [].concat(_toConsumableArray(_this4.application_list), [event.metadata.item]);
+              _this8.application_list = [].concat(_toConsumableArray(_this8.application_list), [event.metadata.item]);
 
-              _this4._service.set('APP_LIST_CHANGE', dayjs__WEBPACK_IMPORTED_MODULE_5__().valueOf());
+              _this8._service.set('APP_LIST_CHANGE', dayjs__WEBPACK_IMPORTED_MODULE_5__().valueOf());
             }
           }));
         }
@@ -768,7 +1060,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "editApplication",
         value: function editApplication(item) {
-          var _this5 = this;
+          var _this9 = this;
 
           if (this.item) {
             var ref = this._dialog.open(src_app_overlays_item_modal_item_modal_component__WEBPACK_IMPORTED_MODULE_3__["ItemCreateUpdateModalComponent"], {
@@ -784,14 +1076,14 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
             this.subscription('item-form', ref.componentInstance.event.subscribe(function (event) {
               if (event.reason === 'done') {
-                var index = _this5.application_list.findIndex(function (app) {
+                var index = _this9.application_list.findIndex(function (app) {
                   return app.id === event.metadata.item.id;
                 });
 
                 if (index >= 0) {
-                  _this5.application_list.splice(index, 1, event.metadata.item);
+                  _this9.application_list.splice(index, 1, event.metadata.item);
 
-                  _this5.application_list = _toConsumableArray(_this5.application_list);
+                  _this9.application_list = _toConsumableArray(_this9.application_list);
                 }
               }
             }));
@@ -800,7 +1092,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "deleteApplication",
         value: function deleteApplication(item) {
-          var _this6 = this;
+          var _this10 = this;
 
           if (item) {
             var ref = this._dialog.open(src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_4__["ConfirmModalComponent"], Object.assign(Object.assign({}, src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_4__["CONFIRM_METADATA"]), {
@@ -818,17 +1110,17 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
               if (event.reason === 'done') {
                 ref.componentInstance.loading = 'Deleting application...';
                 item["delete"]().then(function () {
-                  _this6._service.notifySuccess("Successfully deleted application \"".concat(item.name, "\"."));
+                  _this10._service.notifySuccess("Successfully deleted application \"".concat(item.name, "\"."));
 
-                  _this6.loadApplications();
+                  _this10.loadApplications();
 
                   ref.close();
 
-                  _this6.unsub('delete_confirm');
+                  _this10.unsub('delete_confirm');
                 }, function (err) {
                   ref.componentInstance.loading = null;
 
-                  _this6._service.notifyError("Error deleting application. Error: ".concat(JSON.stringify(err.response || err.message || err)));
+                  _this10._service.notifyError("Error deleting application. Error: ".concat(JSON.stringify(err.response || err.message || err)));
                 });
               }
             }));
@@ -1178,34 +1470,34 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     function (_shared_globals_base_2) {
       _inherits(DomainAuthenticationComponent, _shared_globals_base_2);
 
-      var _super2 = _createSuper(DomainAuthenticationComponent);
+      var _super3 = _createSuper(DomainAuthenticationComponent);
 
       function DomainAuthenticationComponent(_service, _dialog) {
-        var _this7;
+        var _this11;
 
         _classCallCheck(this, DomainAuthenticationComponent);
 
-        _this7 = _super2.call(this);
-        _this7._service = _service;
-        _this7._dialog = _dialog;
+        _this11 = _super3.call(this);
+        _this11._service = _service;
+        _this11._dialog = _dialog;
         /** List of auth sources associated with the active domain */
 
-        _this7.auth_sources = [];
+        _this11.auth_sources = [];
         /** Mapping of auth sources to their type */
 
-        _this7.source_types = {};
-        return _this7;
+        _this11.source_types = {};
+        return _this11;
       }
 
       _createClass(DomainAuthenticationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this8 = this;
+          var _this12 = this;
 
           this.subscription('item', this._service.listen('BACKOFFICE.active_item').subscribe(function (item) {
-            _this8.item = item;
+            _this12.item = item;
 
-            _this8.loadAuthSources();
+            _this12.loadAuthSources();
           }));
         }
       }, {
@@ -1223,7 +1515,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "loadAuthSources",
         value: function loadAuthSources() {
-          var _this9 = this;
+          var _this13 = this;
 
           var offset = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
@@ -1242,7 +1534,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
             offset: offset
           })]).then(function (responses) {
             if (!offset) {
-              _this9.auth_sources = [];
+              _this13.auth_sources = [];
             }
 
             var _iterator3 = _createForOfIteratorHelper(responses),
@@ -1252,7 +1544,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
               for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
                 var list = _step3.value;
                 list.forEach(function (auth_source) {
-                  return _this9.addAuthSourceToList(auth_source);
+                  return _this13.addAuthSourceToList(auth_source);
                 });
               }
             } catch (err) {
@@ -1272,7 +1564,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "newAuthSource",
         value: function newAuthSource() {
-          var _this10 = this;
+          var _this14 = this;
 
           var ref = this._dialog.open(src_app_overlays_auth_source_modal_auth_source_modal_component__WEBPACK_IMPORTED_MODULE_4__["AuthSourceModalComponent"], {
             width: 'auto',
@@ -1283,7 +1575,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
           });
 
           ref.afterClosed().subscribe(function () {
-            return _this10.loadAuthSources();
+            return _this14.loadAuthSources();
           });
         }
         /**
@@ -1294,7 +1586,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "editAuthSource",
         value: function editAuthSource(item) {
-          var _this11 = this;
+          var _this15 = this;
 
           var ref = this._dialog.open(src_app_overlays_auth_source_modal_auth_source_modal_component__WEBPACK_IMPORTED_MODULE_4__["AuthSourceModalComponent"], {
             width: 'auto',
@@ -1306,7 +1598,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
           });
 
           ref.afterClosed().subscribe(function () {
-            return _this11.loadAuthSources();
+            return _this15.loadAuthSources();
           });
         }
         /**
@@ -1317,7 +1609,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "deleteAuthSource",
         value: function deleteAuthSource(item) {
-          var _this12 = this;
+          var _this16 = this;
 
           if (item) {
             var ref = this._dialog.open(src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_3__["ConfirmModalComponent"], Object.assign(Object.assign({}, src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_3__["CONFIRM_METADATA"]), {
@@ -1335,15 +1627,15 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
               if (event.reason === 'done') {
                 ref.componentInstance.loading = 'Deleting auth source...';
                 item["delete"]().then(function () {
-                  _this12._service.notifySuccess('Successfully deleted auth source.');
+                  _this16._service.notifySuccess('Successfully deleted auth source.');
 
                   ref.close();
 
-                  _this12.unsub('delete_confirm');
+                  _this16.unsub('delete_confirm');
 
-                  _this12.loadAuthSources();
+                  _this16.loadAuthSources();
                 }, function (err) {
-                  _this12._service.notifyError("Error deleting auth source. Error ".concat(JSON.stringify(err.response || err.message || err)));
+                  _this16._service.notifyError("Error deleting auth source. Error ".concat(JSON.stringify(err.response || err.message || err)));
 
                   ref.componentInstance.loading = null;
                 });
@@ -1654,28 +1946,28 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     function (_shared_globals_base_3) {
       _inherits(DomainUsersComponent, _shared_globals_base_3);
 
-      var _super3 = _createSuper(DomainUsersComponent);
+      var _super4 = _createSuper(DomainUsersComponent);
 
       function DomainUsersComponent(_service) {
-        var _this13;
+        var _this17;
 
         _classCallCheck(this, DomainUsersComponent);
 
-        _this13 = _super3.call(this);
-        _this13._service = _service;
-        _this13.model = {};
-        return _this13;
+        _this17 = _super4.call(this);
+        _this17._service = _service;
+        _this17.model = {};
+        return _this17;
       }
 
       _createClass(DomainUsersComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this14 = this;
+          var _this18 = this;
 
           this.subscription('item', this._service.listen('BACKOFFICE.active_item').subscribe(function (item) {
-            _this14.item = item;
+            _this18.item = item;
 
-            _this14.loadUsers();
+            _this18.loadUsers();
           }));
           this.loadUsers();
         }
@@ -1689,7 +1981,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "loadUsers",
         value: function loadUsers() {
-          var _this15 = this;
+          var _this19 = this;
 
           var offset = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
@@ -1702,7 +1994,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
             offset: offset
           }).then(function (list) {
             if (!offset) {
-              _this15.model.list = [];
+              _this19.model.list = [];
             }
 
             var _iterator4 = _createForOfIteratorHelper(list || []),
@@ -1713,7 +2005,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
                 var item = _step4.value;
                 var found = false;
 
-                var _iterator5 = _createForOfIteratorHelper(_this15.model.list),
+                var _iterator5 = _createForOfIteratorHelper(_this19.model.list),
                     _step5;
 
                 try {
@@ -1732,7 +2024,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
                 }
 
                 if (!found) {
-                  _this15.model.list.push(item);
+                  _this19.model.list.push(item);
                 }
               }
             } catch (err) {
@@ -1967,40 +2259,40 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     function (_shared_components_ba) {
       _inherits(DomainsComponent, _shared_components_ba);
 
-      var _super4 = _createSuper(DomainsComponent);
+      var _super5 = _createSuper(DomainsComponent);
 
       function DomainsComponent(_service, _route, _router, _dialog) {
-        var _this16;
+        var _this20;
 
         _classCallCheck(this, DomainsComponent);
 
-        _this16 = _super4.call(this, _service, _route, _router);
-        _this16._service = _service;
-        _this16._route = _route;
-        _this16._router = _router;
-        _this16._dialog = _dialog;
-        _this16.service = _this16._service.Domains;
-        return _this16;
+        _this20 = _super5.call(this, _service, _route, _router);
+        _this20._service = _service;
+        _this20._route = _route;
+        _this20._router = _router;
+        _this20._dialog = _dialog;
+        _this20.service = _this20._service.Domains;
+        return _this20;
       }
 
       _createClass(DomainsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this17 = this;
+          var _this21 = this;
 
           _get(_getPrototypeOf(DomainsComponent.prototype), "ngOnInit", this).call(this);
 
           this._service.set('APP_LIST_CHANGE', dayjs__WEBPACK_IMPORTED_MODULE_5__().valueOf());
 
           this.subscription('changes', this._service.listen('APP_LIST_CHANGE').subscribe(function () {
-            _this17.loadValues();
+            _this21.loadValues();
           }));
           this._service.title = 'Domains';
         }
       }, {
         key: "loadValues",
         value: function loadValues() {
-          var _this18 = this;
+          var _this22 = this;
 
           if (!this.item) {
             return;
@@ -2013,7 +2305,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
           }; // Get application count
 
           this._service.Applications.query(query).then(function (list) {
-            return _this18.applications = _this18._service.Applications.last_total || list.length || 0;
+            return _this22.applications = _this22._service.Applications.last_total || list.length || 0;
           });
 
           query = {
@@ -2027,7 +2319,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
           // Get users count
 
           this._service.Users.query(query).then(function (list) {
-            return _this18.user_count = _this18._service.Users.last_total || list.length || 0;
+            return _this22.user_count = _this22._service.Users.last_total || list.length || 0;
           });
         }
         /**
@@ -2037,7 +2329,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "newItem",
         value: function newItem() {
-          var _this19 = this;
+          var _this23 = this;
 
           var copy = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
 
@@ -2060,13 +2352,13 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
           });
           this.subscription('modal_events', this.modal_ref.componentInstance.event.subscribe(function (event) {
             if (event.reason === 'done') {
-              _this19._router.navigate(['/domains', event.metadata.item.id]);
+              _this23._router.navigate(['/domains', event.metadata.item.id]);
             }
           }));
           this.modal_ref.afterClosed().subscribe(function () {
-            _this19.unsub('modal_events');
+            _this23.unsub('modal_events');
 
-            _this19.modal_ref = null;
+            _this23.modal_ref = null;
           });
         }
         /**
@@ -2076,7 +2368,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }, {
         key: "editItem",
         value: function editItem() {
-          var _this20 = this;
+          var _this24 = this;
 
           if (this.item && !this.modal_ref) {
             this.modal_ref = this._dialog.open(src_app_overlays_item_modal_item_modal_component__WEBPACK_IMPORTED_MODULE_3__["ItemCreateUpdateModalComponent"], {
@@ -2090,16 +2382,16 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
               }
             });
             this.modal_ref.afterClosed().subscribe(function () {
-              _this20.unsub('modal_events');
+              _this24.unsub('modal_events');
 
-              _this20.modal_ref = null;
+              _this24.modal_ref = null;
             });
           }
         }
       }, {
         key: "deleteItem",
         value: function deleteItem() {
-          var _this21 = this;
+          var _this25 = this;
 
           if (this.item && !this.modal_ref) {
             this.modal_ref = this._dialog.open(src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_4__["ConfirmModalComponent"], Object.assign(Object.assign({}, src_app_overlays_confirm_modal_confirm_modal_component__WEBPACK_IMPORTED_MODULE_4__["CONFIRM_METADATA"]), {
@@ -2114,27 +2406,27 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
             }));
             this.subscription('delete_confirm', this.modal_ref.componentInstance.event.subscribe(function (event) {
               if (event.reason === 'done') {
-                _this21.modal_ref.componentInstance.loading = 'Deleting domain...';
+                _this25.modal_ref.componentInstance.loading = 'Deleting domain...';
 
-                _this21.item["delete"]().then(function () {
-                  _this21._service.notifySuccess("Successfully deleted domain \"".concat(_this21.item.name, "\"."));
+                _this25.item["delete"]().then(function () {
+                  _this25._service.notifySuccess("Successfully deleted domain \"".concat(_this25.item.name, "\"."));
 
-                  _this21._router.navigate(['/users']);
+                  _this25._router.navigate(['/users']);
 
-                  _this21._service.set('BACKOFFICE.removed', _this21.item.id);
+                  _this25._service.set('BACKOFFICE.removed', _this25.item.id);
 
-                  _this21.modal_ref.close();
+                  _this25.modal_ref.close();
                 }, function (err) {
-                  _this21.modal_ref.componentInstance.loading = null;
+                  _this25.modal_ref.componentInstance.loading = null;
 
-                  _this21._service.notifyError("Error deleting domain. Error: ".concat(JSON.stringify(err.response || err.message || err)));
+                  _this25._service.notifyError("Error deleting domain. Error: ".concat(JSON.stringify(err.response || err.message || err)));
                 });
               }
             }));
             this.modal_ref.afterClosed().subscribe(function () {
-              _this21.unsub('modal_events');
+              _this25.unsub('modal_events');
 
-              _this21.modal_ref = null;
+              _this25.modal_ref = null;
             });
           }
         }
@@ -2309,6 +2601,12 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     var src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! src/app/shared/shared.module */
     "./src/app/shared/shared.module.ts");
+    /* harmony import */
+
+
+    var _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ./domain-about/domain-about.component */
+    "./src/app/shell/domains/domain-about/domain-about.component.ts");
 
     var AppDomainsModule = function AppDomainsModule() {
       _classCallCheck(this, AppDomainsModule);
@@ -2321,13 +2619,13 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       factory: function AppDomainsModule_Factory(t) {
         return new (t || AppDomainsModule)();
       },
-      imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(_domains_routes__WEBPACK_IMPORTED_MODULE_4__["ROUTES"]), src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]]]
+      imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(_domains_routes__WEBPACK_IMPORTED_MODULE_4__["ROUTES"]), src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]]]
     });
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AppDomainsModule, {
-        declarations: [_domains_component__WEBPACK_IMPORTED_MODULE_5__["DomainsComponent"], _domain_applications_domain_applications_component__WEBPACK_IMPORTED_MODULE_6__["DomainApplicationsComponent"], _domain_authentication_domain_authentication_component__WEBPACK_IMPORTED_MODULE_7__["DomainAuthenticationComponent"], _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_8__["DomainUsersComponent"]],
-        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"], src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]]
+        declarations: [_domains_component__WEBPACK_IMPORTED_MODULE_5__["DomainsComponent"], _domain_applications_domain_applications_component__WEBPACK_IMPORTED_MODULE_6__["DomainApplicationsComponent"], _domain_authentication_domain_authentication_component__WEBPACK_IMPORTED_MODULE_7__["DomainAuthenticationComponent"], _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_8__["DomainUsersComponent"], _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_10__["DomainAboutComponent"]],
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"], src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]]
       });
     })();
     /*@__PURE__*/
@@ -2337,8 +2635,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppDomainsModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-          declarations: [_domains_component__WEBPACK_IMPORTED_MODULE_5__["DomainsComponent"], _domain_applications_domain_applications_component__WEBPACK_IMPORTED_MODULE_6__["DomainApplicationsComponent"], _domain_authentication_domain_authentication_component__WEBPACK_IMPORTED_MODULE_7__["DomainAuthenticationComponent"], _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_8__["DomainUsersComponent"]],
-          imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(_domains_routes__WEBPACK_IMPORTED_MODULE_4__["ROUTES"]), src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]]
+          declarations: [_domains_component__WEBPACK_IMPORTED_MODULE_5__["DomainsComponent"], _domain_applications_domain_applications_component__WEBPACK_IMPORTED_MODULE_6__["DomainApplicationsComponent"], _domain_authentication_domain_authentication_component__WEBPACK_IMPORTED_MODULE_7__["DomainAuthenticationComponent"], _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_8__["DomainUsersComponent"], _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_10__["DomainAboutComponent"]],
+          imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(_domains_routes__WEBPACK_IMPORTED_MODULE_4__["ROUTES"]), src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_9__["SharedContentModule"]]
         }]
       }], null, null);
     })();
@@ -2389,11 +2687,20 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     var _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./domain-users/domain-users.component */
     "./src/app/shell/domains/domain-users/domain-users.component.ts");
+    /* harmony import */
+
+
+    var _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./domain-about/domain-about.component */
+    "./src/app/shell/domains/domain-about/domain-about.component.ts");
 
     var ROUTES = [{
       path: ':id',
       component: _domains_component__WEBPACK_IMPORTED_MODULE_0__["DomainsComponent"],
       children: [{
+        path: 'about',
+        component: _domain_about_domain_about_component__WEBPACK_IMPORTED_MODULE_4__["DomainAboutComponent"]
+      }, {
         path: 'applications',
         component: _domain_applications_domain_applications_component__WEBPACK_IMPORTED_MODULE_1__["DomainApplicationsComponent"]
       }, {
@@ -2404,7 +2711,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
         component: _domain_users_domain_users_component__WEBPACK_IMPORTED_MODULE_3__["DomainUsersComponent"]
       }, {
         path: '**',
-        redirectTo: 'applications'
+        redirectTo: 'about'
       }]
     }, {
       path: '**',
