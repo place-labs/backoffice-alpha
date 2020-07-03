@@ -1,5 +1,25 @@
-function _templateObject327() {
+function _templateObject329() {
   var data = _taggedTemplateLiteral([":@@rootLoader\u241F14bedde62d9b8d981d5c7bfc90a28539f328e201\u241F6050958487477380449:Loading application data..."]);
+
+  _templateObject329 = function _templateObject329() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject328() {
+  var data = _taggedTemplateLiteral([":@@languageAction\u241Ffe46ccaae902ce974e2441abe752399288298619\u241F2826581353496868063:Language"]);
+
+  _templateObject328 = function _templateObject328() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject327() {
+  var data = _taggedTemplateLiteral([":@@newUserAction\u241F56d1a826e9d05dd72cc43c6f090b7e7d85a8caca\u241F3494336661951944774:{VAR_SELECT, select, true {Users } false {User }}"]);
 
   _templateObject327 = function _templateObject327() {
     return data;
@@ -9,7 +29,7 @@ function _templateObject327() {
 }
 
 function _templateObject326() {
-  var data = _taggedTemplateLiteral([":@@languageAction\u241Ffe46ccaae902ce974e2441abe752399288298619\u241F2826581353496868063:Language"]);
+  var data = _taggedTemplateLiteral([":@@newModuleAction\u241F01a95aab8ae8b06e0e1daf84dd9e6cf8e78d3d62\u241F4644596245398953801:{VAR_SELECT, select, true {Modules } false {Module }}"]);
 
   _templateObject326 = function _templateObject326() {
     return data;
@@ -19,7 +39,7 @@ function _templateObject326() {
 }
 
 function _templateObject325() {
-  var data = _taggedTemplateLiteral([":@@newUserAction\u241F56d1a826e9d05dd72cc43c6f090b7e7d85a8caca\u241F3494336661951944774:{VAR_SELECT, select, true {Users } false {User }}"]);
+  var data = _taggedTemplateLiteral([":@@newDriverAction\u241F80a021361db2047108a1a4f25c945511da9b1ecc\u241F8699416356467417400:{VAR_SELECT, select, true {Drivers } false {Driver }}"]);
 
   _templateObject325 = function _templateObject325() {
     return data;
@@ -29,7 +49,7 @@ function _templateObject325() {
 }
 
 function _templateObject324() {
-  var data = _taggedTemplateLiteral([":@@newModuleAction\u241F01a95aab8ae8b06e0e1daf84dd9e6cf8e78d3d62\u241F4644596245398953801:{VAR_SELECT, select, true {Modules } false {Module }}"]);
+  var data = _taggedTemplateLiteral([":@@newZoneAction\u241F00363f937b2363a638bab27b4c7fc3d2ef1618cf\u241F4149854438708661230:{VAR_SELECT, select, true {Zones } false {Zone }}"]);
 
   _templateObject324 = function _templateObject324() {
     return data;
@@ -39,7 +59,7 @@ function _templateObject324() {
 }
 
 function _templateObject323() {
-  var data = _taggedTemplateLiteral([":@@newDriverAction\u241F80a021361db2047108a1a4f25c945511da9b1ecc\u241F8699416356467417400:{VAR_SELECT, select, true {Drivers } false {Driver }}"]);
+  var data = _taggedTemplateLiteral([":@@newSystemAction\u241F1457387612e2afc6878ea808c7fd36d91b9bd434\u241F4377142603300937838:{VAR_SELECT, select, true {Systems } false {System }}"]);
 
   _templateObject323 = function _templateObject323() {
     return data;
@@ -49,7 +69,7 @@ function _templateObject323() {
 }
 
 function _templateObject322() {
-  var data = _taggedTemplateLiteral([":@@newZoneAction\u241F00363f937b2363a638bab27b4c7fc3d2ef1618cf\u241F4149854438708661230:{VAR_SELECT, select, true {Zones } false {Zone }}"]);
+  var data = _taggedTemplateLiteral([":@@bulkNewAction\u241F8b0c4bd174d9a59a43aa2c1d06e77e79005de155\u241F453148519308187877:Bulk New"]);
 
   _templateObject322 = function _templateObject322() {
     return data;
@@ -59,7 +79,7 @@ function _templateObject322() {
 }
 
 function _templateObject321() {
-  var data = _taggedTemplateLiteral([":@@newSystemAction\u241F1457387612e2afc6878ea808c7fd36d91b9bd434\u241F4377142603300937838:{VAR_SELECT, select, true {Systems } false {System }}"]);
+  var data = _taggedTemplateLiteral([":@@newAction\u241Fd81f00c85d3b507f3e3d78bfc617a2c66e028391\u241F5280218112746407598:New"]);
 
   _templateObject321 = function _templateObject321() {
     return data;
@@ -69,7 +89,7 @@ function _templateObject321() {
 }
 
 function _templateObject320() {
-  var data = _taggedTemplateLiteral([":@@bulkNewAction\u241F8b0c4bd174d9a59a43aa2c1d06e77e79005de155\u241F453148519308187877:Bulk New"]);
+  var data = _taggedTemplateLiteral([":@@reportAction\u241Fbe8ddc0368963c912be90c70b88f18a0d99879e4\u241F7126973103434606149:Report an Issue"]);
 
   _templateObject320 = function _templateObject320() {
     return data;
@@ -79,7 +99,7 @@ function _templateObject320() {
 }
 
 function _templateObject319() {
-  var data = _taggedTemplateLiteral([":@@newAction\u241Fd81f00c85d3b507f3e3d78bfc617a2c66e028391\u241F5280218112746407598:New"]);
+  var data = _taggedTemplateLiteral([":@@darkMode\u241Fc943d5ecc32b916a210d7c984fe5f55771ad0b1a\u241F3279636347259347513:Dark Mode"]);
 
   _templateObject319 = function _templateObject319() {
     return data;
@@ -89,7 +109,7 @@ function _templateObject319() {
 }
 
 function _templateObject318() {
-  var data = _taggedTemplateLiteral([":@@reportAction\u241Fbe8ddc0368963c912be90c70b88f18a0d99879e4\u241F7126973103434606149:Report an Issue"]);
+  var data = _taggedTemplateLiteral([":@@logoutAction\u241Fbb694b49d408265c91c62799c2b3a7e3151c824d\u241F3797778920049399855:Logout"]);
 
   _templateObject318 = function _templateObject318() {
     return data;
@@ -99,7 +119,7 @@ function _templateObject318() {
 }
 
 function _templateObject317() {
-  var data = _taggedTemplateLiteral([":@@darkMode\u241Fc943d5ecc32b916a210d7c984fe5f55771ad0b1a\u241F3279636347259347513:Dark Mode"]);
+  var data = _taggedTemplateLiteral([":@@profileAction\u241F994363f08f9fbfa3b3994ff7b35c6904fdff18d8\u241F4915431133669985304:Profile"]);
 
   _templateObject317 = function _templateObject317() {
     return data;
@@ -109,7 +129,7 @@ function _templateObject317() {
 }
 
 function _templateObject316() {
-  var data = _taggedTemplateLiteral([":@@logoutAction\u241Fbb694b49d408265c91c62799c2b3a7e3151c824d\u241F3797778920049399855:Logout"]);
+  var data = _taggedTemplateLiteral([":\u241F328708dce9025cefba33d1fb55930918d6bd43cf\u241F5975271772062060140: ", ":ICU: "]);
 
   _templateObject316 = function _templateObject316() {
     return data;
@@ -119,7 +139,7 @@ function _templateObject316() {
 }
 
 function _templateObject315() {
-  var data = _taggedTemplateLiteral([":@@profileAction\u241F994363f08f9fbfa3b3994ff7b35c6904fdff18d8\u241F4915431133669985304:Profile"]);
+  var data = _taggedTemplateLiteral([":\u241Fd159c8ee1ab00895d011670aec21f52593bbe8f3\u241F1497526233588378893:{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repos {Repos } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}"]);
 
   _templateObject315 = function _templateObject315() {
     return data;
@@ -129,7 +149,7 @@ function _templateObject315() {
 }
 
 function _templateObject314() {
-  var data = _taggedTemplateLiteral([":\u241F328708dce9025cefba33d1fb55930918d6bd43cf\u241F5975271772062060140: ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":\u241Fa1e20a5411dd200fdd7d60e8ee2dbc31a9fa60de\u241F4490461035567493937: Add new ", ":INTERPOLATION: "]);
 
   _templateObject314 = function _templateObject314() {
     return data;
@@ -139,7 +159,7 @@ function _templateObject314() {
 }
 
 function _templateObject313() {
-  var data = _taggedTemplateLiteral([":\u241Fd159c8ee1ab00895d011670aec21f52593bbe8f3\u241F1497526233588378893:{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repos {Repos } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":\u241F71af3b0c94878b7a01117a33f35d1e37057cf07f\u241F4582722582214648803:\n            Exceeded quota! No new item can be created\n            until the total is below you license count."]);
 
   _templateObject313 = function _templateObject313() {
     return data;
@@ -149,7 +169,7 @@ function _templateObject313() {
 }
 
 function _templateObject312() {
-  var data = _taggedTemplateLiteral([":\u241Fa1e20a5411dd200fdd7d60e8ee2dbc31a9fa60de\u241F4490461035567493937: Add new ", ":INTERPOLATION: "]);
+  var data = _taggedTemplateLiteral([":\u241F4437d7f46a39b4fbe2821eb4c414848fcbbe4051\u241F7954964908113382488:{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repositories {Repositories } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}"]);
 
   _templateObject312 = function _templateObject312() {
     return data;
@@ -159,7 +179,7 @@ function _templateObject312() {
 }
 
 function _templateObject311() {
-  var data = _taggedTemplateLiteral([":\u241F71af3b0c94878b7a01117a33f35d1e37057cf07f\u241F4582722582214648803:\n            Exceeded quota! No new item can be created\n            until the total is below you license count."]);
+  var data = _taggedTemplateLiteral([":@@deleteAction\u241F61fc382bf58f28881d40c717f4606a554cedc3c4\u241F721771769947153347: Delete ", ":ICU: [D] "]);
 
   _templateObject311 = function _templateObject311() {
     return data;
@@ -169,7 +189,7 @@ function _templateObject311() {
 }
 
 function _templateObject310() {
-  var data = _taggedTemplateLiteral([":\u241F4437d7f46a39b4fbe2821eb4c414848fcbbe4051\u241F7954964908113382488:{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repositories {Repositories } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject310 = function _templateObject310() {
     return data;
@@ -179,7 +199,7 @@ function _templateObject310() {
 }
 
 function _templateObject309() {
-  var data = _taggedTemplateLiteral([":@@deleteAction\u241F61fc382bf58f28881d40c717f4606a554cedc3c4\u241F721771769947153347: Delete ", ":ICU: [D] "]);
+  var data = _taggedTemplateLiteral([":@@editAction\u241F21ceb22efac889d1779502a913c6a6034fce2762\u241F3319045061424151644: Edit ", ":ICU: [E] "]);
 
   _templateObject309 = function _templateObject309() {
     return data;
@@ -199,7 +219,7 @@ function _templateObject308() {
 }
 
 function _templateObject307() {
-  var data = _taggedTemplateLiteral([":@@editAction\u241F21ceb22efac889d1779502a913c6a6034fce2762\u241F3319045061424151644: Edit ", ":ICU: [E] "]);
+  var data = _taggedTemplateLiteral([":@@itemLoading\u241F52d044ff4297029471c22520db9de1da5f9f5a38\u241F2653895365641621709: Loading ", ":ICU:... "]);
 
   _templateObject307 = function _templateObject307() {
     return data;
@@ -209,7 +229,7 @@ function _templateObject307() {
 }
 
 function _templateObject306() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":\u241Fa087d72479f0869cfee2f4b2993c38db8786c16e\u241F1515061680644220493:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other\n        }}"]);
 
   _templateObject306 = function _templateObject306() {
     return data;
@@ -219,7 +239,7 @@ function _templateObject306() {
 }
 
 function _templateObject305() {
-  var data = _taggedTemplateLiteral([":@@itemLoading\u241F52d044ff4297029471c22520db9de1da5f9f5a38\u241F2653895365641621709: Loading ", ":ICU:... "]);
+  var data = _taggedTemplateLiteral([":@@selectItemMobile\u241F384929f519ae014136d51fc46e276888d6f91823\u241F2159444929156162707: Select a ", ":ICU: from the search bar "]);
 
   _templateObject305 = function _templateObject305() {
     return data;
@@ -229,7 +249,7 @@ function _templateObject305() {
 }
 
 function _templateObject304() {
-  var data = _taggedTemplateLiteral([":\u241Fa087d72479f0869cfee2f4b2993c38db8786c16e\u241F1515061680644220493:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other\n        }}"]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject304 = function _templateObject304() {
     return data;
@@ -239,7 +259,7 @@ function _templateObject304() {
 }
 
 function _templateObject303() {
-  var data = _taggedTemplateLiteral([":@@selectItemMobile\u241F384929f519ae014136d51fc46e276888d6f91823\u241F2159444929156162707: Select a ", ":ICU: from the search bar "]);
+  var data = _taggedTemplateLiteral([":@@selectItem\u241F079228ff68aec07ed1e85c1135d1c02ec12550a3\u241F7513824411355833289: Select a ", ":ICU: from the sidebar "]);
 
   _templateObject303 = function _templateObject303() {
     return data;
@@ -259,7 +279,7 @@ function _templateObject302() {
 }
 
 function _templateObject301() {
-  var data = _taggedTemplateLiteral([":@@selectItem\u241F079228ff68aec07ed1e85c1135d1c02ec12550a3\u241F7513824411355833289: Select a ", ":ICU: from the sidebar "]);
+  var data = _taggedTemplateLiteral([":@@tabNames\u241Ff5d55010cea116d649d36311938f07a7b09c6e79\u241F4365557421863687412: ", ":ICU: \xA0 "]);
 
   _templateObject301 = function _templateObject301() {
     return data;
@@ -269,7 +289,7 @@ function _templateObject301() {
 }
 
 function _templateObject300() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":\u241F377431400b7c82410100e5b09cce0a22a7babf3f\u241F927071735214087141:{VAR_SELECT, select, About {About } Modules {Modules } Zones {Zones } Triggers {Triggers } Systems {Systems } Metadata {Metadata } Children {Children } Drivers {Drivers } History {History } Applications {Applications } Authentication {Authentication } Users {Users } Database {Database } Clusters {Clusters } Interfaces {Interfaces } MQTT Brokers {MQTT Brokers } other {Other }}"]);
 
   _templateObject300 = function _templateObject300() {
     return data;
@@ -279,7 +299,7 @@ function _templateObject300() {
 }
 
 function _templateObject299() {
-  var data = _taggedTemplateLiteral([":@@tabNames\u241Ff5d55010cea116d649d36311938f07a7b09c6e79\u241F4365557421863687412: ", ":ICU: \xA0 "]);
+  var data = _taggedTemplateLiteral([":@@secure\u241Ff6fb6b1a38912a6dce713ec93049253d2bb09ec1\u241F6818576096697117709:Secure"]);
 
   _templateObject299 = function _templateObject299() {
     return data;
@@ -289,7 +309,7 @@ function _templateObject299() {
 }
 
 function _templateObject298() {
-  var data = _taggedTemplateLiteral([":\u241F377431400b7c82410100e5b09cce0a22a7babf3f\u241F927071735214087141:{VAR_SELECT, select, About {About } Modules {Modules } Zones {Zones } Triggers {Triggers } Systems {Systems } Metadata {Metadata } Children {Children } Drivers {Drivers } History {History } Applications {Applications } Authentication {Authentication } Users {Users } Database {Database } Clusters {Clusters } Interfaces {Interfaces } MQTT Brokers {MQTT Brokers } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":@@onlineState\u241F7660aaa8fa61bddb05966595d391bb27b3bfb67c\u241F2757699679594366926: ", ":ICU: "]);
 
   _templateObject298 = function _templateObject298() {
     return data;
@@ -299,7 +319,7 @@ function _templateObject298() {
 }
 
 function _templateObject297() {
-  var data = _taggedTemplateLiteral([":@@secure\u241Ff6fb6b1a38912a6dce713ec93049253d2bb09ec1\u241F6818576096697117709:Secure"]);
+  var data = _taggedTemplateLiteral([":\u241Fdf3256642015f9f9c6e01ba29f1f5f74f18a67ff\u241F1133432502520691599:{VAR_SELECT, select, true {Online } false {Offline } other {Other }}"]);
 
   _templateObject297 = function _templateObject297() {
     return data;
@@ -309,7 +329,7 @@ function _templateObject297() {
 }
 
 function _templateObject296() {
-  var data = _taggedTemplateLiteral([":@@onlineState\u241F7660aaa8fa61bddb05966595d391bb27b3bfb67c\u241F2757699679594366926: ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":@@driverType\u241Fc8c46d751e5c3c2c2dc4aa5b692aca82b8c8f5b2\u241F8490238683340498476: ", ":ICU: "]);
 
   _templateObject296 = function _templateObject296() {
     return data;
@@ -319,7 +339,7 @@ function _templateObject296() {
 }
 
 function _templateObject295() {
-  var data = _taggedTemplateLiteral([":\u241Fdf3256642015f9f9c6e01ba29f1f5f74f18a67ff\u241F1133432502520691599:{VAR_SELECT, select, true {Online } false {Offline } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":\u241F2ff3c95508830453d9aa8026026bebdb7e068ff3\u241F930388057628811577:{VAR_SELECT, select, Device {Device } Logic {Logic } SSH {SSH } Websocket {Websocket } Service {Service } other {Other }}"]);
 
   _templateObject295 = function _templateObject295() {
     return data;
@@ -329,7 +349,7 @@ function _templateObject295() {
 }
 
 function _templateObject294() {
-  var data = _taggedTemplateLiteral([":@@driverType\u241Fc8c46d751e5c3c2c2dc4aa5b692aca82b8c8f5b2\u241F8490238683340498476: ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":@@exporeAction\u241F9d2eec442dd6661ddc55b1a55606f586dfe92df7\u241F6976166530197119541: Export ", ":ICU: as TSV template "]);
 
   _templateObject294 = function _templateObject294() {
     return data;
@@ -339,7 +359,7 @@ function _templateObject294() {
 }
 
 function _templateObject293() {
-  var data = _taggedTemplateLiteral([":\u241F2ff3c95508830453d9aa8026026bebdb7e068ff3\u241F930388057628811577:{VAR_SELECT, select, Device {Device } Logic {Logic } SSH {SSH } Websocket {Websocket } Service {Service } other {Other }}"]);
+  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
 
   _templateObject293 = function _templateObject293() {
     return data;
@@ -349,7 +369,7 @@ function _templateObject293() {
 }
 
 function _templateObject292() {
-  var data = _taggedTemplateLiteral([":@@exporeAction\u241F9d2eec442dd6661ddc55b1a55606f586dfe92df7\u241F6976166530197119541: Export ", ":ICU: as TSV template "]);
+  var data = _taggedTemplateLiteral([":@@duplicateAction\u241F41bd546356e6e3f040c515d8057a7ad9d13702d3\u241F6000965021238022836: Duplicate ", ":ICU: "]);
 
   _templateObject292 = function _templateObject292() {
     return data;
@@ -369,7 +389,7 @@ function _templateObject291() {
 }
 
 function _templateObject290() {
-  var data = _taggedTemplateLiteral([":@@duplicateAction\u241F41bd546356e6e3f040c515d8057a7ad9d13702d3\u241F6000965021238022836: Duplicate ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":@@copyItemAction\u241F1b32a43f6b66009f73629476c0acac5f1278c91f\u241F6066848467110836457: Create new from this ", ":ICU: "]);
 
   _templateObject290 = function _templateObject290() {
     return data;
@@ -389,7 +409,7 @@ function _templateObject289() {
 }
 
 function _templateObject288() {
-  var data = _taggedTemplateLiteral([":@@copyItemAction\u241F1b32a43f6b66009f73629476c0acac5f1278c91f\u241F6066848467110836457: Create new from this ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":@@mapUrlPlaceholder\u241Fb4b18d9d669719c8c7439750dc36df8b85e869a9\u241F6753878050259146319:Map ID or URL"]);
 
   _templateObject288 = function _templateObject288() {
     return data;
@@ -399,7 +419,7 @@ function _templateObject288() {
 }
 
 function _templateObject287() {
-  var data = _taggedTemplateLiteral([":\u241F093538d4070407c4aeff8e6f846024b3a6afa304\u241F3973811633009541633:{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}"]);
+  var data = _taggedTemplateLiteral([":@@mapUrlLabel\u241Fb59ac98267a9fea534d729d6021e4ad108b9166e\u241F5947091241433737383:Map:"]);
 
   _templateObject287 = function _templateObject287() {
     return data;
@@ -409,7 +429,7 @@ function _templateObject287() {
 }
 
 function _templateObject286() {
-  var data = _taggedTemplateLiteral([":@@mapUrlPlaceholder\u241Fb4b18d9d669719c8c7439750dc36df8b85e869a9\u241F6753878050259146319:Map ID or URL"]);
+  var data = _taggedTemplateLiteral([":@@zoneCapacityPlaceholder\u241F134a4b73b60ff641a03d3a8b934ae9e426523ae8\u241F7734256545220786201:Physical capacity of the zone"]);
 
   _templateObject286 = function _templateObject286() {
     return data;
@@ -419,7 +439,7 @@ function _templateObject286() {
 }
 
 function _templateObject285() {
-  var data = _taggedTemplateLiteral([":@@mapUrlLabel\u241Fb59ac98267a9fea534d729d6021e4ad108b9166e\u241F5947091241433737383:Map:"]);
+  var data = _taggedTemplateLiteral([":@@capacityLabel\u241Fa1170e85d1897210d5fe03d1f363587de15d02cd\u241F8062822823331512246:Capacity:"]);
 
   _templateObject285 = function _templateObject285() {
     return data;
@@ -429,7 +449,7 @@ function _templateObject285() {
 }
 
 function _templateObject284() {
-  var data = _taggedTemplateLiteral([":@@zoneCapacityPlaceholder\u241F134a4b73b60ff641a03d3a8b934ae9e426523ae8\u241F7734256545220786201:Physical capacity of the zone"]);
+  var data = _taggedTemplateLiteral([":@@zoneFeatureCountPlaceholder\u241F5c4156cb0372c1beb930c5fa7fcb97a71bf8e81f\u241F5165905722503978389:Resource count. Desks, Hardware, etc."]);
 
   _templateObject284 = function _templateObject284() {
     return data;
@@ -439,7 +459,7 @@ function _templateObject284() {
 }
 
 function _templateObject283() {
-  var data = _taggedTemplateLiteral([":@@capacityLabel\u241Fa1170e85d1897210d5fe03d1f363587de15d02cd\u241F8062822823331512246:Capacity:"]);
+  var data = _taggedTemplateLiteral([":@@countLabel\u241Fe684046d73bcee88e82f7ff01e2852789a05fc32\u241F6836949342567686088:Count:"]);
 
   _templateObject283 = function _templateObject283() {
     return data;
@@ -449,7 +469,7 @@ function _templateObject283() {
 }
 
 function _templateObject282() {
-  var data = _taggedTemplateLiteral([":@@zoneFeatureCountPlaceholder\u241F5c4156cb0372c1beb930c5fa7fcb97a71bf8e81f\u241F5165905722503978389:Resource count. Desks, Hardware, etc."]);
+  var data = _taggedTemplateLiteral([":@@zoneTypePlaceholder\u241F850c309c2c6cda8212f559414838f9071223d7ad\u241F2265282878270583875:Organisational Categorisation"]);
 
   _templateObject282 = function _templateObject282() {
     return data;
@@ -459,7 +479,7 @@ function _templateObject282() {
 }
 
 function _templateObject281() {
-  var data = _taggedTemplateLiteral([":@@countLabel\u241Fe684046d73bcee88e82f7ff01e2852789a05fc32\u241F6836949342567686088:Count:"]);
+  var data = _taggedTemplateLiteral([":@@typeLabel\u241Fe78c0d60ac39787f62c9159646fe0b3c1ed55a1d\u241F2736556170366900089:Type:"]);
 
   _templateObject281 = function _templateObject281() {
     return data;
@@ -469,7 +489,7 @@ function _templateObject281() {
 }
 
 function _templateObject280() {
-  var data = _taggedTemplateLiteral([":@@zoneTypePlaceholder\u241F850c309c2c6cda8212f559414838f9071223d7ad\u241F2265282878270583875:Organisational Categorisation"]);
+  var data = _taggedTemplateLiteral([":@@codePlaceholder\u241F817f526a89b8ab78083a764cbcd590fd5412be84\u241F8686897182969797112:Organisation Code"]);
 
   _templateObject280 = function _templateObject280() {
     return data;
@@ -479,7 +499,7 @@ function _templateObject280() {
 }
 
 function _templateObject279() {
-  var data = _taggedTemplateLiteral([":@@typeLabel\u241Fe78c0d60ac39787f62c9159646fe0b3c1ed55a1d\u241F2736556170366900089:Type:"]);
+  var data = _taggedTemplateLiteral([":@@codeLabel\u241F08a3263c58aafca24f31b3f312d90934a14069e5\u241F4793952596010266372:Code:"]);
 
   _templateObject279 = function _templateObject279() {
     return data;
@@ -489,7 +509,7 @@ function _templateObject279() {
 }
 
 function _templateObject278() {
-  var data = _taggedTemplateLiteral([":@@codePlaceholder\u241F817f526a89b8ab78083a764cbcd590fd5412be84\u241F8686897182969797112:Organisation Code"]);
+  var data = _taggedTemplateLiteral([":@@locationPlaceholder\u241Fb3e5a1f76ec45c4b931802cffa6fccfda193d326\u241F5207377723288317697:Geo-location details for zone. <lat, long>"]);
 
   _templateObject278 = function _templateObject278() {
     return data;
@@ -499,7 +519,7 @@ function _templateObject278() {
 }
 
 function _templateObject277() {
-  var data = _taggedTemplateLiteral([":@@codeLabel\u241F08a3263c58aafca24f31b3f312d90934a14069e5\u241F4793952596010266372:Code:"]);
+  var data = _taggedTemplateLiteral([":@@locationLabel\u241F4bebbae34f84157c0b5b852529f0bc2c39a5a38a\u241F4510013877734913501:Location:"]);
 
   _templateObject277 = function _templateObject277() {
     return data;
@@ -509,7 +529,7 @@ function _templateObject277() {
 }
 
 function _templateObject276() {
-  var data = _taggedTemplateLiteral([":@@locationPlaceholder\u241Fb3e5a1f76ec45c4b931802cffa6fccfda193d326\u241F5207377723288317697:Geo-location details for zone. <lat, long>"]);
+  var data = _taggedTemplateLiteral([":@@descriptionPlaceholder\u241Feec715de352a6b114713b30b640d319fa78207a0\u241F4902817035128594900:Description"]);
 
   _templateObject276 = function _templateObject276() {
     return data;
@@ -519,7 +539,7 @@ function _templateObject276() {
 }
 
 function _templateObject275() {
-  var data = _taggedTemplateLiteral([":@@locationLabel\u241F4bebbae34f84157c0b5b852529f0bc2c39a5a38a\u241F4510013877734913501:Location:"]);
+  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
 
   _templateObject275 = function _templateObject275() {
     return data;
@@ -529,7 +549,7 @@ function _templateObject275() {
 }
 
 function _templateObject274() {
-  var data = _taggedTemplateLiteral([":@@descriptionPlaceholder\u241Feec715de352a6b114713b30b640d319fa78207a0\u241F4902817035128594900:Description"]);
+  var data = _taggedTemplateLiteral([":@@zoneTagsPlaceholder\u241F8dc7c13b0c6b8ad9c770bce0ad72e14b4aef8456\u241F3986010900542572161:Zone tags..."]);
 
   _templateObject274 = function _templateObject274() {
     return data;
@@ -539,7 +559,7 @@ function _templateObject274() {
 }
 
 function _templateObject273() {
-  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
+  var data = _taggedTemplateLiteral([":@@tagsLabel\u241Feb97e382f44a2509510b9f817b3760416d683b7e\u241F6536400157246961073: Tags: "]);
 
   _templateObject273 = function _templateObject273() {
     return data;
@@ -549,7 +569,7 @@ function _templateObject273() {
 }
 
 function _templateObject272() {
-  var data = _taggedTemplateLiteral([":@@zoneTagsPlaceholder\u241F8dc7c13b0c6b8ad9c770bce0ad72e14b4aef8456\u241F3986010900542572161:Zone tags..."]);
+  var data = _taggedTemplateLiteral([":@@zoneDisplayNamePlaceholder\u241Fdef055ca6569ccb72cf972e6e6b9b98c83a4cc5f\u241F2910270903067956845:Zone display name"]);
 
   _templateObject272 = function _templateObject272() {
     return data;
@@ -559,7 +579,7 @@ function _templateObject272() {
 }
 
 function _templateObject271() {
-  var data = _taggedTemplateLiteral([":@@tagsLabel\u241Feb97e382f44a2509510b9f817b3760416d683b7e\u241F6536400157246961073: Tags: "]);
+  var data = _taggedTemplateLiteral([":@@zoneNameError\u241F53a823845a372b4b6f6c43d6605938c624b8a6d2\u241F9002349265738353552:Zone name is required"]);
 
   _templateObject271 = function _templateObject271() {
     return data;
@@ -569,7 +589,7 @@ function _templateObject271() {
 }
 
 function _templateObject270() {
-  var data = _taggedTemplateLiteral([":@@zoneDisplayNamePlaceholder\u241Fdef055ca6569ccb72cf972e6e6b9b98c83a4cc5f\u241F2910270903067956845:Zone display name"]);
+  var data = _taggedTemplateLiteral([":@@zoneNamePlaceholder\u241F9908ce895693044630b8188ac54903ccdde33f2f\u241F2331642177230896856:Zone Name"]);
 
   _templateObject270 = function _templateObject270() {
     return data;
@@ -579,7 +599,7 @@ function _templateObject270() {
 }
 
 function _templateObject269() {
-  var data = _taggedTemplateLiteral([":@@zoneNameError\u241F53a823845a372b4b6f6c43d6605938c624b8a6d2\u241F9002349265738353552:Zone name is required"]);
+  var data = _taggedTemplateLiteral([":@@nameLabel\u241Fadcb9673ba45e87f6bc2337ff36d9ecf4639fafd\u241F4518781901288879415: Name", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN:: "]);
 
   _templateObject269 = function _templateObject269() {
     return data;
@@ -589,7 +609,7 @@ function _templateObject269() {
 }
 
 function _templateObject268() {
-  var data = _taggedTemplateLiteral([":@@zoneNamePlaceholder\u241F9908ce895693044630b8188ac54903ccdde33f2f\u241F2331642177230896856:Zone Name"]);
+  var data = _taggedTemplateLiteral([":@@parentZoneLabel\u241Fb1de2266dc47ca8475edc0afc00c5bdfabe3ae7d\u241F5689108453633767964:Parent Zone: "]);
 
   _templateObject268 = function _templateObject268() {
     return data;
@@ -599,7 +619,7 @@ function _templateObject268() {
 }
 
 function _templateObject267() {
-  var data = _taggedTemplateLiteral([":@@nameLabel\u241Fadcb9673ba45e87f6bc2337ff36d9ecf4639fafd\u241F4518781901288879415: Name", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN:: "]);
+  var data = _taggedTemplateLiteral([":@@checkPasswordError\u241Fa3516abf534e03884b37fb7338942f575aca8240\u241F4537715912643868735:Passwords don't match"]);
 
   _templateObject267 = function _templateObject267() {
     return data;
@@ -609,7 +629,7 @@ function _templateObject267() {
 }
 
 function _templateObject266() {
-  var data = _taggedTemplateLiteral([":@@parentZoneLabel\u241Fb1de2266dc47ca8475edc0afc00c5bdfabe3ae7d\u241F5689108453633767964:Parent Zone: "]);
+  var data = _taggedTemplateLiteral([":@@checkPasswordPlaceholder\u241Fc1b7e6d75ff4285c7636c67e5ef259629b81725b\u241F3241357959735682038:Confirm Password"]);
 
   _templateObject266 = function _templateObject266() {
     return data;
@@ -619,7 +639,7 @@ function _templateObject266() {
 }
 
 function _templateObject265() {
-  var data = _taggedTemplateLiteral([":@@checkPasswordError\u241Fa3516abf534e03884b37fb7338942f575aca8240\u241F4537715912643868735:Passwords don't match"]);
+  var data = _taggedTemplateLiteral([":@@checkPasswordLabel\u241F21a1eed0c2256f77a6dfa8383ab3d326eaf2c837\u241F3621727704984227874: Confirm Pasword: "]);
 
   _templateObject265 = function _templateObject265() {
     return data;
@@ -629,7 +649,7 @@ function _templateObject265() {
 }
 
 function _templateObject264() {
-  var data = _taggedTemplateLiteral([":@@checkPasswordPlaceholder\u241Fc1b7e6d75ff4285c7636c67e5ef259629b81725b\u241F3241357959735682038:Confirm Password"]);
+  var data = _taggedTemplateLiteral([":@@passordError\u241Fa4a78d87623c06ef0f4839720801a33aed37f340\u241F6783056096271799189:A valid password is required"]);
 
   _templateObject264 = function _templateObject264() {
     return data;
@@ -639,7 +659,7 @@ function _templateObject264() {
 }
 
 function _templateObject263() {
-  var data = _taggedTemplateLiteral([":@@checkPasswordLabel\u241F21a1eed0c2256f77a6dfa8383ab3d326eaf2c837\u241F3621727704984227874: Confirm Pasword: "]);
+  var data = _taggedTemplateLiteral([":@@passwordPlaceholder\u241Fc32ef07f8803a223a83ed17024b38e8d82292407\u241F1431416938026210429:Password"]);
 
   _templateObject263 = function _templateObject263() {
     return data;
@@ -649,7 +669,7 @@ function _templateObject263() {
 }
 
 function _templateObject262() {
-  var data = _taggedTemplateLiteral([":@@passordError\u241Fa4a78d87623c06ef0f4839720801a33aed37f340\u241F6783056096271799189:A valid password is required"]);
+  var data = _taggedTemplateLiteral([":@@passwordLabel\u241F5448f896476c7fc4e079680b81d0eb56f9aeffad\u241F4299257584970792751: Password: "]);
 
   _templateObject262 = function _templateObject262() {
     return data;
@@ -659,7 +679,7 @@ function _templateObject262() {
 }
 
 function _templateObject261() {
-  var data = _taggedTemplateLiteral([":@@passwordPlaceholder\u241Fc32ef07f8803a223a83ed17024b38e8d82292407\u241F1431416938026210429:Password"]);
+  var data = _taggedTemplateLiteral([":@@adminLabel\u241F07414ab16cefe4d3e009999c717a3336d6dfa4f5\u241F9145160666349260448:System Admin"]);
 
   _templateObject261 = function _templateObject261() {
     return data;
@@ -669,7 +689,7 @@ function _templateObject261() {
 }
 
 function _templateObject260() {
-  var data = _taggedTemplateLiteral([":@@passwordLabel\u241F5448f896476c7fc4e079680b81d0eb56f9aeffad\u241F4299257584970792751: Password: "]);
+  var data = _taggedTemplateLiteral([":@@supportLabel\u241Fb5629d298ff1a69b8db19a4ba2995c76b52da604\u241F2288513108450439427:Support"]);
 
   _templateObject260 = function _templateObject260() {
     return data;
@@ -679,7 +699,7 @@ function _templateObject260() {
 }
 
 function _templateObject259() {
-  var data = _taggedTemplateLiteral([":@@adminLabel\u241F07414ab16cefe4d3e009999c717a3336d6dfa4f5\u241F9145160666349260448:System Admin"]);
+  var data = _taggedTemplateLiteral([":@@cardNumberError\u241Fab529c81668735a4cb7a6f829e6e1d28fae584ee\u241F1972801364330497000:A valid Card Number is required"]);
 
   _templateObject259 = function _templateObject259() {
     return data;
@@ -689,7 +709,7 @@ function _templateObject259() {
 }
 
 function _templateObject258() {
-  var data = _taggedTemplateLiteral([":@@supportLabel\u241Fb5629d298ff1a69b8db19a4ba2995c76b52da604\u241F2288513108450439427:Support"]);
+  var data = _taggedTemplateLiteral([":@@cardNumberPlaceholder\u241Fc51ae86488666fc691751bf76d88811b37505c00\u241F1085309836704157602:Card Number"]);
 
   _templateObject258 = function _templateObject258() {
     return data;
@@ -699,7 +719,7 @@ function _templateObject258() {
 }
 
 function _templateObject257() {
-  var data = _taggedTemplateLiteral([":@@cardNumberError\u241Fab529c81668735a4cb7a6f829e6e1d28fae584ee\u241F1972801364330497000:A valid Card Number is required"]);
+  var data = _taggedTemplateLiteral([":@@cardNumberLabel\u241F8971cd18df46066d774ccf0679dbe71c7c63e30f\u241F4236277563227182681: Card Number: "]);
 
   _templateObject257 = function _templateObject257() {
     return data;
@@ -709,7 +729,7 @@ function _templateObject257() {
 }
 
 function _templateObject256() {
-  var data = _taggedTemplateLiteral([":@@cardNumberPlaceholder\u241Fc51ae86488666fc691751bf76d88811b37505c00\u241F1085309836704157602:Card Number"]);
+  var data = _taggedTemplateLiteral([":@@emailError\u241F66a4553914df830f0bc1dd1f0a42c57fd85864de\u241F6407494155279173358:A valid email is required"]);
 
   _templateObject256 = function _templateObject256() {
     return data;
@@ -719,7 +739,7 @@ function _templateObject256() {
 }
 
 function _templateObject255() {
-  var data = _taggedTemplateLiteral([":@@cardNumberLabel\u241F8971cd18df46066d774ccf0679dbe71c7c63e30f\u241F4236277563227182681: Card Number: "]);
+  var data = _taggedTemplateLiteral([":@@emailPlaceholder\u241F244aae9346da82b0922506c2d2581373a15641cc\u241F4768749765465246664:Email"]);
 
   _templateObject255 = function _templateObject255() {
     return data;
@@ -729,7 +749,7 @@ function _templateObject255() {
 }
 
 function _templateObject254() {
-  var data = _taggedTemplateLiteral([":@@emailError\u241F66a4553914df830f0bc1dd1f0a42c57fd85864de\u241F6407494155279173358:A valid email is required"]);
+  var data = _taggedTemplateLiteral([":@@emailLabel\u241F53c15daa4621098b2ffebf922064ec63ddc26fd5\u241F3482490221732073344: Email", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN:: "]);
 
   _templateObject254 = function _templateObject254() {
     return data;
@@ -739,7 +759,7 @@ function _templateObject254() {
 }
 
 function _templateObject253() {
-  var data = _taggedTemplateLiteral([":@@emailPlaceholder\u241F244aae9346da82b0922506c2d2581373a15641cc\u241F4768749765465246664:Email"]);
+  var data = _taggedTemplateLiteral([":@@userNameError\u241F7c5fa02072147cbd301fdc9522fdda648ad4cb24\u241F1801818211022600675:User's name is required"]);
 
   _templateObject253 = function _templateObject253() {
     return data;
@@ -749,7 +769,7 @@ function _templateObject253() {
 }
 
 function _templateObject252() {
-  var data = _taggedTemplateLiteral([":@@emailLabel\u241F53c15daa4621098b2ffebf922064ec63ddc26fd5\u241F3482490221732073344: Email", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN:: "]);
+  var data = _taggedTemplateLiteral([":@@namePlaceholder\u241Fcff1428d10d59d14e45edec3c735a27b5482db59\u241F8953033926734869941:Name"]);
 
   _templateObject252 = function _templateObject252() {
     return data;
@@ -759,7 +779,7 @@ function _templateObject252() {
 }
 
 function _templateObject251() {
-  var data = _taggedTemplateLiteral([":@@userNameError\u241F7c5fa02072147cbd301fdc9522fdda648ad4cb24\u241F1801818211022600675:User's name is required"]);
+  var data = _taggedTemplateLiteral([":@@nameLabel\u241F2305b40131ebf8149550c6a07209f476afe45553\u241F4797254131591239266: Name", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN:: "]);
 
   _templateObject251 = function _templateObject251() {
     return data;
@@ -769,7 +789,7 @@ function _templateObject251() {
 }
 
 function _templateObject250() {
-  var data = _taggedTemplateLiteral([":@@namePlaceholder\u241Fcff1428d10d59d14e45edec3c735a27b5482db59\u241F8953033926734869941:Name"]);
+  var data = _taggedTemplateLiteral([":@@enableWebhooklabel\u241Faff606823fafbcd7081416e986d9b9237b78a868\u241F835166262276018448: Enable Webhook "]);
 
   _templateObject250 = function _templateObject250() {
     return data;
@@ -779,7 +799,7 @@ function _templateObject250() {
 }
 
 function _templateObject249() {
-  var data = _taggedTemplateLiteral([":@@nameLabel\u241F2305b40131ebf8149550c6a07209f476afe45553\u241F4797254131591239266: Name", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN:: "]);
+  var data = _taggedTemplateLiteral([":@@descriptionPlaceholder\u241Feec715de352a6b114713b30b640d319fa78207a0\u241F4902817035128594900:Description"]);
 
   _templateObject249 = function _templateObject249() {
     return data;
@@ -789,7 +809,7 @@ function _templateObject249() {
 }
 
 function _templateObject248() {
-  var data = _taggedTemplateLiteral([":@@enableWebhooklabel\u241Faff606823fafbcd7081416e986d9b9237b78a868\u241F835166262276018448: Enable Webhook "]);
+  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
 
   _templateObject248 = function _templateObject248() {
     return data;
@@ -799,7 +819,7 @@ function _templateObject248() {
 }
 
 function _templateObject247() {
-  var data = _taggedTemplateLiteral([":@@descriptionPlaceholder\u241Feec715de352a6b114713b30b640d319fa78207a0\u241F4902817035128594900:Description"]);
+  var data = _taggedTemplateLiteral([":@@triggerError\u241Fb8416013796e5f003679b24f87daa0d6f5ac862a\u241F4496558772458207497:Trigger name is required"]);
 
   _templateObject247 = function _templateObject247() {
     return data;
@@ -809,7 +829,7 @@ function _templateObject247() {
 }
 
 function _templateObject246() {
-  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
+  var data = _taggedTemplateLiteral([":@@triggerNamePlaceholder\u241F4c54591311a5d8c558659803fa1f7502146b1572\u241F4536705699985915810:Trigger Name"]);
 
   _templateObject246 = function _templateObject246() {
     return data;
@@ -819,7 +839,7 @@ function _templateObject246() {
 }
 
 function _templateObject245() {
-  var data = _taggedTemplateLiteral([":@@triggerError\u241Fb8416013796e5f003679b24f87daa0d6f5ac862a\u241F4496558772458207497:Trigger name is required"]);
+  var data = _taggedTemplateLiteral([":@@nameLabel\u241F0086787a66bd9938d2c140d6f8abed64e466fbf8\u241F3682970902519304055:Name", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN::"]);
 
   _templateObject245 = function _templateObject245() {
     return data;
@@ -829,7 +849,7 @@ function _templateObject245() {
 }
 
 function _templateObject244() {
-  var data = _taggedTemplateLiteral([":@@triggerNamePlaceholder\u241F4c54591311a5d8c558659803fa1f7502146b1572\u241F4536705699985915810:Trigger Name"]);
+  var data = _taggedTemplateLiteral([":@@triggerConditionType\u241F25283a13a8004d45ebee7acf8f9585502111cfc8\u241F4537971938677572163: ", ":ICU: "]);
 
   _templateObject244 = function _templateObject244() {
     return data;
@@ -839,7 +859,7 @@ function _templateObject244() {
 }
 
 function _templateObject243() {
-  var data = _taggedTemplateLiteral([":@@nameLabel\u241F0086787a66bd9938d2c140d6f8abed64e466fbf8\u241F3682970902519304055:Name", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN::"]);
+  var data = _taggedTemplateLiteral([":\u241F51a627fc769f7b2c9ac363df11cb0792188cdfc1\u241F7957547435558189921:{VAR_SELECT, select, compare {Compare Values } time {Particular Time }}"]);
 
   _templateObject243 = function _templateObject243() {
     return data;
@@ -849,7 +869,7 @@ function _templateObject243() {
 }
 
 function _templateObject242() {
-  var data = _taggedTemplateLiteral([":@@triggerConditionType\u241F25283a13a8004d45ebee7acf8f9585502111cfc8\u241F4537971938677572163: ", ":ICU: "]);
+  var data = _taggedTemplateLiteral([":@@conditionTypeLabel\u241F9e225ed83306a2e392f39645908a7052ed3eea6f\u241F6505188783075809263:Condition Type: "]);
 
   _templateObject242 = function _templateObject242() {
     return data;
@@ -859,7 +879,7 @@ function _templateObject242() {
 }
 
 function _templateObject241() {
-  var data = _taggedTemplateLiteral([":\u241F51a627fc769f7b2c9ac363df11cb0792188cdfc1\u241F7957547435558189921:{VAR_SELECT, select, compare {Compare Values } time {Particular Time }}"]);
+  var data = _taggedTemplateLiteral([":@@minuteLabel\u241F001b8781a098dc133a69476429c35951e289be12\u241F5922506489694689779:Minute past the hour: "]);
 
   _templateObject241 = function _templateObject241() {
     return data;
@@ -869,7 +889,7 @@ function _templateObject241() {
 }
 
 function _templateObject240() {
-  var data = _taggedTemplateLiteral([":@@conditionTypeLabel\u241F9e225ed83306a2e392f39645908a7052ed3eea6f\u241F6505188783075809263:Condition Type: "]);
+  var data = _taggedTemplateLiteral([":@@hourLabel\u241F5d327a5a995bf9120655831ba3f431ae7e321e90\u241F985720588940513633:Hour in the day: "]);
 
   _templateObject240 = function _templateObject240() {
     return data;
@@ -879,7 +899,7 @@ function _templateObject240() {
 }
 
 function _templateObject239() {
-  var data = _taggedTemplateLiteral([":@@minuteLabel\u241F001b8781a098dc133a69476429c35951e289be12\u241F5922506489694689779:Minute past the hour: "]);
+  var data = _taggedTemplateLiteral([":@@weekLabel\u241Fba320c11fad6a4b28e377eb1a80a5c08195145eb\u241F8344655300157810076:Day of week: "]);
 
   _templateObject239 = function _templateObject239() {
     return data;
@@ -889,7 +909,7 @@ function _templateObject239() {
 }
 
 function _templateObject238() {
-  var data = _taggedTemplateLiteral([":@@hourLabel\u241F5d327a5a995bf9120655831ba3f431ae7e321e90\u241F985720588940513633:Hour in the day: "]);
+  var data = _taggedTemplateLiteral([":@@monthLabel\u241Fc994e904745195076e112fbb5e71f526174789c1\u241F5153250344761092111:Month of year: "]);
 
   _templateObject238 = function _templateObject238() {
     return data;
@@ -899,7 +919,7 @@ function _templateObject238() {
 }
 
 function _templateObject237() {
-  var data = _taggedTemplateLiteral([":@@weekLabel\u241Fba320c11fad6a4b28e377eb1a80a5c08195145eb\u241F8344655300157810076:Day of week: "]);
+  var data = _taggedTemplateLiteral([":@@dayLabel\u241F7a1241a5e5ca2093e0779e32b51d84aae9b7e893\u241F4019421587856782916:Day of Month: "]);
 
   _templateObject237 = function _templateObject237() {
     return data;
@@ -909,7 +929,7 @@ function _templateObject237() {
 }
 
 function _templateObject236() {
-  var data = _taggedTemplateLiteral([":@@monthLabel\u241Fc994e904745195076e112fbb5e71f526174789c1\u241F5153250344761092111:Month of year: "]);
+  var data = _taggedTemplateLiteral([":@@repeatLabel\u241F61975ffaadf6d550a4e283d1ca2caf26bd5c24bb\u241F4213346500777653234:Repeat every: "]);
 
   _templateObject236 = function _templateObject236() {
     return data;
@@ -919,7 +939,7 @@ function _templateObject236() {
 }
 
 function _templateObject235() {
-  var data = _taggedTemplateLiteral([":@@dayLabel\u241F7a1241a5e5ca2093e0779e32b51d84aae9b7e893\u241F4019421587856782916:Day of Month: "]);
+  var data = _taggedTemplateLiteral([":@@timeLabel\u241F46b751d02eb94d5aedd00f6e559fa5d12a361558\u241F8803702192913740957:Time: "]);
 
   _templateObject235 = function _templateObject235() {
     return data;
@@ -929,7 +949,7 @@ function _templateObject235() {
 }
 
 function _templateObject234() {
-  var data = _taggedTemplateLiteral([":@@repeatLabel\u241F61975ffaadf6d550a4e283d1ca2caf26bd5c24bb\u241F4213346500777653234:Repeat every: "]);
+  var data = _taggedTemplateLiteral([":@@dateLabel\u241F9525ffe90586e28313b43904fa020a1ee1e434f6\u241F6735318627194228061:Date: "]);
 
   _templateObject234 = function _templateObject234() {
     return data;
@@ -939,7 +959,7 @@ function _templateObject234() {
 }
 
 function _templateObject233() {
-  var data = _taggedTemplateLiteral([":@@timeLabel\u241F46b751d02eb94d5aedd00f6e559fa5d12a361558\u241F8803702192913740957:Time: "]);
+  var data = _taggedTemplateLiteral([":@@recurringLabel\u241F4a07b300dd513f9f6eb9f70cf4383282e7540bf8\u241F1243996811904722643: Recurring Schedule "]);
 
   _templateObject233 = function _templateObject233() {
     return data;
@@ -949,7 +969,7 @@ function _templateObject233() {
 }
 
 function _templateObject232() {
-  var data = _taggedTemplateLiteral([":@@dateLabel\u241F9525ffe90586e28313b43904fa020a1ee1e434f6\u241F6735318627194228061:Date: "]);
+  var data = _taggedTemplateLiteral([":@@subkeysPlaceholder\u241F1f870126b7ffac2c5318bbf3dc13a545304aaf6d\u241F5404492045658532804:Status variable subkeys..."]);
 
   _templateObject232 = function _templateObject232() {
     return data;
@@ -959,7 +979,7 @@ function _templateObject232() {
 }
 
 function _templateObject231() {
-  var data = _taggedTemplateLiteral([":@@recurringLabel\u241F4a07b300dd513f9f6eb9f70cf4383282e7540bf8\u241F1243996811904722643: Recurring Schedule "]);
+  var data = _taggedTemplateLiteral([":@@subkeysLabel\u241Fb79bd92dbe6028d7abb4b0c4b049b4ef57974240\u241F6663653935675225668:Subkeys:"]);
 
   _templateObject231 = function _templateObject231() {
     return data;
@@ -969,7 +989,7 @@ function _templateObject231() {
 }
 
 function _templateObject230() {
-  var data = _taggedTemplateLiteral([":@@subkeysPlaceholder\u241F1f870126b7ffac2c5318bbf3dc13a545304aaf6d\u241F5404492045658532804:Status variable subkeys..."]);
+  var data = _taggedTemplateLiteral([":@@statusVarPlaceholder\u241F154d98adc38f6fdbfddb8e614e1a4069514626bc\u241F8083612823803533310:Select status variable"]);
 
   _templateObject230 = function _templateObject230() {
     return data;
@@ -979,7 +999,7 @@ function _templateObject230() {
 }
 
 function _templateObject229() {
-  var data = _taggedTemplateLiteral([":@@subkeysLabel\u241Fb79bd92dbe6028d7abb4b0c4b049b4ef57974240\u241F6663653935675225668:Subkeys:"]);
+  var data = _taggedTemplateLiteral([":@@statusVarLabel\u241F42d93978bcab70ca31018aa83d2817dddeb8d453\u241F8189553698158016412:Status Variable:"]);
 
   _templateObject229 = function _templateObject229() {
     return data;
@@ -989,7 +1009,7 @@ function _templateObject229() {
 }
 
 function _templateObject228() {
-  var data = _taggedTemplateLiteral([":@@statusVarPlaceholder\u241F154d98adc38f6fdbfddb8e614e1a4069514626bc\u241F8083612823803533310:Select status variable"]);
+  var data = _taggedTemplateLiteral([":@@moduleLabel\u241F16f847b21732b10b4bec119b227d9118446ae3f4\u241F5063611670892633868:Module:"]);
 
   _templateObject228 = function _templateObject228() {
     return data;
@@ -999,7 +1019,7 @@ function _templateObject228() {
 }
 
 function _templateObject227() {
-  var data = _taggedTemplateLiteral([":@@statusVarLabel\u241F42d93978bcab70ca31018aa83d2817dddeb8d453\u241F8189553698158016412:Status Variable:"]);
+  var data = _taggedTemplateLiteral([":@@statusValueError\u241Feec5809235e3af57b84d22d925583391aab908dd\u241F4283330823004002736:Valid JSON is required"]);
 
   _templateObject227 = function _templateObject227() {
     return data;
@@ -1009,7 +1029,7 @@ function _templateObject227() {
 }
 
 function _templateObject226() {
-  var data = _taggedTemplateLiteral([":@@moduleLabel\u241F16f847b21732b10b4bec119b227d9118446ae3f4\u241F5063611670892633868:Module:"]);
+  var data = _taggedTemplateLiteral([":@@comparedValue\u241Fde20df626c29300b82b5db02cfdba5c2868dcd0d\u241F9081076942938073603:true/false, 'string', 123.456"]);
 
   _templateObject226 = function _templateObject226() {
     return data;
@@ -1019,7 +1039,7 @@ function _templateObject226() {
 }
 
 function _templateObject225() {
-  var data = _taggedTemplateLiteral([":@@statusValueError\u241Feec5809235e3af57b84d22d925583391aab908dd\u241F4283330823004002736:Valid JSON is required"]);
+  var data = _taggedTemplateLiteral([":@@comparedLabel\u241F26267356dcde25bdcf3e1894b9476262cb4532cc\u241F4125836865926494881:Compared to:"]);
 
   _templateObject225 = function _templateObject225() {
     return data;
@@ -1029,7 +1049,7 @@ function _templateObject225() {
 }
 
 function _templateObject224() {
-  var data = _taggedTemplateLiteral([":@@comparedValue\u241Fde20df626c29300b82b5db02cfdba5c2868dcd0d\u241F9081076942938073603:true/false, 'string', 123.456"]);
+  var data = _taggedTemplateLiteral([":@@comparedLabel\u241F26267356dcde25bdcf3e1894b9476262cb4532cc\u241F4125836865926494881:Compared to:"]);
 
   _templateObject224 = function _templateObject224() {
     return data;
@@ -1039,7 +1059,7 @@ function _templateObject224() {
 }
 
 function _templateObject223() {
-  var data = _taggedTemplateLiteral([":@@comparedLabel\u241F26267356dcde25bdcf3e1894b9476262cb4532cc\u241F4125836865926494881:Compared to:"]);
+  var data = _taggedTemplateLiteral([":@@operationLabel\u241Fb0341d6108d1468c0b9ac949f089d1b8dd50f273\u241F3992801941256436576:Operation:"]);
 
   _templateObject223 = function _templateObject223() {
     return data;
@@ -1049,7 +1069,7 @@ function _templateObject223() {
 }
 
 function _templateObject222() {
-  var data = _taggedTemplateLiteral([":@@comparedLabel\u241F26267356dcde25bdcf3e1894b9476262cb4532cc\u241F4125836865926494881:Compared to:"]);
+  var data = _taggedTemplateLiteral([":@@statusVarError\u241F4dbe75211057522f16a57cb718ba3225d245d6f7\u241F459240457522470995: A module status variable is required "]);
 
   _templateObject222 = function _templateObject222() {
     return data;
@@ -1059,7 +1079,7 @@ function _templateObject222() {
 }
 
 function _templateObject221() {
-  var data = _taggedTemplateLiteral([":@@operationLabel\u241Fb0341d6108d1468c0b9ac949f089d1b8dd50f273\u241F3992801941256436576:Operation:"]);
+  var data = _taggedTemplateLiteral([":@@selectExecLabel\u241F7b0adaea8a27fdf8b397a5500705ce70f147abad\u241F459603978023366738:Select method to execute:"]);
 
   _templateObject221 = function _templateObject221() {
     return data;
@@ -1069,7 +1089,7 @@ function _templateObject221() {
 }
 
 function _templateObject220() {
-  var data = _taggedTemplateLiteral([":@@statusVarError\u241F4dbe75211057522f16a57cb718ba3225d245d6f7\u241F459240457522470995: A module status variable is required "]);
+  var data = _taggedTemplateLiteral([":@@emailBodyPlacholder\u241F7a1d18ca56b9dc2aab85461c166d2e3da34528f1\u241F6865445768933289034:Email body contents..."]);
 
   _templateObject220 = function _templateObject220() {
     return data;
@@ -1079,7 +1099,7 @@ function _templateObject220() {
 }
 
 function _templateObject219() {
-  var data = _taggedTemplateLiteral([":@@selectExecLabel\u241F7b0adaea8a27fdf8b397a5500705ce70f147abad\u241F459603978023366738:Select method to execute:"]);
+  var data = _taggedTemplateLiteral([":@@emailBodyLabel\u241Fd71c6771c48ae285bcb218a69b73709389f915a7\u241F2910100313264103507:Email Body:"]);
 
   _templateObject219 = function _templateObject219() {
     return data;
@@ -1089,7 +1109,7 @@ function _templateObject219() {
 }
 
 function _templateObject218() {
-  var data = _taggedTemplateLiteral([":@@emailBodyPlacholder\u241F7a1d18ca56b9dc2aab85461c166d2e3da34528f1\u241F6865445768933289034:Email body contents..."]);
+  var data = _taggedTemplateLiteral([":@@addEmailPlaceholder\u241Fa39201cbabca8d443a8d7cd34c332443cba29a2e\u241F6379648581202075793:New email..."]);
 
   _templateObject218 = function _templateObject218() {
     return data;
@@ -1099,7 +1119,7 @@ function _templateObject218() {
 }
 
 function _templateObject217() {
-  var data = _taggedTemplateLiteral([":@@emailBodyLabel\u241Fd71c6771c48ae285bcb218a69b73709389f915a7\u241F2910100313264103507:Email Body:"]);
+  var data = _taggedTemplateLiteral([":@@emailAddressesLabel\u241F2ebca2f5a390b93416cb9a85d063a23fbf503dd5\u241F5893203398559198690: Email Addresses", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN:: "]);
 
   _templateObject217 = function _templateObject217() {
     return data;
@@ -1109,7 +1129,7 @@ function _templateObject217() {
 }
 
 function _templateObject216() {
-  var data = _taggedTemplateLiteral([":@@addEmailPlaceholder\u241Fa39201cbabca8d443a8d7cd34c332443cba29a2e\u241F6379648581202075793:New email..."]);
+  var data = _taggedTemplateLiteral([":@@importantLabel\u241F1aa12f5917ef1aa64c540257c886acb30f18ac2a\u241F6914364962936278074:Important"]);
 
   _templateObject216 = function _templateObject216() {
     return data;
@@ -1119,7 +1139,7 @@ function _templateObject216() {
 }
 
 function _templateObject215() {
-  var data = _taggedTemplateLiteral([":@@emailAddressesLabel\u241F2ebca2f5a390b93416cb9a85d063a23fbf503dd5\u241F5893203398559198690: Email Addresses", ":START_TAG_SPAN:*", ":CLOSE_TAG_SPAN:: "]);
+  var data = _taggedTemplateLiteral([":@@enabledLabel\u241Ff50a33d3c339f8f4a465141f8caa5d2d8c005251\u241F4816216590591222133:Enabled"]);
 
   _templateObject215 = function _templateObject215() {
     return data;
@@ -1129,7 +1149,7 @@ function _templateObject215() {
 }
 
 function _templateObject214() {
-  var data = _taggedTemplateLiteral([":@@importantLabel\u241F1aa12f5917ef1aa64c540257c886acb30f18ac2a\u241F6914364962936278074:Important"]);
+  var data = _taggedTemplateLiteral([":@@triggeredLabel\u241F530a4e7f22569e5d65480a599ff0a47dfb74d0e5\u241F6586977000181080802: Currently Triggered: "]);
 
   _templateObject214 = function _templateObject214() {
     return data;
@@ -1139,7 +1159,7 @@ function _templateObject214() {
 }
 
 function _templateObject213() {
-  var data = _taggedTemplateLiteral([":@@enabledLabel\u241Ff50a33d3c339f8f4a465141f8caa5d2d8c005251\u241F4816216590591222133:Enabled"]);
+  var data = _taggedTemplateLiteral([":@@nameLabel\u241Fa6340f211111be0e91d0e13e05b23a82466d8010\u241F2055167529156953889: Name: "]);
 
   _templateObject213 = function _templateObject213() {
     return data;
@@ -1149,7 +1169,7 @@ function _templateObject213() {
 }
 
 function _templateObject212() {
-  var data = _taggedTemplateLiteral([":@@triggeredLabel\u241F530a4e7f22569e5d65480a599ff0a47dfb74d0e5\u241F6586977000181080802: Currently Triggered: "]);
+  var data = _taggedTemplateLiteral([":@@mapIdPlaceholder\u241F8936f99965a07edd4b09a0e4120f4dd5de79604d\u241F609514156045819245:Map SVG ID selector e.g. area-01.10-status"]);
 
   _templateObject212 = function _templateObject212() {
     return data;
@@ -1159,7 +1179,7 @@ function _templateObject212() {
 }
 
 function _templateObject211() {
-  var data = _taggedTemplateLiteral([":@@nameLabel\u241Fa6340f211111be0e91d0e13e05b23a82466d8010\u241F2055167529156953889: Name: "]);
+  var data = _taggedTemplateLiteral([":@@mapIdLabel\u241F46a8087017d0d929ed6d398ba5d3a5ea1be7ab9b\u241F1613414518051599973:Map ID:"]);
 
   _templateObject211 = function _templateObject211() {
     return data;
@@ -1169,7 +1189,7 @@ function _templateObject211() {
 }
 
 function _templateObject210() {
-  var data = _taggedTemplateLiteral([":@@mapIdPlaceholder\u241F8936f99965a07edd4b09a0e4120f4dd5de79604d\u241F609514156045819245:Map SVG ID selector e.g. area-01.10-status"]);
+  var data = _taggedTemplateLiteral([":@@featuresPlaceholder\u241F4126c1056f023b214a05c8f0f356c685f8270061\u241F1484467417743667178:Features..."]);
 
   _templateObject210 = function _templateObject210() {
     return data;
@@ -1179,7 +1199,7 @@ function _templateObject210() {
 }
 
 function _templateObject209() {
-  var data = _taggedTemplateLiteral([":@@mapIdLabel\u241F46a8087017d0d929ed6d398ba5d3a5ea1be7ab9b\u241F1613414518051599973:Map ID:"]);
+  var data = _taggedTemplateLiteral([":@@featuresLabel\u241F461d71b9737cfd8485c218f2ee03a33d17b76cc2\u241F5426436653359800418: Features: "]);
 
   _templateObject209 = function _templateObject209() {
     return data;
@@ -1189,7 +1209,7 @@ function _templateObject209() {
 }
 
 function _templateObject208() {
-  var data = _taggedTemplateLiteral([":@@featuresPlaceholder\u241F4126c1056f023b214a05c8f0f356c685f8270061\u241F1484467417743667178:Features..."]);
+  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
 
   _templateObject208 = function _templateObject208() {
     return data;
@@ -1199,7 +1219,7 @@ function _templateObject208() {
 }
 
 function _templateObject207() {
-  var data = _taggedTemplateLiteral([":@@featuresLabel\u241F461d71b9737cfd8485c218f2ee03a33d17b76cc2\u241F5426436653359800418: Features: "]);
+  var data = _taggedTemplateLiteral([":@@bookableLabel\u241Ff38fa76d781ca1d48b718794ea039603fc4c56d8\u241F5408461307387002611: Bookable "]);
 
   _templateObject207 = function _templateObject207() {
     return data;
@@ -1209,7 +1229,7 @@ function _templateObject207() {
 }
 
 function _templateObject206() {
-  var data = _taggedTemplateLiteral([":@@descriptionLabel\u241F4a22c6843133f0b0d7dc0d28f864f2f90c1de7ad\u241F6996799422725544865:Description:"]);
+  var data = _taggedTemplateLiteral([":@@capacityError\u241F65f071638c4062b9412db34c4e23a9b15287fefb\u241F4277070962005542433: A valid positive number is required "]);
 
   _templateObject206 = function _templateObject206() {
     return data;
@@ -1219,7 +1239,7 @@ function _templateObject206() {
 }
 
 function _templateObject205() {
-  var data = _taggedTemplateLiteral([":@@bookableLabel\u241Ff38fa76d781ca1d48b718794ea039603fc4c56d8\u241F5408461307387002611: Bookable "]);
+  var data = _taggedTemplateLiteral([":@@capacityPlaceholder\u241Fce9dfdc6dccb28dc75a78c704e09dc18fb02dcfa\u241F7825570888384392250:Capacity"]);
 
   _templateObject205 = function _templateObject205() {
     return data;
@@ -1229,7 +1249,7 @@ function _templateObject205() {
 }
 
 function _templateObject204() {
-  var data = _taggedTemplateLiteral([":@@capacityError\u241F65f071638c4062b9412db34c4e23a9b15287fefb\u241F4277070962005542433: A valid positive number is required "]);
+  var data = _taggedTemplateLiteral([":@@capacityLabel\u241F07fa42ec51c3410bfa300b01aee3544b95201f81\u241F6286382513904734925: Capacity: "]);
 
   _templateObject204 = function _templateObject204() {
     return data;
@@ -1239,7 +1259,7 @@ function _templateObject204() {
 }
 
 function _templateObject203() {
-  var data = _taggedTemplateLiteral([":@@capacityPlaceholder\u241Fce9dfdc6dccb28dc75a78c704e09dc18fb02dcfa\u241F7825570888384392250:Capacity"]);
+  var data = _taggedTemplateLiteral([":@@panelCountError\u241F65f071638c4062b9412db34c4e23a9b15287fefb\u241F4277070962005542433: A valid positive number is required "]);
 
   _templateObject203 = function _templateObject203() {
     return data;
@@ -1249,7 +1269,7 @@ function _templateObject203() {
 }
 
 function _templateObject202() {
-  var data = _taggedTemplateLiteral([":@@capacityLabel\u241F07fa42ec51c3410bfa300b01aee3544b95201f81\u241F6286382513904734925: Capacity: "]);
+  var data = _taggedTemplateLiteral([":@@panelCountPlaceholder\u241F442c1adcad31c348dc16a5b21bcd5e3fe49c0afb\u241F4157651090345977845:Number of Touch Panels"]);
 
   _templateObject202 = function _templateObject202() {
     return data;
@@ -1259,7 +1279,7 @@ function _templateObject202() {
 }
 
 function _templateObject201() {
-  var data = _taggedTemplateLiteral([":@@panelCountError\u241F65f071638c4062b9412db34c4e23a9b15287fefb\u241F4277070962005542433: A valid positive number is required "]);
+  var data = _taggedTemplateLiteral([":@@panelCountLabel\u241Fc534fc2786caea202445d8c9f6a886769531db7a\u241F6391301967941204047: Number of Touch Panels: "]);
 
   _templateObject201 = function _templateObject201() {
     return data;
@@ -1269,7 +1289,7 @@ function _templateObject201() {
 }
 
 function _templateObject200() {
-  var data = _taggedTemplateLiteral([":@@panelCountPlaceholder\u241F442c1adcad31c348dc16a5b21bcd5e3fe49c0afb\u241F4157651090345977845:Number of Touch Panels"]);
+  var data = _taggedTemplateLiteral([":@@urlError\u241Fb884988341afed55e56f8bf5019c4948a4889fac\u241F518633689123735745: A valid URL is required "]);
 
   _templateObject200 = function _templateObject200() {
     return data;
@@ -1279,7 +1299,7 @@ function _templateObject200() {
 }
 
 function _templateObject199() {
-  var data = _taggedTemplateLiteral([":@@panelCountLabel\u241Fc534fc2786caea202445d8c9f6a886769531db7a\u241F6391301967941204047: Number of Touch Panels: "]);
+  var data = _taggedTemplateLiteral([":@@suportUrlPlaceholder\u241Fbf9ae7f0e3cf343578967894e31ba3db4d5622c4\u241F5567034448630716072:Support URL"]);
 
   _templateObject199 = function _templateObject199() {
     return data;
@@ -1289,7 +1309,7 @@ function _templateObject199() {
 }
 
 function _templateObject198() {
-  var data = _taggedTemplateLiteral([":@@urlError\u241Fb884988341afed55e56f8bf5019c4948a4889fac\u241F518633689123735745: A valid URL is required "]);
+  var data = _taggedTemplateLiteral([":@@supportUrlLabel\u241F1c2e0883e42299d6bfea046d2a795e8b3152abe6\u241F7759435008432197806: Support URL: "]);
 
   _templateObject198 = function _templateObject198() {
     return data;
@@ -1299,7 +1319,7 @@ function _templateObject198() {
 }
 
 function _templateObject197() {
-  var data = _taggedTemplateLiteral([":@@suportUrlPlaceholder\u241Fbf9ae7f0e3cf343578967894e31ba3db4d5622c4\u241F5567034448630716072:Support URL"]);
+  var data = _taggedTemplateLiteral([":@@displayNamePlaceholder\u241Fe438ba78cbafdb5bcbce0820bfaad995a504f222\u241F3013055597615607317:Display Name"]);
 
   _templateObject197 = function _templateObject197() {
     return data;
@@ -1309,7 +1329,7 @@ function _templateObject197() {
 }
 
 function _templateObject196() {
-  var data = _taggedTemplateLiteral([":@@supportUrlLabel\u241F1c2e0883e42299d6bfea046d2a795e8b3152abe6\u241F7759435008432197806: Support URL: "]);
+  var data = _taggedTemplateLiteral([":@@displayNameLabel\u241F23076d9246f131cdae80bc9cfd3b39cc01ea266f\u241F8242168687700431157:Display Name: "]);
 
   _templateObject196 = function _templateObject196() {
     return data;
@@ -27477,8 +27497,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var I18N_18;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_supportUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___19 = goog.getMsg(" Support URL: ");
-      I18N_18 = MSG_EXTERNAL_supportUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___19;
+      var MSG_EXTERNAL_displayNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___19 = goog.getMsg("Display Name: ");
+      I18N_18 = MSG_EXTERNAL_displayNameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___19;
     } else {
       I18N_18 = $localize(_templateObject196());
     }
@@ -27486,31 +27506,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var I18N_20;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_suportUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___21 = goog.getMsg("Support URL");
-      I18N_20 = MSG_EXTERNAL_suportUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___21;
+      var MSG_EXTERNAL_displayNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___21 = goog.getMsg("Display Name");
+      I18N_20 = MSG_EXTERNAL_displayNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___21;
     } else {
       I18N_20 = $localize(_templateObject197());
     }
 
     var _c22 = ["placeholder", I18N_20];
-    var I18N_23;
-
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_urlError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____24 = goog.getMsg(" A valid URL is required ");
-      I18N_23 = MSG_EXTERNAL_urlError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____24;
-    } else {
-      I18N_23 = $localize(_templateObject198());
-    }
-
-    function SystemFormComponent_div_0_div_6_mat_error_6_Template(rf, ctx) {
-      if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-error");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_23);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      }
-    }
 
     function SystemFormComponent_div_0_div_6_Template(rf, ctx) {
       if (rf & 1) {
@@ -27530,71 +27532,57 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, SystemFormComponent_div_0_div_6_mat_error_6_Template, 2, 0, "mat-error", 13);
-
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
+    }
 
-      if (rf & 2) {
-        var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    var I18N_23;
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r4.form.controls.support_url.invalid && ctx_r4.form.controls.support_url.touched);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r4.form.controls.support_url.invalid);
-      }
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_supportUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___24 = goog.getMsg(" Support URL: ");
+      I18N_23 = MSG_EXTERNAL_supportUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___24;
+    } else {
+      I18N_23 = $localize(_templateObject198());
     }
 
     var I18N_25;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_panelCountLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___26 = goog.getMsg(" Number of Touch Panels: ");
-      I18N_25 = MSG_EXTERNAL_panelCountLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___26;
+      var MSG_EXTERNAL_suportUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___26 = goog.getMsg("Support URL");
+      I18N_25 = MSG_EXTERNAL_suportUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___26;
     } else {
       I18N_25 = $localize(_templateObject199());
     }
 
-    var I18N_27;
+    var _c27 = ["placeholder", I18N_25];
+    var I18N_28;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_panelCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___28 = goog.getMsg("Number of Touch Panels");
-      I18N_27 = MSG_EXTERNAL_panelCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___28;
+      var MSG_EXTERNAL_urlError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____29 = goog.getMsg(" A valid URL is required ");
+      I18N_28 = MSG_EXTERNAL_urlError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____29;
     } else {
-      I18N_27 = $localize(_templateObject200());
+      I18N_28 = $localize(_templateObject200());
     }
 
-    var _c29 = ["placeholder", I18N_27];
-    var I18N_30;
-
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_panelCountError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____31 = goog.getMsg(" A valid positive number is required ");
-      I18N_30 = MSG_EXTERNAL_panelCountError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____31;
-    } else {
-      I18N_30 = $localize(_templateObject201());
-    }
-
-    function SystemFormComponent_div_0_div_8_mat_error_6_Template(rf, ctx) {
+    function SystemFormComponent_div_0_div_7_mat_error_6_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-error");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_28);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
     }
 
-    function SystemFormComponent_div_0_div_8_Template(rf, ctx) {
+    function SystemFormComponent_div_0_div_7_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 18);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -27602,11 +27590,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "input", 19);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nAttributes"](5, _c29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nAttributes"](5, _c27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, SystemFormComponent_div_0_div_8_mat_error_6_Template, 2, 0, "mat-error", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, SystemFormComponent_div_0_div_7_mat_error_6_Template, 2, 0, "mat-error", 13);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -27618,47 +27606,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r5.form.controls.installed_ui_devices.invalid && ctx_r5.form.controls.installed_ui_devices.touched);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r5.form.controls.support_url.invalid && ctx_r5.form.controls.support_url.touched);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.form.controls.installed_ui_devices.invalid);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r5.form.controls.support_url.invalid);
       }
+    }
+
+    var I18N_30;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_panelCountLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___31 = goog.getMsg(" Number of Touch Panels: ");
+      I18N_30 = MSG_EXTERNAL_panelCountLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___31;
+    } else {
+      I18N_30 = $localize(_templateObject201());
     }
 
     var I18N_32;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___33 = goog.getMsg(" Capacity: ");
-      I18N_32 = MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___33;
+      var MSG_EXTERNAL_panelCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___33 = goog.getMsg("Number of Touch Panels");
+      I18N_32 = MSG_EXTERNAL_panelCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___33;
     } else {
       I18N_32 = $localize(_templateObject202());
     }
 
-    var I18N_34;
+    var _c34 = ["placeholder", I18N_32];
+    var I18N_35;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_capacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___35 = goog.getMsg("Capacity");
-      I18N_34 = MSG_EXTERNAL_capacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___35;
+      var MSG_EXTERNAL_panelCountError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____36 = goog.getMsg(" A valid positive number is required ");
+      I18N_35 = MSG_EXTERNAL_panelCountError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____36;
     } else {
-      I18N_34 = $localize(_templateObject203());
-    }
-
-    var _c36 = ["placeholder", I18N_34];
-    var I18N_37;
-
-    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_capacityError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____38 = goog.getMsg(" A valid positive number is required ");
-      I18N_37 = MSG_EXTERNAL_capacityError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____38;
-    } else {
-      I18N_37 = $localize(_templateObject204());
+      I18N_35 = $localize(_templateObject203());
     }
 
     function SystemFormComponent_div_0_div_9_mat_error_6_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-error");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_35);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -27670,7 +27658,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 20);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_32);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_30);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -27678,7 +27666,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "input", 21);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nAttributes"](5, _c36);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nAttributes"](5, _c34);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -27694,59 +27682,106 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r6.form.controls.capacity.invalid && ctx_r6.form.controls.capacity.touched);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r6.form.controls.installed_ui_devices.invalid && ctx_r6.form.controls.installed_ui_devices.touched);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r6.form.controls.capacity.invalid);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r6.form.controls.installed_ui_devices.invalid);
       }
+    }
+
+    var I18N_37;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___38 = goog.getMsg(" Capacity: ");
+      I18N_37 = MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___38;
+    } else {
+      I18N_37 = $localize(_templateObject204());
     }
 
     var I18N_39;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_bookableLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___40 = goog.getMsg(" Bookable ");
-      I18N_39 = MSG_EXTERNAL_bookableLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___40;
+      var MSG_EXTERNAL_capacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___40 = goog.getMsg("Capacity");
+      I18N_39 = MSG_EXTERNAL_capacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___40;
     } else {
       I18N_39 = $localize(_templateObject205());
+    }
+
+    var _c41 = ["placeholder", I18N_39];
+    var I18N_42;
+
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_capacityError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____43 = goog.getMsg(" A valid positive number is required ");
+      I18N_42 = MSG_EXTERNAL_capacityError$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS____43;
+    } else {
+      I18N_42 = $localize(_templateObject206());
+    }
+
+    function SystemFormComponent_div_0_div_10_mat_error_6_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-error");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](1, I18N_42);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
     }
 
     function SystemFormComponent_div_0_div_10_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-checkbox", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 22);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_39);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_37);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-form-field", 11);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "input", 23);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nAttributes"](5, _c41);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, SystemFormComponent_div_0_div_10_mat_error_6_Template, 2, 0, "mat-error", 13);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
+
+      if (rf & 2) {
+        var ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r7.form.controls.capacity.invalid && ctx_r7.form.controls.capacity.touched);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r7.form.controls.capacity.invalid);
+      }
     }
 
-    var I18N_41;
+    var I18N_44;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___42 = goog.getMsg("Description:");
-      I18N_41 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___42;
+      var MSG_EXTERNAL_bookableLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___45 = goog.getMsg(" Bookable ");
+      I18N_44 = MSG_EXTERNAL_bookableLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___45;
     } else {
-      I18N_41 = $localize(_templateObject206());
+      I18N_44 = $localize(_templateObject207());
     }
 
     function SystemFormComponent_div_0_div_11_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-checkbox", 24);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_41);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-form-field", 11);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "textarea", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_44);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -27754,98 +27789,127 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var I18N_43;
+    var I18N_46;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_featuresLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___44 = goog.getMsg(" Features: ");
-      I18N_43 = MSG_EXTERNAL_featuresLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___44;
+      var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___47 = goog.getMsg("Description:");
+      I18N_46 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___47;
     } else {
-      I18N_43 = $localize(_templateObject207());
+      I18N_46 = $localize(_templateObject208());
     }
 
-    var I18N_45;
+    function SystemFormComponent_div_0_div_12_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 25);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_46);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-form-field", 11);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "textarea", 26);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+    }
+
+    var I18N_48;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_featuresPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___46 = goog.getMsg("Features...");
-      I18N_45 = MSG_EXTERNAL_featuresPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___46;
+      var MSG_EXTERNAL_featuresLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___49 = goog.getMsg(" Features: ");
+      I18N_48 = MSG_EXTERNAL_featuresLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___49;
     } else {
-      I18N_45 = $localize(_templateObject208());
+      I18N_48 = $localize(_templateObject209());
     }
 
-    var _c47 = ["placeholder", I18N_45];
+    var I18N_50;
 
-    var _c48 = function _c48() {
+    if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+      var MSG_EXTERNAL_featuresPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___51 = goog.getMsg("Features...");
+      I18N_50 = MSG_EXTERNAL_featuresPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___51;
+    } else {
+      I18N_50 = $localize(_templateObject210());
+    }
+
+    var _c52 = ["placeholder", I18N_50];
+
+    var _c53 = function _c53() {
       return {
         "class": "backoffice-cross"
       };
     };
 
-    function SystemFormComponent_div_0_div_12_mat_chip_6_Template(rf, ctx) {
+    function SystemFormComponent_div_0_div_13_mat_chip_6_Template(rf, ctx) {
       if (rf & 1) {
-        var _r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-chip", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-chip", 31);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("removed", function SystemFormComponent_div_0_div_12_mat_chip_6_Template_mat_chip_removed_0_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("removed", function SystemFormComponent_div_0_div_13_mat_chip_6_Template_mat_chip_removed_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22);
 
-          var feature_r19 = ctx.$implicit;
+          var feature_r20 = ctx.$implicit;
 
-          var ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+          var ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
 
-          return ctx_r20.removeFeature(feature_r19);
+          return ctx_r21.removeFeature(feature_r20);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "app-icon", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "app-icon", 32);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
 
       if (rf & 2) {
-        var feature_r19 = ctx.$implicit;
+        var feature_r20 = ctx.$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("selectable", true)("removable", true);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", feature_r19, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", feature_r20, " ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("icon", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c48));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("icon", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c53));
       }
     }
 
-    function SystemFormComponent_div_0_div_12_Template(rf, ctx) {
+    function SystemFormComponent_div_0_div_13_Template(rf, ctx) {
       if (rf & 1) {
-        var _r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_43);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_48);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-form-field", 11);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-chip-list", 25, 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-chip-list", 27, 28);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, SystemFormComponent_div_0_div_12_mat_chip_6_Template, 3, 5, "mat-chip", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, SystemFormComponent_div_0_div_13_mat_chip_6_Template, 3, 5, "mat-chip", 29);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "input", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "input", 30);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nAttributes"](8, _c47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nAttributes"](8, _c52);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("matChipInputTokenEnd", function SystemFormComponent_div_0_div_12_Template_input_matChipInputTokenEnd_7_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("matChipInputTokenEnd", function SystemFormComponent_div_0_div_13_Template_input_matChipInputTokenEnd_7_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r24);
 
-          var ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+          var ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
 
-          return ctx_r22.addFeature($event);
+          return ctx_r23.addFeature($event);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -27858,59 +27922,59 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var _r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](5);
+        var _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](5);
 
-        var ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+        var ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r9.form.controls.features.invalid && ctx_r9.form.controls.features.touched);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("error", ctx_r10.form.controls.features.invalid && ctx_r10.form.controls.features.touched);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r9.feature_list);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r10.feature_list);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matChipInputFor", _r17)("matChipInputSeparatorKeyCodes", ctx_r9.separators)("matChipInputAddOnBlur", true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matChipInputFor", _r18)("matChipInputSeparatorKeyCodes", ctx_r10.separators)("matChipInputAddOnBlur", true);
       }
     }
 
-    var I18N_49;
+    var I18N_54;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_mapIdLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___50 = goog.getMsg("Map ID:");
-      I18N_49 = MSG_EXTERNAL_mapIdLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___50;
+      var MSG_EXTERNAL_mapIdLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___55 = goog.getMsg("Map ID:");
+      I18N_54 = MSG_EXTERNAL_mapIdLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___55;
     } else {
-      I18N_49 = $localize(_templateObject209());
+      I18N_54 = $localize(_templateObject211());
     }
 
-    var I18N_51;
+    var I18N_56;
 
     if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-      var MSG_EXTERNAL_mapIdPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___52 = goog.getMsg("Map SVG ID selector e.g. area-01.10-status");
-      I18N_51 = MSG_EXTERNAL_mapIdPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___52;
+      var MSG_EXTERNAL_mapIdPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___57 = goog.getMsg("Map SVG ID selector e.g. area-01.10-status");
+      I18N_56 = MSG_EXTERNAL_mapIdPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_FORM_SYSTEM_FORM_COMPONENT_TS___57;
     } else {
-      I18N_51 = $localize(_templateObject210());
+      I18N_56 = $localize(_templateObject212());
     }
 
-    var _c53 = ["placeholder", I18N_51];
+    var _c58 = ["placeholder", I18N_56];
 
-    function SystemFormComponent_div_0_div_13_Template(rf, ctx) {
+    function SystemFormComponent_div_0_div_14_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 33);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_49);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](2, I18N_54);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-form-field", 11);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "input", 32);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "input", 34);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nAttributes"](5, _c53);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nAttributes"](5, _c58);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -27936,23 +28000,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, SystemFormComponent_div_0_div_6_Template, 7, 3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, SystemFormComponent_div_0_div_6_Template, 6, 0, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, SystemFormComponent_div_0_div_7_Template, 7, 3, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, SystemFormComponent_div_0_div_8_Template, 7, 3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 4);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, SystemFormComponent_div_0_div_9_Template, 7, 3, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, SystemFormComponent_div_0_div_10_Template, 3, 0, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, SystemFormComponent_div_0_div_10_Template, 7, 3, "div", 3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, SystemFormComponent_div_0_div_11_Template, 3, 0, "div", 3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, SystemFormComponent_div_0_div_11_Template, 5, 0, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](12, SystemFormComponent_div_0_div_12_Template, 5, 0, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](12, SystemFormComponent_div_0_div_12_Template, 9, 6, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, SystemFormComponent_div_0_div_13_Template, 9, 6, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, SystemFormComponent_div_0_div_13_Template, 6, 0, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, SystemFormComponent_div_0_div_14_Template, 6, 0, "div", 3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -27977,6 +28043,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.email);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.display_name);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
@@ -28113,10 +28183,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]],
       decls: 1,
       vars: 1,
-      consts: [["class", "system form", 4, "ngIf"], [1, "system", "form"], [3, "formGroup"], ["class", "field", 4, "ngIf"], [1, "fieldset"], [1, "field"], ["for", "zone"], ["formControlName", "zone", 3, "service"], ["class", "error", 4, "ngIf"], [1, "error"], ["for", "system-name"], ["appearance", "outline"], ["matInput", "", "name", "system-name", "formControlName", "name", "required", "", 6, "placeholder"], [4, "ngIf"], ["for", "system-email"], ["matInput", "", "name", "system-email", "formControlName", "email", 6, "placeholder"], ["for", "support-url"], ["matInput", "", "name", "support-url", "formControlName", "support_url", 6, "placeholder"], ["for", "ui-devices"], ["matInput", "", "name", "ui-devices", "type", "number", "formControlName", "installed_ui_devices", 6, "placeholder"], ["for", "capacity"], ["matInput", "", "name", "capacity", "type", "number", "formControlName", "capacity", 6, "placeholder"], ["name", "bookable", "formControlName", "bookable"], ["for", "description"], ["matInput", "", "name", "description", "placeholder", "Description", "formControlName", "description"], ["aria-label", "System features"], ["chipList", ""], [3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], [3, "matChipInputFor", "matChipInputSeparatorKeyCodes", "matChipInputAddOnBlur", "matChipInputTokenEnd", 6, "placeholder"], [3, "selectable", "removable", "removed"], ["matChipRemove", "", 3, "icon"], ["for", "map_id"], ["matInput", "", "name", "map_id", "formControlName", "map_id", 6, "placeholder"]],
+      consts: [["class", "system form", 4, "ngIf"], [1, "system", "form"], [3, "formGroup"], ["class", "field", 4, "ngIf"], [1, "fieldset"], [1, "field"], ["for", "zone"], ["formControlName", "zone", 3, "service"], ["class", "error", 4, "ngIf"], [1, "error"], ["for", "system-name"], ["appearance", "outline"], ["matInput", "", "name", "system-name", "formControlName", "name", "required", "", 6, "placeholder"], [4, "ngIf"], ["for", "system-email"], ["matInput", "", "name", "system-email", "formControlName", "email", 6, "placeholder"], ["for", "display-name"], ["matInput", "", "name", "display-name", "formControlName", "display_name", 6, "placeholder"], ["for", "support-url"], ["matInput", "", "name", "support-url", "formControlName", "support_url", 6, "placeholder"], ["for", "ui-devices"], ["matInput", "", "name", "ui-devices", "type", "number", "formControlName", "installed_ui_devices", 6, "placeholder"], ["for", "capacity"], ["matInput", "", "name", "capacity", "type", "number", "formControlName", "capacity", 6, "placeholder"], ["name", "bookable", "formControlName", "bookable"], ["for", "description"], ["matInput", "", "name", "description", "placeholder", "Description", "formControlName", "description"], ["aria-label", "System features"], ["chipList", ""], [3, "selectable", "removable", "removed", 4, "ngFor", "ngForOf"], [3, "matChipInputFor", "matChipInputSeparatorKeyCodes", "matChipInputAddOnBlur", "matChipInputTokenEnd", 6, "placeholder"], [3, "selectable", "removable", "removed"], ["matChipRemove", "", 3, "icon"], ["for", "map_id"], ["matInput", "", "name", "map_id", "formControlName", "map_id", 6, "placeholder"]],
       template: function SystemFormComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, SystemFormComponent_div_0_Template, 14, 11, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, SystemFormComponent_div_0_Template, 15, 12, "div", 0);
         }
 
         if (rf & 2) {
@@ -28200,7 +28270,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_TRIGGER_FORM_SYSTEM_TRIGGER_FORM_COMPONENT_TS___1 = goog.getMsg(" Name: ");
       I18N_0 = MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_TRIGGER_FORM_SYSTEM_TRIGGER_FORM_COMPONENT_TS___1;
     } else {
-      I18N_0 = $localize(_templateObject211());
+      I18N_0 = $localize(_templateObject213());
     }
 
     function SystemTriggerFormComponent_div_0_div_2_Template(rf, ctx) {
@@ -28237,7 +28307,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_triggeredLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_TRIGGER_FORM_SYSTEM_TRIGGER_FORM_COMPONENT_TS___3 = goog.getMsg(" Currently Triggered: ");
       I18N_2 = MSG_EXTERNAL_triggeredLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_TRIGGER_FORM_SYSTEM_TRIGGER_FORM_COMPONENT_TS___3;
     } else {
-      I18N_2 = $localize(_templateObject212());
+      I18N_2 = $localize(_templateObject214());
     }
 
     function SystemTriggerFormComponent_div_0_div_3_Template(rf, ctx) {
@@ -28274,7 +28344,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_enabledLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_TRIGGER_FORM_SYSTEM_TRIGGER_FORM_COMPONENT_TS___5 = goog.getMsg("Enabled");
       I18N_4 = MSG_EXTERNAL_enabledLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_TRIGGER_FORM_SYSTEM_TRIGGER_FORM_COMPONENT_TS___5;
     } else {
-      I18N_4 = $localize(_templateObject213());
+      I18N_4 = $localize(_templateObject215());
     }
 
     function SystemTriggerFormComponent_div_0_div_4_Template(rf, ctx) {
@@ -28297,7 +28367,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_importantLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_TRIGGER_FORM_SYSTEM_TRIGGER_FORM_COMPONENT_TS___7 = goog.getMsg("Important");
       I18N_6 = MSG_EXTERNAL_importantLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_SYSTEM_TRIGGER_FORM_SYSTEM_TRIGGER_FORM_COMPONENT_TS___7;
     } else {
-      I18N_6 = $localize(_templateObject214());
+      I18N_6 = $localize(_templateObject216());
     }
 
     function SystemTriggerFormComponent_div_0_div_5_Template(rf, ctx) {
@@ -28556,7 +28626,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_1 = MSG_EXTERNAL_emailAddressesLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_ACTION_FORM_TRIGGER_ACTION_FORM_COMPONENT_TS____2;
     } else {
-      I18N_1 = $localize(_templateObject215(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
+      I18N_1 = $localize(_templateObject217(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
     }
 
     var I18N_3;
@@ -28565,7 +28635,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_addEmailPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_ACTION_FORM_TRIGGER_ACTION_FORM_COMPONENT_TS____4 = goog.getMsg("New email...");
       I18N_3 = MSG_EXTERNAL_addEmailPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_ACTION_FORM_TRIGGER_ACTION_FORM_COMPONENT_TS____4;
     } else {
-      I18N_3 = $localize(_templateObject216());
+      I18N_3 = $localize(_templateObject218());
     }
 
     var _c5 = ["placeholder", I18N_3];
@@ -28705,7 +28775,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_emailBodyLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_ACTION_FORM_TRIGGER_ACTION_FORM_COMPONENT_TS____9 = goog.getMsg("Email Body:");
       I18N_8 = MSG_EXTERNAL_emailBodyLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_ACTION_FORM_TRIGGER_ACTION_FORM_COMPONENT_TS____9;
     } else {
-      I18N_8 = $localize(_templateObject217());
+      I18N_8 = $localize(_templateObject219());
     }
 
     var I18N_10;
@@ -28714,7 +28784,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_emailBodyPlacholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_ACTION_FORM_TRIGGER_ACTION_FORM_COMPONENT_TS____11 = goog.getMsg("Email body contents...");
       I18N_10 = MSG_EXTERNAL_emailBodyPlacholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_ACTION_FORM_TRIGGER_ACTION_FORM_COMPONENT_TS____11;
     } else {
-      I18N_10 = $localize(_templateObject218());
+      I18N_10 = $localize(_templateObject220());
     }
 
     var _c12 = ["placeholder", I18N_10];
@@ -28773,7 +28843,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_selectExecLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_ACTION_FORM_TRIGGER_ACTION_FORM_COMPONENT_TS____14 = goog.getMsg("Select method to execute:");
       I18N_13 = MSG_EXTERNAL_selectExecLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_ACTION_FORM_TRIGGER_ACTION_FORM_COMPONENT_TS____14;
     } else {
-      I18N_13 = $localize(_templateObject219());
+      I18N_13 = $localize(_templateObject221());
     }
 
     function TriggerActionFormComponent_div_0_ng_container_5_div_1_Template(rf, ctx) {
@@ -29087,7 +29157,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_statusVarError$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___1 = goog.getMsg(" A module status variable is required ");
       I18N_0 = MSG_EXTERNAL_statusVarError$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___1;
     } else {
-      I18N_0 = $localize(_templateObject220());
+      I18N_0 = $localize(_templateObject222());
     }
 
     function TriggerConditionComparisonFormComponent_div_0_div_2_Template(rf, ctx) {
@@ -29106,7 +29176,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_operationLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___3 = goog.getMsg("Operation:");
       I18N_2 = MSG_EXTERNAL_operationLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___3;
     } else {
-      I18N_2 = $localize(_templateObject221());
+      I18N_2 = $localize(_templateObject223());
     }
 
     function TriggerConditionComparisonFormComponent_div_0_div_3_mat_option_5_Template(rf, ctx) {
@@ -29167,7 +29237,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_comparedLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___5 = goog.getMsg("Compared to:");
       I18N_4 = MSG_EXTERNAL_comparedLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___5;
     } else {
-      I18N_4 = $localize(_templateObject222());
+      I18N_4 = $localize(_templateObject224());
     }
 
     function TriggerConditionComparisonFormComponent_div_0_div_4_mat_option_5_Template(rf, ctx) {
@@ -29254,7 +29324,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_comparedLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___8 = goog.getMsg("Compared to:");
       I18N_7 = MSG_EXTERNAL_comparedLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___8;
     } else {
-      I18N_7 = $localize(_templateObject223());
+      I18N_7 = $localize(_templateObject225());
     }
 
     var I18N_9;
@@ -29263,7 +29333,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_comparedValue$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___10 = goog.getMsg("true/false, 'string', 123.456");
       I18N_9 = MSG_EXTERNAL_comparedValue$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___10;
     } else {
-      I18N_9 = $localize(_templateObject224());
+      I18N_9 = $localize(_templateObject226());
     }
 
     var _c11 = ["placeholder", I18N_9];
@@ -29273,7 +29343,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_statusValueError$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___13 = goog.getMsg("Valid JSON is required");
       I18N_12 = MSG_EXTERNAL_statusValueError$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___13;
     } else {
-      I18N_12 = $localize(_templateObject225());
+      I18N_12 = $localize(_templateObject227());
     }
 
     function TriggerConditionComparisonFormComponent_div_0_div_5_Template(rf, ctx) {
@@ -29392,7 +29462,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_moduleLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS__17 = goog.getMsg("Module:");
       I18N_16 = MSG_EXTERNAL_moduleLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS__17;
     } else {
-      I18N_16 = $localize(_templateObject226());
+      I18N_16 = $localize(_templateObject228());
     }
 
     function TriggerConditionComparisonFormComponent_ng_template_3_mat_option_6_Template(rf, ctx) {
@@ -29421,7 +29491,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_statusVarLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___19 = goog.getMsg("Status Variable:");
       I18N_18 = MSG_EXTERNAL_statusVarLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___19;
     } else {
-      I18N_18 = $localize(_templateObject227());
+      I18N_18 = $localize(_templateObject229());
     }
 
     var I18N_20;
@@ -29430,7 +29500,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_statusVarPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___21 = goog.getMsg("Select status variable");
       I18N_20 = MSG_EXTERNAL_statusVarPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___21;
     } else {
-      I18N_20 = $localize(_templateObject228());
+      I18N_20 = $localize(_templateObject230());
     }
 
     var _c22 = ["placeholder", I18N_20];
@@ -29525,7 +29595,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_subkeysLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___24 = goog.getMsg("Subkeys:");
       I18N_23 = MSG_EXTERNAL_subkeysLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___24;
     } else {
-      I18N_23 = $localize(_templateObject229());
+      I18N_23 = $localize(_templateObject231());
     }
 
     var I18N_25;
@@ -29534,7 +29604,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_subkeysPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___26 = goog.getMsg("Status variable subkeys...");
       I18N_25 = MSG_EXTERNAL_subkeysPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_COMPARISON_FORM_COMPARISON_FORM_COMPONENT_TS___26;
     } else {
-      I18N_25 = $localize(_templateObject230());
+      I18N_25 = $localize(_templateObject232());
     }
 
     var _c27 = ["placeholder", I18N_25];
@@ -30082,7 +30152,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_recurringLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS__1 = goog.getMsg(" Recurring Schedule ");
       I18N_0 = MSG_EXTERNAL_recurringLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS__1;
     } else {
-      I18N_0 = $localize(_templateObject231());
+      I18N_0 = $localize(_templateObject233());
     }
 
     var I18N_2;
@@ -30091,7 +30161,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_dateLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS____3 = goog.getMsg("Date: ");
       I18N_2 = MSG_EXTERNAL_dateLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS____3;
     } else {
-      I18N_2 = $localize(_templateObject232());
+      I18N_2 = $localize(_templateObject234());
     }
 
     function TriggerConditionTimeFormComponent_div_0_div_4_div_1_Template(rf, ctx) {
@@ -30116,7 +30186,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_timeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS____5 = goog.getMsg("Time: ");
       I18N_4 = MSG_EXTERNAL_timeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS____5;
     } else {
-      I18N_4 = $localize(_templateObject233());
+      I18N_4 = $localize(_templateObject235());
     }
 
     function TriggerConditionTimeFormComponent_div_0_div_4_div_2_Template(rf, ctx) {
@@ -30223,7 +30293,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_repeatLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS__8 = goog.getMsg("Repeat every: ");
       I18N_7 = MSG_EXTERNAL_repeatLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS__8;
     } else {
-      I18N_7 = $localize(_templateObject234());
+      I18N_7 = $localize(_templateObject236());
     }
 
     function TriggerConditionTimeFormComponent_ng_template_1_mat_option_5_Template(rf, ctx) {
@@ -30252,7 +30322,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_dayLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___10 = goog.getMsg("Day of Month: ");
       I18N_9 = MSG_EXTERNAL_dayLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___10;
     } else {
-      I18N_9 = $localize(_templateObject235());
+      I18N_9 = $localize(_templateObject237());
     }
 
     function TriggerConditionTimeFormComponent_ng_template_1_div_6_mat_option_5_Template(rf, ctx) {
@@ -30333,7 +30403,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_monthLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___12 = goog.getMsg("Month of year: ");
       I18N_11 = MSG_EXTERNAL_monthLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___12;
     } else {
-      I18N_11 = $localize(_templateObject236());
+      I18N_11 = $localize(_templateObject238());
     }
 
     function TriggerConditionTimeFormComponent_ng_template_1_div_7_mat_button_toggle_4_Template(rf, ctx) {
@@ -30410,7 +30480,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_weekLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___14 = goog.getMsg("Day of week: ");
       I18N_13 = MSG_EXTERNAL_weekLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___14;
     } else {
-      I18N_13 = $localize(_templateObject237());
+      I18N_13 = $localize(_templateObject239());
     }
 
     function TriggerConditionTimeFormComponent_ng_template_1_div_8_mat_button_toggle_4_Template(rf, ctx) {
@@ -30487,7 +30557,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_hourLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___16 = goog.getMsg("Hour in the day: ");
       I18N_15 = MSG_EXTERNAL_hourLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___16;
     } else {
-      I18N_15 = $localize(_templateObject238());
+      I18N_15 = $localize(_templateObject240());
     }
 
     function TriggerConditionTimeFormComponent_ng_template_1_div_9_mat_button_toggle_4_Template(rf, ctx) {
@@ -30616,7 +30686,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_minuteLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___19 = goog.getMsg("Minute past the hour: ");
       I18N_18 = MSG_EXTERNAL_minuteLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TIME_FORM_TIME_FORM_COMPONENT_TS___19;
     } else {
-      I18N_18 = $localize(_templateObject239());
+      I18N_18 = $localize(_templateObject241());
     }
 
     function TriggerConditionTimeFormComponent_ng_template_1_div_10_mat_button_toggle_4_Template(rf, ctx) {
@@ -31053,7 +31123,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_conditionTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TRIGGER_CONDITION_FORM_COMPONENT_TS___1 = goog.getMsg("Condition Type: ");
       I18N_0 = MSG_EXTERNAL_conditionTypeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TRIGGER_CONDITION_FORM_COMPONENT_TS___1;
     } else {
-      I18N_0 = $localize(_templateObject240());
+      I18N_0 = $localize(_templateObject242());
     }
 
     var I18N_3;
@@ -31062,7 +31132,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_7957547435558189921$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TRIGGER_CONDITION_FORM_COMPONENT_TS____4 = goog.getMsg("{VAR_SELECT, select, compare {Compare Values } time {Particular Time }}");
       I18N_3 = MSG_EXTERNAL_7957547435558189921$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TRIGGER_CONDITION_FORM_COMPONENT_TS____4;
     } else {
-      I18N_3 = $localize(_templateObject241());
+      I18N_3 = $localize(_templateObject243());
     }
 
     I18N_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_3, {
@@ -31076,7 +31146,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_2 = MSG_EXTERNAL_triggerConditionType$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_CONDITION_FORM_TRIGGER_CONDITION_FORM_COMPONENT_TS____5;
     } else {
-      I18N_2 = $localize(_templateObject242(), I18N_3);
+      I18N_2 = $localize(_templateObject244(), I18N_3);
     }
 
     function TriggerConditionFormComponent_div_0_div_2_mat_option_5_Template(rf, ctx) {
@@ -31326,7 +31396,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_0 = MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___1;
     } else {
-      I18N_0 = $localize(_templateObject243(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
+      I18N_0 = $localize(_templateObject245(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
     }
 
     var I18N_2;
@@ -31335,7 +31405,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_triggerNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___3 = goog.getMsg("Trigger Name");
       I18N_2 = MSG_EXTERNAL_triggerNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___3;
     } else {
-      I18N_2 = $localize(_templateObject244());
+      I18N_2 = $localize(_templateObject246());
     }
 
     var _c4 = ["placeholder", I18N_2];
@@ -31345,7 +31415,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_triggerError$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___6 = goog.getMsg("Trigger name is required");
       I18N_5 = MSG_EXTERNAL_triggerError$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___6;
     } else {
-      I18N_5 = $localize(_templateObject245());
+      I18N_5 = $localize(_templateObject247());
     }
 
     function TriggerFormComponent_div_0_div_2_Template(rf, ctx) {
@@ -31396,7 +31466,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___8 = goog.getMsg("Description:");
       I18N_7 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___8;
     } else {
-      I18N_7 = $localize(_templateObject246());
+      I18N_7 = $localize(_templateObject248());
     }
 
     var I18N_9;
@@ -31405,7 +31475,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___10 = goog.getMsg("Description");
       I18N_9 = MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___10;
     } else {
-      I18N_9 = $localize(_templateObject247());
+      I18N_9 = $localize(_templateObject249());
     }
 
     var _c11 = ["placeholder", I18N_9];
@@ -31440,7 +31510,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_enableWebhooklabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___13 = goog.getMsg(" Enable Webhook ");
       I18N_12 = MSG_EXTERNAL_enableWebhooklabel$$SRC_APP_SHARED_COMPONENTS_FORMS_TRIGGER_FORM_TRIGGER_FORM_COMPONENT_TS___13;
     } else {
-      I18N_12 = $localize(_templateObject248());
+      I18N_12 = $localize(_templateObject250());
     }
 
     function TriggerFormComponent_div_0_div_4_Template(rf, ctx) {
@@ -31615,7 +31685,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_0 = MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___1;
     } else {
-      I18N_0 = $localize(_templateObject249(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
+      I18N_0 = $localize(_templateObject251(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
     }
 
     var I18N_2;
@@ -31624,7 +31694,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_namePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___3 = goog.getMsg("Name");
       I18N_2 = MSG_EXTERNAL_namePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___3;
     } else {
-      I18N_2 = $localize(_templateObject250());
+      I18N_2 = $localize(_templateObject252());
     }
 
     var _c4 = ["placeholder", I18N_2];
@@ -31634,7 +31704,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_userNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___6 = goog.getMsg("User's name is required");
       I18N_5 = MSG_EXTERNAL_userNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___6;
     } else {
-      I18N_5 = $localize(_templateObject251());
+      I18N_5 = $localize(_templateObject253());
     }
 
     function UserFormComponent_form_0_div_3_Template(rf, ctx) {
@@ -31688,7 +31758,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_7 = MSG_EXTERNAL_emailLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___8;
     } else {
-      I18N_7 = $localize(_templateObject252(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
+      I18N_7 = $localize(_templateObject254(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
     }
 
     var I18N_9;
@@ -31697,7 +31767,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_emailPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___10 = goog.getMsg("Email");
       I18N_9 = MSG_EXTERNAL_emailPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___10;
     } else {
-      I18N_9 = $localize(_templateObject253());
+      I18N_9 = $localize(_templateObject255());
     }
 
     var _c11 = ["placeholder", I18N_9];
@@ -31707,7 +31777,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_emailError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___13 = goog.getMsg("A valid email is required");
       I18N_12 = MSG_EXTERNAL_emailError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___13;
     } else {
-      I18N_12 = $localize(_templateObject254());
+      I18N_12 = $localize(_templateObject256());
     }
 
     function UserFormComponent_form_0_div_4_Template(rf, ctx) {
@@ -31758,7 +31828,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_cardNumberLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___15 = goog.getMsg(" Card Number: ");
       I18N_14 = MSG_EXTERNAL_cardNumberLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___15;
     } else {
-      I18N_14 = $localize(_templateObject255());
+      I18N_14 = $localize(_templateObject257());
     }
 
     var I18N_16;
@@ -31767,7 +31837,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_cardNumberPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___17 = goog.getMsg("Card Number");
       I18N_16 = MSG_EXTERNAL_cardNumberPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___17;
     } else {
-      I18N_16 = $localize(_templateObject256());
+      I18N_16 = $localize(_templateObject258());
     }
 
     var _c18 = ["placeholder", I18N_16];
@@ -31777,7 +31847,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_cardNumberError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___20 = goog.getMsg("A valid Card Number is required");
       I18N_19 = MSG_EXTERNAL_cardNumberError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___20;
     } else {
-      I18N_19 = $localize(_templateObject257());
+      I18N_19 = $localize(_templateObject259());
     }
 
     function UserFormComponent_form_0_div_5_Template(rf, ctx) {
@@ -31824,7 +31894,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_supportLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___22 = goog.getMsg("Support");
       I18N_21 = MSG_EXTERNAL_supportLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___22;
     } else {
-      I18N_21 = $localize(_templateObject258());
+      I18N_21 = $localize(_templateObject260());
     }
 
     function UserFormComponent_form_0_div_6_Template(rf, ctx) {
@@ -31847,7 +31917,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_adminLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___24 = goog.getMsg("System Admin");
       I18N_23 = MSG_EXTERNAL_adminLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___24;
     } else {
-      I18N_23 = $localize(_templateObject259());
+      I18N_23 = $localize(_templateObject261());
     }
 
     function UserFormComponent_form_0_div_7_Template(rf, ctx) {
@@ -31870,7 +31940,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_passwordLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___26 = goog.getMsg(" Password: ");
       I18N_25 = MSG_EXTERNAL_passwordLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___26;
     } else {
-      I18N_25 = $localize(_templateObject260());
+      I18N_25 = $localize(_templateObject262());
     }
 
     var I18N_27;
@@ -31879,7 +31949,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_passwordPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___28 = goog.getMsg("Password");
       I18N_27 = MSG_EXTERNAL_passwordPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___28;
     } else {
-      I18N_27 = $localize(_templateObject261());
+      I18N_27 = $localize(_templateObject263());
     }
 
     var _c29 = ["placeholder", I18N_27];
@@ -31889,7 +31959,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_passordError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___31 = goog.getMsg("A valid password is required");
       I18N_30 = MSG_EXTERNAL_passordError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___31;
     } else {
-      I18N_30 = $localize(_templateObject262());
+      I18N_30 = $localize(_templateObject264());
     }
 
     var _c32 = function _c32() {
@@ -31983,7 +32053,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_checkPasswordLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___34 = goog.getMsg(" Confirm Pasword: ");
       I18N_33 = MSG_EXTERNAL_checkPasswordLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___34;
     } else {
-      I18N_33 = $localize(_templateObject263());
+      I18N_33 = $localize(_templateObject265());
     }
 
     var I18N_35;
@@ -31992,7 +32062,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_checkPasswordPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___36 = goog.getMsg("Confirm Password");
       I18N_35 = MSG_EXTERNAL_checkPasswordPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___36;
     } else {
-      I18N_35 = $localize(_templateObject264());
+      I18N_35 = $localize(_templateObject266());
     }
 
     var _c37 = ["placeholder", I18N_35];
@@ -32002,7 +32072,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_checkPasswordError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___39 = goog.getMsg("Passwords don't match");
       I18N_38 = MSG_EXTERNAL_checkPasswordError$$SRC_APP_SHARED_COMPONENTS_FORMS_USER_FORM_USER_FORM_COMPONENT_TS___39;
     } else {
-      I18N_38 = $localize(_templateObject265());
+      I18N_38 = $localize(_templateObject267());
     }
 
     function UserFormComponent_form_0_div_9_Template(rf, ctx) {
@@ -32290,7 +32360,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_parentZoneLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___1 = goog.getMsg("Parent Zone: ");
       I18N_0 = MSG_EXTERNAL_parentZoneLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___1;
     } else {
-      I18N_0 = $localize(_templateObject266());
+      I18N_0 = $localize(_templateObject268());
     }
 
     function ZoneFormComponent_div_0_div_2_Template(rf, ctx) {
@@ -32326,7 +32396,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_2 = MSG_EXTERNAL_nameLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___3;
     } else {
-      I18N_2 = $localize(_templateObject267(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
+      I18N_2 = $localize(_templateObject269(), "\uFFFD#3\uFFFD", "\uFFFD/#3\uFFFD");
     }
 
     var I18N_4;
@@ -32335,7 +32405,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_zoneNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___5 = goog.getMsg("Zone Name");
       I18N_4 = MSG_EXTERNAL_zoneNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___5;
     } else {
-      I18N_4 = $localize(_templateObject268());
+      I18N_4 = $localize(_templateObject270());
     }
 
     var _c6 = ["placeholder", I18N_4];
@@ -32345,7 +32415,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_zoneNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___8 = goog.getMsg("Zone name is required");
       I18N_7 = MSG_EXTERNAL_zoneNameError$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___8;
     } else {
-      I18N_7 = $localize(_templateObject269());
+      I18N_7 = $localize(_templateObject271());
     }
 
     function ZoneFormComponent_div_0_div_3_Template(rf, ctx) {
@@ -32396,7 +32466,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_zoneDisplayNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___10 = goog.getMsg("Zone display name");
       I18N_9 = MSG_EXTERNAL_zoneDisplayNamePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___10;
     } else {
-      I18N_9 = $localize(_templateObject270());
+      I18N_9 = $localize(_templateObject272());
     }
 
     var _c11 = ["placeholder", I18N_9];
@@ -32439,7 +32509,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_tagsLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___13 = goog.getMsg(" Tags: ");
       I18N_12 = MSG_EXTERNAL_tagsLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___13;
     } else {
-      I18N_12 = $localize(_templateObject271());
+      I18N_12 = $localize(_templateObject273());
     }
 
     var I18N_14;
@@ -32448,7 +32518,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_zoneTagsPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___15 = goog.getMsg("Zone tags...");
       I18N_14 = MSG_EXTERNAL_zoneTagsPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___15;
     } else {
-      I18N_14 = $localize(_templateObject272());
+      I18N_14 = $localize(_templateObject274());
     }
 
     var _c16 = ["placeholder", I18N_14];
@@ -32561,7 +32631,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___19 = goog.getMsg("Description:");
       I18N_18 = MSG_EXTERNAL_descriptionLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___19;
     } else {
-      I18N_18 = $localize(_templateObject273());
+      I18N_18 = $localize(_templateObject275());
     }
 
     var I18N_20;
@@ -32570,7 +32640,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___21 = goog.getMsg("Description");
       I18N_20 = MSG_EXTERNAL_descriptionPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___21;
     } else {
-      I18N_20 = $localize(_templateObject274());
+      I18N_20 = $localize(_templateObject276());
     }
 
     var _c22 = ["placeholder", I18N_20];
@@ -32605,7 +32675,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_locationLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___24 = goog.getMsg("Location:");
       I18N_23 = MSG_EXTERNAL_locationLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___24;
     } else {
-      I18N_23 = $localize(_templateObject275());
+      I18N_23 = $localize(_templateObject277());
     }
 
     var I18N_25;
@@ -32614,7 +32684,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_locationPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___26 = goog.getMsg("Geo-location details for zone. <lat, long>");
       I18N_25 = MSG_EXTERNAL_locationPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___26;
     } else {
-      I18N_25 = $localize(_templateObject276());
+      I18N_25 = $localize(_templateObject278());
     }
 
     var _c27 = ["placeholder", I18N_25];
@@ -32649,7 +32719,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_codeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___29 = goog.getMsg("Code:");
       I18N_28 = MSG_EXTERNAL_codeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___29;
     } else {
-      I18N_28 = $localize(_templateObject277());
+      I18N_28 = $localize(_templateObject279());
     }
 
     var I18N_30;
@@ -32658,7 +32728,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_codePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___31 = goog.getMsg("Organisation Code");
       I18N_30 = MSG_EXTERNAL_codePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___31;
     } else {
-      I18N_30 = $localize(_templateObject278());
+      I18N_30 = $localize(_templateObject280());
     }
 
     var _c32 = ["placeholder", I18N_30];
@@ -32693,7 +32763,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_typeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___34 = goog.getMsg("Type:");
       I18N_33 = MSG_EXTERNAL_typeLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___34;
     } else {
-      I18N_33 = $localize(_templateObject279());
+      I18N_33 = $localize(_templateObject281());
     }
 
     var I18N_35;
@@ -32702,7 +32772,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_zoneTypePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___36 = goog.getMsg("Organisational Categorisation");
       I18N_35 = MSG_EXTERNAL_zoneTypePlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___36;
     } else {
-      I18N_35 = $localize(_templateObject280());
+      I18N_35 = $localize(_templateObject282());
     }
 
     var _c37 = ["placeholder", I18N_35];
@@ -32737,7 +32807,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_countLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___39 = goog.getMsg("Count:");
       I18N_38 = MSG_EXTERNAL_countLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___39;
     } else {
-      I18N_38 = $localize(_templateObject281());
+      I18N_38 = $localize(_templateObject283());
     }
 
     var I18N_40;
@@ -32746,7 +32816,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_zoneFeatureCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___41 = goog.getMsg("Resource count. Desks, Hardware, etc.");
       I18N_40 = MSG_EXTERNAL_zoneFeatureCountPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___41;
     } else {
-      I18N_40 = $localize(_templateObject282());
+      I18N_40 = $localize(_templateObject284());
     }
 
     var _c42 = ["placeholder", I18N_40];
@@ -32781,7 +32851,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___44 = goog.getMsg("Capacity:");
       I18N_43 = MSG_EXTERNAL_capacityLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___44;
     } else {
-      I18N_43 = $localize(_templateObject283());
+      I18N_43 = $localize(_templateObject285());
     }
 
     var I18N_45;
@@ -32790,7 +32860,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_zoneCapacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___46 = goog.getMsg("Physical capacity of the zone");
       I18N_45 = MSG_EXTERNAL_zoneCapacityPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___46;
     } else {
-      I18N_45 = $localize(_templateObject284());
+      I18N_45 = $localize(_templateObject286());
     }
 
     var _c47 = ["placeholder", I18N_45];
@@ -32825,7 +32895,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_mapUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___49 = goog.getMsg("Map:");
       I18N_48 = MSG_EXTERNAL_mapUrlLabel$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___49;
     } else {
-      I18N_48 = $localize(_templateObject285());
+      I18N_48 = $localize(_templateObject287());
     }
 
     var I18N_50;
@@ -32834,7 +32904,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_mapUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___51 = goog.getMsg("Map ID or URL");
       I18N_50 = MSG_EXTERNAL_mapUrlPlaceholder$$SRC_APP_SHARED_COMPONENTS_FORMS_ZONE_FORM_ZONE_FORM_COMPONENT_TS___51;
     } else {
-      I18N_50 = $localize(_templateObject286());
+      I18N_50 = $localize(_templateObject288());
     }
 
     var _c52 = ["placeholder", I18N_50];
@@ -33417,7 +33487,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_3 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_2 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_3;
     } else {
-      I18N_2 = $localize(_templateObject287());
+      I18N_2 = $localize(_templateObject289());
     }
 
     I18N_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_2, {
@@ -33431,7 +33501,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_1 = MSG_EXTERNAL_copyItemAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_4;
     } else {
-      I18N_1 = $localize(_templateObject288(), I18N_2);
+      I18N_1 = $localize(_templateObject290(), I18N_2);
     }
 
     var I18N_6;
@@ -33440,7 +33510,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_7 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_6 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_7;
     } else {
-      I18N_6 = $localize(_templateObject289());
+      I18N_6 = $localize(_templateObject291());
     }
 
     I18N_6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_6, {
@@ -33454,7 +33524,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_5 = MSG_EXTERNAL_duplicateAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_8;
     } else {
-      I18N_5 = $localize(_templateObject290(), I18N_6);
+      I18N_5 = $localize(_templateObject292(), I18N_6);
     }
 
     var I18N_10;
@@ -33463,7 +33533,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_11 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_10 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_11;
     } else {
-      I18N_10 = $localize(_templateObject291());
+      I18N_10 = $localize(_templateObject293());
     }
 
     I18N_10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_10, {
@@ -33477,7 +33547,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_9 = MSG_EXTERNAL_exporeAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS_12;
     } else {
-      I18N_9 = $localize(_templateObject292(), I18N_10);
+      I18N_9 = $localize(_templateObject294(), I18N_10);
     }
 
     function ItemDisplayComponent_header_1_div_5_Template(rf, ctx) {
@@ -33518,7 +33588,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_930388057628811577$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___15 = goog.getMsg("{VAR_SELECT, select, Device {Device } Logic {Logic } SSH {SSH } Websocket {Websocket } Service {Service } other {Other }}");
       I18N_14 = MSG_EXTERNAL_930388057628811577$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___15;
     } else {
-      I18N_14 = $localize(_templateObject293());
+      I18N_14 = $localize(_templateObject295());
     }
 
     I18N_14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_14, {
@@ -33532,7 +33602,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_13 = MSG_EXTERNAL_driverType$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___16;
     } else {
-      I18N_13 = $localize(_templateObject294(), I18N_14);
+      I18N_13 = $localize(_templateObject296(), I18N_14);
     }
 
     function ItemDisplayComponent_header_1_div_6_Template(rf, ctx) {
@@ -33561,7 +33631,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_1133432502520691599$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___19 = goog.getMsg("{VAR_SELECT, select, true {Online } false {Offline } other {Other }}");
       I18N_18 = MSG_EXTERNAL_1133432502520691599$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___19;
     } else {
-      I18N_18 = $localize(_templateObject295());
+      I18N_18 = $localize(_templateObject297());
     }
 
     I18N_18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_18, {
@@ -33575,7 +33645,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_17 = MSG_EXTERNAL_onlineState$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___20;
     } else {
-      I18N_17 = $localize(_templateObject296(), I18N_18);
+      I18N_17 = $localize(_templateObject298(), I18N_18);
     }
 
     function ItemDisplayComponent_header_1_div_7_Template(rf, ctx) {
@@ -33606,7 +33676,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_secure$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___22 = goog.getMsg("Secure");
       I18N_21 = MSG_EXTERNAL_secure$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___22;
     } else {
-      I18N_21 = $localize(_templateObject297());
+      I18N_21 = $localize(_templateObject299());
     }
 
     function ItemDisplayComponent_header_1_div_8_Template(rf, ctx) {
@@ -33729,7 +33799,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_927071735214087141$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___26 = goog.getMsg("{VAR_SELECT, select, About {About } Modules {Modules } Zones {Zones } Triggers {Triggers } Systems {Systems } Metadata {Metadata } Children {Children } Drivers {Drivers } History {History } Applications {Applications } Authentication {Authentication } Users {Users } Database {Database } Clusters {Clusters } Interfaces {Interfaces } MQTT Brokers {MQTT Brokers } other {Other }}");
       I18N_25 = MSG_EXTERNAL_927071735214087141$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___26;
     } else {
-      I18N_25 = $localize(_templateObject298());
+      I18N_25 = $localize(_templateObject300());
     }
 
     I18N_25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_25, {
@@ -33743,7 +33813,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_24 = MSG_EXTERNAL_tabNames$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS___27;
     } else {
-      I18N_24 = $localize(_templateObject299(), I18N_25);
+      I18N_24 = $localize(_templateObject301(), I18N_25);
     }
 
     function ItemDisplayComponent_main_2_a_3_div_6_Template(rf, ctx) {
@@ -33868,7 +33938,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__32 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_31 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__32;
     } else {
-      I18N_31 = $localize(_templateObject300());
+      I18N_31 = $localize(_templateObject302());
     }
 
     I18N_31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_31, {
@@ -33882,7 +33952,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_30 = MSG_EXTERNAL_selectItem$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__33;
     } else {
-      I18N_30 = $localize(_templateObject301(), I18N_31);
+      I18N_30 = $localize(_templateObject303(), I18N_31);
     }
 
     function ItemDisplayComponent_div_3_Template(rf, ctx) {
@@ -33925,7 +33995,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__36 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_35 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__36;
     } else {
-      I18N_35 = $localize(_templateObject302());
+      I18N_35 = $localize(_templateObject304());
     }
 
     I18N_35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_35, {
@@ -33939,7 +34009,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_34 = MSG_EXTERNAL_selectItemMobile$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__37;
     } else {
-      I18N_34 = $localize(_templateObject303(), I18N_35);
+      I18N_34 = $localize(_templateObject305(), I18N_35);
     }
 
     function ItemDisplayComponent_div_4_Template(rf, ctx) {
@@ -33982,7 +34052,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_1515061680644220493$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__40 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other\n        }}");
       I18N_39 = MSG_EXTERNAL_1515061680644220493$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__40;
     } else {
-      I18N_39 = $localize(_templateObject304());
+      I18N_39 = $localize(_templateObject306());
     }
 
     I18N_39 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_39, {
@@ -33996,7 +34066,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_38 = MSG_EXTERNAL_itemLoading$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__41;
     } else {
-      I18N_38 = $localize(_templateObject305(), I18N_39);
+      I18N_38 = $localize(_templateObject307(), I18N_39);
     }
 
     function ItemDisplayComponent_div_5_Template(rf, ctx) {
@@ -34035,7 +34105,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__44 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_43 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__44;
     } else {
-      I18N_43 = $localize(_templateObject306());
+      I18N_43 = $localize(_templateObject308());
     }
 
     I18N_43 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_43, {
@@ -34049,7 +34119,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_42 = MSG_EXTERNAL_editAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__45;
     } else {
-      I18N_42 = $localize(_templateObject307(), I18N_43);
+      I18N_42 = $localize(_templateObject309(), I18N_43);
     }
 
     var _c46 = function _c46() {
@@ -34108,7 +34178,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__49 = goog.getMsg("{VAR_SELECT, select, system {system } module {module } driver {driver } repository {repository } zone {zone } trigger {trigger } user {user } domain {domain } other {other }}");
       I18N_48 = MSG_EXTERNAL_3973811633009541633$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__49;
     } else {
-      I18N_48 = $localize(_templateObject308());
+      I18N_48 = $localize(_templateObject310());
     }
 
     I18N_48 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_48, {
@@ -34122,7 +34192,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_47 = MSG_EXTERNAL_deleteAction$$SRC_APP_SHARED_COMPONENTS_ITEM_DISPLAY_ITEM_DISPLAY_COMPONENT_TS__50;
     } else {
-      I18N_47 = $localize(_templateObject309(), I18N_48);
+      I18N_47 = $localize(_templateObject311(), I18N_48);
     }
 
     var _c51 = function _c51() {
@@ -36085,7 +36155,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_7954964908113382488$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS_2 = goog.getMsg("{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repositories {Repositories } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}");
       I18N_1 = MSG_EXTERNAL_7954964908113382488$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS_2;
     } else {
-      I18N_1 = $localize(_templateObject310());
+      I18N_1 = $localize(_templateObject312());
     }
 
     I18N_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_1, {
@@ -36124,7 +36194,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_4582722582214648803$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS__4 = goog.getMsg("\n            Exceeded quota! No new item can be created\n            until the total is below you license count.");
       I18N_3 = MSG_EXTERNAL_4582722582214648803$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS__4;
     } else {
-      I18N_3 = $localize(_templateObject311());
+      I18N_3 = $localize(_templateObject313());
     }
 
     var _c5 = ["matTooltip", I18N_3];
@@ -36240,7 +36310,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_8 = MSG_EXTERNAL_4490461035567493937$$SRC_APP_SHARED_COMPONENTS_SIDEBAR_SIDEBAR_COMPONENT_TS___9;
     } else {
-      I18N_8 = $localize(_templateObject312(), "\uFFFD0\uFFFD");
+      I18N_8 = $localize(_templateObject314(), "\uFFFD0\uFFFD");
     }
 
     function SidebarComponent_div_21_div_5_Template(rf, ctx) {
@@ -40482,6 +40552,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       var fields = {
         name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.name || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].required]),
+        display_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.display_name || ''),
         email: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.email || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].email]),
         support_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.support_url || '', [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern(URL_PATTERN)]),
         installed_ui_devices: new _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormControl"](system.installed_ui_devices || 0, [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["Validators"].pattern('[0-9]*')]),
@@ -42513,7 +42584,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_1497526233588378893$$SRC_APP_SHELL_COMPONENTS_SIDEBAR_MENU_SIDEBAR_MENU_COMPONENT_TS____2 = goog.getMsg("{VAR_SELECT, select, Systems {Systems } Modules {Modules } Zones {Zones } Drivers {Drivers } Repos {Repos } Triggers {Triggers } Users {Users } Domains {Domains } Admin {Admin } other {Other }}");
       I18N_1 = MSG_EXTERNAL_1497526233588378893$$SRC_APP_SHELL_COMPONENTS_SIDEBAR_MENU_SIDEBAR_MENU_COMPONENT_TS____2;
     } else {
-      I18N_1 = $localize(_templateObject313());
+      I18N_1 = $localize(_templateObject315());
     }
 
     I18N_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_1, {
@@ -42527,7 +42598,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       I18N_0 = MSG_EXTERNAL_5975271772062060140$$SRC_APP_SHELL_COMPONENTS_SIDEBAR_MENU_SIDEBAR_MENU_COMPONENT_TS____3;
     } else {
-      I18N_0 = $localize(_templateObject314(), I18N_1);
+      I18N_0 = $localize(_templateObject316(), I18N_1);
     }
 
     function SidebarMenuComponent_div_0_ng_container_1_div_4_Template(rf, ctx) {
@@ -42959,7 +43030,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_profileAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_1 = goog.getMsg("Profile");
       I18N_0 = MSG_EXTERNAL_profileAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_1;
     } else {
-      I18N_0 = $localize(_templateObject315());
+      I18N_0 = $localize(_templateObject317());
     }
 
     var I18N_2;
@@ -42968,7 +43039,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_logoutAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_3 = goog.getMsg("Logout");
       I18N_2 = MSG_EXTERNAL_logoutAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_3;
     } else {
-      I18N_2 = $localize(_templateObject316());
+      I18N_2 = $localize(_templateObject318());
     }
 
     var I18N_4;
@@ -42977,7 +43048,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_darkMode$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_5 = goog.getMsg("Dark Mode");
       I18N_4 = MSG_EXTERNAL_darkMode$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_5;
     } else {
-      I18N_4 = $localize(_templateObject317());
+      I18N_4 = $localize(_templateObject319());
     }
 
     var I18N_6;
@@ -42986,7 +43057,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_reportAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_7 = goog.getMsg("Report an Issue");
       I18N_6 = MSG_EXTERNAL_reportAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_7;
     } else {
-      I18N_6 = $localize(_templateObject318());
+      I18N_6 = $localize(_templateObject320());
     }
 
     var I18N_8;
@@ -42995,7 +43066,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_9 = goog.getMsg("New");
       I18N_8 = MSG_EXTERNAL_newAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_9;
     } else {
-      I18N_8 = $localize(_templateObject319());
+      I18N_8 = $localize(_templateObject321());
     }
 
     var I18N_10;
@@ -43004,7 +43075,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_bulkNewAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_11 = goog.getMsg("Bulk New");
       I18N_10 = MSG_EXTERNAL_bulkNewAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_11;
     } else {
-      I18N_10 = $localize(_templateObject320());
+      I18N_10 = $localize(_templateObject322());
     }
 
     var I18N_12;
@@ -43013,7 +43084,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newSystemAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_13 = goog.getMsg("{VAR_SELECT, select, true {Systems } false {System }}");
       I18N_12 = MSG_EXTERNAL_newSystemAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_13;
     } else {
-      I18N_12 = $localize(_templateObject321());
+      I18N_12 = $localize(_templateObject323());
     }
 
     I18N_12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_12, {
@@ -43025,7 +43096,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newZoneAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_15 = goog.getMsg("{VAR_SELECT, select, true {Zones } false {Zone }}");
       I18N_14 = MSG_EXTERNAL_newZoneAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_15;
     } else {
-      I18N_14 = $localize(_templateObject322());
+      I18N_14 = $localize(_templateObject324());
     }
 
     I18N_14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_14, {
@@ -43037,7 +43108,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newDriverAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_17 = goog.getMsg("{VAR_SELECT, select, true {Drivers } false {Driver }}");
       I18N_16 = MSG_EXTERNAL_newDriverAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_17;
     } else {
-      I18N_16 = $localize(_templateObject323());
+      I18N_16 = $localize(_templateObject325());
     }
 
     I18N_16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_16, {
@@ -43049,7 +43120,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newModuleAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_19 = goog.getMsg("{VAR_SELECT, select, true {Modules } false {Module }}");
       I18N_18 = MSG_EXTERNAL_newModuleAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_19;
     } else {
-      I18N_18 = $localize(_templateObject324());
+      I18N_18 = $localize(_templateObject326());
     }
 
     I18N_18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_18, {
@@ -43061,7 +43132,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_newUserAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_21 = goog.getMsg("{VAR_SELECT, select, true {Users } false {User }}");
       I18N_20 = MSG_EXTERNAL_newUserAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS_21;
     } else {
-      I18N_20 = $localize(_templateObject325());
+      I18N_20 = $localize(_templateObject327());
     }
 
     I18N_20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18nPostprocess"](I18N_20, {
@@ -43166,7 +43237,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_languageAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS__24 = goog.getMsg("Language");
       I18N_23 = MSG_EXTERNAL_languageAction$$SRC_APP_SHELL_COMPONENTS_TOPBAR_HEADER_TOPBAR_HEADER_COMPONENT_TS__24;
     } else {
-      I18N_23 = $localize(_templateObject326());
+      I18N_23 = $localize(_templateObject328());
     }
 
     var _c25 = function _c25() {
@@ -44281,7 +44352,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var MSG_EXTERNAL_rootLoader$$SRC_APP_SHELL_SHELL_COMPONENT_TS__1 = goog.getMsg("Loading application data...");
       I18N_0 = MSG_EXTERNAL_rootLoader$$SRC_APP_SHELL_SHELL_COMPONENT_TS__1;
     } else {
-      I18N_0 = $localize(_templateObject327());
+      I18N_0 = $localize(_templateObject329());
     }
 
     function AppShellComponent_div_1_Template(rf, ctx) {
@@ -44519,16 +44590,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "5c5f140",
-      "hash": "5c5f140",
+      "raw": "1cc07f2",
+      "hash": "1cc07f2",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "5c5f140",
+      "suffix": "1cc07f2",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1593673113221
+      "time": 1593738350289
     };
     /* tslint:enable */
 
