@@ -8821,7 +8821,7 @@ function DriverFormComponent_div_0_div_2_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("service", ctx_r3.discovery_service)("ngModel", ctx_r3.base_repo);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("service", ctx_r3.discovery_service)("ngModel", ctx_r3.base_repo)("exclude", ctx_r3.exclude_fn);
 } }
 var I18N_2;
 if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
@@ -9139,7 +9139,7 @@ function DriverFormComponent_div_0_ng_container_5_Template(rf, ctx) { if (rf & 1
 function DriverFormComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, DriverFormComponent_div_0_div_2_Template, 4, 2, "div", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, DriverFormComponent_div_0_div_2_Template, 4, 3, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, DriverFormComponent_div_0_div_3_Template, 4, 3, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, DriverFormComponent_div_0_div_4_Template, 4, 3, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -9196,6 +9196,8 @@ class DriverFormComponent extends src_app_shared_globals_base_directive__WEBPACK
         this.repo$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
         /** Subject holding the value of the search */
         this.driver$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
+        /** Function to check repo that are excluded from being listed */
+        this.exclude_fn = (repo) => repo.type === _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineRepositoryType"].Interface;
     }
     get editing() {
         return this.form.controls.id && this.form.controls.id.value;
@@ -9327,7 +9329,7 @@ class DriverFormComponent extends src_app_shared_globals_base_directive__WEBPACK
     }
 }
 DriverFormComponent.ɵfac = function DriverFormComponent_Factory(t) { return new (t || DriverFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_services_app_service__WEBPACK_IMPORTED_MODULE_8__["ApplicationService"])); };
-DriverFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: DriverFormComponent, selectors: [["driver-form"]], inputs: { form: "form" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInheritDefinitionFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 3, vars: 1, consts: [["class", "driver form", 4, "ngIf"], ["load_state", ""], [1, "driver", "form"], [1, "fieldset"], ["class", "field discovery", 4, "ngIf"], [4, "ngIf", "ngIfElse"], [1, "field", "discovery"], ["for", "repo"], ["name", "repo", 3, "service", "ngModel", "ngModelChange"], ["for", "driver"], ["name", "driver", 3, "options", "loading", "ngModel", "ngModelChange"], ["for", "commit"], ["name", "commit", 3, "options", "loading", "ngModel", "ngModelChange"], [3, "formGroup"], [4, "ngIf"], ["class", "field", 4, "ngIf"], [1, "field"], ["for", "driver-name"], ["appearance", "outline"], ["matInput", "", "name", "driver-name", "formControlName", "name", "required", "", 6, "placeholder"], ["for", "role"], ["name", "role", "formControlName", "role"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], ["for", "description"], ["matInput", "", "name", "description", "formControlName", "description", 6, "placeholder"], ["for", "module-name"], ["matInput", "", "name", "module-name", "placeholder", "Module Name", "formControlName", "module_name", "required", ""], ["for", "default-uri"], ["matInput", "", "name", "default-uri", "placeholder", "Default URI", "formControlName", "default_uri"], ["for", "default-port"], ["matInput", "", "name", "default-port", "type", "number", "placeholder", "Port Number", "formControlName", "default_port"], ["name", "ignore-connected", "formControlName", "ignore_connected"], [1, "info-block"], [1, "icon"], ["diameter", "48"], [1, "text"]], template: function DriverFormComponent_Template(rf, ctx) { if (rf & 1) {
+DriverFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: DriverFormComponent, selectors: [["driver-form"]], inputs: { form: "form" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInheritDefinitionFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 3, vars: 1, consts: [["class", "driver form", 4, "ngIf"], ["load_state", ""], [1, "driver", "form"], [1, "fieldset"], ["class", "field discovery", 4, "ngIf"], [4, "ngIf", "ngIfElse"], [1, "field", "discovery"], ["for", "repo"], ["name", "repo", 3, "service", "ngModel", "exclude", "ngModelChange"], ["for", "driver"], ["name", "driver", 3, "options", "loading", "ngModel", "ngModelChange"], ["for", "commit"], ["name", "commit", 3, "options", "loading", "ngModel", "ngModelChange"], [3, "formGroup"], [4, "ngIf"], ["class", "field", 4, "ngIf"], [1, "field"], ["for", "driver-name"], ["appearance", "outline"], ["matInput", "", "name", "driver-name", "formControlName", "name", "required", "", 6, "placeholder"], ["for", "role"], ["name", "role", "formControlName", "role"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], ["for", "description"], ["matInput", "", "name", "description", "formControlName", "description", 6, "placeholder"], ["for", "module-name"], ["matInput", "", "name", "module-name", "placeholder", "Module Name", "formControlName", "module_name", "required", ""], ["for", "default-uri"], ["matInput", "", "name", "default-uri", "placeholder", "Default URI", "formControlName", "default_uri"], ["for", "default-port"], ["matInput", "", "name", "default-port", "type", "number", "placeholder", "Port Number", "formControlName", "default_port"], ["name", "ignore-connected", "formControlName", "ignore_connected"], [1, "info-block"], [1, "icon"], ["diameter", "48"], [1, "text"]], template: function DriverFormComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, DriverFormComponent_div_0_Template, 6, 5, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, DriverFormComponent_ng_template_1_Template, 5, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
     } if (rf & 2) {
@@ -21875,16 +21877,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "bfbfdc4",
-    "hash": "bfbfdc4",
+    "raw": "d37f48e",
+    "hash": "d37f48e",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "bfbfdc4",
+    "suffix": "d37f48e",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1594097905694
+    "time": 1594113476651
 };
 /* tslint:enable */
 
