@@ -17286,7 +17286,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(SystemExecFieldComponent, [{
         key: "ngOnChanges",
         value: function ngOnChanges(changes) {
-          if (changes.system) {
+          if (changes.system || changes.refresh) {
             this.devices = [];
             this.loadModules();
           }
@@ -17776,7 +17776,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       },
       inputs: {
         system: "system",
-        executable: "executable"
+        executable: "executable",
+        refresh: "refresh"
       },
       outputs: {
         event: "event"
@@ -17837,6 +17838,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }],
         executable: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }],
+        refresh: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }],
         event: [{
@@ -44734,16 +44738,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "7f155d1",
-      "hash": "7f155d1",
+      "raw": "bfbfdc4",
+      "hash": "bfbfdc4",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "7f155d1",
+      "suffix": "bfbfdc4",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1593762724535
+      "time": 1594097905694
     };
     /* tslint:enable */
 

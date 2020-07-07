@@ -2079,7 +2079,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("system", ctx_r1.item);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("system", ctx_r1.item)("refresh", ctx_r1.refresh_modules);
       }
     }
 
@@ -2131,6 +2131,12 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
           var device_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
 
           return device_r5.connected = $event;
+        })("modelChange", function SystemModulesComponent_div_0_table_12_tr_13_i_5_Template_i_modelChange_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13);
+
+          var ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](4);
+
+          return ctx_r14.refresh_modules = !ctx_r14.refresh_modules;
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2153,20 +2159,20 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
     function SystemModulesComponent_div_0_table_12_tr_13_button_23_Template(rf, ctx) {
       if (rf & 1) {
-        var _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 36);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("tapped", function SystemModulesComponent_div_0_table_12_tr_13_button_23_Template_button_tapped_0_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r19);
 
-          var item_r15 = ctx.$implicit;
+          var item_r16 = ctx.$implicit;
 
           var device_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
 
-          var ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+          var ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
 
-          return ctx_r16.handleContextEvent(item_r15, device_r5);
+          return ctx_r17.handleContextEvent(item_r16, device_r5);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-icon", 30);
@@ -2181,15 +2187,15 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       }
 
       if (rf & 2) {
-        var item_r15 = ctx.$implicit;
+        var item_r16 = ctx.$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("icon", item_r15.icon);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("icon", item_r16.icon);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r15.name);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r16.name);
       }
     }
 
@@ -2211,18 +2217,18 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
     function SystemModulesComponent_div_0_table_12_tr_13_Template(rf, ctx) {
       if (rf & 1) {
-        var _r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr", 18);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("contextAction", function SystemModulesComponent_div_0_table_12_tr_13_Template_tr_contextAction_0_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r20);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r21);
 
           var device_r5 = ctx.$implicit;
 
-          var ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+          var ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
 
-          return ctx_r19.handleContextEvent($event, device_r5);
+          return ctx_r20.handleContextEvent($event, device_r5);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "td", 12);
@@ -2242,13 +2248,13 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 22);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("tapped", function SystemModulesComponent_div_0_table_12_tr_13_Template_div_tapped_6_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r20);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r21);
 
           var device_r5 = ctx.$implicit;
 
-          var ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+          var ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
 
-          return ctx_r21.power(device_r5);
+          return ctx_r22.power(device_r5);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2260,7 +2266,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 23);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("contextmenu", function SystemModulesComponent_div_0_table_12_tr_13_Template_a_contextmenu_8_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r20);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r21);
 
           return $event.stopPropagation();
         });
@@ -2276,13 +2282,13 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "mat-checkbox", 24);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function SystemModulesComponent_div_0_table_12_tr_13_Template_mat_checkbox_change_11_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r20);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r21);
 
           var device_r5 = ctx.$implicit;
 
-          var ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
+          var ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
 
-          return ctx_r23.toggleDebugEvents(device_r5);
+          return ctx_r24.toggleDebugEvents(device_r5);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
@@ -2343,7 +2349,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("active", device_r5.running && device_r5.connected === "true")("inactive", device_r5.running && device_r5.connected === "false")("black", !device_r5.running);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("active", device_r5.running && !!device_r5.connected)("inactive", device_r5.running && !device_r5.connected)("black", !device_r5.running);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -2393,7 +2399,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
     function SystemModulesComponent_div_0_table_12_Template(rf, ctx) {
       if (rf & 1) {
-        var _r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "table");
 
@@ -2432,11 +2438,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "tbody", 16);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("cdkDropListDropped", function SystemModulesComponent_div_0_table_12_Template_tbody_cdkDropListDropped_12_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r25);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r26);
 
-          var ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+          var ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
 
-          return ctx_r24.drop($event);
+          return ctx_r25.drop($event);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, SystemModulesComponent_div_0_table_12_tr_13_Template, 25, 23, "tr", 17);
@@ -2480,7 +2486,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
     function SystemModulesComponent_div_0_Template(rf, ctx) {
       if (rf & 1) {
-        var _r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r28 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1);
 
@@ -2491,11 +2497,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "item-search-field", 4);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function SystemModulesComponent_div_0_Template_item_search_field_ngModelChange_3_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r27);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r28);
 
-          var ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+          var ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r26.new_module = $event.id;
+          return ctx_r27.new_module = $event.id;
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2505,11 +2511,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "button", 5);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("tapped", function SystemModulesComponent_div_0_Template_button_tapped_4_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r27);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r28);
 
-          var ctx_r28 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+          var ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r28.addModule();
+          return ctx_r29.addModule();
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](5, I18N_0);
@@ -2519,11 +2525,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 6);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("tapped", function SystemModulesComponent_div_0_Template_button_tapped_6_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r27);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r28);
 
-          var ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+          var ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r29.newModule();
+          return ctx_r30.newModule();
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](7, I18N_2);
@@ -2532,7 +2538,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, SystemModulesComponent_div_0_ng_container_8_Template, 5, 1, "ng-container", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, SystemModulesComponent_div_0_ng_container_8_Template, 5, 2, "ng-container", 7);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "section", 8);
 
@@ -2770,6 +2776,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
               _this15._service.notifySuccess('Module successfully stopped');
 
               device.running = false;
+              _this15.refresh_modules = !_this15.refresh_modules;
             }, function (err) {
               _this15.hide_exec = false;
 
@@ -2788,6 +2795,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
               _this15._service.notifySuccess('Module successfully started');
 
               device.running = true;
+              _this15.refresh_modules = !_this15.refresh_modules;
             }, function (err) {
               _this15.hide_exec = false;
 
@@ -3136,7 +3144,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]],
       decls: 1,
       vars: 1,
-      consts: [["class", "container", 4, "ngIf"], [1, "container"], [1, "select"], [1, "dropdown"], [3, "service", "exclude", "ngModel", "ngModelChange"], ["mat-button", "", 3, "disabled", "tapped"], ["mat-button", "", 3, "tapped"], [4, "ngIf"], [1, "device-list"], ["class", "info-block", 4, "ngIf"], [1, "exec"], [3, "system"], [1, "small"], [1, "name"], [1, "module"], [1, "ip"], ["cdkDropList", "", 3, "cdkDropListDropped"], ["cdkDrag", "", 3, "context-menu", "offset_y", "contextAction", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 3, "context-menu", "offset_y", "contextAction"], ["cdkDragHandle", "", 1, "action", "grab"], [1, "backoffice-select-arrows"], ["binding", "", "bind", "connected", 3, "model", "sys", "mod", "modelChange", 4, "ngIf"], [1, "state", 3, "tapped"], ["routerLinkActive", "router-link-active", 3, "routerLink", "matTooltip", "contextmenu"], [3, "checked", "change"], [1, "lock"], ["class", "backoffice-lock", 4, "ngIf"], [3, "href"], ["touchrelease", "", 1, "small"], ["mat-icon-button", "", 3, "matMenuTriggerFor"], [3, "icon"], ["menu", "matMenu"], ["mat-menu-item", "", 3, "tapped", 4, "ngFor", "ngForOf"], ["class", "placeholder", "colspan", "6", 4, "cdkDragPlaceholder"], ["binding", "", "bind", "connected", 3, "model", "sys", "mod", "modelChange"], [1, "backoffice-lock"], ["mat-menu-item", "", 3, "tapped"], [1, "text"], ["colspan", "6", 1, "placeholder"], [1, "info-block"]],
+      consts: [["class", "container", 4, "ngIf"], [1, "container"], [1, "select"], [1, "dropdown"], [3, "service", "exclude", "ngModel", "ngModelChange"], ["mat-button", "", 3, "disabled", "tapped"], ["mat-button", "", 3, "tapped"], [4, "ngIf"], [1, "device-list"], ["class", "info-block", 4, "ngIf"], [1, "exec"], [3, "system", "refresh"], [1, "small"], [1, "name"], [1, "module"], [1, "ip"], ["cdkDropList", "", 3, "cdkDropListDropped"], ["cdkDrag", "", 3, "context-menu", "offset_y", "contextAction", 4, "ngFor", "ngForOf"], ["cdkDrag", "", 3, "context-menu", "offset_y", "contextAction"], ["cdkDragHandle", "", 1, "action", "grab"], [1, "backoffice-select-arrows"], ["binding", "", "bind", "connected", 3, "model", "sys", "mod", "modelChange", 4, "ngIf"], [1, "state", 3, "tapped"], ["routerLinkActive", "router-link-active", 3, "routerLink", "matTooltip", "contextmenu"], [3, "checked", "change"], [1, "lock"], ["class", "backoffice-lock", 4, "ngIf"], [3, "href"], ["touchrelease", "", 1, "small"], ["mat-icon-button", "", 3, "matMenuTriggerFor"], [3, "icon"], ["menu", "matMenu"], ["mat-menu-item", "", 3, "tapped", 4, "ngFor", "ngForOf"], ["class", "placeholder", "colspan", "6", 4, "cdkDragPlaceholder"], ["binding", "", "bind", "connected", 3, "model", "sys", "mod", "modelChange"], [1, "backoffice-lock"], ["mat-menu-item", "", 3, "tapped"], [1, "text"], ["colspan", "6", 1, "placeholder"], [1, "info-block"]],
       template: function SystemModulesComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, SystemModulesComponent_div_0_Template, 14, 7, "div", 0);

@@ -6941,7 +6941,7 @@ class SystemExecFieldComponent extends _globals_base_directive__WEBPACK_IMPORTED
         return map;
     }
     ngOnChanges(changes) {
-        if (changes.system) {
+        if (changes.system || changes.refresh) {
             this.devices = [];
             this.loadModules();
         }
@@ -7230,7 +7230,7 @@ SystemExecFieldComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.arg_list = _t);
-    } }, inputs: { system: "system", executable: "executable" }, outputs: { event: "event" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([
+    } }, inputs: { system: "system", executable: "executable", refresh: "refresh" }, outputs: { event: "event" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([
             {
                 provide: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NG_VALUE_ACCESSOR"],
                 useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(() => SystemExecFieldComponent),
@@ -7261,6 +7261,8 @@ SystemExecFieldComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ�
     }], function () { return [{ type: _services_app_service__WEBPACK_IMPORTED_MODULE_4__["ApplicationService"] }, { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] }]; }, { system: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], executable: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], refresh: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], event: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
@@ -21873,16 +21875,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "7f155d1",
-    "hash": "7f155d1",
+    "raw": "bfbfdc4",
+    "hash": "bfbfdc4",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "7f155d1",
+    "suffix": "bfbfdc4",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1593762724535
+    "time": 1594097905694
 };
 /* tslint:enable */
 
