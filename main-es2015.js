@@ -12165,7 +12165,7 @@ class SettingsFormComponent extends src_app_shared_globals_base_directive__WEBPA
     }
     /** Currently shown settings */
     get shown_option() {
-        return this.available_levels.find(i => i.id === this.encryption_level);
+        return this.available_levels.find((i) => i.id === this.encryption_level);
     }
     /** Whether the currently active settings have been edited */
     get active_edited() {
@@ -12200,10 +12200,10 @@ class SettingsFormComponent extends src_app_shared_globals_base_directive__WEBPA
             {
                 id: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].Support,
                 name: 'Support',
-                active: this.is_support
+                active: this.is_support,
             },
             { id: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].Admin, name: 'Admin', active: this.is_admin },
-            { id: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].NeverDisplay, name: 'Encrypted', active: this.is_admin }
+            { id: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].NeverDisplay, name: 'Encrypted', active: this.is_admin },
         ];
         if (this.merge) {
             levels.unshift({ id: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].NeverDisplay + 1, name: 'Merged' });
@@ -12232,6 +12232,12 @@ class SettingsFormComponent extends src_app_shared_globals_base_directive__WEBPA
                 : _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].None;
             this.available_levels = this.levels;
         }
+        if (changes.merge_settings) {
+            this.timeout('update_merge', () => {
+                this.used_settings = this.processSettings(this.settings || []);
+                this.initForm();
+            }, 50);
+        }
         if (changes.settings) {
             this.used_settings = this.processSettings(this.settings || []);
             this.initForm();
@@ -12251,7 +12257,7 @@ class SettingsFormComponent extends src_app_shared_globals_base_directive__WEBPA
                 this._service.notifySuccess(`Successfully saved ${this.type(level)} settings.`);
                 this.used_settings = this.processSettings(this.settings || []);
                 this.initForm();
-            }, err => {
+            }, (err) => {
                 this.saving[level] = false;
                 this._service.notifyError(`Error updating settings. Error: ${JSON.stringify(err.response || err.message || err)}`);
             });
@@ -12280,7 +12286,7 @@ class SettingsFormComponent extends src_app_shared_globals_base_directive__WEBPA
                 this._service.notifySuccess('Successfully saved all settings.');
                 this.used_settings = this.processSettings(this.settings || []);
                 this.initForm();
-            }, err => {
+            }, (err) => {
                 for (let i = 0; i < _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].NeverDisplay + 1; i++) {
                     this.saving[i] = false;
                 }
@@ -12301,10 +12307,10 @@ class SettingsFormComponent extends src_app_shared_globals_base_directive__WEBPA
             settings1: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](this.used_settings[1].settings_string, [src_app_shared_utilities_data_systems_utilities__WEBPACK_IMPORTED_MODULE_4__["validateYAML"]]),
             settings2: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](this.used_settings[2].settings_string, [src_app_shared_utilities_data_systems_utilities__WEBPACK_IMPORTED_MODULE_4__["validateYAML"]]),
             settings3: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](this.used_settings[3].settings_string, [src_app_shared_utilities_data_systems_utilities__WEBPACK_IMPORTED_MODULE_4__["validateYAML"]]),
-            settings4: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](this.used_settings[4].settings_string, [src_app_shared_utilities_data_systems_utilities__WEBPACK_IMPORTED_MODULE_4__["validateYAML"]])
+            settings4: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](this.used_settings[4].settings_string, [src_app_shared_utilities_data_systems_utilities__WEBPACK_IMPORTED_MODULE_4__["validateYAML"]]),
         });
         for (let i = 0; i < _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].NeverDisplay + 1; i++) {
-            this.subscription(`setting_change_${i}`, this.form.controls[`settings${i}`].valueChanges.subscribe(value => {
+            this.subscription(`setting_change_${i}`, this.form.controls[`settings${i}`].valueChanges.subscribe((value) => {
                 this.used_settings[i].storePendingChange('settings_string', value);
             }));
         }
@@ -12332,15 +12338,39 @@ class SettingsFormComponent extends src_app_shared_globals_base_directive__WEBPA
     }
     /** Genereate merged settings from all available settings */
     generateMergedSettings(settings) {
-        const local_settings = (settings || []).map(item => js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeLoad"](item.settings_string) || {});
-        const remote_settings = (this.merge_settings || []).map(item => js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeLoad"](item.settings_string) || {});
+        const local_settings = (settings || []).map((item) => {
+            let obj = {};
+            try {
+                obj = js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeLoad"](item.settings_string) || {};
+            }
+            catch (err) {
+                for (const key of item.keys) {
+                    obj[key] = '<MASKED>';
+                }
+            }
+            return obj;
+        });
+        const remote_settings = (this.merge_settings || []).map((item) => {
+            let obj = {};
+            try {
+                obj = js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeLoad"](item.settings_string) || {};
+            }
+            catch (err) {
+                for (const key of item.keys) {
+                    obj[key] = '<MASKED>';
+                }
+            }
+            return obj;
+        });
         const merged_settings = deepmerge__WEBPACK_IMPORTED_MODULE_6__["all"](remote_settings.concat(local_settings));
-        const settings_string = Object.keys(merged_settings).length ? js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeDump"](merged_settings, { strict: true }) : '';
+        const settings_string = Object.keys(merged_settings).length
+            ? js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeDump"](merged_settings, { strict: true })
+            : '';
         return new _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EngineSettings"]({
             id: 'merged',
             settings_string,
             parent_id: this.id,
-            keys: Object.keys(merged_settings)
+            keys: Object.keys(merged_settings),
         });
     }
 }
@@ -12356,7 +12386,7 @@ SettingsFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         args: [{
                 selector: 'a-settings-form',
                 templateUrl: './settings-form.component.html',
-                styleUrls: ['./settings-form.component.scss']
+                styleUrls: ['./settings-form.component.scss'],
             }]
     }], function () { return [{ type: src_app_services_app_service__WEBPACK_IMPORTED_MODULE_7__["ApplicationService"] }]; }, { id: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -21877,16 +21907,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "d37f48e",
-    "hash": "d37f48e",
+    "raw": "0618000",
+    "hash": "0618000",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "d37f48e",
+    "suffix": "0618000",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1594113476651
+    "time": 1594177659689
 };
 /* tslint:enable */
 

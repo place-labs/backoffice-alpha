@@ -26902,9 +26902,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngOnChanges",
         value: function ngOnChanges(changes) {
+          var _this104 = this;
+
           if (changes.merge) {
             this.encryption_level = this.merge ? _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].NeverDisplay + 1 : _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].None;
             this.available_levels = this.levels;
+          }
+
+          if (changes.merge_settings) {
+            this.timeout('update_merge', function () {
+              _this104.used_settings = _this104.processSettings(_this104.settings || []);
+
+              _this104.initForm();
+            }, 50);
           }
 
           if (changes.settings) {
@@ -26917,25 +26927,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "save",
         value: function save(level) {
-          var _this104 = this;
+          var _this105 = this;
 
           var item = this.used_settings[level];
 
           if (item && !this.saving[level] && item.changes && item.changes.settings_string !== undefined) {
             this.saving[level] = true;
             item.save().then(function (new_settings) {
-              _this104.saving[level] = false;
-              _this104.settings[level] = new_settings;
+              _this105.saving[level] = false;
+              _this105.settings[level] = new_settings;
 
-              _this104._service.notifySuccess("Successfully saved ".concat(_this104.type(level), " settings."));
+              _this105._service.notifySuccess("Successfully saved ".concat(_this105.type(level), " settings."));
 
-              _this104.used_settings = _this104.processSettings(_this104.settings || []);
+              _this105.used_settings = _this105.processSettings(_this105.settings || []);
 
-              _this104.initForm();
+              _this105.initForm();
             }, function (err) {
-              _this104.saving[level] = false;
+              _this105.saving[level] = false;
 
-              _this104._service.notifyError("Error updating settings. Error: ".concat(JSON.stringify(err.response || err.message || err)));
+              _this105._service.notifyError("Error updating settings. Error: ".concat(JSON.stringify(err.response || err.message || err)));
             });
           }
         }
@@ -26944,7 +26954,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "saveAll",
         value: function saveAll() {
-          var _this105 = this;
+          var _this106 = this;
 
           if (this.has_errors) {
             return;
@@ -26967,8 +26977,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               try {
                 for (_iterator19.s(); !(_step19 = _iterator19.n()).done;) {
                   var result = _step19.value;
-                  _this105.saving[result.encryption_level] = false;
-                  _this105.settings[result.encryption_level] = result;
+                  _this106.saving[result.encryption_level] = false;
+                  _this106.settings[result.encryption_level] = result;
                 }
               } catch (err) {
                 _iterator19.e(err);
@@ -26976,17 +26986,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 _iterator19.f();
               }
 
-              _this105._service.notifySuccess('Successfully saved all settings.');
+              _this106._service.notifySuccess('Successfully saved all settings.');
 
-              _this105.used_settings = _this105.processSettings(_this105.settings || []);
+              _this106.used_settings = _this106.processSettings(_this106.settings || []);
 
-              _this105.initForm();
+              _this106.initForm();
             }, function (err) {
               for (var _i2 = 0; _i2 < _placeos_ts_client__WEBPACK_IMPORTED_MODULE_2__["EncryptionLevel"].NeverDisplay + 1; _i2++) {
-                _this105.saving[_i2] = false;
+                _this106.saving[_i2] = false;
               }
 
-              _this105._service.notifyError("Error updating settings. Error: ".concat(JSON.stringify(err.response || err.message || err)));
+              _this106._service.notifyError("Error updating settings. Error: ".concat(JSON.stringify(err.response || err.message || err)));
             });
           }
         }
@@ -27003,7 +27013,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "initForm",
         value: function initForm() {
-          var _this106 = this;
+          var _this107 = this;
 
           this.form = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
             settings0: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](this.used_settings[0].settings_string, [src_app_shared_utilities_data_systems_utilities__WEBPACK_IMPORTED_MODULE_4__["validateYAML"]]),
@@ -27014,8 +27024,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
 
           var _loop4 = function _loop4(i) {
-            _this106.subscription("setting_change_".concat(i), _this106.form.controls["settings".concat(i)].valueChanges.subscribe(function (value) {
-              _this106.used_settings[i].storePendingChange('settings_string', value);
+            _this107.subscription("setting_change_".concat(i), _this107.form.controls["settings".concat(i)].valueChanges.subscribe(function (value) {
+              _this107.used_settings[i].storePendingChange('settings_string', value);
             }));
           };
 
@@ -27072,10 +27082,50 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "generateMergedSettings",
         value: function generateMergedSettings(settings) {
           var local_settings = (settings || []).map(function (item) {
-            return js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeLoad"](item.settings_string) || {};
+            var obj = {};
+
+            try {
+              obj = js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeLoad"](item.settings_string) || {};
+            } catch (err) {
+              var _iterator21 = _createForOfIteratorHelper(item.keys),
+                  _step21;
+
+              try {
+                for (_iterator21.s(); !(_step21 = _iterator21.n()).done;) {
+                  var key = _step21.value;
+                  obj[key] = '<MASKED>';
+                }
+              } catch (err) {
+                _iterator21.e(err);
+              } finally {
+                _iterator21.f();
+              }
+            }
+
+            return obj;
           });
           var remote_settings = (this.merge_settings || []).map(function (item) {
-            return js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeLoad"](item.settings_string) || {};
+            var obj = {};
+
+            try {
+              obj = js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeLoad"](item.settings_string) || {};
+            } catch (err) {
+              var _iterator22 = _createForOfIteratorHelper(item.keys),
+                  _step22;
+
+              try {
+                for (_iterator22.s(); !(_step22 = _iterator22.n()).done;) {
+                  var key = _step22.value;
+                  obj[key] = '<MASKED>';
+                }
+              } catch (err) {
+                _iterator22.e(err);
+              } finally {
+                _iterator22.f();
+              }
+            }
+
+            return obj;
           });
           var merged_settings = deepmerge__WEBPACK_IMPORTED_MODULE_6__["all"](remote_settings.concat(local_settings));
           var settings_string = Object.keys(merged_settings).length ? js_yaml__WEBPACK_IMPORTED_MODULE_5__["safeDump"](merged_settings, {
@@ -27112,10 +27162,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "shown_option",
         get: function get() {
-          var _this107 = this;
+          var _this108 = this;
 
           return this.available_levels.find(function (i) {
-            return i.id === _this107.encryption_level;
+            return i.id === _this108.encryption_level;
           });
         }
         /** Whether the currently active settings have been edited */
@@ -27132,21 +27182,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         get: function get() {
           var count = 0;
 
-          var _iterator21 = _createForOfIteratorHelper(this.used_settings),
-              _step21;
+          var _iterator23 = _createForOfIteratorHelper(this.used_settings),
+              _step23;
 
           try {
-            for (_iterator21.s(); !(_step21 = _iterator21.n()).done;) {
-              var setting = _step21.value;
+            for (_iterator23.s(); !(_step23 = _iterator23.n()).done;) {
+              var setting = _step23.value;
 
               if (setting.changes.settings_string !== undefined) {
                 count++;
               }
             }
           } catch (err) {
-            _iterator21.e(err);
+            _iterator23.e(err);
           } finally {
-            _iterator21.f();
+            _iterator23.f();
           }
 
           return count;
@@ -28183,15 +28233,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super35 = _createSuper(SystemFormComponent);
 
       function SystemFormComponent(_service) {
-        var _this108;
+        var _this109;
 
         _classCallCheck(this, SystemFormComponent);
 
-        _this108 = _super35.call(this);
-        _this108._service = _service;
+        _this109 = _super35.call(this);
+        _this109._service = _service;
         /** Levels of encyption available for the system's settings */
 
-        _this108.encryption_levels = [{
+        _this109.encryption_levels = [{
           id: _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EncryptionLevel"].None,
           name: 'None'
         }, {
@@ -28206,8 +28256,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }];
         /** List of separator characters for features */
 
-        _this108.separators = [_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["COMMA"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["SPACE"]];
-        return _this108;
+        _this109.separators = [_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["COMMA"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["SPACE"]];
+        return _this109;
       }
 
       _createClass(SystemFormComponent, [{
@@ -29933,7 +29983,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "loadSystemStatusVariables",
         value: function loadSystemStatusVariables(mod_name, side) {
-          var _this109 = this;
+          var _this110 = this;
 
           var name = mod_name.split('_');
 
@@ -29942,16 +29992,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               var_map.connected = true;
             }
 
-            _this109["".concat(side, "_status_variables")] = Object.keys(var_map).map(function (key) {
+            _this110["".concat(side, "_status_variables")] = Object.keys(var_map).map(function (key) {
               return {
                 id: key,
                 name: key
               };
             });
 
-            _this109.addExistingStatusVariables();
+            _this110.addExistingStatusVariables();
           }, function () {
-            return _this109._service.notifyError("Error loading the status variables for ".concat(_this109.system.id, ", ").concat(mod_name));
+            return _this110._service.notifyError("Error loading the status variables for ".concat(_this110.system.id, ", ").concat(mod_name));
           });
         }
         /**
@@ -29961,7 +30011,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "loadSystemModules",
         value: function loadSystemModules() {
-          var _this110 = this;
+          var _this111 = this;
 
           if (!this.system) {
             return;
@@ -29970,23 +30020,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this._service.Modules.query({
             control_system_id: this.system.id
           }).then(function (module_list) {
-            _this110.modules = module_list;
-            var mod_list = _this110.system.modules;
+            _this111.modules = module_list;
+            var mod_list = _this111.system.modules;
 
-            _this110.modules.sort(function (a, b) {
+            _this111.modules.sort(function (a, b) {
               return mod_list.indexOf(a.id) - mod_list.indexOf(b.id);
             });
 
-            _this110.module_list = _this110.modules.map(function (mod) {
+            _this111.module_list = _this111.modules.map(function (mod) {
               var module_class = mod.custom_name || (mod.driver ? mod.driver.class_name : 'System');
-              var index = Object(src_app_shared_utilities_api_utilities__WEBPACK_IMPORTED_MODULE_2__["calculateModuleIndex"])(_this110.modules, mod);
+              var index = Object(src_app_shared_utilities_api_utilities__WEBPACK_IMPORTED_MODULE_2__["calculateModuleIndex"])(_this111.modules, mod);
               return {
                 id: mod.id,
                 name: "".concat(module_class, "_").concat(index)
               };
             });
 
-            _this110.addExistingModules();
+            _this111.addExistingModules();
           });
         }
         /**
@@ -30036,11 +30086,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addExistingStatusVariables",
         value: function addExistingStatusVariables() {
-          var _this111 = this;
+          var _this112 = this;
 
           if (this.left_side.status) {
             if (!this.left_status_variables.find(function (status) {
-              return status.name === _this111.left_side.status;
+              return status.name === _this112.left_side.status;
             })) {
               this.left_status_variables.unshift({
                 id: this.left_side.status,
@@ -30051,7 +30101,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           if (this.right_side.status) {
             if (!this.right_status_variables.find(function (status) {
-              return status.name === _this111.right_side.status;
+              return status.name === _this112.right_side.status;
             })) {
               this.right_status_variables.unshift({
                 id: this.right_side.status,
@@ -33132,22 +33182,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super36 = _createSuper(ZoneFormComponent);
 
       function ZoneFormComponent(_service) {
-        var _this112;
+        var _this113;
 
         _classCallCheck(this, ZoneFormComponent);
 
-        _this112 = _super36.call(this);
-        _this112._service = _service;
+        _this113 = _super36.call(this);
+        _this113._service = _service;
         /** List of separator characters for tags */
 
-        _this112.separators = [_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["COMMA"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["SPACE"]];
+        _this113.separators = [_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["COMMA"], _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["SPACE"]];
         /** Function to exclude zones */
 
-        _this112.exclude = function (zone) {
-          return zone.id === _this112.form.controls.id.value;
+        _this113.exclude = function (zone) {
+          return zone.id === _this113.form.controls.id.value;
         };
 
-        return _this112;
+        return _this113;
       }
       /** Service for handling zones */
 
@@ -34368,24 +34418,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super38 = _createSuper(ItemDisplayComponent);
 
       function ItemDisplayComponent(_service, _dialog, _router) {
-        var _this113;
+        var _this114;
 
         _classCallCheck(this, ItemDisplayComponent);
 
-        _this113 = _super38.call(this);
-        _this113._service = _service;
-        _this113._dialog = _dialog;
-        _this113._router = _router;
+        _this114 = _super38.call(this);
+        _this114._service = _service;
+        _this114._dialog = _dialog;
+        _this114._router = _router;
         /** Whether item is allowed to be edited and deleted */
 
-        _this113.has_change = true;
+        _this114.has_change = true;
         /** Tabs available to the item type */
 
-        _this113.tabs = [];
+        _this114.tabs = [];
         /** Emitter for events on the item display */
 
-        _this113.event = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        return _this113;
+        _this114.event = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        return _this114;
       }
       /** Whether dark mode is enabled */
 
@@ -34393,31 +34443,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ItemDisplayComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this114 = this;
+          var _this115 = this;
 
           this.subscription('right', this._service.Hotkeys.listen(['ArrowRight'], function () {
-            return _this114.changeTab(1);
+            return _this115.changeTab(1);
           }));
           this.subscription('left', this._service.Hotkeys.listen(['ArrowLeft'], function () {
-            return _this114.changeTab(-1);
+            return _this115.changeTab(-1);
           }));
         }
       }, {
         key: "changeTab",
         value: function changeTab(direction) {
-          var _this115 = this;
+          var _this116 = this;
 
           if (!this.item) {
             return;
           }
 
           this.timeout('change_tab', function () {
-            var index = _this115.tabs.findIndex(function (tab) {
-              return _this115._router.url.indexOf(tab.id) >= 0;
+            var index = _this116.tabs.findIndex(function (tab) {
+              return _this116._router.url.indexOf(tab.id) >= 0;
             });
 
-            if (index >= 0 && _this115.tabs[index + direction]) {
-              _this115._router.navigate(["/".concat(_this115.route), _this115.item.id, _this115.tabs[index + direction].id]);
+            if (index >= 0 && _this116.tabs[index + direction]) {
+              _this116._router.navigate(["/".concat(_this116.route), _this116.item.id, _this116.tabs[index + direction].id]);
             }
           }, 100);
         }
@@ -34439,7 +34489,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "edit",
         value: function edit() {
-          var _this116 = this;
+          var _this117 = this;
 
           var ref = this._dialog.open(src_app_overlays_item_modal_item_modal_component__WEBPACK_IMPORTED_MODULE_3__["ItemCreateUpdateModalComponent"], {
             data: {
@@ -34452,7 +34502,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.subscription('confirm_ref', ref.componentInstance.event.subscribe(function (e) {
             if (e.reason === 'done') {
-              _this116.item = e.metadata.item;
+              _this117.item = e.metadata.item;
             }
           }));
         }
@@ -34474,7 +34524,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "duplicateItem",
         value: function duplicateItem() {
-          var _this117 = this;
+          var _this118 = this;
 
           var ref = this._dialog.open(src_app_overlays_duplicate_modal_duplicate_modal_component__WEBPACK_IMPORTED_MODULE_5__["DuplicateModalComponent"], {
             data: {
@@ -34484,7 +34534,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.subscription('confirm_ref', ref.componentInstance.event.subscribe(function (e) {
             if (e.reason === 'done') {
-              _this117.item = e.metadata[0];
+              _this118.item = e.metadata[0];
             }
           }));
         }
@@ -35174,30 +35224,30 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super39 = _createSuper(LoginFormComponent);
 
       function LoginFormComponent(_service) {
-        var _this118;
+        var _this119;
 
         _classCallCheck(this, LoginFormComponent);
 
-        _this118 = _super39.call(this);
-        _this118._service = _service;
+        _this119 = _super39.call(this);
+        _this119._service = _service;
         /** Emitter for user forgot password action */
 
-        _this118.forgot = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        _this119.forgot = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         /** Emitter for form submission events */
 
-        _this118.submitted = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        return _this118;
+        _this119.submitted = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        return _this119;
       }
 
       _createClass(LoginFormComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this119 = this;
+          var _this120 = this;
 
           this._service.initialised.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["first"])(function (_) {
             return _;
           })).subscribe(function () {
-            _this119.settings = _this119._service.setting('app.login') || {};
+            _this120.settings = _this120._service.setting('app.login') || {};
           });
         }
       }]);
@@ -35457,19 +35507,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super40 = _createSuper(LoginComponent);
 
       function LoginComponent(_service) {
-        var _this120;
+        var _this121;
 
         _classCallCheck(this, LoginComponent);
 
-        _this120 = _super40.call(this);
-        _this120._service = _service;
-        return _this120;
+        _this121 = _super40.call(this);
+        _this121._service = _service;
+        return _this121;
       }
 
       _createClass(LoginComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this121 = this;
+          var _this122 = this;
 
           this.show = 'login';
           this.loading = true;
@@ -35483,23 +35533,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this._service.initialised.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["first"])(function (_) {
             return _;
           })).subscribe(function () {
-            return _this121.init();
+            return _this122.init();
           });
         }
       }, {
         key: "init",
         value: function init() {
-          var _this122 = this;
+          var _this123 = this;
 
           this.env = this._service.setting('env');
           this.logo = this._service.setting('app.logo') || {};
           this.subscription('state', this._service.Users.state.subscribe(function (state) {
-            _this122.loading = false;
+            _this123.loading = false;
 
             if (state === 'invalid') {
-              _this122.show = 'login';
+              _this123.show = 'login';
             } else if (state === 'loading') {
-              _this122.loading = true;
+              _this123.loading = true;
             }
           }));
         }
@@ -35515,7 +35565,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "login",
         value: function login() {
-          var _this123 = this;
+          var _this124 = this;
 
           var form_values = this.login_form.value;
 
@@ -35529,7 +35579,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }, function (err) {
             console.log('Error:', err);
 
-            _this123.login_form.controls.password.setErrors({
+            _this124.login_form.controls.password.setErrors({
               invalid: true
             });
           });
@@ -35825,22 +35875,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super41 = _createSuper(SearchbarComponent);
 
       function SearchbarComponent(_service) {
-        var _this124;
+        var _this125;
 
         _classCallCheck(this, SearchbarComponent);
 
-        _this124 = _super41.call(this);
-        _this124._service = _service;
-        _this124.dictation = true;
-        _this124.clearable = true;
-        _this124.placeholder = 'Search...';
-        _this124.filterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        _this124.focus = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        _this124.blur = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        _this124.model = {};
+        _this125 = _super41.call(this);
+        _this125._service = _service;
+        _this125.dictation = true;
+        _this125.clearable = true;
+        _this125.placeholder = 'Search...';
+        _this125.filterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        _this125.focus = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        _this125.blur = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        _this125.model = {};
         var win = window;
-        _this124.model.speech = !!(win.SpeechRecognition || win.webkitSpeechRecognition);
-        return _this124;
+        _this125.model.speech = !!(win.SpeechRecognition || win.webkitSpeechRecognition);
+        return _this125;
       }
       /** Whether dark mode is enabled */
 
@@ -35852,7 +35902,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * Activate dictation search
          */
         value: function startDictation() {
-          var _this125 = this;
+          var _this126 = this;
 
           if (!this.input) {
             return;
@@ -35878,34 +35928,34 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
             this.model.recognition.onresult = function (e) {
               // Update search field with dictation result
-              _this125.input.nativeElement.value = e.results[0][0].transcript;
-              _this125.filter = e.results[0][0].transcript;
+              _this126.input.nativeElement.value = e.results[0][0].transcript;
+              _this126.filter = e.results[0][0].transcript;
 
-              _this125.model.recognition.stop();
+              _this126.model.recognition.stop();
 
-              _this125.post();
+              _this126.post();
 
-              _this125.model.dictate = false;
+              _this126.model.dictate = false;
             };
 
             this.model.recognition.onerror = function (e) {
-              _this125.model.recognition.stop();
+              _this126.model.recognition.stop();
 
-              _this125.model.dictate = false;
+              _this126.model.dictate = false;
             };
           }
         }
       }, {
         key: "focusInput",
         value: function focusInput() {
-          var _this126 = this;
+          var _this127 = this;
 
           this.model.focus = true;
           this.timeout('focus', function () {
-            if (_this126.input && _this126.input.nativeElement) {
-              _this126.input.nativeElement.focus();
+            if (_this127.input && _this127.input.nativeElement) {
+              _this127.input.nativeElement.focus();
 
-              _this126.focus.emit();
+              _this127.focus.emit();
             }
           }, 50);
         }
@@ -35918,11 +35968,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "post",
         value: function post() {
-          var _this127 = this;
+          var _this128 = this;
 
           this.checkLimitations();
           this.timeout('post', function () {
-            _this127.filterChange.emit(_this127.filter);
+            _this128.filterChange.emit(_this128.filter);
           });
         }
       }, {
@@ -36508,38 +36558,38 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super42 = _createSuper(SidebarComponent);
 
       function SidebarComponent(_service, _router) {
-        var _this128;
+        var _this129;
 
         _classCallCheck(this, SidebarComponent);
 
-        _this128 = _super42.call(this);
-        _this128._service = _service;
-        _this128._router = _router;
+        _this129 = _super42.call(this);
+        _this129._service = _service;
+        _this129._router = _router;
         /** Module name to display at the top of the sidebar */
 
-        _this128.heading = '';
+        _this129.heading = '';
         /** List of items to render on the list */
 
-        _this128.list = [];
+        _this129.list = [];
         /** Additional query params to add to item load requests */
 
-        _this128.query_params = {};
+        _this129.query_params = {};
         /** Whether sidebar is closed */
 
-        _this128.close = false;
+        _this129.close = false;
         /** Search string */
 
-        _this128.search = '';
+        _this129.search = '';
         /** Emitter for changes to the search string */
 
-        _this128.searchChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        _this129.searchChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         /** Emitter for user actions on the component */
 
-        _this128.event = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        _this129.event = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         /** Async list of items to render on the sidebar list */
 
-        _this128.items = new rxjs__WEBPACK_IMPORTED_MODULE_4__["BehaviorSubject"]([]);
-        return _this128;
+        _this129.items = new rxjs__WEBPACK_IMPORTED_MODULE_4__["BehaviorSubject"]([]);
+        return _this129;
       }
       /** Whether dark mode is enabled */
 
@@ -36547,50 +36597,50 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(SidebarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this129 = this;
+          var _this130 = this;
 
           this._service.initialised.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["first"])(function (_) {
             return _;
           })).subscribe(function () {
-            if (!_this129._service.get('BACKOFFICE.active_item')) {
-              _this129._service.set('BACKOFFICE.active_item', null);
+            if (!_this130._service.get('BACKOFFICE.active_item')) {
+              _this130._service.set('BACKOFFICE.active_item', null);
             }
 
-            if (!_this129._service.get('BACKOFFICE.removed')) {
-              _this129._service.set('BACKOFFICE.removed', '');
+            if (!_this130._service.get('BACKOFFICE.removed')) {
+              _this130._service.set('BACKOFFICE.removed', '');
             }
 
-            _this129.subscription('active_item', _this129._service.listen('BACKOFFICE.active_item').subscribe(function (item) {
-              return _this129.replaceActiveItem(item);
+            _this130.subscription('active_item', _this130._service.listen('BACKOFFICE.active_item').subscribe(function (item) {
+              return _this130.replaceActiveItem(item);
             }));
 
-            _this129.subscription('remove_item', _this129._service.listen('BACKOFFICE.removed').subscribe(function (id) {
-              return _this129.removeItem(id);
+            _this130.subscription('remove_item', _this130._service.listen('BACKOFFICE.removed').subscribe(function (id) {
+              return _this130.removeItem(id);
             }));
 
-            _this129.subscription('up', _this129._service.Hotkeys.listen(['Alt', 'ArrowUp'], function () {
-              return _this129.changeSelected(-1);
+            _this130.subscription('up', _this130._service.Hotkeys.listen(['Alt', 'ArrowUp'], function () {
+              return _this130.changeSelected(-1);
             }));
 
-            _this129.subscription('down', _this129._service.Hotkeys.listen(['Alt', 'ArrowDown'], function () {
-              return _this129.changeSelected(1);
+            _this130.subscription('down', _this130._service.Hotkeys.listen(['Alt', 'ArrowDown'], function () {
+              return _this130.changeSelected(1);
             }));
 
-            _this129.items.next(_this129.list || []);
+            _this130.items.next(_this130.list || []);
 
-            var url = _this129._router.url.split('/');
+            var url = _this130._router.url.split('/');
 
-            _this129.subroute = url[3];
+            _this130.subroute = url[3];
 
-            _this129.subscription('router.events', _this129._router.events.subscribe(function (event) {
+            _this130.subscription('router.events', _this130._router.events.subscribe(function (event) {
               if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationEnd"]) {
                 var _url = event.url.split('/');
 
-                _this129.subroute = _url[3];
+                _this130.subroute = _url[3];
               }
             }));
 
-            _this129.atBottom();
+            _this130.atBottom();
           });
         }
       }, {
@@ -36619,7 +36669,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * Check if user has scrolled to the bottom of the sidebar and emit an event to get next page of items
          */
         value: function atBottom() {
-          var _this130 = this;
+          var _this131 = this;
 
           if (this.loading || !this.is_stale) {
             return;
@@ -36627,7 +36677,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           if (!this.viewport) {
             return this.timeout('atBottom', function () {
-              return _this130.atBottom();
+              return _this131.atBottom();
             });
           }
 
@@ -36671,7 +36721,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "searching",
         value: function searching() {
-          var _this131 = this;
+          var _this132 = this;
 
           var offset = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
           this.loading = true;
@@ -36681,20 +36731,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               q: this.search,
               offset: offset
             }, this.query_params || {})).then(function (list) {
-              _this131.list = offset ? _this131.list.concat(list) : list;
-              _this131.list = Object(_utilities_general_utilities__WEBPACK_IMPORTED_MODULE_7__["unique"])(_this131.list, 'id');
+              _this132.list = offset ? _this132.list.concat(list) : list;
+              _this132.list = Object(_utilities_general_utilities__WEBPACK_IMPORTED_MODULE_7__["unique"])(_this132.list, 'id');
 
-              _this131.list.sort(function (a, b) {
+              _this132.list.sort(function (a, b) {
                 return (a.name || '').localeCompare(b.name || '');
               });
 
-              _this131.items.next(_this131.list);
+              _this132.items.next(_this132.list);
 
-              _this131.loading = false;
+              _this132.loading = false;
             }, function (err) {
-              _this131._service.notifyError("Error updating ".concat(_this131.module._name, " list. Error: ").concat(JSON.stringify(err.response || err.message || err)));
+              _this132._service.notifyError("Error updating ".concat(_this132.module._name, " list. Error: ").concat(JSON.stringify(err.response || err.message || err)));
 
-              _this131.loading = false;
+              _this132.loading = false;
             });
           } else {
             this.loading = false;
@@ -36708,14 +36758,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "changeSelected",
         value: function changeSelected(offset) {
-          var _this132 = this;
+          var _this133 = this;
 
           var list = this.item_list.toArray();
           var item_list = this.items.getValue();
 
           if (list && list.length > 0) {
             var index = item_list.findIndex(function (item) {
-              return _this132._router.url.indexOf("".concat(item.id)) >= 0;
+              return _this133._router.url.indexOf("".concat(item.id)) >= 0;
             });
             index += offset;
 
@@ -36855,12 +36905,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var map = {};
           var list = this.items.getValue() || [];
 
-          var _iterator22 = _createForOfIteratorHelper(list),
-              _step22;
+          var _iterator24 = _createForOfIteratorHelper(list),
+              _step24;
 
           try {
-            for (_iterator22.s(); !(_step22 = _iterator22.n()).done;) {
-              var item = _step22.value;
+            for (_iterator24.s(); !(_step24 = _iterator24.n()).done;) {
+              var item = _step24.value;
 
               if (item instanceof _placeos_ts_client__WEBPACK_IMPORTED_MODULE_3__["EngineModule"]) {
                 var detail = item.role === _placeos_ts_client__WEBPACK_IMPORTED_MODULE_3__["EngineDriverRole"].Service ? item.uri : item.role === _placeos_ts_client__WEBPACK_IMPORTED_MODULE_3__["EngineDriverRole"].Logic ? item.control_system_id : item.ip;
@@ -36870,9 +36920,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               }
             }
           } catch (err) {
-            _iterator22.e(err);
+            _iterator24.e(err);
           } finally {
-            _iterator22.f();
+            _iterator24.f();
           }
 
           return map;
@@ -37191,7 +37241,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(TerminalComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this133 = this;
+          var _this134 = this;
 
           if (this.terminal) {
             this.ngOnDestroy();
@@ -37204,15 +37254,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
           this.terminal.open(this.terminal_element.nativeElement);
           this.timeout('init', function () {
-            _this133.resizeTerminal();
+            _this134.resizeTerminal();
 
-            _this133.updateTerminalContents(_this133.content || '');
+            _this134.updateTerminalContents(_this134.content || '');
           });
         }
       }, {
         key: "ngOnChanges",
         value: function ngOnChanges(changes) {
-          var _this134 = this;
+          var _this135 = this;
 
           if (changes.content) {
             this.updateTerminalContents(this.content || '');
@@ -37220,7 +37270,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           if (changes.resize) {
             this.timeout('resize', function () {
-              return _this134.resizeTerminal();
+              return _this135.resizeTerminal();
             });
           }
         }
@@ -37256,7 +37306,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "updateTerminalContents",
         value: function updateTerminalContents(new_content) {
-          var _this135 = this;
+          var _this136 = this;
 
           if (!this.terminal) {
             return;
@@ -37265,22 +37315,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.terminal.clear();
           var lines = new_content.split('\n');
 
-          var _iterator23 = _createForOfIteratorHelper(lines),
-              _step23;
+          var _iterator25 = _createForOfIteratorHelper(lines),
+              _step25;
 
           try {
-            for (_iterator23.s(); !(_step23 = _iterator23.n()).done;) {
-              var line = _step23.value;
+            for (_iterator25.s(); !(_step25 = _iterator25.n()).done;) {
+              var line = _step25.value;
               this.terminal.writeln(line);
             }
           } catch (err) {
-            _iterator23.e(err);
+            _iterator25.e(err);
           } finally {
-            _iterator23.f();
+            _iterator25.f();
           }
 
           this.timeout('scroll', function () {
-            return _this135.terminal.scrollToBottom();
+            return _this136.terminal.scrollToBottom();
           }, 50);
         }
       }]);
@@ -37497,7 +37547,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
          * @param delay Callback delay
          */
         value: function timeout(name, fn) {
-          var _this136 = this;
+          var _this137 = this;
 
           var delay = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 300;
 
@@ -37505,7 +37555,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             this.clearTimeout(name);
             this._timers[name] = setTimeout(function () {
               fn();
-              _this136._timers[name] = null;
+              _this137._timers[name] = null;
             }, delay);
           } else {
             throw new Error(name ? 'Cannot create named timeout without a name' : 'Cannot create a timeout without a callback');
@@ -41444,12 +41494,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var filters = (filter || '').toLowerCase().split(' ');
       var list = {};
 
-      var _iterator24 = _createForOfIteratorHelper(filters),
-          _step24;
+      var _iterator26 = _createForOfIteratorHelper(filters),
+          _step26;
 
       try {
-        for (_iterator24.s(); !(_step24 = _iterator24.n()).done;) {
-          var _f5 = _step24.value;
+        for (_iterator26.s(); !(_step26 = _iterator26.n()).done;) {
+          var _f5 = _step26.value;
 
           if (_f5) {
             if (!list[_f5]) {
@@ -41461,9 +41511,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         } // Group similar tokens
 
       } catch (err) {
-        _iterator24.e(err);
+        _iterator26.e(err);
       } finally {
-        _iterator24.f();
+        _iterator26.f();
       }
 
       var parts = [];
@@ -41490,12 +41540,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           item.match = '';
           var field_list = {}; // Initialise field match variables
 
-          var _iterator25 = _createForOfIteratorHelper(fields),
-              _step25;
+          var _iterator27 = _createForOfIteratorHelper(fields),
+              _step27;
 
           try {
-            for (_iterator25.s(); !(_step25 = _iterator25.n()).done;) {
-              var _f = _step25.value;
+            for (_iterator27.s(); !(_step27 = _iterator27.n()).done;) {
+              var _f = _step27.value;
               field_list[_f] = {
                 value: (item[_f] || '').toLowerCase(),
                 index: 65536,
@@ -41504,26 +41554,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             } // Search for matches with the tokenised filter string
 
           } catch (err) {
-            _iterator25.e(err);
+            _iterator27.e(err);
           } finally {
-            _iterator25.f();
+            _iterator27.f();
           }
 
-          var _iterator26 = _createForOfIteratorHelper(parts),
-              _step26;
+          var _iterator28 = _createForOfIteratorHelper(parts),
+              _step28;
 
           try {
-            for (_iterator26.s(); !(_step26 = _iterator26.n()).done;) {
-              var i = _step26.value;
+            for (_iterator28.s(); !(_step28 = _iterator28.n()).done;) {
+              var i = _step28.value;
 
               if (i.word) {
                 // Check fields for matches
-                var _iterator28 = _createForOfIteratorHelper(fields),
-                    _step28;
+                var _iterator30 = _createForOfIteratorHelper(fields),
+                    _step30;
 
                 try {
-                  for (_iterator28.s(); !(_step28 = _iterator28.n()).done;) {
-                    var _f2 = _step28.value;
+                  for (_iterator30.s(); !(_step30 = _iterator30.n()).done;) {
+                    var _f2 = _step30.value;
                     var field = field_list[_f2];
                     var index = field.value.indexOf(i.word);
                     field.index = index < field.index ? index : field.index;
@@ -41532,17 +41582,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                   } // Update token match count
 
                 } catch (err) {
-                  _iterator28.e(err);
+                  _iterator30.e(err);
                 } finally {
-                  _iterator28.f();
+                  _iterator30.f();
                 }
 
-                var _iterator29 = _createForOfIteratorHelper(fields),
-                    _step29;
+                var _iterator31 = _createForOfIteratorHelper(fields),
+                    _step31;
 
                 try {
-                  for (_iterator29.s(); !(_step29 = _iterator29.n()).done;) {
-                    var _f3 = _step29.value;
+                  for (_iterator31.s(); !(_step31 = _iterator31.n()).done;) {
+                    var _f3 = _step31.value;
                     var _field = field_list[_f3];
 
                     if (_field.matches >= i.count) {
@@ -41551,12 +41601,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                       var changed = 0;
                       var tokens = (item["match_".concat(_f3)] || item[_f3] || '').split(' ');
 
-                      var _iterator30 = _createForOfIteratorHelper(tokens),
-                          _step30;
+                      var _iterator32 = _createForOfIteratorHelper(tokens),
+                          _step32;
 
                       try {
-                        for (_iterator30.s(); !(_step30 = _iterator30.n()).done;) {
-                          var k = _step30.value;
+                        for (_iterator32.s(); !(_step32 = _iterator32.n()).done;) {
+                          var k = _step32.value;
 
                           if (changed >= i.count) {
                             break;
@@ -41568,9 +41618,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                           }
                         }
                       } catch (err) {
-                        _iterator30.e(err);
+                        _iterator32.e(err);
                       } finally {
-                        _iterator30.f();
+                        _iterator32.f();
                       }
 
                       item["match_".concat(_f3)] = tokens.join(' ');
@@ -41578,25 +41628,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     }
                   }
                 } catch (err) {
-                  _iterator29.e(err);
+                  _iterator31.e(err);
                 } finally {
-                  _iterator29.f();
+                  _iterator31.f();
                 }
               }
             } // Get field with the most relevent match
 
           } catch (err) {
-            _iterator26.e(err);
+            _iterator28.e(err);
           } finally {
-            _iterator26.f();
+            _iterator28.f();
           }
 
-          var _iterator27 = _createForOfIteratorHelper(fields),
-              _step27;
+          var _iterator29 = _createForOfIteratorHelper(fields),
+              _step29;
 
           try {
-            for (_iterator27.s(); !(_step27 = _iterator27.n()).done;) {
-              var _f4 = _step27.value;
+            for (_iterator29.s(); !(_step29 = _iterator29.n()).done;) {
+              var _f4 = _step29.value;
               var _field2 = field_list[_f4];
 
               if (_field2.index < item.match_index && _field2.index >= 0) {
@@ -41605,9 +41655,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               }
             }
           } catch (err) {
-            _iterator27.e(err);
+            _iterator29.e(err);
           } finally {
-            _iterator27.f();
+            _iterator29.f();
           }
 
           return item.match_index >= 0 && item.match && match_count >= parts.length;
@@ -41751,12 +41801,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
       var list = [];
 
-      var _iterator31 = _createForOfIteratorHelper(lines),
-          _step31;
+      var _iterator33 = _createForOfIteratorHelper(lines),
+          _step33;
 
       try {
-        for (_iterator31.s(); !(_step31 = _iterator31.n()).done;) {
-          var line = _step31.value;
+        for (_iterator33.s(); !(_step33 = _iterator33.n()).done;) {
+          var line = _step33.value;
           var parts = line.split(seperator);
           parts = parts.map(function (v) {
             return v.replace('\r', '');
@@ -41789,9 +41839,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
         }
       } catch (err) {
-        _iterator31.e(err);
+        _iterator33.e(err);
       } finally {
-        _iterator31.f();
+        _iterator33.f();
       }
 
       return list;
@@ -42267,23 +42317,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super45 = _createSuper(GlobalSearchComponent);
 
       function GlobalSearchComponent(_service, _dialog, _router) {
-        var _this137;
+        var _this138;
 
         _classCallCheck(this, GlobalSearchComponent);
 
-        _this137 = _super45.call(this);
-        _this137._service = _service;
-        _this137._dialog = _dialog;
-        _this137._router = _router;
+        _this138 = _super45.call(this);
+        _this138._service = _service;
+        _this138._dialog = _dialog;
+        _this138._router = _router;
         /** Search query string */
 
-        _this137.searchChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        _this138.searchChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         /** Minimum number of characters needed to start a server query */
 
-        _this137.min_length = 2;
+        _this138.min_length = 2;
         /** Mapping of item types to routes */
 
-        _this137.route_map = {
+        _this138.route_map = {
           system: 'Systems',
           device: 'Modules',
           user: 'Users',
@@ -42292,11 +42342,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         };
         /** Current page offset to get the next list of items */
 
-        _this137.offset = 0;
+        _this138.offset = 0;
         /** Subject holding the value of the search */
 
-        _this137.search$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
-        return _this137;
+        _this138.search$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
+        return _this138;
       }
       /** Whether dark mode is enabled */
 
@@ -42304,41 +42354,41 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(GlobalSearchComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this138 = this;
+          var _this139 = this;
 
           // Listen for input changes
           this.search_results$ = this.search$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["debounceTime"])(400), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["distinctUntilChanged"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["switchMap"])(function (query_string) {
-            _this138.loading = true;
-            _this138.offset = 20;
-            return !_this138.min_length || query_string.length >= _this138.min_length ? _this138.queryEndpoints(query_string) : Promise.resolve([]);
+            _this139.loading = true;
+            _this139.offset = 20;
+            return !_this139.min_length || query_string.length >= _this139.min_length ? _this139.queryEndpoints(query_string) : Promise.resolve([]);
           }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function () {
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["of"])([]);
           }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (list) {
-            _this138.loading = false;
+            _this139.loading = false;
             return [].concat.apply([], list);
           })); // Process API results
 
           this.subscription('search_results', this.search_results$.subscribe(function (list) {
-            _this138.results = list;
+            _this139.results = list;
 
-            _this138.results.forEach(function (item) {
-              return item.type = _this138.itemType(item);
+            _this139.results.forEach(function (item) {
+              return item.type = _this139.itemType(item);
             });
           }));
           this.subscription('navigate_end', this._router.events.subscribe(function (event) {
             if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationEnd"]) {
-              _this138.afterNavigate();
+              _this139.afterNavigate();
             }
           }));
         }
       }, {
         key: "ngOnChanges",
         value: function ngOnChanges(change) {
-          var _this139 = this;
+          var _this140 = this;
 
           if (change.search) {
             this.timeout('search', function () {
-              return _this139.search$.next(_this139.search);
+              return _this140.search$.next(_this140.search);
             }, 100);
           }
         }
@@ -42349,33 +42399,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "loadMoreItems",
         value: function loadMoreItems() {
-          var _this140 = this;
+          var _this141 = this;
 
           this.loading = true;
           this.queryEndpoints(this.search, this.offset).then(function (results_list) {
-            var _iterator32 = _createForOfIteratorHelper(results_list),
-                _step32;
+            var _iterator34 = _createForOfIteratorHelper(results_list),
+                _step34;
 
             try {
-              for (_iterator32.s(); !(_step32 = _iterator32.n()).done;) {
-                var list = _step32.value;
-                _this140.results = Object(src_app_shared_utilities_general_utilities__WEBPACK_IMPORTED_MODULE_7__["unique"])(_this140.results.concat(list), 'id');
+              for (_iterator34.s(); !(_step34 = _iterator34.n()).done;) {
+                var list = _step34.value;
+                _this141.results = Object(src_app_shared_utilities_general_utilities__WEBPACK_IMPORTED_MODULE_7__["unique"])(_this141.results.concat(list), 'id');
               }
             } catch (err) {
-              _iterator32.e(err);
+              _iterator34.e(err);
             } finally {
-              _iterator32.f();
+              _iterator34.f();
             }
 
-            _this140.results.forEach(function (item) {
-              return item.type = _this140.itemType(item);
+            _this141.results.forEach(function (item) {
+              return item.type = _this141.itemType(item);
             });
 
-            _this140.offset += 20;
-            _this140.loading = false;
+            _this141.offset += 20;
+            _this141.loading = false;
 
-            _this140.timeout('load_more', function () {
-              return _this140.atBottom();
+            _this141.timeout('load_more', function () {
+              return _this141.atBottom();
             }, 2000);
           });
         }
@@ -42454,11 +42504,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "atBottom",
         value: function atBottom() {
-          var _this141 = this;
+          var _this142 = this;
 
           if (!this.list_el) {
             return this.timeout('bottom', function () {
-              return _this141.atBottom();
+              return _this142.atBottom();
             });
           }
 
@@ -42871,35 +42921,35 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super46 = _createSuper(SidebarMenuComponent);
 
       function SidebarMenuComponent(_service, _composer, _router) {
-        var _this142;
+        var _this143;
 
         _classCallCheck(this, SidebarMenuComponent);
 
-        _this142 = _super46.call(this);
-        _this142._service = _service;
-        _this142._composer = _composer;
-        _this142._router = _router;
+        _this143 = _super46.call(this);
+        _this143._service = _service;
+        _this143._composer = _composer;
+        _this143._router = _router;
         /** Emitter for changes to the sidebar show state */
 
-        _this142.showChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        return _this142;
+        _this143.showChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        return _this143;
       }
 
       _createClass(SidebarMenuComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this143 = this;
+          var _this144 = this;
 
           this._service.initialised.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["first"])(function (_) {
             return _;
           })).subscribe(function () {
-            return _this143.init();
+            return _this144.init();
           });
         }
       }, {
         key: "init",
         value: function init() {
-          var _this144 = this;
+          var _this145 = this;
 
           this.menu_items = this._service.setting('app.general.menu');
 
@@ -42923,10 +42973,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             return !item.needs_role || !!user[item.needs_role];
           });
           this.subscription('up', this._service.Hotkeys.listen(['Control', 'Shift', 'ArrowUp'], function () {
-            return _this144.changeSelected(-1);
+            return _this145.changeSelected(-1);
           }));
           this.subscription('down', this._service.Hotkeys.listen(['Control', 'Shift', 'ArrowDown'], function () {
-            return _this144.changeSelected(1);
+            return _this145.changeSelected(1);
           }));
         }
       }, {
@@ -42943,12 +42993,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "close",
         value: function close() {
-          var _this145 = this;
+          var _this146 = this;
 
           this.timeout('close', function () {
-            _this145.show = false;
+            _this146.show = false;
 
-            _this145.showChange.emit(_this145.show);
+            _this146.showChange.emit(_this146.show);
           }, 100);
         }
         /**
@@ -42958,20 +43008,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "cancelClose",
         value: function cancelClose() {
-          var _this146 = this;
+          var _this147 = this;
 
           this.timeout('cancel_close', function () {
-            return _this146.clearTimeout('close');
+            return _this147.clearTimeout('close');
           }, 10);
         }
       }, {
         key: "changeSelected",
         value: function changeSelected() {
-          var _this147 = this;
+          var _this148 = this;
 
           var offset = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
           var index = this.menu_items.findIndex(function (item) {
-            return _this147._router.url.indexOf(item.route) >= 0;
+            return _this148._router.url.indexOf(item.route) >= 0;
           });
           var new_index = index + offset;
 
@@ -43579,23 +43629,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super47 = _createSuper(TopbarHeaderComponent);
 
       function TopbarHeaderComponent(_service, _dialog) {
-        var _this148;
+        var _this149;
 
         _classCallCheck(this, TopbarHeaderComponent);
 
-        _this148 = _super47.call(this);
-        _this148._service = _service;
-        _this148._dialog = _dialog;
+        _this149 = _super47.call(this);
+        _this149._service = _service;
+        _this149._dialog = _dialog;
         /** Emitter for changes to the sidebar menu show state */
 
-        _this148.show_menu_change = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        _this149.show_menu_change = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         /** Emitter for changes to the search input */
 
-        _this148.filterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        _this149.filterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         /** Whether the user wishes to bulk add items */
 
-        _this148.bulk = false;
-        return _this148;
+        _this149.bulk = false;
+        return _this149;
       }
       /** Whether dark mode is enabled */
 
@@ -44563,13 +44613,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var _super48 = _createSuper(AppShellComponent);
 
       function AppShellComponent(_service) {
-        var _this149;
+        var _this150;
 
         _classCallCheck(this, AppShellComponent);
 
-        _this149 = _super48.call(this);
-        _this149._service = _service;
-        return _this149;
+        _this150 = _super48.call(this);
+        _this150._service = _service;
+        return _this150;
       }
       /** Active environment */
 
@@ -44577,29 +44627,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(AppShellComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this150 = this;
+          var _this151 = this;
 
           this.year = dayjs__WEBPACK_IMPORTED_MODULE_3__().format('YYYY');
           this.subscription('user', this._service.Users.user.subscribe(function (user) {
-            return _this150.user = user;
+            return _this151.user = user;
           }));
           this.loading = true;
 
           this._service.initialised.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["first"])(function (_) {
             return _;
           })).subscribe(function () {
-            return _this150.init();
+            return _this151.init();
           });
         }
       }, {
         key: "init",
         value: function init() {
-          var _this151 = this;
+          var _this152 = this;
 
           this.loading = false;
 
           this._service.Users.current().then(function (user) {
-            return _this151.user = user;
+            return _this152.user = user;
           });
         }
         /** Navigate to the root page */
@@ -44744,16 +44794,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "d37f48e",
-      "hash": "d37f48e",
+      "raw": "0618000",
+      "hash": "0618000",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "d37f48e",
+      "suffix": "0618000",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1594113476651
+      "time": 1594177659689
     };
     /* tslint:enable */
 
