@@ -20096,9 +20096,9 @@ function generateRepositoryFormFields(repository) {
     else {
         if (repository.type === _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineRepositoryType"].Driver) {
             delete fields.branch;
+            delete fields.uri;
         }
         delete fields.folder_name;
-        delete fields.uri;
     }
     if (fields.branch) {
         fields.branch.valueChanges.subscribe((name) => {
@@ -22263,16 +22263,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "1db2806",
-    "hash": "1db2806",
+    "raw": "665503c",
+    "hash": "665503c",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "1db2806",
+    "suffix": "665503c",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1594793160226
+    "time": 1594795183188
 };
 /* tslint:enable */
 
