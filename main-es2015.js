@@ -37,6 +37,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 /* harmony import */ var _shell_shell_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shell/shell.component */ "./src/app/shell/shell.component.ts");
 /* harmony import */ var _shared_guards_authorised_admin_guard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shared/guards/authorised-admin.guard */ "./src/app/shared/guards/authorised-admin.guard.ts");
+/* harmony import */ var _shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./shared/guards/authorised-user.guard */ "./src/app/shared/guards/authorised-user.guard.ts");
+/* harmony import */ var _shared_components_unauthorised_unauthorised_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./shared/components/unauthorised/unauthorised.component */ "./src/app/shared/components/unauthorised/unauthorised.component.ts");
+
+
 
 
 
@@ -44,55 +48,75 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
+    { path: 'unauthorised', component: _shared_components_unauthorised_unauthorised_component__WEBPACK_IMPORTED_MODULE_5__["UnauthorisedComponent"] },
     {
         path: '',
         component: _shell_shell_component__WEBPACK_IMPORTED_MODULE_2__["AppShellComponent"],
         children: [
             {
                 path: 'modules',
-                loadChildren: () => __webpack_require__.e(/*! import() | shell-modules-modules-module */ "shell-modules-modules-module").then(__webpack_require__.bind(null, /*! ./shell/modules/modules.module */ "./src/app/shell/modules/modules.module.ts")).then(m => m.AppModulesModule)
+                canLoad: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                canActivate: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                loadChildren: () => __webpack_require__.e(/*! import() | shell-modules-modules-module */ "shell-modules-modules-module").then(__webpack_require__.bind(null, /*! ./shell/modules/modules.module */ "./src/app/shell/modules/modules.module.ts")).then((m) => m.AppModulesModule),
             },
             {
                 path: 'domains',
-                loadChildren: () => __webpack_require__.e(/*! import() | shell-domains-domains-module */ "shell-domains-domains-module").then(__webpack_require__.bind(null, /*! ./shell/domains/domains.module */ "./src/app/shell/domains/domains.module.ts")).then(m => m.AppDomainsModule)
+                canLoad: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                canActivate: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                loadChildren: () => __webpack_require__.e(/*! import() | shell-domains-domains-module */ "shell-domains-domains-module").then(__webpack_require__.bind(null, /*! ./shell/domains/domains.module */ "./src/app/shell/domains/domains.module.ts")).then((m) => m.AppDomainsModule),
             },
             {
                 path: 'drivers',
-                loadChildren: () => __webpack_require__.e(/*! import() | shell-drivers-drivers-module */ "shell-drivers-drivers-module").then(__webpack_require__.bind(null, /*! ./shell/drivers/drivers.module */ "./src/app/shell/drivers/drivers.module.ts")).then(m => m.AppDriversModule)
+                canLoad: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                canActivate: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                loadChildren: () => __webpack_require__.e(/*! import() | shell-drivers-drivers-module */ "shell-drivers-drivers-module").then(__webpack_require__.bind(null, /*! ./shell/drivers/drivers.module */ "./src/app/shell/drivers/drivers.module.ts")).then((m) => m.AppDriversModule),
             },
             {
                 path: 'metrics',
-                loadChildren: () => __webpack_require__.e(/*! import() | shell-metrics-metrics-module */ "shell-metrics-metrics-module").then(__webpack_require__.bind(null, /*! ./shell/metrics/metrics.module */ "./src/app/shell/metrics/metrics.module.ts")).then(m => m.AppMetricsModule)
+                canLoad: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                canActivate: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                loadChildren: () => __webpack_require__.e(/*! import() | shell-metrics-metrics-module */ "shell-metrics-metrics-module").then(__webpack_require__.bind(null, /*! ./shell/metrics/metrics.module */ "./src/app/shell/metrics/metrics.module.ts")).then((m) => m.AppMetricsModule),
             },
             {
                 path: 'systems',
-                loadChildren: () => Promise.all(/*! import() | shell-systems-systems-module */[__webpack_require__.e("default~shell-systems-systems-module~shell-triggers-triggers-module"), __webpack_require__.e("shell-systems-systems-module")]).then(__webpack_require__.bind(null, /*! ./shell/systems/systems.module */ "./src/app/shell/systems/systems.module.ts")).then(m => m.AppSystemsModule)
+                canLoad: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                canActivate: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                loadChildren: () => Promise.all(/*! import() | shell-systems-systems-module */[__webpack_require__.e("default~shell-systems-systems-module~shell-triggers-triggers-module"), __webpack_require__.e("shell-systems-systems-module")]).then(__webpack_require__.bind(null, /*! ./shell/systems/systems.module */ "./src/app/shell/systems/systems.module.ts")).then((m) => m.AppSystemsModule),
             },
             {
                 path: 'repositories',
-                loadChildren: () => __webpack_require__.e(/*! import() | shell-repositories-repositories-module */ "shell-repositories-repositories-module").then(__webpack_require__.bind(null, /*! ./shell/repositories/repositories.module */ "./src/app/shell/repositories/repositories.module.ts")).then(m => m.AppRepositoriesModule)
+                canLoad: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                canActivate: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                loadChildren: () => __webpack_require__.e(/*! import() | shell-repositories-repositories-module */ "shell-repositories-repositories-module").then(__webpack_require__.bind(null, /*! ./shell/repositories/repositories.module */ "./src/app/shell/repositories/repositories.module.ts")).then((m) => m.AppRepositoriesModule),
             },
             {
                 path: 'triggers',
-                loadChildren: () => Promise.all(/*! import() | shell-triggers-triggers-module */[__webpack_require__.e("default~shell-systems-systems-module~shell-triggers-triggers-module"), __webpack_require__.e("shell-triggers-triggers-module")]).then(__webpack_require__.bind(null, /*! ./shell/triggers/triggers.module */ "./src/app/shell/triggers/triggers.module.ts")).then(m => m.AppTriggersModule)
+                canLoad: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                canActivate: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                loadChildren: () => Promise.all(/*! import() | shell-triggers-triggers-module */[__webpack_require__.e("default~shell-systems-systems-module~shell-triggers-triggers-module"), __webpack_require__.e("shell-triggers-triggers-module")]).then(__webpack_require__.bind(null, /*! ./shell/triggers/triggers.module */ "./src/app/shell/triggers/triggers.module.ts")).then((m) => m.AppTriggersModule),
             },
             {
                 path: 'users',
-                loadChildren: () => __webpack_require__.e(/*! import() | shell-users-users-module */ "shell-users-users-module").then(__webpack_require__.bind(null, /*! ./shell/users/users.module */ "./src/app/shell/users/users.module.ts")).then(m => m.AppUsersModule)
+                canLoad: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                canActivate: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                loadChildren: () => __webpack_require__.e(/*! import() | shell-users-users-module */ "shell-users-users-module").then(__webpack_require__.bind(null, /*! ./shell/users/users.module */ "./src/app/shell/users/users.module.ts")).then((m) => m.AppUsersModule),
             },
             {
                 path: 'zones',
-                loadChildren: () => __webpack_require__.e(/*! import() | shell-zones-zones-module */ "shell-zones-zones-module").then(__webpack_require__.bind(null, /*! ./shell/zones/zones.module */ "./src/app/shell/zones/zones.module.ts")).then(m => m.AppZonesModule)
+                canLoad: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                canActivate: [_shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_4__["AuthorisedUserGuard"]],
+                loadChildren: () => __webpack_require__.e(/*! import() | shell-zones-zones-module */ "shell-zones-zones-module").then(__webpack_require__.bind(null, /*! ./shell/zones/zones.module */ "./src/app/shell/zones/zones.module.ts")).then((m) => m.AppZonesModule),
             },
             {
                 path: 'admin',
-                loadChildren: () => __webpack_require__.e(/*! import() | shell-engine-engine-module */ "shell-engine-engine-module").then(__webpack_require__.bind(null, /*! ./shell/engine/engine.module */ "./src/app/shell/engine/engine.module.ts")).then(m => m.AppEngineModule),
-                canLoad: [_shared_guards_authorised_admin_guard__WEBPACK_IMPORTED_MODULE_3__["AuthorisedAdminGuard"]]
+                canLoad: [_shared_guards_authorised_admin_guard__WEBPACK_IMPORTED_MODULE_3__["AuthorisedAdminGuard"]],
+                canActivate: [_shared_guards_authorised_admin_guard__WEBPACK_IMPORTED_MODULE_3__["AuthorisedAdminGuard"]],
+                loadChildren: () => __webpack_require__.e(/*! import() | shell-engine-engine-module */ "shell-engine-engine-module").then(__webpack_require__.bind(null, /*! ./shell/engine/engine.module */ "./src/app/shell/engine/engine.module.ts")).then((m) => m.AppEngineModule),
             },
-            { path: '**', redirectTo: 'systems' }
-        ]
+            { path: '**', redirectTo: 'systems' },
+        ],
     },
-    { path: '**', redirectTo: 'systems' }
+    { path: '**', redirectTo: 'systems' },
 ];
 class AppRoutingModule {
 }
@@ -104,7 +128,7 @@ AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
                 imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, { useHash: true })],
-                exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+                exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]],
             }]
     }], null, null); })();
 
@@ -225,10 +249,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_sentry_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/sentry.service */ "./src/app/services/sentry.service.ts");
 /* harmony import */ var _shell__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./shell */ "./src/app/shell/index.ts");
 /* harmony import */ var _shared_mocks__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./shared/mocks */ "./src/app/shared/mocks/index.ts");
-/* harmony import */ var _shell_shell_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./shell/shell.component */ "./src/app/shell/shell.component.ts");
-/* harmony import */ var _shell_components_topbar_header_topbar_header_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./shell/components/topbar-header/topbar-header.component */ "./src/app/shell/components/topbar-header/topbar-header.component.ts");
-/* harmony import */ var _shell_components_sidebar_menu_sidebar_menu_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./shell/components/sidebar-menu/sidebar-menu.component */ "./src/app/shell/components/sidebar-menu/sidebar-menu.component.ts");
-/* harmony import */ var _shell_components_global_search_global_search_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./shell/components/global-search/global-search.component */ "./src/app/shell/components/global-search/global-search.component.ts");
+/* harmony import */ var _shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./shared/guards/authorised-user.guard */ "./src/app/shared/guards/authorised-user.guard.ts");
+/* harmony import */ var _shared_guards_authorised_admin_guard__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./shared/guards/authorised-admin.guard */ "./src/app/shared/guards/authorised-admin.guard.ts");
+/* harmony import */ var _shell_shell_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./shell/shell.component */ "./src/app/shell/shell.component.ts");
+/* harmony import */ var _shell_components_topbar_header_topbar_header_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./shell/components/topbar-header/topbar-header.component */ "./src/app/shell/components/topbar-header/topbar-header.component.ts");
+/* harmony import */ var _shell_components_sidebar_menu_sidebar_menu_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./shell/components/sidebar-menu/sidebar-menu.component */ "./src/app/shell/components/sidebar-menu/sidebar-menu.component.ts");
+/* harmony import */ var _shell_components_global_search_global_search_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./shell/components/global-search/global-search.component */ "./src/app/shell/components/global-search/global-search.component.ts");
+
+
 
 
 
@@ -253,7 +281,11 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
 }
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [{ provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ErrorHandler"], useClass: _services_sentry_service__WEBPACK_IMPORTED_MODULE_12__["SentryService"] }], imports: [[
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [
+        { provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ErrorHandler"], useClass: _services_sentry_service__WEBPACK_IMPORTED_MODULE_12__["SentryService"] },
+        _shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_15__["AuthorisedUserGuard"],
+        _shared_guards_authorised_admin_guard__WEBPACK_IMPORTED_MODULE_16__["AuthorisedAdminGuard"],
+    ], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
@@ -262,9 +294,9 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector
             _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
             _acaprojects_ngx_google_analytics__WEBPACK_IMPORTED_MODULE_6__["AGoogleAnalyticsModule"],
             _overlays_overlays_module__WEBPACK_IMPORTED_MODULE_10__["SharedOverlaysModule"],
-            _shared_shared_module__WEBPACK_IMPORTED_MODULE_11__["SharedContentModule"]
+            _shared_shared_module__WEBPACK_IMPORTED_MODULE_11__["SharedContentModule"],
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _shell_shell_component__WEBPACK_IMPORTED_MODULE_15__["AppShellComponent"], _shell_components_topbar_header_topbar_header_component__WEBPACK_IMPORTED_MODULE_16__["TopbarHeaderComponent"], _shell_components_sidebar_menu_sidebar_menu_component__WEBPACK_IMPORTED_MODULE_17__["SidebarMenuComponent"], _shell_components_global_search_global_search_component__WEBPACK_IMPORTED_MODULE_18__["GlobalSearchComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _shell_shell_component__WEBPACK_IMPORTED_MODULE_17__["AppShellComponent"], _shell_components_topbar_header_topbar_header_component__WEBPACK_IMPORTED_MODULE_18__["TopbarHeaderComponent"], _shell_components_sidebar_menu_sidebar_menu_component__WEBPACK_IMPORTED_MODULE_19__["SidebarMenuComponent"], _shell_components_global_search_global_search_component__WEBPACK_IMPORTED_MODULE_20__["GlobalSearchComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_4__["ServiceWorkerModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
@@ -274,10 +306,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
-                declarations: [
-                    _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
-                    ..._shell__WEBPACK_IMPORTED_MODULE_13__["APP_COMPONENTS"]
-                ],
+                declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], ..._shell__WEBPACK_IMPORTED_MODULE_13__["APP_COMPONENTS"]],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                     _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"],
@@ -287,10 +316,14 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector
                     _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
                     _acaprojects_ngx_google_analytics__WEBPACK_IMPORTED_MODULE_6__["AGoogleAnalyticsModule"],
                     _overlays_overlays_module__WEBPACK_IMPORTED_MODULE_10__["SharedOverlaysModule"],
-                    _shared_shared_module__WEBPACK_IMPORTED_MODULE_11__["SharedContentModule"]
+                    _shared_shared_module__WEBPACK_IMPORTED_MODULE_11__["SharedContentModule"],
                 ],
-                providers: [{ provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ErrorHandler"], useClass: _services_sentry_service__WEBPACK_IMPORTED_MODULE_12__["SentryService"] }],
-                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
+                providers: [
+                    { provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ErrorHandler"], useClass: _services_sentry_service__WEBPACK_IMPORTED_MODULE_12__["SentryService"] },
+                    _shared_guards_authorised_user_guard__WEBPACK_IMPORTED_MODULE_15__["AuthorisedUserGuard"],
+                    _shared_guards_authorised_admin_guard__WEBPACK_IMPORTED_MODULE_16__["AuthorisedAdminGuard"],
+                ],
+                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]],
             }]
     }], null, null); })();
 
@@ -17710,6 +17743,78 @@ const ɵTerminalComponent_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0
 
 /***/ }),
 
+/***/ "./src/app/shared/components/unauthorised/unauthorised.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/shared/components/unauthorised/unauthorised.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: UnauthorisedComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnauthorisedComponent", function() { return UnauthorisedComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+var I18N_0;
+if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+    const MSG_EXTERNAL_forbiddenLabel$$SRC_APP_SHARED_COMPONENTS_UNAUTHORISED_UNAUTHORISED_COMPONENT_TS_1 = goog.getMsg("Access forbidden.");
+    I18N_0 = MSG_EXTERNAL_forbiddenLabel$$SRC_APP_SHARED_COMPONENTS_UNAUTHORISED_UNAUTHORISED_COMPONENT_TS_1;
+}
+else {
+    I18N_0 = $localize `:@@forbiddenLabel␟56a20d819b6e59b0de025988a3f9ed7d6a1bc08c␟4136336337692896315:Access forbidden.`;
+}
+var I18N_2;
+if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+    const MSG_EXTERNAL_invalidPermissionLabel$$SRC_APP_SHARED_COMPONENTS_UNAUTHORISED_UNAUTHORISED_COMPONENT_TS_3 = goog.getMsg("You do not have permission to view this page and your access attempt has been recorded.");
+    I18N_2 = MSG_EXTERNAL_invalidPermissionLabel$$SRC_APP_SHARED_COMPONENTS_UNAUTHORISED_UNAUTHORISED_COMPONENT_TS_3;
+}
+else {
+    I18N_2 = $localize `:@@invalidPermissionLabel␟1aca7781b07d777caf04565a56610c0e17c4304d␟308864243968742941:You do not have permission to view this page and your access attempt has been recorded.`;
+}
+var I18N_4;
+if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+    const MSG_EXTERNAL_contactAdminLabel$$SRC_APP_SHARED_COMPONENTS_UNAUTHORISED_UNAUTHORISED_COMPONENT_TS_5 = goog.getMsg("Contact your Administrator if you feel that you should have access.");
+    I18N_4 = MSG_EXTERNAL_contactAdminLabel$$SRC_APP_SHARED_COMPONENTS_UNAUTHORISED_UNAUTHORISED_COMPONENT_TS_5;
+}
+else {
+    I18N_4 = $localize `:@@contactAdminLabel␟e358d83bb1bc17c9b658421a63df1688a4cca173␟4454329093426439945:Contact your Administrator if you feel that you should have access.`;
+}
+class UnauthorisedComponent {
+    constructor() {
+    }
+    ngOnInit() {
+    }
+}
+UnauthorisedComponent.ɵfac = function UnauthorisedComponent_Factory(t) { return new (t || UnauthorisedComponent)(); };
+UnauthorisedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: UnauthorisedComponent, selectors: [["app-unauthorised"]], decls: 9, vars: 0, consts: [[1, "unauthorised"]], template: function UnauthorisedComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "403");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](4, I18N_0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](6, I18N_2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵi18n"](8, I18N_4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["[_nghost-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.unauthorised[_ngcontent-%COMP%] {\n  width: 24em;\n  background-color: #fff;\n  color: rgba(0, 0, 0, 0.85);\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  text-align: center;\n  padding: 0.5em 2em 2em;\n  margin: 1em;\n}\n\n@media (prefers-color-scheme: dark) {\n  .unauthorised[_ngcontent-%COMP%] {\n    background-color: #262626;\n    color: #fff;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2JhY2tvZmZpY2UvYmFja29mZmljZS9zcmMvYXBwL3NoYXJlZC9jb21wb25lbnRzL3VuYXV0aG9yaXNlZC91bmF1dGhvcmlzZWQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3NoYXJlZC9jb21wb25lbnRzL3VuYXV0aG9yaXNlZC91bmF1dGhvcmlzZWQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSx1QkFBQTtBQ0FKOztBREdBO0VBQ0ksV0FBQTtFQUNBLHNCQUFBO0VBQ0EsMEJBQUE7RUFDQSxrQkFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSxzQkFBQTtFQUNBLFdBQUE7QUNBSjs7QURFSTtFQVZKO0lBV1EseUJBQUE7SUFDQSxXQUFBO0VDQ047QUFDRiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9jb21wb25lbnRzL3VuYXV0aG9yaXNlZC91bmF1dGhvcmlzZWQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbjpob3N0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi51bmF1dGhvcmlzZWQge1xuICAgIHdpZHRoOiAyNGVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gICAgY29sb3I6IHJnYmEoIzAwMCwgLjg1KTtcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgcGFkZGluZzogLjVlbSAyZW0gMmVtO1xuICAgIG1hcmdpbjogMWVtO1xuXG4gICAgQG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjYyNjI2O1xuICAgICAgICBjb2xvcjogI2ZmZjtcbiAgICB9XG59XG4iLCI6aG9zdCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4udW5hdXRob3Jpc2VkIHtcbiAgd2lkdGg6IDI0ZW07XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gIGNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuODUpO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcGFkZGluZzogMC41ZW0gMmVtIDJlbTtcbiAgbWFyZ2luOiAxZW07XG59XG5AbWVkaWEgKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7XG4gIC51bmF1dGhvcmlzZWQge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMyNjI2MjY7XG4gICAgY29sb3I6ICNmZmY7XG4gIH1cbn0iXX0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](UnauthorisedComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-unauthorised',
+                templateUrl: './unauthorised.component.html',
+                styleUrls: ['./unauthorised.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
 /***/ "./src/app/shared/globals/angular-animations.ts":
 /*!******************************************************!*\
   !*** ./src/app/shared/globals/angular-animations.ts ***!
@@ -17922,43 +18027,118 @@ const ɵBaseDirective_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthorisedAdminGuard", function() { return AuthorisedAdminGuard; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var src_app_services_app_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/app.service */ "./src/app/services/app.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _placeos_composer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @placeos/composer */ "./node_modules/@placeos/composer/__ivy_ngcc__/fesm2015/placeos-composer.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+
 
 
 
 
 class AuthorisedAdminGuard {
-    constructor(_service, _router) {
-        this._service = _service;
+    constructor(_composer, _router) {
+        this._composer = _composer;
         this._router = _router;
     }
     canActivate(next, state) {
-        const user = this._service.get('user');
-        const can_activate = user && user.sys_admin;
-        if (!can_activate) {
-            this._router.navigate(['/systems']);
-        }
-        return can_activate;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            yield this._composer.initialised.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["first"])(_ => _)).toPromise();
+            const user = this._user || (yield this._composer.users.current());
+            const can_activate = user && user.sys_admin;
+            if (!can_activate) {
+                this._router.navigate(['/systems']);
+            }
+            this._user = user;
+            return can_activate;
+        });
     }
     canLoad(route, segments) {
-        const user = this._service.get('user');
-        const can_load = user && user.sys_admin;
-        if (!can_load) {
-            this._router.navigate(['/systems']);
-        }
-        return can_load;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            yield this._composer.initialised.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["first"])(_ => _)).toPromise();
+            const user = this._user || (yield this._composer.users.current());
+            const can_activate = user && user.sys_admin;
+            if (!can_activate) {
+                this._router.navigate(['/systems']);
+            }
+            this._user = user;
+            return can_activate;
+        });
     }
 }
-AuthorisedAdminGuard.ɵfac = function AuthorisedAdminGuard_Factory(t) { return new (t || AuthorisedAdminGuard)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](src_app_services_app_service__WEBPACK_IMPORTED_MODULE_1__["ApplicationService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"])); };
-AuthorisedAdminGuard.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: AuthorisedAdminGuard, factory: AuthorisedAdminGuard.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AuthorisedAdminGuard, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+AuthorisedAdminGuard.ɵfac = function AuthorisedAdminGuard_Factory(t) { return new (t || AuthorisedAdminGuard)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_placeos_composer__WEBPACK_IMPORTED_MODULE_3__["ComposerService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"])); };
+AuthorisedAdminGuard.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: AuthorisedAdminGuard, factory: AuthorisedAdminGuard.ɵfac, providedIn: 'root' });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AuthorisedAdminGuard, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"],
         args: [{
                 providedIn: 'root'
             }]
-    }], function () { return [{ type: src_app_services_app_service__WEBPACK_IMPORTED_MODULE_1__["ApplicationService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }]; }, null); })();
+    }], function () { return [{ type: _placeos_composer__WEBPACK_IMPORTED_MODULE_3__["ComposerService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/shared/guards/authorised-user.guard.ts":
+/*!********************************************************!*\
+  !*** ./src/app/shared/guards/authorised-user.guard.ts ***!
+  \********************************************************/
+/*! exports provided: AuthorisedUserGuard */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthorisedUserGuard", function() { return AuthorisedUserGuard; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _placeos_composer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @placeos/composer */ "./node_modules/@placeos/composer/__ivy_ngcc__/fesm2015/placeos-composer.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
+
+
+
+
+
+class AuthorisedUserGuard {
+    constructor(_composer, _router) {
+        this._composer = _composer;
+        this._router = _router;
+    }
+    canActivate(next, state) {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            yield this._composer.initialised.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["first"])(_ => _)).toPromise();
+            const user = this._user || (yield this._composer.users.current());
+            const can_activate = user && user.sys_admin;
+            if (!can_activate) {
+                this._router.navigate(['/unauthorised']);
+            }
+            this._user = user;
+            return can_activate;
+        });
+    }
+    canLoad(route, segments) {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            yield this._composer.initialised.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["first"])(_ => _)).toPromise();
+            const user = this._user || (yield this._composer.users.current());
+            const can_activate = user && user.sys_admin;
+            if (!can_activate) {
+                this._router.navigate(['/unauthorised']);
+            }
+            this._user = user;
+            return can_activate;
+        });
+    }
+}
+AuthorisedUserGuard.ɵfac = function AuthorisedUserGuard_Factory(t) { return new (t || AuthorisedUserGuard)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_placeos_composer__WEBPACK_IMPORTED_MODULE_3__["ComposerService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"])); };
+AuthorisedUserGuard.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: AuthorisedUserGuard, factory: AuthorisedUserGuard.ɵfac, providedIn: 'root' });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AuthorisedUserGuard, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"],
+        args: [{
+                providedIn: 'root',
+            }]
+    }], function () { return [{ type: _placeos_composer__WEBPACK_IMPORTED_MODULE_3__["ComposerService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }]; }, null); })();
 
 
 /***/ }),
@@ -19027,10 +19207,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_forms_settings_form_settings_form_component__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./components/forms/settings-form/settings-form.component */ "./src/app/shared/components/forms/settings-form/settings-form.component.ts");
 /* harmony import */ var _acaprojects_ngx_date_picker__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! @acaprojects/ngx-date-picker */ "./node_modules/@acaprojects/ngx-date-picker/__ivy_ngcc__/fesm2015/acaprojects-ngx-date-picker.js");
 /* harmony import */ var _components_forms_broker_form_broker_form_component__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ./components/forms/broker-form/broker-form.component */ "./src/app/shared/components/forms/broker-form/broker-form.component.ts");
-/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/shared/components/login/login.component.ts");
-/* harmony import */ var _components_login_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ./components/login/login-form/login-form.component */ "./src/app/shared/components/login/login-form/login-form.component.ts");
-/* harmony import */ var _components_login_register_form_register_form_component__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ./components/login/register-form/register-form.component */ "./src/app/shared/components/login/register-form/register-form.component.ts");
-/* harmony import */ var _components_login_forgot_pass_form_forgot_pass_form_component__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ./components/login/forgot-pass-form/forgot-pass-form.component */ "./src/app/shared/components/login/forgot-pass-form/forgot-pass-form.component.ts");
+/* harmony import */ var _components_unauthorised_unauthorised_component__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ./components/unauthorised/unauthorised.component */ "./src/app/shared/components/unauthorised/unauthorised.component.ts");
+/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/shared/components/login/login.component.ts");
+/* harmony import */ var _components_login_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ./components/login/login-form/login-form.component */ "./src/app/shared/components/login/login-form/login-form.component.ts");
+/* harmony import */ var _components_login_register_form_register_form_component__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ./components/login/register-form/register-form.component */ "./src/app/shared/components/login/register-form/register-form.component.ts");
+/* harmony import */ var _components_login_forgot_pass_form_forgot_pass_form_component__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ./components/login/forgot-pass-form/forgot-pass-form.component */ "./src/app/shared/components/login/forgot-pass-form/forgot-pass-form.component.ts");
 
 
 
@@ -19047,6 +19228,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import { MatProgressBarModule } from '@angular/material/progress-bar';
+
 
 
 
@@ -19134,6 +19316,7 @@ const COMPONENTS = [
     ...FORM_COMPONENTS,
     _components_terminal_terminal_component__WEBPACK_IMPORTED_MODULE_35__["TerminalComponent"],
     _components_debug_output_debug_output_component__WEBPACK_IMPORTED_MODULE_62__["DebugOutputComponent"],
+    _components_unauthorised_unauthorised_component__WEBPACK_IMPORTED_MODULE_66__["UnauthorisedComponent"],
 ];
 const PIPES = [
     _pipes_driver_format_pipe__WEBPACK_IMPORTED_MODULE_55__["DriverFormatPipe"],
@@ -19214,7 +19397,7 @@ SharedContentModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _components_base_root_component__WEBPACK_IMPORTED_MODULE_33__["BaseRootComponent"],
         _components_item_display_item_display_component__WEBPACK_IMPORTED_MODULE_29__["ItemDisplayComponent"],
         _components_searchbar_searchbar_component__WEBPACK_IMPORTED_MODULE_31__["SearchbarComponent"],
-        _components_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_32__["SidebarComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_66__["LoginComponent"], _components_login_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_67__["LoginFormComponent"], _components_login_register_form_register_form_component__WEBPACK_IMPORTED_MODULE_68__["RegisterFormComponent"], _components_login_forgot_pass_form_forgot_pass_form_component__WEBPACK_IMPORTED_MODULE_69__["ForgotPassFormComponent"], _components_icon_icon_component__WEBPACK_IMPORTED_MODULE_34__["IconComponent"],
+        _components_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_32__["SidebarComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_67__["LoginComponent"], _components_login_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_68__["LoginFormComponent"], _components_login_register_form_register_form_component__WEBPACK_IMPORTED_MODULE_69__["RegisterFormComponent"], _components_login_forgot_pass_form_forgot_pass_form_component__WEBPACK_IMPORTED_MODULE_70__["ForgotPassFormComponent"], _components_icon_icon_component__WEBPACK_IMPORTED_MODULE_34__["IconComponent"],
         _components_forms_system_form_system_form_component__WEBPACK_IMPORTED_MODULE_41__["SystemFormComponent"],
         _components_forms_module_form_module_form_component__WEBPACK_IMPORTED_MODULE_42__["ModuleFormComponent"],
         _components_forms_zone_form_zone_form_component__WEBPACK_IMPORTED_MODULE_43__["ZoneFormComponent"],
@@ -19234,6 +19417,7 @@ SharedContentModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _components_forms_broker_form_broker_form_component__WEBPACK_IMPORTED_MODULE_65__["BrokerFormComponent"],
         _components_terminal_terminal_component__WEBPACK_IMPORTED_MODULE_35__["TerminalComponent"],
         _components_debug_output_debug_output_component__WEBPACK_IMPORTED_MODULE_62__["DebugOutputComponent"],
+        _components_unauthorised_unauthorised_component__WEBPACK_IMPORTED_MODULE_66__["UnauthorisedComponent"],
         _pipes_driver_format_pipe__WEBPACK_IMPORTED_MODULE_55__["DriverFormatPipe"],
         _pipes_date_from_pipe__WEBPACK_IMPORTED_MODULE_56__["DateFromPipe"],
         _pipes_format_list_pipe__WEBPACK_IMPORTED_MODULE_57__["FormatListPipe"],
@@ -19281,7 +19465,7 @@ SharedContentModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _components_base_root_component__WEBPACK_IMPORTED_MODULE_33__["BaseRootComponent"],
         _components_item_display_item_display_component__WEBPACK_IMPORTED_MODULE_29__["ItemDisplayComponent"],
         _components_searchbar_searchbar_component__WEBPACK_IMPORTED_MODULE_31__["SearchbarComponent"],
-        _components_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_32__["SidebarComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_66__["LoginComponent"], _components_login_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_67__["LoginFormComponent"], _components_login_register_form_register_form_component__WEBPACK_IMPORTED_MODULE_68__["RegisterFormComponent"], _components_login_forgot_pass_form_forgot_pass_form_component__WEBPACK_IMPORTED_MODULE_69__["ForgotPassFormComponent"], _components_icon_icon_component__WEBPACK_IMPORTED_MODULE_34__["IconComponent"],
+        _components_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_32__["SidebarComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_67__["LoginComponent"], _components_login_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_68__["LoginFormComponent"], _components_login_register_form_register_form_component__WEBPACK_IMPORTED_MODULE_69__["RegisterFormComponent"], _components_login_forgot_pass_form_forgot_pass_form_component__WEBPACK_IMPORTED_MODULE_70__["ForgotPassFormComponent"], _components_icon_icon_component__WEBPACK_IMPORTED_MODULE_34__["IconComponent"],
         _components_forms_system_form_system_form_component__WEBPACK_IMPORTED_MODULE_41__["SystemFormComponent"],
         _components_forms_module_form_module_form_component__WEBPACK_IMPORTED_MODULE_42__["ModuleFormComponent"],
         _components_forms_zone_form_zone_form_component__WEBPACK_IMPORTED_MODULE_43__["ZoneFormComponent"],
@@ -19301,6 +19485,7 @@ SharedContentModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _components_forms_broker_form_broker_form_component__WEBPACK_IMPORTED_MODULE_65__["BrokerFormComponent"],
         _components_terminal_terminal_component__WEBPACK_IMPORTED_MODULE_35__["TerminalComponent"],
         _components_debug_output_debug_output_component__WEBPACK_IMPORTED_MODULE_62__["DebugOutputComponent"],
+        _components_unauthorised_unauthorised_component__WEBPACK_IMPORTED_MODULE_66__["UnauthorisedComponent"],
         _pipes_driver_format_pipe__WEBPACK_IMPORTED_MODULE_55__["DriverFormatPipe"],
         _pipes_date_from_pipe__WEBPACK_IMPORTED_MODULE_56__["DateFromPipe"],
         _pipes_format_list_pipe__WEBPACK_IMPORTED_MODULE_57__["FormatListPipe"],
@@ -22016,16 +22201,16 @@ __webpack_require__.r(__webpack_exports__);
 /* tslint:disable */
 const VERSION = {
     "dirty": false,
-    "raw": "35c9d91",
-    "hash": "35c9d91",
+    "raw": "24fdc2b",
+    "hash": "24fdc2b",
     "distance": null,
     "tag": null,
     "semver": null,
-    "suffix": "35c9d91",
+    "suffix": "24fdc2b",
     "semverString": null,
     "version": "2.0.2",
     "core_version": "1.0.0",
-    "time": 1594694819030
+    "time": 1594780409185
 };
 /* tslint:enable */
 
