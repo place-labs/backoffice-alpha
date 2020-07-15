@@ -25149,7 +25149,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.branch);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.form.controls.branch && ctx_r0.is_edit);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
@@ -41337,11 +41337,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _loop13(key);
       }
 
-      fields.branch.disable();
-
       if (!repository.id) {
         repository.storePendingChange('commit_hash', 'HEAD');
       } else {
+        if (repository.type === _placeos_ts_client__WEBPACK_IMPORTED_MODULE_1__["EngineRepositoryType"].Driver) {
+          delete fields.branch;
+        }
+
         delete fields.folder_name;
         delete fields.uri;
       }
@@ -45514,16 +45516,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var VERSION = {
       "dirty": false,
-      "raw": "24fdc2b",
-      "hash": "24fdc2b",
+      "raw": "07a7566",
+      "hash": "07a7566",
       "distance": null,
       "tag": null,
       "semver": null,
-      "suffix": "24fdc2b",
+      "suffix": "07a7566",
       "semverString": null,
       "version": "2.0.2",
       "core_version": "1.0.0",
-      "time": 1594780409185
+      "time": 1594789054157
     };
     /* tslint:enable */
 
